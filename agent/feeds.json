@@ -1,0 +1,12 @@
+{
+  "note": "Official RSS/Atom feeds to monitor. Only government / official bodies. Add or fix feed URLs over time; the collector skips any feed that fails.",
+  "window_days": 7,
+  "keyword": "iran",
+  "feeds": [
+    { "country": "United Nations", "region": "International Bodies", "organization": "UN News", "flag": "🇺🇳", "feed": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "homepage": "https://news.un.org/" },
+    { "country": "United Kingdom", "region": "Europe", "organization": "Foreign, Commonwealth & Development Office", "flag": "🇬🇧", "feed": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office", "homepage": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" },
+    { "country": "United States", "region": "North America", "organization": "U.S. Department of State", "flag": "🇺🇸", "feed": "https://www.state.gov/feed/", "homepage": "https://www.state.gov/press-releases/" },
+    { "country": "IAEA", "region": "International Bodies", "organization": "International Atomic Energy Agency", "flag": "🌍", "feed": "https://www.iaea.org/feeds/topnews", "homepage": "https://www.iaea.org/newscenter" },
+    { "country": "European Union", "region": "Europe", "organization": "European External Action Service", "flag": "🇪🇺", "feed": "https://www.eeas.europa.eu/eeas/rss.xml", "homepage": "https://www.eeas.europa.eu/eeas/press_en" }
+  ]
+}

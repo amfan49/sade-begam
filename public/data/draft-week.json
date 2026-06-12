@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-06-12T10:23:22.687Z",
+  "window_days": 45,
+  "keyword": "iran",
+  "total": 6,
+  "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
+  "items": [
+    {
+      "id": "draft-001",
+      "date": "2026-06-10",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on We",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-05",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167648",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "‘The ocean has no boundaries’: Beauty and life in a war zone",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "When US and Israeli forces launched strikes on Iran on 28 February, triggering one of the most serious geopolitical crises in years, the Strait of Hormuz – a narrow channel just 34 kilometres wide at its narrowest point – became a global flashpoint overnight.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nu…",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-quad-statement-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Quad statement to the IAEA Board of Governors, June 2026",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-006",
+      "date": "2026-06-09",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    }
+  ]
+}

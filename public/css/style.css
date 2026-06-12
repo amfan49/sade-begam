@@ -1,0 +1,157 @@
+/* ── Sade Begam — Brand Guide styles (light/clean) ──────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Vazirmatn:wght@400;600;700&display=swap');
+
+:root {
+  --brand-blue: #1A6FBF;
+  --brand-blue-deep: #2E6687;
+  --brand-blue-soft: #4A8FB8;
+  --brand-orange: #FF6B35;
+  --brand-gold: #D9B247;
+
+  --bg-page: #F5F7FA;
+  --bg-card: #FFFFFF;
+  --bg-dark: #1C2233;
+  --text-primary: #1C2233;
+  --text-body: #3A4A60;
+  --text-muted: #7A8AA8;
+  --border: #D0D8EC;
+
+  --radius: 14px;
+  --shadow: 0 1px 3px rgba(28, 34, 51, 0.06), 0 6px 20px rgba(28, 34, 51, 0.05);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Vazirmatn', 'Outfit', sans-serif;
+  background: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.6;
+}
+[dir="ltr"] body { font-family: 'Outfit', 'Vazirmatn', sans-serif; }
+
+.muted { color: var(--text-muted); }
+a { color: var(--brand-blue-deep); }
+
+.container { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+/* ── Header / Masthead ── */
+.masthead {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 20;
+}
+.masthead__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 14px 20px; max-width: 920px; margin: 0 auto;
+}
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo__mark {
+  width: 40px; height: 40px; border-radius: 11px;
+  background: var(--brand-blue); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-family: 'Outfit', sans-serif; font-size: 16px;
+}
+.logo__text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo__name { color: var(--text-primary); font-weight: 700; font-size: 18px; }
+.logo__tag { color: var(--brand-blue-soft); font-size: 11px; }
+
+.nav { display: flex; align-items: center; gap: 18px; }
+.nav a { color: var(--text-body); text-decoration: none; font-size: 14px; }
+.nav a:hover { color: var(--brand-blue); }
+
+.langswitch { display: flex; gap: 6px; }
+.langswitch button {
+  border: 1px solid var(--border); background: #fff; cursor: pointer;
+  border-radius: 8px; padding: 5px 10px; font-size: 13px; color: var(--text-muted);
+  font-family: inherit;
+}
+.langswitch button.active { color: #fff; background: var(--brand-blue); border-color: var(--brand-blue); }
+
+/* ── Hero strip ── */
+.hero {
+  background: var(--bg-dark); color: #fff;
+  text-align: center; padding: 30px 20px;
+}
+.hero__kicker {
+  font-family: 'Outfit', sans-serif; letter-spacing: 0.22em;
+  text-transform: uppercase; font-size: 11px; color: var(--brand-blue-soft);
+}
+.hero__tagline { font-size: clamp(24px, 5vw, 40px); font-weight: 700; margin: 8px 0; }
+.hero__tagline .accent { color: var(--brand-orange); }
+.weekstrip { color: #B8BCC6; font-size: 13px; margin-top: 6px; }
+
+/* ── Sample badge ── */
+.sample {
+  background: #FFF3EC; color: var(--brand-orange);
+  border: 1px solid #FFD9C7; border-radius: 8px;
+  text-align: center; font-size: 13px; padding: 8px 12px;
+  margin: 18px auto 0; max-width: 880px;
+}
+
+/* ── Filter bar ── */
+.filterbar { padding: 20px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.chip {
+  border: 1px solid var(--border); background: #fff; cursor: pointer;
+  border-radius: 999px; padding: 7px 14px; font-size: 13px;
+  color: var(--text-body); font-family: inherit;
+}
+.chip:hover { border-color: var(--brand-blue-soft); }
+.chip.active { background: var(--brand-blue); color: #fff; border-color: var(--brand-blue); }
+.search {
+  width: 100%; border: 1px solid var(--border); border-radius: 10px;
+  padding: 11px 14px; font-size: 14px; font-family: inherit; background: #fff;
+  color: var(--text-primary);
+}
+.search:focus { outline: none; border-color: var(--brand-blue); }
+
+/* ── News feed ── */
+.feed { display: grid; gap: 16px; padding: 4px 20px 40px; }
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 20px; border-inline-start: 4px solid var(--brand-blue);
+}
+.card__head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.card__flag { font-size: 26px; line-height: 1; }
+.card__country { color: var(--text-primary); font-weight: 700; font-size: 16px; }
+.card__date { color: var(--text-muted); font-size: 12px; }
+.badge {
+  margin-inline-start: auto; font-size: 11px; padding: 4px 10px;
+  border-radius: 999px; white-space: nowrap; font-weight: 600;
+}
+.badge--official { background: #E8F5EC; color: #1E8E4E; border: 1px solid #BCE3C8; }
+
+.card__org { color: var(--brand-blue-deep); font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+
+.card__quote, .card__translation {
+  background: #F7F9FC; border-radius: 10px; padding: 12px 14px;
+  margin-bottom: 10px; color: var(--text-primary); font-size: 15px;
+}
+.card__translation { background: #F1F5FB; border: 1px dashed var(--border); }
+.card__quote-label {
+  display: block; font-family: 'Outfit', sans-serif; text-transform: uppercase;
+  letter-spacing: 0.14em; font-size: 10px; color: var(--text-muted); margin-bottom: 4px;
+}
+.card__context { font-size: 13px; margin-bottom: 12px; }
+.card__source {
+  display: inline-block; background: var(--brand-blue); color: #fff;
+  text-decoration: none; font-size: 13px; padding: 8px 14px; border-radius: 8px;
+  font-weight: 600;
+}
+.card__source:hover { background: var(--brand-blue-deep); }
+
+/* ── Footer ── */
+.footer { background: var(--bg-dark); color: #B8BCC6; margin-top: 20px; }
+.footer__inner { max-width: 920px; margin: 0 auto; padding: 32px 20px; text-align: center; }
+.footer__note { color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 14px; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin-bottom: 18px; }
+.footer__links a { color: var(--brand-blue-soft); text-decoration: none; font-size: 14px; }
+.footer__links a:hover { color: var(--brand-orange); }
+.footer__rights { font-size: 12px; color: #6b7794; }
+
+@media (max-width: 600px) {
+  .nav .nav__link { display: none; }
+  .logo__tag { display: none; }
+}

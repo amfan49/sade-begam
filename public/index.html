@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sade Begam — Official News. No Filter.</title>
+  <meta name="description" content="Independent Persian news media that aggregates official statements about Iran from around the world — no interpretation, no rumors." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">SB</span>
+        <span class="logo__text">
+          <span class="logo__name" id="brandName">Sade Begam</span>
+          <span class="logo__tag" id="tagline">Official News. No Filter.</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html" id="navHome">Home</a>
+        <a class="nav__link" href="about.html" id="navAbout">About</a>
+        <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
+        <span class="langswitch">
+          <button data-setlang="fa">فا</button>
+          <button data-setlang="en">EN</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__kicker" id="kicker">Independent Persian News Media</div>
+    <h1 class="hero__tagline">
+      <span id="taglineMain">Official News.</span>
+      <span class="accent" id="taglineAccent"> No Filter.</span>
+    </h1>
+    <div class="weekstrip" id="weekStrip"></div>
+  </section>
+
+  <div class="container">
+    <div class="sample" id="sampleBadge" hidden></div>
+  </div>
+
+  <!-- Filter -->
+  <section class="filterbar container">
+    <div class="chips" id="regionFilter"></div>
+    <input class="search" id="search" type="search" placeholder="Search…" />
+  </section>
+
+  <!-- News feed -->
+  <main class="feed container" id="feed"></main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__note" id="footerNote">We report the news. You draw the conclusions.</p>
+      <div class="footer__links">
+        <a href="mailto:hello@sadebegam.com">hello@sadebegam.com</a>
+        <a href="https://instagram.com/sadeh.begam" target="_blank" rel="noopener noreferrer">@sadeh.begam</a>
+        <a href="https://youtube.com/@sadehbegam" target="_blank" rel="noopener noreferrer">@sadehbegam</a>
+      </div>
+      <p class="footer__rights" id="rights">© 2026 Sade Begam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

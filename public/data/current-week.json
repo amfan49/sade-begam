@@ -1,0 +1,129 @@
+{
+  "week": "2026-W24",
+  "date_range": { "start": "2026-06-08", "end": "2026-06-14" },
+  "published_at": "2026-06-13T09:00:00Z",
+  "is_sample": true,
+  "note": "SAMPLE DATA. The quote texts below are clearly-marked placeholders for layout preview only — they are NOT real statements. Source organizations and links are real press pages. The weekly agent will replace these with verified official quotes.",
+  "items": [
+    {
+      "id": "2026-W24-001",
+      "date": "2026-06-09",
+      "country": "United States",
+      "country_code": "US",
+      "flag": "🇺🇸",
+      "region": "North America",
+      "source_organization": "U.S. Department of State",
+      "source_person": "Department Spokesperson",
+      "source_type": "press_statement",
+      "source_url": "https://www.state.gov/press-releases/",
+      "is_official": true,
+      "lang_original": "en",
+      "quote_original": "[SAMPLE PLACEHOLDER — a verified official quote in the source's own words will appear here, followed by its link.]",
+      "translations": {
+        "en": null,
+        "fa": "[نمونه — این‌جا نقل‌قول رسمی تأییدشده به همراه پیوند منبع قرار می‌گیرد.]"
+      },
+      "context": {
+        "en": "Sample item shown to demonstrate the layout.",
+        "fa": "نمونه برای نمایش چیدمان صفحه."
+      },
+      "topics": ["diplomacy"]
+    },
+    {
+      "id": "2026-W24-002",
+      "date": "2026-06-10",
+      "country": "Germany",
+      "country_code": "DE",
+      "flag": "🇩🇪",
+      "region": "Europe",
+      "source_organization": "Auswärtiges Amt (Federal Foreign Office)",
+      "source_person": "Sprecher des Auswärtigen Amts",
+      "source_type": "press_briefing",
+      "source_url": "https://www.auswaertiges-amt.de/en/newsroom",
+      "is_official": true,
+      "lang_original": "de",
+      "quote_original": "[BEISPIEL-PLATZHALTER — hier erscheint ein geprüftes offizielles Zitat im deutschen Originalwortlaut, mit Quellenlink.]",
+      "translations": {
+        "en": "[SAMPLE — the English translation of the German quote appears here, beneath the original.]",
+        "fa": "[نمونه — ترجمه‌ی فارسی نقل‌قول آلمانی این‌جا، زیر متن اصلی، می‌آید.]"
+      },
+      "context": {
+        "en": "Demonstrates a non-English source: original quote + translation are both shown.",
+        "fa": "نمونه‌ی منبع غیرانگلیسی: هم متن اصلی و هم ترجمه نمایش داده می‌شود."
+      },
+      "topics": ["diplomacy", "regional-security"]
+    },
+    {
+      "id": "2026-W24-003",
+      "date": "2026-06-11",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_person": "FCDO",
+      "source_type": "press_release",
+      "source_url": "https://www.gov.uk/search/news-and-communications",
+      "is_official": true,
+      "lang_original": "en",
+      "quote_original": "[SAMPLE PLACEHOLDER — a verified UK official statement, in its own words, will appear here with its link.]",
+      "translations": {
+        "en": null,
+        "fa": "[نمونه — این‌جا بیانیه‌ی رسمی تأییدشده‌ی بریتانیا با پیوند منبع قرار می‌گیرد.]"
+      },
+      "context": {
+        "en": "Sample item for layout preview.",
+        "fa": "نمونه برای پیش‌نمایش طراحی."
+      },
+      "topics": ["sanctions"]
+    },
+    {
+      "id": "2026-W24-004",
+      "date": "2026-06-12",
+      "country": "European Union",
+      "country_code": "EU",
+      "flag": "🇪🇺",
+      "region": "Europe",
+      "source_organization": "European External Action Service (EEAS)",
+      "source_person": "EEAS Spokesperson",
+      "source_type": "official_statement",
+      "source_url": "https://www.eeas.europa.eu/eeas/press_en",
+      "is_official": true,
+      "lang_original": "en",
+      "quote_original": "[SAMPLE PLACEHOLDER — a verified EU official statement will appear here, with its link.]",
+      "translations": {
+        "en": null,
+        "fa": "[نمونه — این‌جا بیانیه‌ی رسمی تأییدشده‌ی اتحادیه‌ی اروپا با پیوند منبع قرار می‌گیرد.]"
+      },
+      "context": {
+        "en": "Sample item for layout preview.",
+        "fa": "نمونه برای پیش‌نمایش طراحی."
+      },
+      "topics": ["diplomacy"]
+    },
+    {
+      "id": "2026-W24-005",
+      "date": "2026-06-12",
+      "country": "United Nations",
+      "country_code": "UN",
+      "flag": "🇺🇳",
+      "region": "International Bodies",
+      "source_organization": "United Nations — IAEA",
+      "source_person": "IAEA",
+      "source_type": "press_release",
+      "source_url": "https://www.iaea.org/newscenter/focus/iran",
+      "is_official": true,
+      "lang_original": "en",
+      "quote_original": "[SAMPLE PLACEHOLDER — a verified IAEA/UN official statement will appear here, with its link.]",
+      "translations": {
+        "en": null,
+        "fa": "[نمونه — این‌جا بیانیه‌ی رسمی تأییدشده‌ی آژانس/سازمان ملل با پیوند منبع قرار می‌گیرد.]"
+      },
+      "context": {
+        "en": "Sample item for layout preview.",
+        "fa": "نمونه برای پیش‌نمایش طراحی."
+      },
+      "topics": ["nuclear"]
+    }
+  ]
+}

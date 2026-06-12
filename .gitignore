@@ -1,0 +1,13 @@
+# Secrets & environment
+.env
+.env.*
+*.key
+*.pem
+
+# Vercel
+.vercel
+
+# OS / editor
+.DS_Store
+Thumbs.db
+node_modules/
