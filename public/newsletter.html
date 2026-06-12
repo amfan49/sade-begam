@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — Sade Begam</title>
+  <meta name="description" content="Subscribe to the free Sade Begam newsletter — official news about Iran. A free service; donations go to the German Red Cross." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">SB</span>
+        <span class="logo__text">
+          <span class="logo__name" id="brandName">Sade Begam</span>
+          <span class="logo__tag" id="tagline">Official News. No Filter.</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html" id="navHome">Home</a>
+        <a class="nav__link" href="about.html" id="navAbout">About</a>
+        <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
+        <span class="langswitch">
+          <button data-setlang="fa">فا</button>
+          <button data-setlang="en">EN</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Newsletter signup -->
+    <section class="card form-block">
+      <h1 class="about__title" id="nlTitle">Newsletter</h1>
+      <p class="about__body" id="nlIntro"></p>
+      <form id="signupForm" class="sb-form">
+        <label class="field-label"><span id="nlEmailLabel"></span>
+          <input type="email" name="email" required class="search" />
+        </label>
+        <label class="field-label"><span id="nlNameLabel"></span>
+          <input type="text" name="name" class="search" />
+        </label>
+        <button type="submit" class="card__source" id="nlSignupBtn"></button>
+        <p class="muted form-note" id="nlFormNote"></p>
+      </form>
+    </section>
+
+    <!-- Special news request -->
+    <section class="card form-block">
+      <h2 class="about__subtitle" id="reqTitle"></h2>
+      <p class="about__body" id="reqIntro"></p>
+      <form id="requestForm" class="sb-form">
+        <label class="field-label"><span id="reqEmailLabel"></span>
+          <input type="email" name="email" required class="search" />
+        </label>
+        <label class="field-label"><span id="reqTopicLabel"></span>
+          <textarea name="topic" rows="4" class="search" id="reqTopicInput"></textarea>
+        </label>
+        <button type="submit" class="card__source" id="reqBtn"></button>
+        <p class="muted form-note" id="reqFormNote"></p>
+      </form>
+    </section>
+
+    <!-- Donation -->
+    <section class="card donate-block">
+      <h2 class="donate__title" id="donateTitle"></h2>
+      <p class="about__body" id="donateBody"></p>
+      <a id="donateBtn" class="donate__btn" href="#" target="_blank" rel="noopener noreferrer"></a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__note" id="footerNote">We report the news. You draw the conclusions.</p>
+      <div class="footer__links">
+        <a href="mailto:hello@sadebegam.com">hello@sadebegam.com</a>
+        <a href="https://instagram.com/sadeh.begam" target="_blank" rel="noopener noreferrer">@sadeh.begam</a>
+        <a href="https://youtube.com/@sadehbegam" target="_blank" rel="noopener noreferrer">@sadehbegam</a>
+      </div>
+      <p class="footer__rights" id="rights">© 2026 Sade Begam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    document.documentElement.lang = T.htmlLang;
+    document.documentElement.dir = T.dir;
+    const set = (id, txt) => { const el = document.getElementById(id); if (el) el.textContent = txt; };
+
+    // Chrome
+    set("brandName", T.brandName); set("tagline", T.tagline);
+    set("navHome", T.navHome); set("navAbout", T.navAbout); set("navNewsletter", T.navNewsletter);
+    set("footerNote", T.footerNote); set("rights", T.rights);
+
+    // Newsletter
+    set("nlTitle", T.newsletter.title);
+    set("nlIntro", T.newsletter.intro);
+    set("nlEmailLabel", T.newsletter.emailLabel);
+    set("nlNameLabel", T.newsletter.nameLabel);
+    set("nlSignupBtn", T.newsletter.signupBtn);
+    set("nlFormNote", T.newsletter.formNote);
+
+    // Request
+    set("reqTitle", T.newsletter.requestTitle);
+    set("reqIntro", T.newsletter.requestIntro);
+    set("reqEmailLabel", T.newsletter.emailLabel);
+    set("reqTopicLabel", T.newsletter.requestTopicLabel);
+    set("reqBtn", T.newsletter.requestBtn);
+    set("reqFormNote", T.newsletter.formNote);
+    document.getElementById("reqTopicInput").placeholder = T.newsletter.requestTopicPlaceholder;
+
+    // Donation
+    set("donateTitle", T.donate.title);
+    set("donateBody", T.donate.body);
+    const donateBtn = document.getElementById("donateBtn");
+    donateBtn.textContent = "♥ " + T.donate.button;
+    donateBtn.href = T.donate.url;
+
+    // Interim submit: opens the visitor's email app pre-filled to us.
+    // (No data is auto-sent; nothing leaves without the visitor acting.
+    //  Can be upgraded to a free service like Buttondown later.)
+    function mailtoSubmit(e, subject, fields) {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const body = fields.map((k) => `${k}: ${f.get(k) || ""}`).join("\n");
+      location.href =
+        "mailto:hello@sadebegam.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+    }
+    document.getElementById("signupForm").addEventListener("submit", (e) =>
+      mailtoSubmit(e, "Sade Begam — Newsletter signup", ["email", "name"])
+    );
+    document.getElementById("requestForm").addEventListener("submit", (e) =>
+      mailtoSubmit(e, "Sade Begam — Special news request", ["email", "topic"])
+    );
+
+    document.querySelectorAll("[data-setlang]").forEach((btn) => {
+      if (btn.dataset.setlang === SB_LANG) btn.classList.add("active");
+      btn.addEventListener("click", () => setLang(btn.dataset.setlang));
+    });
+  </script>
+</body>
+</html>

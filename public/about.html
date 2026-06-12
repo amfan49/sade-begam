@@ -40,6 +40,11 @@
       <ul class="about__sources" id="aboutSources"></ul>
 
       <p class="about__focus" id="aboutFocus"></p>
+
+      <p class="about__donate">
+        <span id="aboutDonateNote"></span>
+        <a id="aboutDonateLink" href="#" target="_blank" rel="noopener noreferrer"></a>
+      </p>
     </section>
   </main>
 
@@ -74,6 +79,10 @@
     set("aboutBody", T.about.body);
     set("aboutSourcesTitle", T.about.sourcesTitle);
     set("aboutFocus", T.about.focus);
+    set("aboutDonateNote", T.about.donateNote + " ");
+    const adl = document.getElementById("aboutDonateLink");
+    adl.textContent = T.donate.button;
+    adl.href = T.donate.url;
 
     const ul = document.getElementById("aboutSources");
     T.about.sources.forEach((s) => {
