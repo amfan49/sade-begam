@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Newsletter — Sade Begam</title>
-  <meta name="description" content="Subscribe to the free Sade Begam newsletter — official news about Iran." />
+  <title>Order specific news — Sade Begam</title>
+  <meta name="description" content="Request specific official news about Iran, focused on your topic, delivered by email." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -33,22 +33,25 @@
 
   <main class="container">
     <section class="card form-block">
-      <h1 class="about__title" id="nlTitle">Newsletter</h1>
-      <p class="about__body" id="nlIntro"></p>
-      <form id="signupForm" class="sb-form">
+      <h1 class="about__title" id="ordTitle"></h1>
+      <p class="about__body" id="ordIntro"></p>
+      <form id="orderForm" class="sb-form">
         <div class="form-row">
-          <label class="field-label"><span id="nlFirstNameLabel"></span>
+          <label class="field-label"><span id="ordFirstNameLabel"></span>
             <input type="text" name="firstName" required class="search" autocomplete="given-name" />
           </label>
-          <label class="field-label"><span id="nlLastNameLabel"></span>
+          <label class="field-label"><span id="ordLastNameLabel"></span>
             <input type="text" name="lastName" required class="search" autocomplete="family-name" />
           </label>
         </div>
-        <label class="field-label"><span id="nlEmailLabel"></span>
+        <label class="field-label"><span id="ordEmailLabel"></span>
           <input type="email" name="email" required class="search" autocomplete="email" />
         </label>
-        <button type="submit" class="card__source" id="nlSignupBtn"></button>
-        <p class="muted form-note" id="nlFormNote"></p>
+        <label class="field-label"><span id="ordFocusLabel"></span>
+          <textarea name="focus" rows="5" required class="search" id="ordFocusInput"></textarea>
+        </label>
+        <button type="submit" class="card__source" id="ordSubmitBtn"></button>
+        <p class="muted form-note" id="ordNote"></p>
       </form>
     </section>
   </main>
@@ -76,22 +79,23 @@
     set("navNewsletter", T.navNewsletter); set("navOrders", T.navOrders);
     set("footerNote", T.footerNote); set("rights", T.rights);
 
-    set("nlTitle", T.newsletter.title);
-    set("nlIntro", T.newsletter.intro);
-    set("nlFirstNameLabel", T.newsletter.firstNameLabel);
-    set("nlLastNameLabel", T.newsletter.lastNameLabel);
-    set("nlEmailLabel", T.newsletter.emailLabel);
-    set("nlSignupBtn", T.newsletter.signupBtn);
-    set("nlFormNote", T.newsletter.formNote);
+    set("ordTitle", T.orders.title);
+    set("ordIntro", T.orders.intro);
+    set("ordFirstNameLabel", T.orders.firstNameLabel);
+    set("ordLastNameLabel", T.orders.lastNameLabel);
+    set("ordEmailLabel", T.orders.emailLabel);
+    set("ordFocusLabel", T.orders.focusLabel);
+    set("ordSubmitBtn", T.orders.submitBtn);
+    set("ordNote", T.orders.note);
+    document.getElementById("ordFocusInput").placeholder = T.orders.focusPlaceholder;
 
-    // Interim: opens the visitor's email app pre-filled. Nothing is auto-sent.
-    document.getElementById("signupForm").addEventListener("submit", (e) => {
+    document.getElementById("orderForm").addEventListener("submit", (e) => {
       e.preventDefault();
       const f = new FormData(e.target);
-      const body = ["firstName", "lastName", "email"]
+      const body = ["firstName", "lastName", "email", "focus"]
         .map((k) => `${k}: ${f.get(k) || ""}`).join("\n");
       location.href = "mailto:hello@sadebegam.com?subject=" +
-        encodeURIComponent("Sade Begam — Newsletter signup") + "&body=" + encodeURIComponent(body);
+        encodeURIComponent("Sade Begam — Special news order") + "&body=" + encodeURIComponent(body);
     });
 
     document.querySelectorAll("[data-setlang]").forEach((btn) => {

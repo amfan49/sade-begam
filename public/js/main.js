@@ -25,6 +25,7 @@ function applyLanguageChrome() {
   setText("navHome", T.navHome);
   setText("navAbout", T.navAbout);
   setText("navNewsletter", T.navNewsletter);
+  setText("navOrders", T.navOrders);
   setText("footerNote", T.footerNote);
   setText("rights", T.rights);
 
@@ -125,44 +126,42 @@ function renderCard(item) {
   const card = document.createElement("article");
   card.className = "card";
 
-  const translation = item.translations ? item.translations[SB_LANG] : null;
-  const showTranslation = item.lang_original !== SB_LANG && translation;
-  const context = item.context ? item.context[SB_LANG] : "";
+  const tr = item.translations ? item.translations[SB_LANG] : null;
+  const showTr = item.lang_original !== SB_LANG && tr && tr.headline;
+  const origDir = item.lang_original === "fa" ? "rtl" : "ltr";
+
+  const imageHTML = item.image
+    ? `<img class="card__photo" src="${item.image}" alt="${item.country}" loading="lazy" />`
+    : `<span class="card__flag-badge">${item.flag || "🏳️"}</span>`;
 
   card.innerHTML = `
     <header class="card__head">
-      <span class="card__flag">${item.flag || "🏳️"}</span>
-      <div>
-        <div class="card__country">${item.country}</div>
+      ${imageHTML}
+      <div class="card__meta">
+        <div class="card__country">${item.flag || ""} ${item.country}</div>
+        <div class="card__org">${item.source_organization}</div>
         <div class="card__date">${item.date}</div>
       </div>
       <span class="badge badge--official">✓ ${T.officialBadge}</span>
     </header>
 
-    <div class="card__org">${item.source_organization}${
-    item.source_person ? ` · <span class="muted">${item.source_person}</span>` : ""
-  }</div>
+    <div class="card__body">
+      <h3 class="card__headline" lang="${item.lang_original}" dir="${origDir}">${item.headline || ""}</h3>
+      <p class="card__excerpt" lang="${item.lang_original}" dir="${origDir}">${item.excerpt || ""}</p>
 
-    <blockquote class="card__quote" lang="${item.lang_original}" dir="${
-    item.lang_original === "fa" ? "rtl" : "ltr"
-  }">
-      <span class="card__quote-label">${T.originalLabel}</span>
-      ${item.quote_original}
-    </blockquote>
-
-    ${
-      showTranslation
-        ? `<div class="card__translation">
-             <span class="card__quote-label">${T.translationLabel}</span>
-             ${translation}
-           </div>`
-        : ""
-    }
-
-    ${context ? `<p class="card__context"><span class="muted">${T.contextLabel}:</span> ${context}</p>` : ""}
+      ${
+        showTr
+          ? `<div class="card__translation">
+               <span class="card__quote-label">${T.translationLabel}</span>
+               <h4 class="card__headline-tr">${tr.headline}</h4>
+               <p>${tr.excerpt || ""}</p>
+             </div>`
+          : ""
+      }
+    </div>
 
     <a class="card__source" href="${item.source_url}" target="_blank" rel="noopener noreferrer">
-      🔗 ${T.sourceLabel}: ${item.source_organization}
+      🔗 ${T.sourceLabel}: ${item.source_organization} →
     </a>
   `;
   return card;

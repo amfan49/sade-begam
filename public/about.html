@@ -22,6 +22,7 @@
         <a class="nav__link" href="index.html" id="navHome">Home</a>
         <a class="nav__link" href="about.html" id="navAbout">About</a>
         <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
+        <a class="nav__link" href="orders.html" id="navOrders">Orders</a>
         <span class="langswitch">
           <button data-setlang="fa">فا</button>
           <button data-setlang="en">EN</button>
@@ -40,11 +41,6 @@
       <ul class="about__sources" id="aboutSources"></ul>
 
       <p class="about__focus" id="aboutFocus"></p>
-
-      <p class="about__donate">
-        <span id="aboutDonateNote"></span>
-        <a id="aboutDonateLink" href="#" target="_blank" rel="noopener noreferrer"></a>
-      </p>
     </section>
   </main>
 
@@ -71,6 +67,7 @@
     set("navHome", T.navHome);
     set("navAbout", T.navAbout);
     set("navNewsletter", T.navNewsletter);
+    set("navOrders", T.navOrders);
     set("footerNote", T.footerNote);
     set("rights", T.rights);
 
@@ -79,10 +76,6 @@
     set("aboutBody", T.about.body);
     set("aboutSourcesTitle", T.about.sourcesTitle);
     set("aboutFocus", T.about.focus);
-    set("aboutDonateNote", T.about.donateNote + " ");
-    const adl = document.getElementById("aboutDonateLink");
-    adl.textContent = T.donate.button;
-    adl.href = T.donate.url;
 
     const ul = document.getElementById("aboutSources");
     T.about.sources.forEach((s) => {

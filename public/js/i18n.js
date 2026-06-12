@@ -14,6 +14,7 @@ const STRINGS = {
     navHome: "خانه",
     navAbout: "درباره",
     navNewsletter: "خبرنامه",
+    navOrders: "سفارش خبر",
     weekLabel: "هفته‌ی",
     updated: "آخرین به‌روزرسانی: شنبه",
     filterAll: "همه",
@@ -37,27 +38,27 @@ const STRINGS = {
         "وب‌سایت‌های رسمی سیاستمداران و وزارت‌خانه‌ها",
         "حساب‌های رسمی و تأییدشده‌ی ایکس (توییتر) سیاستمداران و مقام‌ها"
       ],
-      focus: "تمرکز ما بر ایران است.",
-      donateNote: "ساده بگم یک خدمت کاملاً رایگان است. ما، سازندگان، از آن سودی نمی‌بریم — هدف ما آگاهی است، نه پول. اگر مایلید، در ازای این خدمت به صلیب سرخ آلمان کمک کنید."
+      focus: "تمرکز ما بر ایران است."
     },
     newsletter: {
       title: "خبرنامه",
       intro: "هفته‌ای یک‌بار، خبرهای رسمی درباره‌ی ایران — گردآوری‌شده، مستند و رایگان. ابتدا یک ایمیل تأیید می‌فرستیم؛ بدون رضایت شما چیزی ارسال نمی‌شود و هر زمان می‌توانید لغو اشتراک کنید.",
+      firstNameLabel: "نام",
+      lastNameLabel: "نام خانوادگی",
       emailLabel: "نشانی ایمیل",
-      nameLabel: "نام (اختیاری)",
       signupBtn: "اشتراک در خبرنامه",
-      requestTitle: "درخواست خبر ویژه",
-      requestIntro: "می‌خواهید موضوع مشخصی درباره‌ی ایران را دنبال کنیم؟ دقیقاً بگویید چه می‌خواهید بدانید — ما منابع رسمی را بررسی و نتیجه را برایتان ایمیل می‌کنیم. این خدمت رایگان است؛ اگر مایلید، در ازای آن به صلیب سرخ آلمان کمک کنید.",
-      requestTopicLabel: "موضوع / خواسته‌ی شما",
-      requestTopicPlaceholder: "مثلاً بیانیه‌های رسمی درباره‌ی یک موضوع خاص…",
-      requestBtn: "ارسال درخواست",
       formNote: "فقط پس از تأیید شما ایمیل می‌فرستیم. بدون هرزنامه."
     },
-    donate: {
-      title: "خدمت رایگان — حمایت از صلیب سرخ آلمان",
-      body: "ساده بگم رایگان است و ما از آن سود نمی‌بریم. اگر کار ما برایتان ارزشمند است، به‌جای پرداخت به ما، لطفاً به صلیب سرخ آلمان کمک کنید. ۱۰۰٪ کمک به آن‌ها می‌رسد، نه به ما.",
-      button: "کمک به صلیب سرخ آلمان",
-      url: "https://www.drk.de/spenden/"
+    orders: {
+      title: "سفارش خبر ویژه",
+      intro: "می‌خواهید روی موضوعِ مشخصی درباره‌ی ایران تمرکز کنیم؟ این یک سرویس ویژه است. درخواست خود را دقیق بنویسید — ما منابع رسمی را بررسی و نتیجه را برایتان ایمیل می‌کنیم.",
+      firstNameLabel: "نام",
+      lastNameLabel: "نام خانوادگی",
+      emailLabel: "نشانی ایمیل",
+      focusLabel: "موضوع یا تمرکز دقیق شما",
+      focusPlaceholder: "مثلاً یک موضوع، رویداد یا منطقه‌ی مشخص درباره‌ی ایران…",
+      submitBtn: "ثبت درخواست",
+      note: "این یک سرویس ویژه است. فعلاً هیچ پرداختی فعال نیست؛ پس از ثبت با شما هماهنگ می‌کنیم."
     },
     regions: {
       "North America": "آمریکای شمالی",
@@ -81,6 +82,7 @@ const STRINGS = {
     navHome: "Home",
     navAbout: "About",
     navNewsletter: "Newsletter",
+    navOrders: "Orders",
     weekLabel: "Week",
     updated: "Last updated: Saturday",
     filterAll: "All",
@@ -104,27 +106,27 @@ const STRINGS = {
         "Official websites of politicians and ministries",
         "Verified official X (Twitter) accounts of politicians and officials"
       ],
-      focus: "Our focus is Iran.",
-      donateNote: "Sade Begam is a completely free service. We, the creators, do not profit from it — our goal is awareness, not money. If you wish, support the German Red Cross in return for this service."
+      focus: "Our focus is Iran."
     },
     newsletter: {
       title: "Newsletter",
       intro: "Once a week, the official news about Iran — gathered, sourced, and free. We send a confirmation first; nothing is sent without your consent, and you can unsubscribe anytime.",
+      firstNameLabel: "First name",
+      lastNameLabel: "Last name",
       emailLabel: "Email address",
-      nameLabel: "Name (optional)",
       signupBtn: "Subscribe to the newsletter",
-      requestTitle: "Request specific news",
-      requestIntro: "Want us to follow a specific topic about Iran? Tell us exactly what you'd like to know — we research official sources and email the result to you. This service is free; if you wish, support the German Red Cross in return.",
-      requestTopicLabel: "Your topic / wish",
-      requestTopicPlaceholder: "e.g. official statements on a specific subject…",
-      requestBtn: "Send my request",
       formNote: "We email you only after you confirm. No spam, ever."
     },
-    donate: {
-      title: "Free service — support the German Red Cross",
-      body: "Sade Begam is free and we do not profit from it. If our work is valuable to you, instead of paying us, please support the German Red Cross. 100% goes to them, none to us.",
-      button: "Donate to the German Red Cross",
-      url: "https://www.drk.de/spenden/"
+    orders: {
+      title: "Request specific news",
+      intro: "Want us to focus on a specific topic about Iran? This is a special service. Describe exactly what you want — we research official sources and email the result to you.",
+      firstNameLabel: "First name",
+      lastNameLabel: "Last name",
+      emailLabel: "Email address",
+      focusLabel: "Your exact topic or focus",
+      focusPlaceholder: "e.g. a specific subject, event, or region about Iran…",
+      submitBtn: "Submit request",
+      note: "This is a special service. No payment is active yet; we'll coordinate with you after you submit."
     },
     regions: {
       "North America": "North America",
