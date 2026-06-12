@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Sade Begam</title>
+  <meta name="description" content="Sade Begam is an independent Persian news media that relays only official news about Iran from official sources — no analysis, nothing added." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">SB</span>
+        <span class="logo__text">
+          <span class="logo__name" id="brandName">Sade Begam</span>
+          <span class="logo__tag" id="tagline">Official News. No Filter.</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a class="nav__link" href="index.html" id="navHome">Home</a>
+        <a class="nav__link" href="about.html" id="navAbout">About</a>
+        <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
+        <span class="langswitch">
+          <button data-setlang="fa">فا</button>
+          <button data-setlang="en">EN</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about card">
+      <h1 class="about__title" id="aboutTitle">About Sade Begam</h1>
+      <p class="about__lead" id="aboutLead"></p>
+      <p class="about__body" id="aboutBody"></p>
+
+      <h2 class="about__subtitle" id="aboutSourcesTitle"></h2>
+      <ul class="about__sources" id="aboutSources"></ul>
+
+      <p class="about__focus" id="aboutFocus"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__note" id="footerNote">We report the news. You draw the conclusions.</p>
+      <div class="footer__links">
+        <a href="mailto:hello@sadebegam.com">hello@sadebegam.com</a>
+        <a href="https://instagram.com/sadeh.begam" target="_blank" rel="noopener noreferrer">@sadeh.begam</a>
+        <a href="https://youtube.com/@sadehbegam" target="_blank" rel="noopener noreferrer">@sadehbegam</a>
+      </div>
+      <p class="footer__rights" id="rights">© 2026 Sade Begam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    document.documentElement.lang = T.htmlLang;
+    document.documentElement.dir = T.dir;
+    const set = (id, txt) => { const el = document.getElementById(id); if (el) el.textContent = txt; };
+
+    set("brandName", T.brandName);
+    set("tagline", T.tagline);
+    set("navHome", T.navHome);
+    set("navAbout", T.navAbout);
+    set("navNewsletter", T.navNewsletter);
+    set("footerNote", T.footerNote);
+    set("rights", T.rights);
+
+    set("aboutTitle", T.about.title);
+    set("aboutLead", T.about.lead);
+    set("aboutBody", T.about.body);
+    set("aboutSourcesTitle", T.about.sourcesTitle);
+    set("aboutFocus", T.about.focus);
+
+    const ul = document.getElementById("aboutSources");
+    T.about.sources.forEach((s) => {
+      const li = document.createElement("li");
+      li.textContent = s;
+      ul.appendChild(li);
+    });
+
+    document.querySelectorAll("[data-setlang]").forEach((btn) => {
+      if (btn.dataset.setlang === SB_LANG) btn.classList.add("active");
+      btn.addEventListener("click", () => setLang(btn.dataset.setlang));
+    });
+  </script>
+</body>
+</html>

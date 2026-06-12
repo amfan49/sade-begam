@@ -27,6 +27,18 @@ const STRINGS = {
     sampleBadge: "داده‌ی نمونه — برای نمایش طراحی",
     footerNote: "ما خبر را می‌رسانیم. نتیجه‌گیری با شماست.",
     rights: "© ۲۰۲۶ ساده بگم. همه‌ی حقوق محفوظ است.",
+    about: {
+      title: "درباره‌ی ساده بگم",
+      lead: "ساده بگم یک رسانه‌ی مستقل فارسی‌زبان است. ما فقط خبرهای رسمی درباره‌ی ایران را بازتاب می‌دهیم — و هیچ چیز دیگر.",
+      body: "ما تنها بیانیه‌های رسمی از منابع رسمی را منتشر می‌کنیم. بدون تحلیل، بدون تفسیر، بدون نظر شخصی، بدون هیچ افزوده‌ای. ما گزارش می‌دهیم؛ شما تصمیم می‌گیرید.",
+      sourcesTitle: "منابع ما تنها این‌ها هستند:",
+      sources: [
+        "وب‌سایت‌های رسمی دولت‌ها",
+        "وب‌سایت‌های رسمی سیاستمداران و وزارت‌خانه‌ها",
+        "حساب‌های رسمی و تأییدشده‌ی ایکس (توییتر) سیاستمداران و مقام‌ها"
+      ],
+      focus: "تمرکز ما بر ایران است."
+    },
     regions: {
       "North America": "آمریکای شمالی",
       "Europe": "اروپا",
@@ -62,6 +74,18 @@ const STRINGS = {
     sampleBadge: "Sample data — for design preview",
     footerNote: "We report the news. You draw the conclusions.",
     rights: "© 2026 Sade Begam. All rights reserved.",
+    about: {
+      title: "About Sade Begam",
+      lead: "Sade Begam is an independent Persian news media. We relay official news about Iran — and nothing else.",
+      body: "We publish only official statements from official sources. No analysis, no interpretation, no opinion, nothing added. We report; you decide.",
+      sourcesTitle: "Our sources are only:",
+      sources: [
+        "Official government websites",
+        "Official websites of politicians and ministries",
+        "Verified official X (Twitter) accounts of politicians and officials"
+      ],
+      focus: "Our focus is Iran."
+    },
     regions: {
       "North America": "North America",
       "Europe": "Europe",
