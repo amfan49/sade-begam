@@ -238,9 +238,11 @@ function sbJalali(iso) {
   return `${sbPersianDigits(j.jd)} ${SB_JALALI_MONTHS[j.jm - 1]}`;
 }
 
-// "13 June · ۲۳ خرداد" — Gregorian + Persian (no year) side by side.
+// Persian and Latin scripts don't sit well next to each other, so we stack
+// them on two lines: line 1 Persian (Jalali, no year), line 2 Latin
+// (Gregorian). Returns HTML — use it in an innerHTML context.
 function sbBothDates(iso) {
-  return `${sbGregorian(iso)} · ${sbJalali(iso)}`;
+  return `<span class="d-fa">${sbJalali(iso)}</span><span class="d-la">${sbGregorian(iso)}</span>`;
 }
 
 function sbTodayIso() {
@@ -252,7 +254,11 @@ function sbTodayIso() {
 // non-profit / imprint notice) on every page that includes them.
 function sbRenderCommonFooter() {
   const today = document.getElementById("todayDate");
-  if (today) today.textContent = `${T.todayLabel}: ${sbBothDates(sbTodayIso())}`;
+  if (today) {
+    const iso = sbTodayIso();
+    today.innerHTML = `<span class="d-label">${T.todayLabel}</span>` +
+      `<span class="d-fa">${sbJalali(iso)}</span><span class="d-la">${sbGregorian(iso)}</span>`;
+  }
   const np = document.getElementById("nonProfitFooter");
   if (np) np.textContent = T.nonProfitNotice;
 }

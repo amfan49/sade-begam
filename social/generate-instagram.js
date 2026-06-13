@@ -95,8 +95,8 @@ const html = `<!DOCTYPE html>
   .brand__name { font-size: 40px; font-weight: 700; }
   .brand__tag { font-size: 19px; color: #4A8FB8; margin-top: 4px; }
   .date { text-align: left; }
-  .date__greg { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 34px; color: #FF6B35; }
-  .date__fa { font-size: 22px; color: #B8BCC6; margin-top: 4px; }
+  .date__fa { font-size: 34px; font-weight: 700; color: #FF6B35; }
+  .date__greg { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 22px; color: #B8BCC6; margin-top: 6px; }
   .kicker {
     background: #1A6FBF; color: #fff; text-align: center;
     font-size: 24px; font-weight: 600; padding: 18px;
@@ -129,8 +129,8 @@ const html = `<!DOCTYPE html>
         </div>
       </div>
       <div class="date">
-        <div class="date__greg">${gregToday}</div>
         <div class="date__fa">${jalaliToday}</div>
+        <div class="date__greg">${gregToday}</div>
       </div>
     </div>
     <div class="kicker">خبرهای رسمی امروز درباره‌ی ایران</div>

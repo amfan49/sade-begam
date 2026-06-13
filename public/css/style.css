@@ -130,6 +130,12 @@ a { color: var(--brand-blue-deep); }
 .card__country { color: var(--text-primary); font-weight: 700; font-size: 15px; }
 .card__org { color: var(--brand-blue-deep); font-weight: 600; font-size: 13px; }
 .card__date { color: var(--text-muted); font-size: 12px; }
+
+/* Date stacks on two lines: line 1 Persian, line 2 Latin (scripts kept apart). */
+.d-fa, .d-la, .d-label { display: block; line-height: 1.5; }
+.d-fa { font-family: 'Vazirmatn', sans-serif; direction: rtl; }
+.d-la { font-family: 'Outfit', 'Vazirmatn', sans-serif; direction: ltr; }
+.card__date .d-la { color: var(--text-muted); }
 .badge {
   margin-inline-start: auto; font-size: 11px; padding: 5px 11px;
   border-radius: 999px; white-space: nowrap; font-weight: 600; align-self: flex-start;
@@ -196,7 +202,8 @@ textarea.search { resize: vertical; font-family: inherit; }
 .footer__links { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin-bottom: 18px; }
 .footer__links a { color: var(--brand-blue-soft); text-decoration: none; font-size: 14px; }
 .footer__links a:hover { color: var(--brand-orange); }
-.footer__today { font-size: 13px; color: var(--brand-blue-soft); margin-bottom: 6px; }
+.footer__today { font-size: 13px; color: var(--brand-blue-soft); margin-bottom: 10px; }
+.footer__today .d-label { font-size: 11px; color: var(--text-muted); margin-bottom: 2px; }
 .footer__legal { font-size: 12px; color: #8b96b0; max-width: 640px; margin: 0 auto 10px; line-height: 1.6; }
 .footer__rights { font-size: 12px; color: #6b7794; }
 
