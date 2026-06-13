@@ -81,14 +81,6 @@ a { color: var(--brand-blue-deep); }
 .hero__tagline .accent { color: var(--brand-orange); }
 .weekstrip { color: #B8BCC6; font-size: 13px; margin-top: 6px; }
 
-/* ── Sample badge ── */
-.sample {
-  background: #FFF3EC; color: var(--brand-orange);
-  border: 1px solid #FFD9C7; border-radius: 8px;
-  text-align: center; font-size: 13px; padding: 8px 12px;
-  margin: 18px auto 0; max-width: 880px;
-}
-
 /* ── Filter bar ── */
 .filterbar { padding: 20px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }

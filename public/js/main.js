@@ -60,7 +60,6 @@ const NEWS_CACHE_TTL = 60 * 60 * 1000; // 1h — treat cache as "fresh" within t
 function renderNews(data) {
   ALL_ITEMS = data.items || [];
   renderWeekStrip(data);
-  if (data.is_sample) showSampleBadge();
   buildRegionFilter();
   renderFeed();
 }
@@ -98,14 +97,6 @@ function renderWeekStrip(data) {
   if (!el) return;
   const r = data.date_range || {};
   el.textContent = `${T.weekLabel} ${data.week} · ${r.start} – ${r.end} · ${T.updated}`;
-}
-
-function showSampleBadge() {
-  const el = document.getElementById("sampleBadge");
-  if (el) {
-    el.textContent = T.sampleBadge;
-    el.hidden = false;
-  }
 }
 
 function buildRegionFilter() {
