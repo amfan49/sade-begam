@@ -3,6 +3,38 @@
 // card: source organization, original quote, translation (if the original
 // isn't in the page language), context, and a clickable source link.
 
+// Date formatting utilities
+const MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const MONTHS_FA = ["ژانویه", "فوریه", "مارس", "آپریل", "مه", "ژوئن", "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
+
+function formatDate(isoDate, lang = SB_LANG) {
+  const [year, month, day] = isoDate.split("-");
+  const months = lang === "fa" ? MONTHS_FA : MONTHS_EN;
+  return `${day} ${months[parseInt(month) - 1]}`;
+}
+
+function gregorianToPersian(isoDate) {
+  const [year, month, day] = isoDate.split("-").map(Number);
+  let gy = year, gm = month, gd = day;
+
+  const g_d_n = 365 * gy + Math.floor((gy + 3) / 4) - Math.floor((gy + 99) / 100) + Math.floor((gy + 399) / 400) +
+    [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334][gm - 1] + gd;
+
+  const j_d_n = g_d_n - 79;
+  const j_np = Math.floor(j_d_n / 12053);
+  const j_d_n_m = j_d_n % 12053;
+  const jy = 979 + 2820 * j_np + 128 * Math.floor(j_d_n_m / 4017);
+  const j_d_n_m_m = j_d_n_m % 4017;
+
+  const jy2 = jy + Math.floor(j_d_n_m_m / 1461);
+  const j_d_n_m_m_m = j_d_n_m_m % 1461;
+  const jy3 = jy2 + Math.floor(j_d_n_m_m_m / 365);
+  const jd = (j_d_n_m_m_m % 365) + 1;
+  const jm = jd <= 186 ? Math.ceil(jd / 31) : Math.ceil((jd - 6) / 30);
+
+  return `${jy3}/${String(jm).padStart(2, '0')}/${String(jd).padStart(2, '0')}`;
+}
+
 let ALL_ITEMS = [];
 let ACTIVE_REGION = "all";
 let SEARCH = "";
@@ -134,13 +166,16 @@ function renderCard(item) {
     ? `<img class="card__photo" src="${item.image}" alt="${item.country}" loading="lazy" />`
     : `<span class="card__flag-badge">${item.flag || "🏳️"}</span>`;
 
+  const formattedDate = formatDate(item.date, SB_LANG);
+  const persianDate = gregorianToPersian(item.date);
+
   card.innerHTML = `
     <header class="card__head">
       ${imageHTML}
       <div class="card__meta">
         <div class="card__country">${item.flag || ""} ${item.country}</div>
         <div class="card__org">${item.source_organization}</div>
-        <div class="card__date">${item.date}</div>
+        <div class="card__date">${formattedDate}${SB_LANG === "fa" ? ` / ${persianDate}` : ""}</div>
       </div>
       <span class="badge badge--official">✓ ${T.officialBadge}</span>
     </header>
@@ -155,6 +190,7 @@ function renderCard(item) {
                <span class="card__quote-label">${T.translationLabel}</span>
                <h4 class="card__headline-tr">${tr.headline}</h4>
                <p>${tr.excerpt || ""}</p>
+               <p class="card__disclaimer"><small>${T.translationDisclaimer}</small></p>
              </div>`
           : ""
       }

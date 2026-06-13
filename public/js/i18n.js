@@ -20,6 +20,7 @@ const STRINGS = {
     filterAll: "همه",
     searchPlaceholder: "جستجو در کشورها و موضوع‌ها…",
     sourceLabel: "منبع رسمی",
+    nonProfitNotice: "این وب‌سایت صرفاً برای اطلاعات شخصی، به‌طور خصوصی اداره می‌شود و هدف تجاری ندارد.",
     officialBadge: "منبع رسمی تأییدشده",
     originalLabel: "متن اصلی",
     translationLabel: "ترجمه",
@@ -27,6 +28,7 @@ const STRINGS = {
     noItems: "برای این بخش خبری موجود نیست.",
     sampleBadge: "داده‌ی نمونه — برای نمایش طراحی",
     footerNote: "ما خبر را می‌رسانیم. نتیجه‌گیری با شماست.",
+    translationDisclaimer: "این ترجمه توسط هوش مصنوعی تولید شده است. این وب‌سایت تولید کننده محتوای خبری نیست؛ این محتوا را فقط از منابع رسمی جمع‌آوری می‌کند. این وب‌سایت هیچ مسئولیتی در قبال دقت یا محتوای منابع ندارد.",
     rights: "© ۲۰۲۶ ساده بگم. همه‌ی حقوق محفوظ است.",
     about: {
       title: "درباره‌ی ساده بگم",
@@ -58,7 +60,9 @@ const STRINGS = {
       focusLabel: "موضوع یا تمرکز دقیق شما",
       focusPlaceholder: "مثلاً یک موضوع، رویداد یا منطقه‌ی مشخص درباره‌ی ایران…",
       submitBtn: "ثبت درخواست",
-      note: "این یک سرویس ویژه است. فعلاً هیچ پرداختی فعال نیست؛ پس از ثبت با شما هماهنگ می‌کنیم."
+      note: "این یک سرویس ویژه است. فعلاً هیچ پرداختی فعال نیست؛ پس از ثبت با شما هماهنگ می‌کنیم.",
+      sourceNote: "از آنجایی که روزنامه‌نگاران مستقل و آمار رسمی در دسترس نیستند، ما کاملاً بر منابع اینترنتی موجود متکی هستیم. ارسال درخواست تضمینی برای تکمیل نیست؛ ما امکان‌پذیری آن را بررسی می‌کنیم. ما از کمک‌های مالی کوچک استقبال می‌کنیم.",
+      supportNote: "پیشنهاد مالی فقط برای اشخاص خارج از ایران."
     },
     regions: {
       "North America": "آمریکای شمالی",
@@ -88,6 +92,7 @@ const STRINGS = {
     filterAll: "All",
     searchPlaceholder: "Search countries and topics…",
     sourceLabel: "Official source",
+    nonProfitNotice: "This website is for personal information purposes only, is operated privately, and does not pursue any commercial interests.",
     officialBadge: "Verified Official Source",
     originalLabel: "Original",
     translationLabel: "Translation",
@@ -95,6 +100,7 @@ const STRINGS = {
     noItems: "No items for this section.",
     sampleBadge: "Sample data — for design preview",
     footerNote: "We report the news. You draw the conclusions.",
+    translationDisclaimer: "This translation is AI-generated. This website is not the producer of the news content; it only aggregates news from official sources. This website bears no responsibility for the accuracy or content of the sources.",
     rights: "© 2026 Sade Begam. All rights reserved.",
     about: {
       title: "About Sade Begam",
@@ -126,7 +132,9 @@ const STRINGS = {
       focusLabel: "Your exact topic or focus",
       focusPlaceholder: "e.g. a specific subject, event, or region about Iran…",
       submitBtn: "Submit request",
-      note: "This is a special service. No payment is active yet; we'll coordinate with you after you submit."
+      note: "This is a special service. No payment is active yet; we'll coordinate with you after you submit.",
+      sourceNote: "Due to the lack of independent journalists and official statistics, we rely exclusively on available Internet sources. Submission does not guarantee fulfillment; we review feasibility. We welcome small financial contributions.",
+      supportNote: "Financial support suggestions are for persons outside Iran only."
     },
     regions: {
       "North America": "North America",

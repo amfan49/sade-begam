@@ -41,6 +41,9 @@
       <ul class="about__sources" id="aboutSources"></ul>
 
       <p class="about__focus" id="aboutFocus"></p>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;" />
+      <p class="about__legal" id="aboutLegal" style="font-size: 0.9rem; color: #666; margin-top: 2rem;"></p>
     </section>
   </main>
 
@@ -76,6 +79,7 @@
     set("aboutBody", T.about.body);
     set("aboutSourcesTitle", T.about.sourcesTitle);
     set("aboutFocus", T.about.focus);
+    set("aboutLegal", T.nonProfitNotice);
 
     const ul = document.getElementById("aboutSources");
     T.about.sources.forEach((s) => {

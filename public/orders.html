@@ -53,6 +53,10 @@
         <button type="submit" class="card__source" id="ordSubmitBtn"></button>
         <p class="muted form-note" id="ordNote"></p>
       </form>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;" />
+      <p class="about__legal" id="ordSourceNote" style="font-size: 0.9rem; color: #666; margin: 1rem 0;"></p>
+      <p class="about__legal" id="ordSupportNote" style="font-size: 0.85rem; color: #999; margin-top: 1rem;"></p>
     </section>
   </main>
 
@@ -87,6 +91,8 @@
     set("ordFocusLabel", T.orders.focusLabel);
     set("ordSubmitBtn", T.orders.submitBtn);
     set("ordNote", T.orders.note);
+    set("ordSourceNote", T.orders.sourceNote);
+    set("ordSupportNote", T.orders.supportNote);
     document.getElementById("ordFocusInput").placeholder = T.orders.focusPlaceholder;
 
     document.getElementById("orderForm").addEventListener("submit", (e) => {
