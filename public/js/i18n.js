@@ -198,6 +198,9 @@ const T = STRINGS[SB_LANG];
 // The Persian (Jalali) date is always shown WITHOUT the year (e.g. "۲۳ خرداد").
 const SB_MONTHS_EN = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
+// Gregorian months as Iranians write them in Persian (for the Persian page).
+const SB_MONTHS_FA = ["ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن",
+  "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
 const SB_JALALI_MONTHS = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور",
   "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
 
@@ -225,10 +228,16 @@ function sbToJalali(gy, gm, gd) {
   return { jy, jm, jd };
 }
 
-// "13 June" — Gregorian, English month, no year.
+// "13 June" — Gregorian, English month, no year (English page).
 function sbGregorian(iso) {
   const [, m, d] = iso.split("-").map(Number);
   return `${d} ${SB_MONTHS_EN[m - 1]}`;
+}
+
+// "۱۳ ژوئن" — Gregorian in Persian words + Persian digits (Persian page).
+function sbGregorianFa(iso) {
+  const [, m, d] = iso.split("-").map(Number);
+  return `${sbPersianDigits(d)} ${SB_MONTHS_FA[m - 1]}`;
 }
 
 // "۲۳ خرداد" — Jalali, Persian digits + month name, no year.
@@ -238,11 +247,13 @@ function sbJalali(iso) {
   return `${sbPersianDigits(j.jd)} ${SB_JALALI_MONTHS[j.jm - 1]}`;
 }
 
-// Persian and Latin scripts don't sit well next to each other, so we stack
-// them on two lines: line 1 Persian (Jalali, no year), line 2 Latin
-// (Gregorian). Returns HTML — use it in an innerHTML context.
+// Date for the current language, one line, single script:
+//   • Persian page: Jalali date + Gregorian date, both in Persian
+//     (e.g. "۲۳ خرداد · ۱۳ ژوئن") — Iranian date first.
+//   • English page: just the Gregorian date (e.g. "13 June").
 function sbBothDates(iso) {
-  return `<span class="d-fa">${sbJalali(iso)}</span><span class="d-la">${sbGregorian(iso)}</span>`;
+  if (SB_LANG === "fa") return `${sbJalali(iso)} · ${sbGregorianFa(iso)}`;
+  return sbGregorian(iso);
 }
 
 function sbTodayIso() {
@@ -254,11 +265,7 @@ function sbTodayIso() {
 // non-profit / imprint notice) on every page that includes them.
 function sbRenderCommonFooter() {
   const today = document.getElementById("todayDate");
-  if (today) {
-    const iso = sbTodayIso();
-    today.innerHTML = `<span class="d-label">${T.todayLabel}</span>` +
-      `<span class="d-fa">${sbJalali(iso)}</span><span class="d-la">${sbGregorian(iso)}</span>`;
-  }
+  if (today) today.textContent = `${T.todayLabel}: ${sbBothDates(sbTodayIso())}`;
   const np = document.getElementById("nonProfitFooter");
   if (np) np.textContent = T.nonProfitNotice;
 }

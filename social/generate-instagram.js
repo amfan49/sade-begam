@@ -19,6 +19,9 @@ const dataPath = path.join(__dirname, "..", "public", "data", "current-week.json
 // ── Dates ──────────────────────────────────────────────────────────
 const MONTHS_EN = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
+// Gregorian months as Iranians write them in Persian.
+const MONTHS_FA = ["ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن",
+  "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
 const JALALI_MONTHS = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور",
   "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"];
 const faDigits = (s) => String(s).replace(/[0-9]/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
@@ -42,7 +45,9 @@ function toJalali(gy, gm, gd) {
 }
 
 const today = new Date();
-const gregToday = `${today.getDate()} ${MONTHS_EN[today.getMonth()]}`;
+// The card is Persian, so the Gregorian date is shown in Persian words too.
+const gregFaToday = `${faDigits(today.getDate())} ${MONTHS_FA[today.getMonth()]}`;
+const gregToday = `${today.getDate()} ${MONTHS_EN[today.getMonth()]}`; // for title/log only
 const jt = toJalali(today.getFullYear(), today.getMonth() + 1, today.getDate());
 const jalaliToday = `${faDigits(jt.jd)} ${JALALI_MONTHS[jt.jm - 1]}`;
 
@@ -96,7 +101,7 @@ const html = `<!DOCTYPE html>
   .brand__tag { font-size: 19px; color: #4A8FB8; margin-top: 4px; }
   .date { text-align: left; }
   .date__fa { font-size: 34px; font-weight: 700; color: #FF6B35; }
-  .date__greg { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 22px; color: #B8BCC6; margin-top: 6px; }
+  .date__greg { font-weight: 600; font-size: 22px; color: #B8BCC6; margin-top: 6px; }
   .kicker {
     background: #1A6FBF; color: #fff; text-align: center;
     font-size: 24px; font-weight: 600; padding: 18px;
@@ -130,7 +135,7 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="date">
         <div class="date__fa">${jalaliToday}</div>
-        <div class="date__greg">${gregToday}</div>
+        <div class="date__greg">${gregFaToday}</div>
       </div>
     </div>
     <div class="kicker">خبرهای رسمی امروز درباره‌ی ایران</div>
@@ -146,7 +151,7 @@ const html = `<!DOCTYPE html>
 
 // ── Caption ────────────────────────────────────────────────────────
 const captionLines = items.map((it) => `${it.flag} ${it.headline}`).join("\n\n");
-const caption = `خبرهای رسمی امروز درباره‌ی ایران — ${gregToday} / ${jalaliToday}
+const caption = `خبرهای رسمی امروز درباره‌ی ایران — ${jalaliToday} · ${gregFaToday}
 
 ${captionLines}
 
