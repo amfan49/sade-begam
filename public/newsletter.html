@@ -21,6 +21,7 @@
       <nav class="nav">
         <a class="nav__link" href="index.html" id="navHome">Home</a>
         <a class="nav__link" href="about.html" id="navAbout">About</a>
+        <a class="nav__link" href="archive.html" id="navArchive">Archive</a>
         <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
         <a class="nav__link" href="orders.html" id="navOrders">Orders</a>
         <span class="langswitch">
@@ -36,20 +37,18 @@
       <h1 class="about__title" id="nlTitle">Newsletter</h1>
       <p class="about__body" id="nlIntro"></p>
       <form id="signupForm" class="sb-form">
-        <div class="form-row">
-          <label class="field-label"><span id="nlFirstNameLabel"></span>
-            <input type="text" name="firstName" required class="search" autocomplete="given-name" />
-          </label>
-          <label class="field-label"><span id="nlLastNameLabel"></span>
-            <input type="text" name="lastName" required class="search" autocomplete="family-name" />
-          </label>
-        </div>
         <label class="field-label"><span id="nlEmailLabel"></span>
           <input type="email" name="email" required class="search" autocomplete="email" />
         </label>
         <button type="submit" class="card__source" id="nlSignupBtn"></button>
         <p class="muted form-note" id="nlFormNote"></p>
       </form>
+
+      <div id="signupConfirm" class="confirm-panel" hidden>
+        <h2 class="about__subtitle" id="nlConfirmTitle"></h2>
+        <p class="about__body" id="nlConfirmBody"></p>
+        <button type="button" class="card__source" id="nlConfirmAgain"></button>
+      </div>
     </section>
   </main>
 
@@ -61,6 +60,8 @@
         <a href="https://instagram.com/sadeh.begam" target="_blank" rel="noopener noreferrer">@sadeh.begam</a>
         <a href="https://youtube.com/@sadehbegam" target="_blank" rel="noopener noreferrer">@sadehbegam</a>
       </div>
+      <p class="footer__today" id="todayDate"></p>
+      <p class="footer__legal" id="nonProfitFooter"></p>
       <p class="footer__rights" id="rights">© 2026 Sade Begam. All rights reserved.</p>
     </div>
   </footer>
@@ -73,25 +74,40 @@
 
     set("brandName", T.brandName); set("tagline", T.tagline);
     set("navHome", T.navHome); set("navAbout", T.navAbout);
+    set("navArchive", T.navArchive);
     set("navNewsletter", T.navNewsletter); set("navOrders", T.navOrders);
     set("footerNote", T.footerNote); set("rights", T.rights);
+    sbRenderCommonFooter();
 
     set("nlTitle", T.newsletter.title);
     set("nlIntro", T.newsletter.intro);
-    set("nlFirstNameLabel", T.newsletter.firstNameLabel);
-    set("nlLastNameLabel", T.newsletter.lastNameLabel);
     set("nlEmailLabel", T.newsletter.emailLabel);
     set("nlSignupBtn", T.newsletter.signupBtn);
     set("nlFormNote", T.newsletter.formNote);
+    set("nlConfirmTitle", T.newsletter.confirmTitle);
+    set("nlConfirmBody", T.newsletter.confirmBody);
+    set("nlConfirmAgain", T.newsletter.confirmAgain);
 
-    // Interim: opens the visitor's email app pre-filled. Nothing is auto-sent.
-    document.getElementById("signupForm").addEventListener("submit", (e) => {
+    const form = document.getElementById("signupForm");
+    const confirm = document.getElementById("signupConfirm");
+
+    // Step 1 → 2 (double opt-in): opens the visitor's email app pre-filled so
+    // the subscription is confirmed by THEM. Nothing is auto-sent or stored.
+    form.addEventListener("submit", (e) => {
       e.preventDefault();
-      const f = new FormData(e.target);
-      const body = ["firstName", "lastName", "email"]
-        .map((k) => `${k}: ${f.get(k) || ""}`).join("\n");
+      const email = new FormData(e.target).get("email") || "";
       location.href = "mailto:hello@sadebegam.com?subject=" +
-        encodeURIComponent("Sade Begam — Newsletter signup") + "&body=" + encodeURIComponent(body);
+        encodeURIComponent("Sade Begam — Confirm newsletter subscription") +
+        "&body=" + encodeURIComponent("Please confirm my subscription. Email: " + email);
+      form.hidden = true;
+      confirm.hidden = false;
+    });
+
+    // Let the visitor go back and enter a different address.
+    document.getElementById("nlConfirmAgain").addEventListener("click", () => {
+      confirm.hidden = true;
+      form.hidden = false;
+      form.reset();
     });
 
     document.querySelectorAll("[data-setlang]").forEach((btn) => {

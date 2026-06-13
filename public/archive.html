@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sade Begam — Official News. No Filter.</title>
-  <meta name="description" content="Independent Persian news media that aggregates official statements about Iran from around the world — no interpretation, no rumors." />
+  <title>Archive — Sade Begam</title>
+  <meta name="description" content="Browse all official news about Iran published by Sade Begam, grouped by day, week, month, or year." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Masthead -->
   <header class="masthead">
     <div class="masthead__inner">
       <a class="logo" href="index.html">
@@ -33,30 +32,23 @@
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero__kicker" id="kicker">Independent Persian News Media</div>
-    <h1 class="hero__tagline">
-      <span id="taglineMain">Official News.</span>
-      <span class="accent" id="taglineAccent"> No Filter.</span>
-    </h1>
-    <div class="weekstrip" id="weekStrip"></div>
-  </section>
+  <main class="container">
+    <h1 class="about__title" id="arcTitle" style="margin-top: 28px;"></h1>
+    <p class="about__body" id="arcIntro"></p>
 
-  <div class="container">
-    <div class="sample" id="sampleBadge" hidden></div>
-  </div>
+    <div class="archive-controls">
+      <span class="label" id="arcGroupLabel"></span>
+      <div class="chips">
+        <button class="chip" data-gran="day"></button>
+        <button class="chip" data-gran="week"></button>
+        <button class="chip" data-gran="month"></button>
+        <button class="chip" data-gran="year"></button>
+      </div>
+    </div>
 
-  <!-- Filter -->
-  <section class="filterbar container">
-    <div class="chips" id="regionFilter"></div>
-    <input class="search" id="search" type="search" placeholder="Search…" />
-  </section>
+    <div class="archive-groups" id="arcGroups"></div>
+  </main>
 
-  <!-- News feed -->
-  <main class="feed container" id="feed"></main>
-
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__note" id="footerNote">We report the news. You draw the conclusions.</p>
@@ -72,6 +64,6 @@
   </footer>
 
   <script src="js/i18n.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/archive.js"></script>
 </body>
 </html>

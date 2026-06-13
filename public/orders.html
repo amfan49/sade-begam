@@ -21,6 +21,7 @@
       <nav class="nav">
         <a class="nav__link" href="index.html" id="navHome">Home</a>
         <a class="nav__link" href="about.html" id="navAbout">About</a>
+        <a class="nav__link" href="archive.html" id="navArchive">Archive</a>
         <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
         <a class="nav__link" href="orders.html" id="navOrders">Orders</a>
         <span class="langswitch">
@@ -36,14 +37,9 @@
       <h1 class="about__title" id="ordTitle"></h1>
       <p class="about__body" id="ordIntro"></p>
       <form id="orderForm" class="sb-form">
-        <div class="form-row">
-          <label class="field-label"><span id="ordFirstNameLabel"></span>
-            <input type="text" name="firstName" required class="search" autocomplete="given-name" />
-          </label>
-          <label class="field-label"><span id="ordLastNameLabel"></span>
-            <input type="text" name="lastName" required class="search" autocomplete="family-name" />
-          </label>
-        </div>
+        <label class="field-label"><span id="ordNameLabel"></span>
+          <input type="text" name="name" required class="search" autocomplete="name" />
+        </label>
         <label class="field-label"><span id="ordEmailLabel"></span>
           <input type="email" name="email" required class="search" autocomplete="email" />
         </label>
@@ -68,6 +64,8 @@
         <a href="https://instagram.com/sadeh.begam" target="_blank" rel="noopener noreferrer">@sadeh.begam</a>
         <a href="https://youtube.com/@sadehbegam" target="_blank" rel="noopener noreferrer">@sadehbegam</a>
       </div>
+      <p class="footer__today" id="todayDate"></p>
+      <p class="footer__legal" id="nonProfitFooter"></p>
       <p class="footer__rights" id="rights">© 2026 Sade Begam. All rights reserved.</p>
     </div>
   </footer>
@@ -80,13 +78,14 @@
 
     set("brandName", T.brandName); set("tagline", T.tagline);
     set("navHome", T.navHome); set("navAbout", T.navAbout);
+    set("navArchive", T.navArchive);
     set("navNewsletter", T.navNewsletter); set("navOrders", T.navOrders);
     set("footerNote", T.footerNote); set("rights", T.rights);
+    sbRenderCommonFooter();
 
     set("ordTitle", T.orders.title);
     set("ordIntro", T.orders.intro);
-    set("ordFirstNameLabel", T.orders.firstNameLabel);
-    set("ordLastNameLabel", T.orders.lastNameLabel);
+    set("ordNameLabel", T.orders.nameLabel);
     set("ordEmailLabel", T.orders.emailLabel);
     set("ordFocusLabel", T.orders.focusLabel);
     set("ordSubmitBtn", T.orders.submitBtn);
@@ -98,7 +97,7 @@
     document.getElementById("orderForm").addEventListener("submit", (e) => {
       e.preventDefault();
       const f = new FormData(e.target);
-      const body = ["firstName", "lastName", "email", "focus"]
+      const body = ["name", "email", "focus"]
         .map((k) => `${k}: ${f.get(k) || ""}`).join("\n");
       location.href = "mailto:hello@sadebegam.com?subject=" +
         encodeURIComponent("Sade Begam — Special news order") + "&body=" + encodeURIComponent(body);

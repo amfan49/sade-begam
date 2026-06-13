@@ -21,6 +21,7 @@
       <nav class="nav">
         <a class="nav__link" href="index.html" id="navHome">Home</a>
         <a class="nav__link" href="about.html" id="navAbout">About</a>
+        <a class="nav__link" href="archive.html" id="navArchive">Archive</a>
         <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
         <a class="nav__link" href="orders.html" id="navOrders">Orders</a>
         <span class="langswitch">
@@ -55,6 +56,8 @@
         <a href="https://instagram.com/sadeh.begam" target="_blank" rel="noopener noreferrer">@sadeh.begam</a>
         <a href="https://youtube.com/@sadehbegam" target="_blank" rel="noopener noreferrer">@sadehbegam</a>
       </div>
+      <p class="footer__today" id="todayDate"></p>
+      <p class="footer__legal" id="nonProfitFooter"></p>
       <p class="footer__rights" id="rights">© 2026 Sade Begam. All rights reserved.</p>
     </div>
   </footer>
@@ -69,10 +72,12 @@
     set("tagline", T.tagline);
     set("navHome", T.navHome);
     set("navAbout", T.navAbout);
+    set("navArchive", T.navArchive);
     set("navNewsletter", T.navNewsletter);
     set("navOrders", T.navOrders);
     set("footerNote", T.footerNote);
     set("rights", T.rights);
+    sbRenderCommonFooter();
 
     set("aboutTitle", T.about.title);
     set("aboutLead", T.about.lead);

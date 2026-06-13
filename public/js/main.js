@@ -3,37 +3,8 @@
 // card: source organization, original quote, translation (if the original
 // isn't in the page language), context, and a clickable source link.
 
-// Date formatting utilities
-const MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const MONTHS_FA = ["ژانویه", "فوریه", "مارس", "آپریل", "مه", "ژوئن", "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر"];
-
-function formatDate(isoDate, lang = SB_LANG) {
-  const [year, month, day] = isoDate.split("-");
-  const months = lang === "fa" ? MONTHS_FA : MONTHS_EN;
-  return `${day} ${months[parseInt(month) - 1]}`;
-}
-
-function gregorianToPersian(isoDate) {
-  const [year, month, day] = isoDate.split("-").map(Number);
-  let gy = year, gm = month, gd = day;
-
-  const g_d_n = 365 * gy + Math.floor((gy + 3) / 4) - Math.floor((gy + 99) / 100) + Math.floor((gy + 399) / 400) +
-    [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334][gm - 1] + gd;
-
-  const j_d_n = g_d_n - 79;
-  const j_np = Math.floor(j_d_n / 12053);
-  const j_d_n_m = j_d_n % 12053;
-  const jy = 979 + 2820 * j_np + 128 * Math.floor(j_d_n_m / 4017);
-  const j_d_n_m_m = j_d_n_m % 4017;
-
-  const jy2 = jy + Math.floor(j_d_n_m_m / 1461);
-  const j_d_n_m_m_m = j_d_n_m_m % 1461;
-  const jy3 = jy2 + Math.floor(j_d_n_m_m_m / 365);
-  const jd = (j_d_n_m_m_m % 365) + 1;
-  const jm = jd <= 186 ? Math.ceil(jd / 31) : Math.ceil((jd - 6) / 30);
-
-  return `${jy3}/${String(jm).padStart(2, '0')}/${String(jd).padStart(2, '0')}`;
-}
+// Date utilities live in i18n.js (sbGregorian / sbJalali / sbBothDates) so
+// every page can share them.
 
 let ALL_ITEMS = [];
 let ACTIVE_REGION = "all";
@@ -56,6 +27,7 @@ function applyLanguageChrome() {
   setText("kicker", T.kicker);
   setText("navHome", T.navHome);
   setText("navAbout", T.navAbout);
+  setText("navArchive", T.navArchive);
   setText("navNewsletter", T.navNewsletter);
   setText("navOrders", T.navOrders);
   setText("footerNote", T.footerNote);
@@ -75,22 +47,49 @@ function applyLanguageChrome() {
     if (btn.dataset.setlang === SB_LANG) btn.classList.add("active");
     btn.addEventListener("click", () => setLang(btn.dataset.setlang));
   });
+
+  sbRenderCommonFooter();
+}
+
+// Client-side caching: show the cached copy instantly, then revalidate in
+// the background (stale-while-revalidate). Saves bandwidth and renders fast
+// on repeat visits. News + translations live together in current-week.json.
+const NEWS_CACHE_KEY = "sb_current_week_v1";
+const NEWS_CACHE_TTL = 60 * 60 * 1000; // 1h — treat cache as "fresh" within this
+
+function renderNews(data) {
+  ALL_ITEMS = data.items || [];
+  renderWeekStrip(data);
+  if (data.is_sample) showSampleBadge();
+  buildRegionFilter();
+  renderFeed();
 }
 
 async function loadNews() {
+  let cached = null;
   try {
-    const res = await fetch("data/current-week.json", { cache: "no-store" });
-    const data = await res.json();
-    ALL_ITEMS = data.items || [];
+    cached = JSON.parse(localStorage.getItem(NEWS_CACHE_KEY));
+  } catch (_) { /* ignore corrupt cache */ }
 
-    renderWeekStrip(data);
-    if (data.is_sample) showSampleBadge();
-    buildRegionFilter();
-    renderFeed();
+  const fresh = cached && Date.now() - cached.at < NEWS_CACHE_TTL;
+  if (cached && cached.data) renderNews(cached.data); // instant paint from cache
+
+  // If the cache is still fresh, skip the network entirely.
+  if (fresh) return;
+
+  try {
+    const res = await fetch("data/current-week.json", { cache: "default" });
+    const data = await res.json();
+    try {
+      localStorage.setItem(NEWS_CACHE_KEY, JSON.stringify({ at: Date.now(), data }));
+    } catch (_) { /* storage full / disabled — fine */ }
+    renderNews(data);
   } catch (err) {
     console.error(err);
-    const feed = document.getElementById("feed");
-    if (feed) feed.innerHTML = `<p class="muted">${T.noItems}</p>`;
+    if (!cached) {
+      const feed = document.getElementById("feed");
+      if (feed) feed.innerHTML = `<p class="muted">${T.noItems}</p>`;
+    }
   }
 }
 
@@ -166,16 +165,13 @@ function renderCard(item) {
     ? `<img class="card__photo" src="${item.image}" alt="${item.country}" loading="lazy" />`
     : `<span class="card__flag-badge">${item.flag || "🏳️"}</span>`;
 
-  const formattedDate = formatDate(item.date, SB_LANG);
-  const persianDate = gregorianToPersian(item.date);
-
   card.innerHTML = `
     <header class="card__head">
       ${imageHTML}
       <div class="card__meta">
         <div class="card__country">${item.flag || ""} ${item.country}</div>
         <div class="card__org">${item.source_organization}</div>
-        <div class="card__date">${formattedDate}${SB_LANG === "fa" ? ` / ${persianDate}` : ""}</div>
+        <div class="card__date">${sbBothDates(item.date)}</div>
       </div>
       <span class="badge badge--official">✓ ${T.officialBadge}</span>
     </header>

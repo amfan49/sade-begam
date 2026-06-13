@@ -1,0 +1,69 @@
+{
+  "note": "Archive of published official news items. archive.js also merges the current week so the latest items always appear here. Each item keeps its source link and translation.",
+  "items": [
+    {
+      "id": "2026-W24-001",
+      "date": "2026-06-12",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
+      "lang_original": "en",
+      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
+      "translations": {
+        "fa": { "headline": "بیانیه‌ی مشترک درباره‌ی تهدیدهای دولتی ایران و حملات منتسب به «هایی»" }
+      },
+      "topics": ["security"]
+    },
+    {
+      "id": "2026-W24-002",
+      "date": "2026-06-11",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
+      "translations": {
+        "fa": { "headline": "توافق پادمان‌های ان‌پی‌تی با ایران: قطع‌نامه به شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶" }
+      },
+      "topics": ["nuclear"]
+    },
+    {
+      "id": "2026-W24-003",
+      "date": "2026-06-11",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
+      "lang_original": "en",
+      "headline": "Reinstated UN sanctions on Iran remain essential: UK statement at the UN Security Council",
+      "translations": {
+        "fa": { "headline": "اجرای کامل و مؤثر تحریم‌های بازگردانده‌شده‌ی سازمان ملل علیه ایران ضروری است: بیانیه‌ی بریتانیا در شورای امنیت" }
+      },
+      "topics": ["sanctions"]
+    },
+    {
+      "id": "2026-W24-004",
+      "date": "2026-06-12",
+      "country": "United Nations",
+      "country_code": "UN",
+      "flag": "🇺🇳",
+      "region": "International Bodies",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
+      "lang_original": "en",
+      "headline": "Middle East: Diplomacy in focus as escalation 'reverberates across borders', warns UN chief",
+      "translations": {
+        "fa": { "headline": "خاورمیانه: تمرکز بر دیپلماسی؛ دبیرکل سازمان ملل درباره‌ی گسترش تنش «فراتر از مرزها» هشدار داد" }
+      },
+      "topics": ["diplomacy"]
+    }
+  ]
+}
