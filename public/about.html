@@ -44,6 +44,11 @@
       <p class="about__focus" id="aboutFocus"></p>
 
       <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;" />
+
+      <h2 class="about__subtitle" id="aboutFeedsTitle"></h2>
+      <ul class="about__sources" id="aboutFeeds" style="list-style: none; padding: 0;"></ul>
+
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;" />
       <p class="about__legal" id="aboutLegal" style="font-size: 0.9rem; color: #666; margin-top: 2rem;"></p>
     </section>
   </main>
@@ -63,6 +68,8 @@
   </footer>
 
   <script src="js/i18n.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script src="js/chatbot.js"></script>
   <script>
     document.documentElement.lang = T.htmlLang;
     document.documentElement.dir = T.dir;
@@ -97,6 +104,25 @@
       if (btn.dataset.setlang === SB_LANG) btn.classList.add("active");
       btn.addEventListener("click", () => setLang(btn.dataset.setlang));
     });
+
+    set("aboutFeedsTitle", T.about.officialFeedsTitle);
+    fetch("data/sources.json")
+      .then((r) => r.json())
+      .then((data) => {
+        const ul = document.getElementById("aboutFeeds");
+        (data.feeds || []).forEach((f) => {
+          const li = document.createElement("li");
+          li.style.cssText = "display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid #eee;";
+          li.innerHTML = `<span style="font-size:22px;flex-shrink:0;">${f.flag}</span>
+            <div>
+              <a href="${f.homepage}" target="_blank" rel="noopener noreferrer"
+                 style="font-weight:600;color:#1A6FBF;text-decoration:none;">${f.name}</a>
+              <span style="font-size:12px;color:#7A8AA8;margin-inline-start:8px;">${f.country}</span>
+            </div>`;
+          ul.appendChild(li);
+        });
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>

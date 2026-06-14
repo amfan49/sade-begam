@@ -67,7 +67,20 @@
     </div>
   </footer>
 
+  <!-- Detail overlay — client-side only, not stored on server -->
+  <div class="detail-overlay" id="detailOverlay" aria-hidden="true">
+    <div class="detail-panel" id="detailPanel">
+      <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+        <button class="detail-back-btn" id="detailBackBtn"></button>
+        <button class="detail-close" id="detailClose" style="position:relative;top:0;margin-bottom:0;">✕</button>
+      </div>
+      <div class="detail-body" id="detailBody"></div>
+    </div>
+  </div>
+
   <script src="js/i18n.js"></script>
+  <script src="js/accessibility.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>

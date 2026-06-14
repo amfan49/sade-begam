@@ -1,27 +1,18 @@
 {
   "last_updated": "2026-06-13",
-  "note": "Registry of official sources to monitor. Start set — expand over time. Only government/official bodies; the weekly process pulls only from these.",
-  "regions": {
-    "North America": {
-      "United States": { "name": "U.S. Department of State", "url": "https://www.state.gov", "press": "https://www.state.gov/press-releases/", "iran": "https://www.state.gov/countries-areas/iran/" },
-      "Canada": { "name": "Global Affairs Canada", "url": "https://www.canada.ca/en/global-affairs.html", "press": "https://www.canada.ca/en/global-affairs/news.html" }
-    },
-    "Europe": {
-      "European Union": { "name": "European External Action Service (EEAS)", "url": "https://www.eeas.europa.eu", "press": "https://www.eeas.europa.eu/eeas/press_en" },
-      "United Kingdom": { "name": "Foreign, Commonwealth & Development Office", "url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office", "press": "https://www.gov.uk/search/news-and-communications" },
-      "Germany": { "name": "Auswärtiges Amt (Federal Foreign Office)", "url": "https://www.auswaertiges-amt.de/en", "press": "https://www.auswaertiges-amt.de/en/newsroom" },
-      "France": { "name": "Ministry for Europe and Foreign Affairs", "url": "https://www.diplomatie.gouv.fr/en/", "press": "https://www.diplomatie.gouv.fr/en/country-files/iran/" }
-    },
-    "Asia": {
-      "China": { "name": "Ministry of Foreign Affairs of China", "url": "https://www.fmprc.gov.cn/eng/", "press": "https://www.fmprc.gov.cn/eng/xw/" },
-      "Japan": { "name": "Ministry of Foreign Affairs of Japan", "url": "https://www.mofa.go.jp/", "press": "https://www.mofa.go.jp/announce/announce/" }
-    },
-    "Middle East": {
-      "Saudi Arabia": { "name": "Ministry of Foreign Affairs of Saudi Arabia", "url": "https://www.mofa.gov.sa/en/", "press": "https://www.mofa.gov.sa/en/" }
-    },
-    "International Bodies": {
-      "United Nations": { "name": "United Nations", "url": "https://www.un.org/", "press": "https://press.un.org/en" },
-      "IAEA": { "name": "International Atomic Energy Agency", "url": "https://www.iaea.org/", "iran": "https://www.iaea.org/newscenter/focus/iran" }
-    }
-  }
+  "note": "Active official RSS/Atom feeds monitored by the collector. Only official government and intergovernmental sources.",
+  "feeds": [
+    { "name": "UN News", "country": "United Nations", "flag": "🇺🇳", "region": "International Bodies", "homepage": "https://news.un.org/" },
+    { "name": "Foreign, Commonwealth & Development Office", "country": "United Kingdom", "flag": "🇬🇧", "region": "Europe", "homepage": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" },
+    { "name": "International Atomic Energy Agency (IAEA)", "country": "IAEA", "flag": "🌍", "region": "International Bodies", "homepage": "https://www.iaea.org/newscenter" },
+    { "name": "Global Affairs Canada", "country": "Canada", "flag": "🇨🇦", "region": "North America", "homepage": "https://www.canada.ca/en/global-affairs.html" },
+    { "name": "EU External Action Service (EEAS)", "country": "European Union", "flag": "🇪🇺", "region": "Europe", "homepage": "https://www.eeas.europa.eu/" },
+    { "name": "Council of the European Union", "country": "European Union", "flag": "🇪🇺", "region": "Europe", "homepage": "https://www.consilium.europa.eu/en/press/" },
+    { "name": "UN Human Rights (OHCHR)", "country": "United Nations", "flag": "🇺🇳", "region": "International Bodies", "homepage": "https://www.ohchr.org/en/news" },
+    { "name": "NATO News", "country": "NATO", "flag": "🌍", "region": "International Bodies", "homepage": "https://www.nato.int/cps/en/natohq/news.htm" },
+    { "name": "Organization for Security and Co-operation in Europe (OSCE)", "country": "OSCE", "flag": "🌍", "region": "International Bodies", "homepage": "https://www.osce.org/news" },
+    { "name": "French Ministry for Europe and Foreign Affairs", "country": "France", "flag": "🇫🇷", "region": "Europe", "homepage": "https://www.diplomatie.gouv.fr/en/" },
+    { "name": "German Federal Foreign Office", "country": "Germany", "flag": "🇩🇪", "region": "Europe", "homepage": "https://www.auswaertiges-amt.de/en" },
+    { "name": "US State Department", "country": "United States", "flag": "🇺🇸", "region": "North America", "homepage": "https://www.state.gov/press-releases/" }
+  ]
 }

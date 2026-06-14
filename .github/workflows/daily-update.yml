@@ -1,19 +1,23 @@
-name: Daily News Draft
+name: News Draft (3x Daily)
 
-# Collects candidate official news into a DRAFT file once a day for human
-# review. It does NOT publish automatically — you review draft-week.json and
-# move approved items into current-week.json (and archive.json).
+# Collects candidate official news into a DRAFT file three times a day for
+# human review. It does NOT publish automatically — you review draft-week.json
+# and move approved items into current-week.json (and archive.json).
 # Free: GitHub Actions, no paid APIs.
 #
-# Schedule: 01:00 Europe/London, year-round. GitHub cron is UTC-only and has
-# no DST awareness, so we fire at both 00:00 and 01:00 UTC and then let a guard
-# step continue only when it is actually 01:00 in London (00:00 UTC in summer
-# BST, 01:00 UTC in winter GMT).
+# Schedule: 08:00, 14:00, 20:00 Europe/London, year-round.
+# GitHub cron is UTC-only and has no DST awareness, so we fire at both UTC
+# offsets for each target hour and let a gate step skip runs that fall outside
+# the three target London hours (08, 14, 20).
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # 01:00 London during BST (summer)
-    - cron: "0 1 * * *"   # 01:00 London during GMT (winter)
+    - cron: "0 7 * * *"   # 08:00 London during BST (summer, UTC+1)
+    - cron: "0 8 * * *"   # 08:00 London during GMT (winter, UTC+0)
+    - cron: "0 13 * * *"  # 14:00 London during BST
+    - cron: "0 14 * * *"  # 14:00 London during GMT
+    - cron: "0 19 * * *"  # 20:00 London during BST
+    - cron: "0 20 * * *"  # 20:00 London during GMT
   workflow_dispatch: {}     # lets you run it manually with one click
 
 permissions:
@@ -23,13 +27,14 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - name: Only continue at 01:00 London time
+      - name: Only continue at 08:00, 14:00, or 20:00 London time
         id: gate
         run: |
           HOUR=$(TZ="Europe/London" date +%H)
           echo "London hour: $HOUR"
-          if [ "${{ github.event_name }}" != "workflow_dispatch" ] && [ "$HOUR" != "01" ]; then
-            echo "Not 01:00 in London — skipping this run."
+          if [ "${{ github.event_name }}" != "workflow_dispatch" ] && \
+             [ "$HOUR" != "08" ] && [ "$HOUR" != "14" ] && [ "$HOUR" != "20" ]; then
+            echo "Not a target hour in London — skipping this run."
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -56,6 +61,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes."
           else
-            git commit -m "Daily news draft — $(TZ='Europe/London' date +%Y-%m-%d)"
+            git commit -m "News draft — $(TZ='Europe/London' date '+%Y-%m-%d %H:%M')"
             git push
           fi

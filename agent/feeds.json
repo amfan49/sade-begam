@@ -1,11 +1,19 @@
 {
-  "note": "Verified official RSS/Atom feeds. The collector skips any feed that fails, so more can be added safely. Tested 2026-06-12: UN News & UK FCDO return Iran items; IAEA is a valid feed (15 entries); Canada GAC atom is valid. US State Dept feed URLs returned HTML (removed) — needs a correct feed URL. Australia foreign minister feed timed out (removed).",
-  "window_days": 7,
+  "note": "Official RSS/Atom feeds only. The collector skips any feed that fails, so more can be added safely. Tested 2026-06-12: UN News & UK FCDO return Iran items; IAEA is a valid feed; Canada GAC atom is valid. Updated 2026-06-13: added EU EEAS, OHCHR, NATO, Council of EU, OSCE, French MFA, German AA, US State Dept.",
+  "window_days": 1,
   "keyword": "iran",
   "feeds": [
     { "country": "United Nations", "region": "International Bodies", "organization": "UN News", "flag": "🇺🇳", "feed": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "homepage": "https://news.un.org/" },
     { "country": "United Kingdom", "region": "Europe", "organization": "Foreign, Commonwealth & Development Office", "flag": "🇬🇧", "feed": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office", "homepage": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" },
     { "country": "IAEA", "region": "International Bodies", "organization": "International Atomic Energy Agency", "flag": "🌍", "feed": "https://www.iaea.org/feeds/topnews", "homepage": "https://www.iaea.org/newscenter" },
-    { "country": "Canada", "region": "North America", "organization": "Global Affairs Canada", "flag": "🇨🇦", "feed": "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&type=newsreleases&sort=publishedDate&orderBy=desc&pick=50&format=atom&atomtitle=Global%20Affairs%20Canada", "homepage": "https://www.canada.ca/en/global-affairs.html" }
+    { "country": "Canada", "region": "North America", "organization": "Global Affairs Canada", "flag": "🇨🇦", "feed": "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&type=newsreleases&sort=publishedDate&orderBy=desc&pick=50&format=atom&atomtitle=Global%20Affairs%20Canada", "homepage": "https://www.canada.ca/en/global-affairs.html" },
+    { "country": "European Union", "region": "Europe", "organization": "EU External Action Service (EEAS)", "flag": "🇪🇺", "feed": "https://www.eeas.europa.eu/eeas/rss_en", "homepage": "https://www.eeas.europa.eu/" },
+    { "country": "European Union", "region": "Europe", "organization": "Council of the European Union", "flag": "🇪🇺", "feed": "https://www.consilium.europa.eu/en/press/rss/", "homepage": "https://www.consilium.europa.eu/en/press/" },
+    { "country": "United Nations", "region": "International Bodies", "organization": "UN Human Rights (OHCHR)", "flag": "🇺🇳", "feed": "https://www.ohchr.org/en/rss", "homepage": "https://www.ohchr.org/en/news" },
+    { "country": "NATO", "region": "International Bodies", "organization": "NATO News", "flag": "🌍", "feed": "https://www.nato.int/cps/en/natohq/news.xml", "homepage": "https://www.nato.int/cps/en/natohq/news.htm" },
+    { "country": "OSCE", "region": "International Bodies", "organization": "Organization for Security and Co-operation in Europe", "flag": "🌍", "feed": "https://www.osce.org/feeds/all", "homepage": "https://www.osce.org/news" },
+    { "country": "France", "region": "Europe", "organization": "French Ministry for Europe and Foreign Affairs", "flag": "🇫🇷", "feed": "https://www.diplomatie.gouv.fr/spip.php?page=backend", "homepage": "https://www.diplomatie.gouv.fr/en/" },
+    { "country": "Germany", "region": "Europe", "organization": "German Federal Foreign Office", "flag": "🇩🇪", "feed": "https://www.auswaertiges-amt.de/opendata/rss/news_en", "homepage": "https://www.auswaertiges-amt.de/en" },
+    { "country": "United States", "region": "North America", "organization": "US State Department", "flag": "🇺🇸", "feed": "https://www.state.gov/feeds/press.xml", "homepage": "https://www.state.gov/press-releases/" }
   ]
 }

@@ -94,12 +94,22 @@ function groupOf(iso) {
     case "week": {
       const w = isoWeek(date);
       const wl = SB_LANG === "fa" ? sbPersianDigits(w.week) : w.week;
-      return { key: `${w.year}-W${String(w.week).padStart(2, "0")}`, label: `${T.archive.week} ${wl} · ${w.year}` };
+      const yearLabel = SB_LANG === "fa" ? sbPersianDigits(w.year) : String(w.year);
+      return { key: `${w.year}-W${String(w.week).padStart(2, "0")}`, label: `${T.archive.week} ${wl} · ${yearLabel}` };
     }
-    case "year":
-      return { key: String(y), label: SB_LANG === "fa" ? sbPersianDigits(y) : String(y) };
+    case "year": {
+      if (SB_LANG === "fa") {
+        const j = sbToJalali(y, 7, 1);
+        return { key: String(y), label: sbPersianDigits(j.jy) };
+      }
+      return { key: String(y), label: String(y) };
+    }
     case "month":
     default: {
+      if (SB_LANG === "fa") {
+        const j = sbToJalali(y, m, 15);
+        return { key: `${y}-${String(m).padStart(2, "0")}`, label: `${SB_JALALI_MONTHS[j.jm - 1]} ${sbPersianDigits(j.jy)}` };
+      }
       const monthName = SB_MONTHS_EN[m - 1];
       return { key: `${y}-${String(m).padStart(2, "0")}`, label: `${monthName} ${y}` };
     }

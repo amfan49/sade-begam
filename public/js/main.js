@@ -13,7 +13,89 @@ let SEARCH = "";
 document.addEventListener("DOMContentLoaded", () => {
   applyLanguageChrome();
   loadNews();
+  initDetailOverlay();
 });
+
+// ── Detail overlay ────────────────────────────────────────────────
+// Purely client-side. Content is rendered on demand from ALL_ITEMS and
+// cleared on close — nothing is written to localStorage or the server.
+
+function initDetailOverlay() {
+  const overlay = document.getElementById("detailOverlay");
+  const closeBtn = document.getElementById("detailClose");
+  if (!overlay) return;
+
+  closeBtn.setAttribute("aria-label", T.closeDetail);
+  closeBtn.addEventListener("click", closeDetail);
+
+  // "Back to home" button (keyboard/screen-reader accessible shortcut)
+  const backBtn = document.getElementById("detailBackBtn");
+  if (backBtn) backBtn.addEventListener("click", () => { closeDetail(); window.location.href = "index.html"; });
+  overlay.addEventListener("click", (e) => { if (e.target === overlay) closeDetail(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
+  window.addEventListener("popstate", () => { if (!location.hash) closeDetail(); });
+}
+
+function openDetail(item) {
+  const overlay = document.getElementById("detailOverlay");
+  const body = document.getElementById("detailBody");
+  if (!overlay || !body) return;
+
+  const tr = item.translations ? item.translations[SB_LANG] : null;
+  const hasTr = item.lang_original !== SB_LANG && tr && tr.headline;
+  const origDir = item.lang_original === "fa" ? "rtl" : "ltr";
+
+  body.innerHTML = `
+    <div class="detail-header">
+      <span class="detail-flag">${item.flag || "🏳️"}</span>
+      <div class="detail-meta">
+        <div class="detail-country">${item.country}</div>
+        <div class="detail-org">${item.source_organization}</div>
+        <div class="detail-date">${sbBothDates(item.date)}</div>
+      </div>
+      <span class="badge badge--official">✓ ${T.officialBadge}</span>
+    </div>
+
+    <hr class="detail-divider" />
+
+    <section class="detail-section">
+      <span class="card__quote-label">${T.originalLabel}</span>
+      <h2 class="detail-headline" lang="${item.lang_original}" dir="${origDir}">${item.headline || ""}</h2>
+      <p class="detail-excerpt" lang="${item.lang_original}" dir="${origDir}">${item.excerpt || ""}</p>
+    </section>
+
+    ${hasTr ? `
+    <section class="detail-section detail-section--tr">
+      <span class="card__quote-label">${T.translationLabel}</span>
+      <h2 class="detail-headline">${tr.headline}</h2>
+      <p class="detail-excerpt">${tr.excerpt || ""}</p>
+      <p class="detail-disclaimer"><small>${T.translationDisclaimer}</small></p>
+    </section>` : ""}
+
+    <a class="detail-source-btn" href="${item.source_url}" target="_blank" rel="noopener noreferrer">
+      🔗 ${T.viewSource}
+    </a>
+  `;
+
+  overlay.classList.add("open");
+  overlay.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  history.pushState({ detailId: item.id }, "", `#${item.id}`);
+}
+
+function closeDetail() {
+  const overlay = document.getElementById("detailOverlay");
+  if (!overlay || !overlay.classList.contains("open")) return;
+  overlay.classList.remove("open");
+  overlay.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  if (location.hash) history.pushState(null, "", location.pathname + location.search);
+  // Clear rendered content after animation — no stale data kept in DOM
+  setTimeout(() => {
+    const body = document.getElementById("detailBody");
+    if (body) body.innerHTML = "";
+  }, 320);
+}
 
 // Fill in all the static UI text from the language file.
 function applyLanguageChrome() {
@@ -49,6 +131,7 @@ function applyLanguageChrome() {
   });
 
   sbRenderCommonFooter();
+  setText("detailBackBtn", T.backToHome);
 }
 
 // Client-side caching: show the cached copy instantly, then revalidate in
@@ -96,7 +179,19 @@ function renderWeekStrip(data) {
   const el = document.getElementById("weekStrip");
   if (!el) return;
   const r = data.date_range || {};
-  el.textContent = `${T.weekLabel} ${data.week} · ${r.start} – ${r.end} · ${T.updated}`;
+  const weekMatch = String(data.week || "").match(/W(\d+)/);
+  const weekNum = weekMatch ? weekMatch[1] : data.week;
+  const weekLabel = SB_LANG === "fa" ? sbPersianDigits(weekNum) : weekNum;
+  const start = r.start ? sbBothDates(r.start) : "";
+  const end = r.end ? sbBothDates(r.end) : "";
+
+  let updatedPart = "";
+  if (data.published_at) {
+    const pubDate = data.published_at.split("T")[0];
+    updatedPart = ` · ${T.lastUpdated}: ${sbBothDates(pubDate)}`;
+  }
+
+  el.textContent = `${T.weekLabel} ${weekLabel} · ${start} – ${end}${updatedPart}`;
 }
 
 function buildRegionFilter() {
@@ -147,6 +242,10 @@ function renderFeed() {
 function renderCard(item) {
   const card = document.createElement("article");
   card.className = "card";
+  card.addEventListener("click", (e) => {
+    if (e.target.closest(".card__source")) return;
+    openDetail(item);
+  });
 
   const tr = item.translations ? item.translations[SB_LANG] : null;
   const showTr = item.lang_original !== SB_LANG && tr && tr.headline;
