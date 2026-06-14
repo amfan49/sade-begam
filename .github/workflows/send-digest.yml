@@ -1,0 +1,52 @@
+name: Daily Draft Digest Email
+
+# Sends Amir a daily email at 8:00 AM London time (07:00 UTC in summer).
+# Each news item in draft-week.json gets a one-click "Publish" link.
+# Requires secrets: APPROVE_SECRET, GMAIL_USER, GMAIL_APP_PASSWORD
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC = 08:00 BST (London summer)
+  workflow_dispatch: {}    # allows manual trigger from GitHub Actions tab
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check for draft items
+        id: check
+        run: |
+          COUNT=$(node -e "const d=require('./public/data/draft-week.json'); console.log(d.items ? d.items.length : 0)")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Draft items found: $COUNT"
+
+      - name: Generate digest email HTML
+        if: steps.check.outputs.count != '0'
+        env:
+          APPROVE_SECRET: ${{ secrets.APPROVE_SECRET }}
+          SITE_URL: "https://sade-begam.vercel.app"
+        run: node agent/digest-email.js > /tmp/digest.html
+
+      - name: Send digest email
+        if: steps.check.outputs.count != '0'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          secure: false
+          username: ${{ secrets.GMAIL_USER }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          subject: "📰 Sade Begam — ${{ steps.check.outputs.count }} خبر جدید برای بررسی"
+          to: amfan49@gmail.com
+          from: "Sade Begam 📰 <${{ secrets.GMAIL_USER }}>"
+          html_body: file:///tmp/digest.html
+
+      - name: Skip (no draft items)
+        if: steps.check.outputs.count == '0'
+        run: echo "No draft items today — email not sent."

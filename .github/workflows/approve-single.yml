@@ -1,0 +1,48 @@
+name: Approve Single Draft Item
+
+# Triggered by the Vercel /api/approve function via GitHub API.
+# Runs approve.js for the given item, then pushes + deploys.
+
+on:
+  workflow_dispatch:
+    inputs:
+      item_id:
+        description: "Draft item ID to approve (e.g. draft-001 or all)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run approve.js
+        run: node agent/approve.js "${{ github.event.inputs.item_id }}"
+
+      - name: Commit approved item
+        run: |
+          git config user.name "Sade Begam Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/data/current-week.json
+          if git diff --staged --quiet; then
+            echo "Nothing to commit (item may already be published)."
+          else
+            git commit -m "Publish ${{ github.event.inputs.item_id }} [vercel skip]"
+            git push
+          fi
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: team_gySo3Th0dmEG0VY22J0UmLRR
+          VERCEL_PROJECT_ID: prj_oA3A64H6PtWXzwOwqXr27kMdqe4u
+        run: |
+          npm install -g vercel@latest --silent
+          vercel --prod --yes --token "$VERCEL_TOKEN"
