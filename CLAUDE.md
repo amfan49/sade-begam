@@ -138,16 +138,18 @@ Client-side also polls `current-week.json` every **5 minutes** (`startAutoRefres
 
 ## News sources (`agent/feeds.json` + `public/data/sources.json`)
 
-**44 active RSS/Atom feeds** across 60 official primary sources. The collector skips any that fail — safe to add uncertain URLs. Sources are organized in 6 categories:
+**57 RSS/Atom feed entries** covering all 60 official primary sources. The collector skips any that fail — safe to add uncertain URLs. Sources are organized in 6 categories:
 
 | Category | Count | Examples |
 |---|---|---|
-| Iran — Government | 18 | Khamenei.ir, President.ir, MFA Iran, AEOI, NIOC |
-| USA — Government | 7 | White House, State Dept, Treasury/OFAC, CENTCOM, Senate/House FRC |
+| Iran — Government | 18 | Khamenei.ir, President.ir, MFA Iran, AEOI, NIOC, Parliament, Central Bank, Judiciary, Ministries, Embassies UK/RU/CN |
+| USA — Government | 8 | White House, State Dept, US Special Envoy Iran, Treasury/OFAC, CENTCOM, Senate/House FRC |
 | Europe | 7 | FCDO, Germany AA, Bundeskanzler, France Diplomatie, EEAS, Council EU |
-| Middle East | 6 | Israel PM, Israeli MFA, Saudi MFA, UAE MFA, Israeli MFA Farsi |
-| International Bodies | 8 | UN News, IAEA, IAEA-DG, UN Security Council, OHCHR, NATO, OSCE, European Commission |
-| Think Tanks | 16 | WINEP, FDD, MEI, USIP, Crisis Group, Atlantic Council, CFR, Brookings, Carnegie, CSIS, RAND, Stimson, ECFR, Chatham House, SWP, DGAP, IISS, B&B, AGSIW, INSS |
+| Middle East | 6 | Israel PM, Israeli MFA, Saudi MFA, UAE MFA |
+| International Bodies | 9 | UN News, IAEA, IAEA-DG, UN Security Council, OHCHR, UN Special Procedures, NATO, OSCE, European Commission |
+| Think Tanks | 20 | WINEP, FDD, MEI, USIP, Crisis Group, Atlantic Council, CFR, Brookings, Carnegie, CSIS, RAND, Stimson, ECFR, Chatham House, SWP, DGAP, IISS, B&B, AGSIW, INSS |
+
+**Note on Iranian government ministry feeds:** Many Iranian ministry sites (MOI, MCLS, Judiciary, CBI, etc.) have Persian-only RSS or may block international access. The collector silently skips failing feeds — these are listed as best-guess URLs. The key Iran sources (Khamenei, President, MFA, AEOI, UN Mission) are well-tested and reliable.
 
 `public/data/sources.json` mirrors all 60 sources with `flag`, `name`, `country`, `region`, `homepage`, `twitter` fields. Grouped by region on the About page with Twitter/X links. Keep in sync with `agent/feeds.json`.
 
@@ -190,10 +192,10 @@ Loaded on **every page**. 100% free — no external API. Floating 💬 button (b
 | Multilingual | Reads `T.chat.*` strings from i18n.js for FA/EN |
 
 ### Search logic
-1. Search `ALL_ITEMS` + localStorage cache by keyword (country, headline, excerpt, topics, translations)
-2. Show top 3 results with flag, date, original headline, translation, source link
-3. Always append Twitter search link for broader discovery
-4. Iran-only by construction: all collected items are already filtered for Iran
+1. **Iran pre-filter (explicit):** Before keyword search, `sbChatSearch` filters the item pool to only items where headline/excerpt/topics contain "iran" OR `item.country === "Iran"`. This guarantees the chatbot never surfaces off-topic results even if the data cache is contaminated.
+2. Search filtered items by keyword (country, headline, excerpt, topics, translations)
+3. Show top 3 results with flag, date, original headline, translation, source link
+4. Always append Twitter search link for broader discovery
 
 ### Commands (both languages)
 `help` · `newsletter` · `contact` · `read news` (TTS) · `stop` · any topic keyword → search

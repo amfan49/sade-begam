@@ -184,7 +184,20 @@ function sbChatSearch(query) {
     return;
   }
 
-  const results = items.filter((item) => {
+  // Strict filter: only items that mention Iran (topic or source)
+  const IRAN_SOURCES = new Set([
+    "Iran","United States","United Kingdom","European Union","Germany","France",
+    "Israel","Saudi Arabia","UAE","Canada","IAEA","United Nations","NATO","OSCE",
+    "International","Europe","Think Tanks"
+  ]);
+  const iranItems = items.filter((item) => {
+    const allText = [item.headline, item.excerpt,
+      item.translations?.fa?.headline || "", item.translations?.en?.headline || "",
+      ...(item.topics || [])].join(" ").toLowerCase();
+    return allText.includes("iran") || item.country === "Iran";
+  });
+
+  const results = iranItems.filter((item) => {
     const txt = [
       item.country, item.source_organization,
       item.headline, item.excerpt,
