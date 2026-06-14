@@ -1,101 +1,115 @@
 {
   "week": "2026-W24",
   "date_range": { "start": "2026-06-08", "end": "2026-06-14" },
-  "published_at": "2026-06-13T09:00:00Z",
-  "is_sample": true,
-  "note": "PREVIEW — automatically collected from official sources (UK FCDO, UN), pending your final review. Excerpts are quoted from each source's own feed; the full statement is at the source link. Persian translations are provided for demonstration.",
+  "published_at": "2026-06-14T19:30:00Z",
   "items": [
     {
       "id": "2026-W24-001",
       "date": "2026-06-12",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "flag": "🇬🇧",
-      "region": "Europe",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167713",
       "is_official": true,
-      "image": null,
       "lang_original": "en",
-      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
-      "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe. The signatories express their shared concern, reaffirm their commitment to the safety of their citizens, and call for accountability under international law. The statement was issued through the UK Foreign, Commonwealth & Development Office.",
+      "headline": "UN 'encouraged' by talk of possible US-Iran ceasefire deal",
+      "excerpt": "The United Nations continues to monitor developments amid conflicting reports on Friday of a possible ceasefire deal between the United States and Iran, the Spokesperson for the Secretary-General said in New York.",
       "translations": {
         "en": null,
-        "fa": {
-          "headline": "بیانیه‌ی مشترک درباره‌ی تهدیدهای دولتی ایران و حملات منتسب به «هایی»",
-          "excerpt": "بیانیه‌ی مشترک ۲۴ کشور درباره‌ی تهدیدهای مرتبط با سرویس‌های امنیتی ایران و محکومیت حملات اخیرِ منتسب به گروه «حرکت اصحاب الیمین الاسلامیه (هایی)» در سراسر اروپا. امضاکنندگان نگرانی مشترک خود را ابراز کرده، بر پایبندی به امنیت شهروندانشان تأکید کرده و خواستار پاسخ‌گویی بر اساس حقوق بین‌الملل شده‌اند. این بیانیه از طریق وزارت خارجه‌ی بریتانیا منتشر شد."
-        }
+        "fa": null
       },
-      "topics": ["security"]
+      "topics": ["ceasefire", "diplomacy"]
     },
     {
       "id": "2026-W24-002",
-      "date": "2026-06-11",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "flag": "🇬🇧",
-      "region": "Europe",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
-      "is_official": true,
-      "image": null,
-      "lang_original": "en",
-      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
-      "excerpt": "Statement on behalf of France, Germany, the UK and the United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting, introducing a resolution on Iran's implementation of its obligations under its Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement. The statement sets out the Quad's position on outstanding safeguards issues and calls on Iran to cooperate fully with the Agency.",
-      "translations": {
-        "en": null,
-        "fa": {
-          "headline": "توافق پادمان‌های ان‌پی‌تی با ایران: قطع‌نامه به شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
-          "excerpt": "بیانیه‌ای از سوی فرانسه، آلمان، بریتانیا و ایالات متحده («کواد») در نشست شورای حکام آژانس بین‌المللی انرژی اتمی که قطع‌نامه‌ای درباره‌ی اجرای تعهدات ایران ذیل توافق پادمان‌های پیمان منع گسترش سلاح‌های هسته‌ای (ان‌پی‌تی) را معرفی می‌کند. این بیانیه موضع «کواد» درباره‌ی مسائل حل‌نشده‌ی پادمانی را تشریح کرده و از ایران می‌خواهد به‌طور کامل با آژانس همکاری کند."
-        }
-      },
-      "topics": ["nuclear"]
-    },
-    {
-      "id": "2026-W24-003",
-      "date": "2026-06-11",
-      "country": "United Kingdom",
-      "country_code": "GB",
-      "flag": "🇬🇧",
-      "region": "Europe",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
-      "is_official": true,
-      "image": null,
-      "lang_original": "en",
-      "headline": "Reinstated UN sanctions on Iran remain essential: UK statement at the UN Security Council",
-      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d'Affaires to the UN, at the UN Security Council meeting on Iran. The statement underlines the UK position that the full and effective implementation of reinstated United Nations sanctions on Iran remains essential, and reiterates the UK's continued support for diplomacy and the work of the Security Council on this file.",
-      "translations": {
-        "en": null,
-        "fa": {
-          "headline": "اجرای کامل و مؤثر تحریم‌های بازگردانده‌شده‌ی سازمان ملل علیه ایران ضروری است: بیانیه‌ی بریتانیا در شورای امنیت",
-          "excerpt": "بیانیه‌ی سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در نشست شورای امنیت درباره‌ی ایران. این بیانیه بر موضع بریتانیا تأکید می‌کند که اجرای کامل و مؤثر تحریم‌های بازگردانده‌شده‌ی سازمان ملل علیه ایران همچنان ضروری است و حمایت مستمر بریتانیا از دیپلماسی و کار شورای امنیت در این پرونده را تکرار می‌کند."
-        }
-      },
-      "topics": ["sanctions"]
-    },
-    {
-      "id": "2026-W24-004",
-      "date": "2026-06-12",
+      "date": "2026-06-10",
       "country": "United Nations",
-      "country_code": "UN",
-      "flag": "🇺🇳",
       "region": "International Bodies",
+      "flag": "🇺🇳",
       "source_organization": "UN News",
       "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
       "is_official": true,
-      "image": null,
       "lang_original": "en",
-      "headline": "Middle East: Diplomacy in focus as escalation 'reverberates across borders', warns UN chief",
-      "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council heard from senior UN officials, who urged a return to diplomacy and full respect for international law as the path to de-escalation.",
+      "headline": "Middle East LIVE: Diplomacy in focus as escalation 'reverberates across borders and continents', warns UN chief",
+      "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East.",
       "translations": {
         "en": null,
-        "fa": {
-          "headline": "خاورمیانه: تمرکز بر دیپلماسی؛ دبیرکل سازمان ملل درباره‌ی گسترش تنش «فراتر از مرزها» هشدار داد",
-          "excerpt": "نزدیک به چهار ماه پس از آغاز بحران اخیر خاورمیانه و باوجود آتش‌بس شکننده میان ایالات متحده و ایران، تنش‌ها همچنان در منطقه و فراتر از آن ادامه دارد. شورای امنیت سازمان ملل سخنان مقام‌های ارشد سازمان ملل را شنید که خواستار بازگشت به دیپلماسی و احترام کامل به حقوق بین‌الملل به‌عنوان مسیر کاهش تنش شدند."
-        }
+        "fa": null
       },
-      "topics": ["diplomacy"]
+      "topics": ["diplomacy", "security-council"]
+    },
+    {
+      "id": "2026-W24-003",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
+      "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nuclear Non-Proliferation Treaty Safeguards Agreement.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": ["nuclear", "iaea", "npt"]
+    },
+    {
+      "id": "2026-W24-004",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-quad-statement-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Quad statement to the IAEA Board of Governors, June 2026",
+      "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": ["nuclear", "iaea", "npt"]
+    },
+    {
+      "id": "2026-W24-005",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
+      "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": ["security", "sanctions"]
+    },
+    {
+      "id": "2026-W24-006",
+      "date": "2026-06-09",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
+      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d'Affaires to the UN, at the UN Security Council meeting on Iran.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": ["sanctions", "security-council"]
     }
   ]
 }
