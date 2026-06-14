@@ -64,3 +64,13 @@ jobs:
             git commit -m "News draft — $(TZ='Europe/London' date '+%Y-%m-%d %H:%M')"
             git push
           fi
+
+      - name: Deploy to Vercel (production)
+        if: steps.gate.outputs.skip != 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: team_gySo3Th0dmEG0VY22J0UmLRR
+          VERCEL_PROJECT_ID: prj_oA3A64H6PtWXzwOwqXr27kMdqe4u
+        run: |
+          npm install -g vercel@latest --silent
+          vercel --prod --yes --token "$VERCEL_TOKEN"
