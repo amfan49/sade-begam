@@ -19,7 +19,7 @@
           <span class="logo__tag" id="tagline">Official News. No Filter.</span>
         </span>
       </a>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a class="nav__link" href="index.html" id="navHome">Home</a>
         <a class="nav__link" href="about.html" id="navAbout">About</a>
         <a class="nav__link" href="archive.html" id="navArchive">Archive</a>
@@ -70,9 +70,9 @@
   <!-- Detail overlay — client-side only, not stored on server -->
   <div class="detail-overlay" id="detailOverlay" aria-hidden="true">
     <div class="detail-panel" id="detailPanel">
-      <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+      <div class="detail-top-bar">
         <button class="detail-back-btn" id="detailBackBtn"></button>
-        <button class="detail-close" id="detailClose" style="position:relative;top:0;margin-bottom:0;">✕</button>
+        <button class="detail-close" id="detailClose">✕</button>
       </div>
       <div class="detail-body" id="detailBody"></div>
     </div>

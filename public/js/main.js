@@ -223,11 +223,17 @@ function renderFeed() {
   let items = ALL_ITEMS;
   if (ACTIVE_REGION !== "all") items = items.filter((i) => i.region === ACTIVE_REGION);
   if (SEARCH) {
-    items = items.filter((i) =>
-      (i.country + " " + i.source_organization + " " + (i.topics || []).join(" "))
-        .toLowerCase()
-        .includes(SEARCH)
-    );
+    items = items.filter((i) => {
+      const fields = [
+        i.country, i.source_organization, i.headline, i.excerpt,
+        ...(i.topics || []),
+        i.translations?.fa?.headline || "",
+        i.translations?.fa?.excerpt || "",
+        i.translations?.en?.headline || "",
+        i.translations?.en?.excerpt || "",
+      ].join(" ").toLowerCase();
+      return fields.includes(SEARCH);
+    });
   }
 
   if (!items.length) {

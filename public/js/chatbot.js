@@ -31,6 +31,10 @@ function _sbLink(href, label) {
   return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="sb-chat-result-link">${label}</a>`;
 }
 
+function _sbEscape(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
 // ── Init ──────────────────────────────────────────────────────────
 
 function sbChatInit() {
@@ -193,7 +197,7 @@ function sbChatSearch(query) {
   });
 
   if (!results.length) {
-    const noRes = (chat.noResults || "No results for “{q}”. Search on Twitter:").replace("{q}", query);
+    const noRes = (chat.noResults || 'No results for "{q}". Search on Twitter:').replace('{q}', _sbEscape(query));
     sbBotMsg(`${noRes} ${_sbLink(_sbTwUrl(query), "🐦 Twitter/X →")}`, true);
     return;
   }
