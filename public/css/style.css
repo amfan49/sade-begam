@@ -460,6 +460,8 @@ textarea.search { resize: vertical; font-family: inherit; }
 .about-feed-name { font-weight: 600; color: var(--brand-blue); text-decoration: none; }
 .about-feed-name:hover { text-decoration: underline; }
 .about-feed-country { font-size: 12px; color: var(--text-muted); margin-inline-start: 8px; }
+.about-feed-tw { font-size: 12px; color: var(--text-muted); margin-inline-start: 6px; text-decoration: none; }
+.about-feed-tw:hover { color: var(--brand-blue); }
 
 /* ── Detail overlay top bar ────────────────────────────────────── */
 .detail-top-bar {
@@ -481,3 +483,83 @@ textarea.search { resize: vertical; font-family: inherit; }
   .sb-chat-panel { width: 94vw; height: 70vh; }
   .sb-a11y-bar { bottom: 88px; inset-inline-end: 12px; }
 }
+
+/* ── Translation modal ─────────────────────────────────────────── */
+.tr-modal {
+  position: fixed; inset: 0; z-index: 110;
+  background: rgba(28, 34, 51, 0.6);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.tr-modal.open { opacity: 1; pointer-events: all; }
+
+.tr-modal__panel {
+  background: var(--bg-card); border-radius: 16px;
+  width: min(580px, 94vw); max-height: 82vh;
+  display: flex; flex-direction: column;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.28);
+  transform: scale(0.96);
+  transition: transform 0.2s ease;
+}
+.tr-modal.open .tr-modal__panel { transform: scale(1); }
+
+.tr-modal__head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px; border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.tr-modal__title {
+  font-weight: 700; font-size: 15px; color: var(--text-primary);
+}
+.tr-modal__close {
+  background: none; border: 1px solid var(--border); border-radius: 8px;
+  padding: 5px 12px; cursor: pointer; font-size: 13px; color: var(--text-muted);
+  font-family: inherit;
+}
+.tr-modal__close:hover { background: var(--bg-page); color: var(--text-primary); }
+
+.tr-modal__body {
+  padding: 20px 24px 24px; overflow-y: auto; flex: 1;
+}
+.tr-modal__header {
+  display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;
+}
+.tr-modal__flag { font-size: 30px; flex-shrink: 0; line-height: 1; }
+.tr-modal__country { font-weight: 700; font-size: 15px; color: var(--text-primary); }
+.tr-modal__org { font-size: 13px; color: var(--brand-blue-deep); }
+.tr-modal__date { font-size: 12px; color: var(--text-muted); }
+.tr-modal__headline {
+  font-size: 19px; font-weight: 700; color: var(--text-primary);
+  line-height: 1.35; margin-bottom: 12px;
+}
+.tr-modal__excerpt { font-size: 15px; line-height: 1.85; color: var(--text-body); margin-bottom: 16px; }
+.tr-modal__disclaimer { margin-bottom: 20px; }
+.tr-modal__disclaimer small { color: var(--text-muted); font-size: 11px; }
+.tr-modal__source-btn {
+  display: block; text-align: center;
+  background: var(--brand-blue); color: #fff !important; text-decoration: none;
+  padding: 13px 20px; border-radius: 10px; font-size: 15px; font-weight: 700;
+  transition: background 0.15s;
+}
+.tr-modal__source-btn:hover { background: var(--brand-blue-deep); }
+
+[data-theme="dark"] .tr-modal__panel { background: var(--bg-card); }
+
+/* clickable translation block on card */
+.card__translation[role="button"] { cursor: pointer; }
+.card__translation[role="button"]:hover {
+  border-inline-start-color: var(--brand-blue);
+  background: #EBF0FA;
+}
+[data-theme="dark"] .card__translation[role="button"]:hover { background: #1c2d48; }
+
+/* ── Auto-refresh banner ───────────────────────────────────────── */
+.sb-refresh-banner {
+  position: fixed; top: 70px; left: 50%; transform: translateX(-50%);
+  z-index: 55; background: var(--brand-blue); color: #fff;
+  padding: 10px 22px; border-radius: 999px; font-size: 13px; font-weight: 600;
+  box-shadow: 0 4px 16px rgba(26,111,191,0.4);
+  cursor: pointer; animation: slideDown 0.3s ease;
+}
+@keyframes slideDown { from { opacity: 0; transform: translateX(-50%) translateY(-10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }

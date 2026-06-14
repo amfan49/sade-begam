@@ -110,15 +110,29 @@
       .then((r) => r.json())
       .then((data) => {
         const ul = document.getElementById("aboutFeeds");
+        // Group by region
+        const byRegion = {};
         (data.feeds || []).forEach((f) => {
-          const li = document.createElement("li");
-          li.className = "about-feed-item";
-          li.innerHTML = `<span class="about-feed-flag">${f.flag}</span>
-            <div>
-              <a class="about-feed-name" href="${f.homepage}" target="_blank" rel="noopener noreferrer">${f.name}</a>
-              <span class="about-feed-country">${f.country}</span>
-            </div>`;
-          ul.appendChild(li);
+          const r = f.region || "Other";
+          if (!byRegion[r]) byRegion[r] = [];
+          byRegion[r].push(f);
+        });
+        Object.entries(byRegion).forEach(([region, items]) => {
+          const header = document.createElement("li");
+          header.style.cssText = "font-weight:700;color:var(--brand-blue-deep);font-size:13px;text-transform:uppercase;letter-spacing:0.1em;padding:14px 0 4px;list-style:none;";
+          header.textContent = region;
+          ul.appendChild(header);
+          items.forEach((f) => {
+            const li = document.createElement("li");
+            li.className = "about-feed-item";
+            const twLink = f.twitter ? ` <a class="about-feed-tw" href="${f.twitter}" target="_blank" rel="noopener noreferrer" title="X/Twitter">𝕏</a>` : "";
+            li.innerHTML = `<span class="about-feed-flag">${f.flag}</span>
+              <div>
+                <a class="about-feed-name" href="${f.homepage}" target="_blank" rel="noopener noreferrer">${f.name}</a>${twLink}
+                <span class="about-feed-country">${f.country}</span>
+              </div>`;
+            ul.appendChild(li);
+          });
         });
       })
       .catch(() => {});

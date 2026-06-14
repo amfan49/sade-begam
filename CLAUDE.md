@@ -125,32 +125,35 @@ The hero section shows `#weekStrip` with: week number, date range, and **last up
 
 ### Automation (`.github/workflows/daily-update.yml`)
 
-Runs `node agent/collect.js` **three times a day** at **08:00, 14:00, and 20:00 Europe/London**. GitHub cron is UTC-only, so six crons fire (two per target hour) and a gate step skips any run where London hour ∉ {08, 14, 20} (DST-accurate). Commits `draft-week.json` only — no auto-publish.
+Two jobs, runs **every hour** + **on every push to main**:
+
+| Job | Trigger | What it does |
+|---|---|---|
+| `collect` | hourly schedule / manual | Runs `collect.js`, commits `draft-week.json` if changed, deploys only if new items found |
+| `deploy-on-push` | push to `main` | Deploys to Vercel immediately (e.g. when Amir approves and pushes `current-week.json`) |
+
+Client-side also polls `current-week.json` every **5 minutes** (`startAutoRefresh()` in `main.js`) and shows a blue banner if new items appear.
 
 ---
 
-## News sources (`agent/feeds.json`)
+## News sources (`agent/feeds.json` + `public/data/sources.json`)
 
-Active official RSS/Atom feeds (collector skips any that fail):
+**44 active RSS/Atom feeds** across 60 official primary sources. The collector skips any that fail — safe to add uncertain URLs. Sources are organized in 6 categories:
 
-| Organization | Country/Body | Region |
+| Category | Count | Examples |
 |---|---|---|
-| UN News | United Nations | International |
-| FCDO | United Kingdom | Europe |
-| IAEA | International | International |
-| Global Affairs Canada | Canada | North America |
-| EU External Action Service (EEAS) | European Union | Europe |
-| Council of the European Union | European Union | Europe |
-| UN Human Rights (OHCHR) | United Nations | International |
-| NATO News | NATO | International |
-| OSCE | OSCE | International |
-| French Ministry for Europe and Foreign Affairs | France | Europe |
-| German Federal Foreign Office | Germany | Europe |
-| US State Department | United States | North America |
+| Iran — Government | 18 | Khamenei.ir, President.ir, MFA Iran, AEOI, NIOC |
+| USA — Government | 7 | White House, State Dept, Treasury/OFAC, CENTCOM, Senate/House FRC |
+| Europe | 7 | FCDO, Germany AA, Bundeskanzler, France Diplomatie, EEAS, Council EU |
+| Middle East | 6 | Israel PM, Israeli MFA, Saudi MFA, UAE MFA, Israeli MFA Farsi |
+| International Bodies | 8 | UN News, IAEA, IAEA-DG, UN Security Council, OHCHR, NATO, OSCE, European Commission |
+| Think Tanks | 16 | WINEP, FDD, MEI, USIP, Crisis Group, Atlantic Council, CFR, Brookings, Carnegie, CSIS, RAND, Stimson, ECFR, Chatham House, SWP, DGAP, IISS, B&B, AGSIW, INSS |
 
-**When adding feeds:** only official government/intergovernmental RSS/Atom. No media. The collector skips feeds that fail, so new entries are safe to add.
+`public/data/sources.json` mirrors all 60 sources with `flag`, `name`, `country`, `region`, `homepage`, `twitter` fields. Grouped by region on the About page with Twitter/X links. Keep in sync with `agent/feeds.json`.
 
-`public/data/sources.json` mirrors these 12 feeds as a flat `feeds` array (flag, name, country, region, homepage) for display on the About page. Keep in sync with `agent/feeds.json` when adding new feeds.
+Each feed entry in `feeds.json` now has a `lang` field (e.g. `"fa"`, `"de"`, `"fr"`, `"en"`) used by `collect.js` to set `lang_original` on collected items.
+
+**When adding feeds:** only official government/intergovernmental/think-tank RSS/Atom. No media outlets. The collector skips failed feeds automatically.
 
 ---
 
@@ -225,6 +228,21 @@ When a user clicks a news card, a side-panel overlay opens showing the full item
 URL hash: `#item-id` is pushed when a detail opens (browser back button closes it). Clicking the backdrop or pressing Escape also closes it.
 
 Strings added to `i18n.js`: `closeDetail`, `viewSource` (both FA and EN).
+
+## Translation modal (`public/js/main.js` + `public/css/style.css`)
+
+A **lightweight centered modal** (distinct from the full detail overlay) opens when the user clicks the translation block inside a news card.
+
+- Shows: flag, country, org, date, full translation headline + excerpt, AI disclaimer, source button
+- HTML: `#trModal` (`.tr-modal`) + `#trModalBody` + `#trModalClose` in `index.html`
+- JS: `openTranslationModal(item)` / `closeTranslationModal()` / `initTranslationModal()`
+- Closes on: backdrop click, ✕ button, Escape key
+- Panel scales in (CSS `scale(0.96→1)`) for lightweight feel
+- i18n keys: `T.trModalTitle`, `T.trModalClose`, `T.trModalSource`, `T.trModalDisclaimer`
+
+## Auto-refresh (`public/js/main.js`)
+
+`startAutoRefresh()` runs on page load (index.html only). Polls `data/current-week.json` with `cache: "no-cache"` every **5 minutes**. If new items arrive, re-renders the feed and shows `#sbRefreshBanner` (a dismissible blue pill) for 5 seconds. i18n key: `T.autoRefreshNotice`.
 
 ---
 

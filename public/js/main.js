@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
   applyLanguageChrome();
   loadNews();
   initDetailOverlay();
+  initTranslationModal();
+  startAutoRefresh();
 });
 
 // ── Detail overlay ────────────────────────────────────────────────
@@ -250,7 +252,16 @@ function renderCard(item) {
   card.className = "card";
   card.addEventListener("click", (e) => {
     if (e.target.closest(".card__source")) return;
+    if (e.target.closest(".card__translation")) {
+      openTranslationModal(item);
+      return;
+    }
     openDetail(item);
+  });
+  card.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && e.target.closest(".card__translation")) {
+      openTranslationModal(item);
+    }
   });
 
   const tr = item.translations ? item.translations[SB_LANG] : null;
@@ -278,10 +289,10 @@ function renderCard(item) {
 
       ${
         showTr
-          ? `<div class="card__translation">
-               <span class="card__quote-label">${T.translationLabel}</span>
+          ? `<div class="card__translation" role="button" tabindex="0" title="${T.trModalTitle}" aria-label="${T.trModalTitle}">
+               <span class="card__quote-label">${T.translationLabel} ↗</span>
                <h4 class="card__headline-tr">${tr.headline}</h4>
-               <p>${tr.excerpt || ""}</p>
+               <p>${tr.excerpt ? tr.excerpt.slice(0, 200) + (tr.excerpt.length > 200 ? "…" : "") : ""}</p>
                <p class="card__disclaimer"><small>${T.translationDisclaimer}</small></p>
              </div>`
           : ""
@@ -298,4 +309,96 @@ function renderCard(item) {
 function setText(id, text) {
   const el = document.getElementById(id);
   if (el) el.textContent = text;
+}
+
+// ── Auto-refresh: poll current-week.json every 5 minutes ─────────
+function startAutoRefresh() {
+  const INTERVAL = 5 * 60 * 1000;
+  setInterval(async () => {
+    try {
+      const res = await fetch("data/current-week.json", { cache: "no-cache" });
+      const data = await res.json();
+      try { localStorage.setItem(NEWS_CACHE_KEY, JSON.stringify({ at: Date.now(), data })); } catch (_) {}
+      const prevCount = ALL_ITEMS.length;
+      renderNews(data);
+      if (data.items && data.items.length > prevCount) {
+        showRefreshBanner();
+      }
+    } catch (_) {}
+  }, INTERVAL);
+}
+
+function showRefreshBanner() {
+  let banner = document.getElementById("sbRefreshBanner");
+  if (!banner) {
+    banner = document.createElement("div");
+    banner.id = "sbRefreshBanner";
+    banner.className = "sb-refresh-banner";
+    banner.addEventListener("click", () => banner.remove());
+    document.body.appendChild(banner);
+  }
+  banner.textContent = T.autoRefreshNotice || "News updated.";
+  setTimeout(() => banner && banner.remove(), 5000);
+}
+
+// ── Translation modal ─────────────────────────────────────────────
+// Lightweight popup: click the translation snippet on a card to see
+// the full translation in a centered modal (memory-light, quick to close).
+
+function initTranslationModal() {
+  const modal = document.getElementById("trModal");
+  if (!modal) return;
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeTranslationModal();
+  });
+  const closeBtn = document.getElementById("trModalClose");
+  if (closeBtn) closeBtn.addEventListener("click", closeTranslationModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("open")) closeTranslationModal();
+  });
+}
+
+function openTranslationModal(item) {
+  const modal = document.getElementById("trModal");
+  const body = document.getElementById("trModalBody");
+  if (!modal || !body) return;
+
+  const tr = item.translations ? item.translations[SB_LANG] : null;
+  const hasFullTr = tr && tr.headline;
+
+  body.innerHTML = `
+    <div class="tr-modal__header">
+      <span class="tr-modal__flag">${item.flag || "🌍"}</span>
+      <div>
+        <div class="tr-modal__country">${item.country}</div>
+        <div class="tr-modal__org">${item.source_organization}</div>
+        <div class="tr-modal__date">${sbBothDates(item.date)}</div>
+      </div>
+    </div>
+    <h2 class="tr-modal__headline">${hasFullTr ? tr.headline : item.headline}</h2>
+    <p class="tr-modal__excerpt">${hasFullTr ? (tr.excerpt || "") : (item.excerpt || "")}</p>
+    <p class="tr-modal__disclaimer"><small>${T.trModalDisclaimer}</small></p>
+    <a class="tr-modal__source-btn" href="${item.source_url}" target="_blank" rel="noopener noreferrer">
+      🔗 ${T.trModalSource}
+    </a>
+  `;
+
+  setText("trModalTitle", T.trModalTitle);
+  setText("trModalClose", T.trModalClose);
+
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeTranslationModal() {
+  const modal = document.getElementById("trModal");
+  if (!modal) return;
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  setTimeout(() => {
+    const body = document.getElementById("trModalBody");
+    if (body) body.innerHTML = "";
+  }, 220);
 }

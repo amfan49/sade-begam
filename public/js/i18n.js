@@ -65,6 +65,11 @@ const STRINGS = {
       ttsNotSupported: "متأسفانه مرورگر شما از خواندن متن پشتیبانی نمی‌کند.",
       sttNotSupported: "ورودی صوتی در این مرورگر پشتیبانی نمی‌شود. لطفاً از Chrome استفاده کنید."
     },
+    trModalTitle: "ترجمه‌ی فارسی",
+    trModalClose: "بستن ×",
+    trModalSource: "مشاهده منبع اصلی ←",
+    trModalDisclaimer: "این ترجمه توسط هوش مصنوعی تولید شده است. برای اطلاعات دقیق، به منبع اصلی مراجعه کنید.",
+    autoRefreshNotice: "اخبار هر ۵ دقیقه به‌روز می‌شوند.",
     translationDisclaimer: "این ترجمه توسط هوش مصنوعی تولید شده است. این وب‌سایت تولید کننده محتوای خبری نیست؛ این محتوا را فقط از منابع رسمی جمع‌آوری می‌کند. این وب‌سایت هیچ مسئولیتی در قبال دقت یا محتوای منابع ندارد.",
     rights: "© ۲۰۲۶ ساده بگم. همه‌ی حقوق محفوظ است.",
     about: {
@@ -186,6 +191,11 @@ const STRINGS = {
       ttsNotSupported: "Sorry, your browser does not support text-to-speech.",
       sttNotSupported: "Voice input is not supported in this browser. Please use Chrome."
     },
+    trModalTitle: "Persian Translation",
+    trModalClose: "Close ×",
+    trModalSource: "View Original Source →",
+    trModalDisclaimer: "AI-generated translation. For accurate information, refer to the original source.",
+    autoRefreshNotice: "News refreshes every 5 minutes.",
     translationDisclaimer: "This translation is AI-generated. This website is not the producer of the news content; it only aggregates news from official sources. This website bears no responsibility for the accuracy or content of the sources.",
     rights: "© 2026 Sade Begam. All rights reserved.",
     about: {

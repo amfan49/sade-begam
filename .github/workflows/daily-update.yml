@@ -1,72 +1,78 @@
-name: News Draft (3x Daily)
+name: News Collector & Deploy
 
-# Collects candidate official news into a DRAFT file three times a day for
-# human review. It does NOT publish automatically — you review draft-week.json
-# and move approved items into current-week.json (and archive.json).
-# Free: GitHub Actions, no paid APIs.
+# Collects candidate official news into a DRAFT file every hour for
+# human review. It does NOT auto-publish — Amir reviews draft-week.json
+# and moves approved items into current-week.json manually.
 #
-# Schedule: 08:00, 14:00, 20:00 Europe/London, year-round.
-# GitHub cron is UTC-only and has no DST awareness, so we fire at both UTC
-# offsets for each target hour and let a gate step skip runs that fall outside
-# the three target London hours (08, 14, 20).
+# Deploy to Vercel also runs:
+#   • on every push to main (e.g. when Amir approves and pushes new items)
+#   • after each collection run that produced new draft items
+#
+# Free: GitHub Actions public repo = unlimited minutes.
+# Private repo estimate: ~1h/day for collect + occasional deploys < 2000 min/month.
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # 08:00 London during BST (summer, UTC+1)
-    - cron: "0 8 * * *"   # 08:00 London during GMT (winter, UTC+0)
-    - cron: "0 13 * * *"  # 14:00 London during BST
-    - cron: "0 14 * * *"  # 14:00 London during GMT
-    - cron: "0 19 * * *"  # 20:00 London during BST
-    - cron: "0 20 * * *"  # 20:00 London during GMT
-  workflow_dispatch: {}     # lets you run it manually with one click
+    - cron: "0 * * * *"   # every hour, every day
+  push:
+    branches: [main]
+  workflow_dispatch: {}
 
 permissions:
   contents: write
 
 jobs:
   collect:
+    # Only run the collection job on schedule or manual dispatch — not on push
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
-      - name: Only continue at 08:00, 14:00, or 20:00 London time
-        id: gate
-        run: |
-          HOUR=$(TZ="Europe/London" date +%H)
-          echo "London hour: $HOUR"
-          if [ "${{ github.event_name }}" != "workflow_dispatch" ] && \
-             [ "$HOUR" != "08" ] && [ "$HOUR" != "14" ] && [ "$HOUR" != "20" ]; then
-            echo "Not a target hour in London — skipping this run."
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          fi
+      - uses: actions/checkout@v4
 
-      - if: steps.gate.outputs.skip != 'true'
-        uses: actions/checkout@v4
-
-      - if: steps.gate.outputs.skip != 'true'
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
 
       - name: Collect candidate news (last 1 day)
-        if: steps.gate.outputs.skip != 'true'
         env:
           DAYS: "1"
         run: node agent/collect.js
 
-      - name: Commit the draft if it changed
-        if: steps.gate.outputs.skip != 'true'
+      - name: Commit draft if changed
+        id: commit
         run: |
           git config user.name "Sade Begam Bot"
           git config user.email "bot@users.noreply.github.com"
           git add public/data/draft-week.json
           if git diff --staged --quiet; then
-            echo "No changes."
+            echo "No new draft items."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "News draft — $(TZ='Europe/London' date '+%Y-%m-%d %H:%M')"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Deploy to Vercel (production)
-        if: steps.gate.outputs.skip != 'true'
+      - name: Deploy to Vercel (only when new draft items found)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: team_gySo3Th0dmEG0VY22J0UmLRR
+          VERCEL_PROJECT_ID: prj_oA3A64H6PtWXzwOwqXr27kMdqe4u
+        run: |
+          npm install -g vercel@latest --silent
+          vercel --prod --yes --token "$VERCEL_TOKEN"
+
+  deploy-on-push:
+    # Deploy immediately whenever Amir pushes changes (e.g. approving current-week.json)
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: team_gySo3Th0dmEG0VY22J0UmLRR

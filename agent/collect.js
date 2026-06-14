@@ -97,7 +97,7 @@ async function main() {
           source_url: it.link || f.homepage,
           is_official: true,
           needs_review: true,
-          lang_original: "en",
+          lang_original: f.lang || "en",
           headline: it.title,
           quote_original: "[REVIEW: paste the exact official quote here]",
           excerpt: it.desc.slice(0, 300),
