@@ -50,7 +50,7 @@ jobs:
             echo "No new draft items."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "News draft — $(TZ='Europe/London' date '+%Y-%m-%d %H:%M')"
+            git commit -m "News draft — $(TZ='Europe/London' date '+%Y-%m-%d %H:%M') [vercel skip]"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
