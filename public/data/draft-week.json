@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-15T16:29:29.522Z",
+  "generated_at": "2026-06-15T23:27:34.917Z",
   "window_days": 1,
   "keyword": "iran",
-  "total": 5,
+  "total": 10,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
@@ -36,6 +36,126 @@
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/15/u-s-iran-outline-terms-of-war-ending-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S., Iran outline terms of war-ending deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S., Iran outline terms of war-ending deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/15/is-lebanon-part-of-the-u-s-iran-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Is Lebanon part of the U.S.-Iran deal?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Is Lebanon part of the U.S.-Iran deal? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/15/oil-prices-fall-and-shares-jump-after-us-iran-deal-announced/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Oil prices fall and shares jump after US-Iran deal announced",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Oil prices fall and shares jump after US-Iran deal announced appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/15/lack-of-details-on-trumps-great-iran-deal-prompts-criticism-from-all-sides/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Lack Of Details On Trump’s ‘Great’ Iran Deal Prompts Criticism From All Sides",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Lack Of Details On Trump’s ‘Great’ Iran Deal Prompts Criticism From All Sides appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-006",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/15/trump-meeting-g7-leaders-with-iran-deal-secured/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump meeting G7 leaders with Iran deal secured",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump meeting G7 leaders with Iran deal secured appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-007",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
       "source_url": "https://www.fdd.org/analysis/2026/06/15/idf-confirms-killing-hezbollah-commander-responsible-for-creating-iran-backed-militias-in-iraq/",
       "is_official": true,
       "needs_review": true,
@@ -54,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-008",
       "date": "2026-06-15",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-009",
       "date": "2026-06-15",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-010",
       "date": "2026-06-15",
       "country": "United States",
       "region": "Think Tanks",
