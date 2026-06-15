@@ -1,8 +1,129 @@
 {
-  "generated_at": "2026-06-14T20:51:11.042Z",
+  "generated_at": "2026-06-15T16:29:29.522Z",
   "window_days": 1,
   "keyword": "iran",
-  "total": 0,
+  "total": 5,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
-  "items": []
+  "items": [
+    {
+      "id": "draft-001",
+      "date": "2026-06-15",
+      "country": "European Union",
+      "region": "International Bodies",
+      "flag": "🇪🇺",
+      "source_organization": "European Commission",
+      "source_url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_1359",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Statement by President von der Leyen on the agreement between the United States and Iran",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "European Commission Statement Brussels, 15 Jun 2026 I welcome the agreement reached between the US and Iran, following sustained diplomatic efforts by several partners. The priority now is its swift and full impl...",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/15/idf-confirms-killing-hezbollah-commander-responsible-for-creating-iran-backed-militias-in-iraq/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "IDF confirms killing Hezbollah commander responsible for creating Iran-backed militias in Iraq",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The Israel Defense Forces (IDF) confirmed that it killed Ali Mousa Daqduq, a top Hezbollah military leader and a commander in the Radwan Unit, the group responsible for infiltrating the Israeli border.... The post IDF confirms killing Hezbollah commander responsible for creating Iran-backed militias",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/15/irans-internet-is-back-until-it-isnt/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran’s internet is back, until it isn’t",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Iran’s internet access has partially returned after nearly 90 days, the longest blackout in the country’s history. Yet authorities continue to throttle the available bandwidth, with Iranians reporting... The post Iran’s internet is back, until it isn’t appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/insight-impact/in-the-news/charai-for-the-jerusalem-strategic-tribune-trumps-iran-deal-a-strategic-opening/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Charai for the Jerusalem Strategic Tribune: Trump&#8217;s Iran Deal: A Strategic Opening",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Charai for the Jerusalem Strategic Tribune: Trump&#8217;s Iran Deal: A Strategic Opening appeared first on Atlantic Council.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
+      "date": "2026-06-15",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/dispatches/experts-react-the-us-and-iran-just-announced-an-interim-peace-deal-heres-what-we-know-so-far/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Experts react: The US and Iran just announced an interim peace deal. Here’s what we know so far.",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "As details emerge, our experts are sharing their insights on what we know—and still don’t know—about the deal, and what to expect next. The post Experts react: The US and Iran just announced an interim peace deal. Here’s what we know so far. appeared first on Atlantic Council.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    }
+  ]
 }
