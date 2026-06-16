@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:09.585Z",
+  "published_at": "2026-06-16T10:56:12.097Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -625,6 +625,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "How Iran war is giving China an opening in Gulf drone market",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-034",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-pivots-on-strikes-while-dangling-iran-deal-testing-whether-tehran-blinks/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump pivots on strikes while dangling Iran deal, testing whether Tehran blinks",
       "excerpt": "",
       "translations": {
         "en": null,
