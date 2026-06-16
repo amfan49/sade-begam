@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:47.273Z",
+  "published_at": "2026-06-16T10:55:48.649Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -410,6 +410,24 @@
       "lang_original": "en",
       "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
       "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-022",
+      "date": "2026-06-09",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
+      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
       "translations": {
         "en": null,
         "fa": null
