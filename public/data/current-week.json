@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:01:59.239Z",
+  "published_at": "2026-06-16T11:02:01.337Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1915,6 +1915,27 @@
         "fa": {
           "headline": "از شکاف تا شکاف عمیق: منافع متضاد آمریکا و اسرائیل در جنگ با ایران",
           "excerpt": "اختلاف نظر میان بنیامین نتانیاهو، نخست وزیر اسرائیل، و دونالد ترامپ، رئیس جمهور آمریکا که زمانی اندک بود، در هفته‌های اخیر عمیق‌تر شده است."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-099",
+      "date": "2026-06-09",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/blogs/energysource/us-energy-secretary-chris-wright-it-will-take-many-months-to-get-back-to-normal-after-this-energy-crisis/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after this energy crisis",
+      "excerpt": "At the tenth annual Global Energy Forum, Wright said that “the price” of this crisis “will be wildly worth paying,” if it means that Iran eventually ceases to be “a constant threat to its neighbors.\" The post US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after th",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "کریس رایت، وزیر انرژی آمریکا، می‌گوید بازگشت به حالت عادی پس از این بحران انرژی «ماه‌ها» طول خواهد کشید.",
+          "excerpt": "رایت در دهمین مجمع جهانی انرژی سالانه گفت که «بهای» این بحران «ارزش پرداخت فوق‌العاده‌ای خواهد داشت»، اگر به این معنی باشد که ایران در نهایت دیگر «تهدیدی دائمی برای همسایگانش» نباشد. کریس رایت، وزیر انرژی ایالات متحده، پس از ...: «ماه‌های زیادی» طول خواهد کشید تا پس از ... به حالت عادی برگردیم."
         }
       },
       "topics": []
