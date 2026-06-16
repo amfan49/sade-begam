@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:50.165Z",
+  "published_at": "2026-06-16T10:56:51.702Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -968,6 +968,24 @@
       "lang_original": "en",
       "headline": "US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after this energy crisis",
       "excerpt": "At the tenth annual Global Energy Forum, Wright said that “the price” of this crisis “will be wildly worth paying,” if it means that Iran eventually ceases to be “a constant threat to its neighbors.\" The post US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after th",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-053",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/is-a-u-s-iran-deal-within-reach-six-key-issues-that-could-shape-a-ceasefire",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Is a U.S.-Iran Deal Within Reach? Six Key Issues That Could Shape a Ceasefire",
+      "excerpt": "The United States and Iran are reportedly close to a long-awaited agreement, but it remains to be seen whether it resolves their major differences—including nuclear and missile programs, the Strait of Hormuz, and Israel’s war with Iranian proxies.",
       "translations": {
         "en": null,
         "fa": null
