@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:38.589Z",
+  "published_at": "2026-06-16T10:56:40.969Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -860,6 +860,24 @@
       "lang_original": "en",
       "headline": "U.S. hits 20 targets inside Iran, Tehran threatens to retaliate",
       "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-047",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-conducts-strikes-on-iran-after-helicopter-downing/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S. conducts strikes on Iran after helicopter downing",
+      "excerpt": "INTERVIEW: FULL LIVE ANALYSIS OF THE U.S ATTACK ON IRAN, AND IRAN’S RETALIATIONW/ Admiral Mark Montgomery (@MarkCMontgomery), Fmr Army Officer Stefano Ritondale (@artoriastech), and @realazadeh pic.twitter.com/YaIsFqIllW&#8212;... The post U.S. conducts strikes on Iran after helicopter downing appea",
       "translations": {
         "en": null,
         "fa": null
