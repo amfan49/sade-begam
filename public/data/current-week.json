@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:30:42.516Z",
+  "published_at": "2026-06-16T10:31:18.743Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -151,6 +151,27 @@
         "fa": {
           "headline": "خاورمیانه زنده: دبیرکل سازمان ملل متحد هشدار داد که دیپلماسی در کانون توجه است، زیرا تشدید تنش‌ها «در مرزها و قاره‌ها طنین‌انداز می‌شود».",
           "excerpt": "تقریباً چهار ماه پس از وقوع آخرین بحران خاورمیانه و با وجود آتش‌بس شکننده بین ایالات متحده و ایران، تنش‌ها همچنان در سراسر منطقه و فراتر از آن طنین‌انداز است. شورای امنیت سازمان ملل متحد روز سه‌شنبه بحثی در سطح بالا در مورد پیشبرد راه‌حل‌های سیاسی در خاورمیانه برگزار کرد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-008",
+      "date": "2026-06-11",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-global-challenges-der-irankrieg-veraendert-die-golfregion-europa-muss-handeln/100230194.html",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
+      "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen, politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes, Ex-UN-Untergeneralsekretär, zeigt, wo die Anknüpfungspunkte liegen.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
+          "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen، politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes، سابق سازمان ملل متحد Untergeneralsekretär، zeigt، wo die Anknüpfungspunkte liegen."
         }
       },
       "topics": []
