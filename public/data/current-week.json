@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:17.084Z",
+  "published_at": "2026-06-16T10:56:19.635Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -680,6 +680,24 @@
       "lang_original": "en",
       "headline": "Iraq’s prime minister prepares US visit amid Iran threats and militia focus",
       "excerpt": "Iraqi Prime Minister Ali al Zaidi is preparing for an upcoming trip to Washington, DC, Iraqi media outlets recently reported. The prime minister has been working since his May appointment... The post Iraq’s prime minister prepares US visit amid Iran threats and militia focus appe",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-037",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/the-u-s-retaliatory-strikes-on-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The U.S. retaliatory strikes on Iran",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
