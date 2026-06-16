@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:00:55.434Z",
+  "published_at": "2026-06-16T11:00:57.396Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1411,6 +1411,27 @@
         "fa": {
           "headline": "حمله آمریکا به تأسیسات آبی ایران و حمله اسرائیل به جنوب لبنان",
           "excerpt": "مصاحبه: حمله آمریکا به تأسیسات آبی ایران، حمله اسرائیل به جنوب لبنان – با جاناتان کونریکوس pic.twitter.com/FUpxHOym84— ماریو نوفال (@MarioNawfal) 11 ژوئن 2026 ..."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-075",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-announces-fresh-us-strikes-on-iran-as-cease-fire-hangs-in-balance/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump Announces Fresh US Strikes On Iran As Cease-Fire Hangs In Balance",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ترامپ در حالی که آتش‌بس در هاله‌ای از ابهام است، حملات جدید آمریکا به ایران را اعلام کرد",
+          "excerpt": ""
         }
       },
       "topics": []
