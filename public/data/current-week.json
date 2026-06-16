@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:48.649Z",
+  "published_at": "2026-06-16T10:55:51.071Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -428,6 +428,24 @@
       "lang_original": "en",
       "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
       "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-023",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/12/irans-nuclear-enrichment-progress-2008-2025-and-beyond/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran's Nuclear Enrichment Progress: 2008-2025 and Beyond",
+      "excerpt": "...",
       "translations": {
         "en": null,
         "fa": null
