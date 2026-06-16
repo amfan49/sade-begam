@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:56.427Z",
+  "published_at": "2026-06-16T10:55:57.785Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -499,6 +499,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "Israel’s reaction to a potential Iran deal",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-027",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/trump-backs-off-iran-strikes-claims-agreement-is-near/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump backs off Iran strikes, claims agreement is near",
       "excerpt": "",
       "translations": {
         "en": null,
