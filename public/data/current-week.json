@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:51:17.123Z",
+  "published_at": "2026-06-16T10:52:23.718Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -266,6 +266,24 @@
       "lang_original": "en",
       "headline": "Trump's 180 degree turn on Iran",
       "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-014",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/dispatches/its-not-a-deal-but-trumps-memorandum-with-iran-can-be-the-start-of-something-bigger/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "It's not a 'deal.’ But Trump's memorandum with Iran can be the start of something bigger.",
+      "excerpt": "What appears to be emerging now is a rough outline and high-level explanation of the concepts that an eventual deal could include.",
       "translations": {
         "en": null,
         "fa": null
