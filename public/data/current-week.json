@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:00:53.340Z",
+  "published_at": "2026-06-16T11:00:55.434Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1390,6 +1390,27 @@
         "fa": {
           "headline": "نگرانی واقعی «تشدید تصادفی» تنش بین ایالات متحده و ایران است",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-074",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/u-s-attacks-irans-water-facilities-israel-attacks-southern-lebanon/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S. attacks Iran’s water facilities, Israel attacks southern Lebanon",
+      "excerpt": "INTERVIEW: U.S. ATTACK ON IRAN’S WATER FACILITIES, ISRAEL ATTACKS SOUTHERN LEBANON – w/ Jonathan Conricus pic.twitter.com/FUpxHOym84&#8212; Mario Nawfal (@MarioNawfal) June 11, 2026 ...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "حمله آمریکا به تأسیسات آبی ایران و حمله اسرائیل به جنوب لبنان",
+          "excerpt": "مصاحبه: حمله آمریکا به تأسیسات آبی ایران، حمله اسرائیل به جنوب لبنان – با جاناتان کونریکوس pic.twitter.com/FUpxHOym84— ماریو نوفال (@MarioNawfal) 11 ژوئن 2026 ..."
         }
       },
       "topics": []
