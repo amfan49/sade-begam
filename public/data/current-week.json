@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:48.736Z",
+  "published_at": "2026-06-16T10:56:50.165Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -950,6 +950,24 @@
       "lang_original": "en",
       "headline": "From a gap to a chasm: Diverging US and Israeli interests in the war with Iran",
       "excerpt": "The once-modest gap between Israeli Prime Minister Benjamin Netanyahu and US President Donald Trump has widened in recent weeks.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-052",
+      "date": "2026-06-09",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/blogs/energysource/us-energy-secretary-chris-wright-it-will-take-many-months-to-get-back-to-normal-after-this-energy-crisis/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after this energy crisis",
+      "excerpt": "At the tenth annual Global Energy Forum, Wright said that “the price” of this crisis “will be wildly worth paying,” if it means that Iran eventually ceases to be “a constant threat to its neighbors.\" The post US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after th",
       "translations": {
         "en": null,
         "fa": null
