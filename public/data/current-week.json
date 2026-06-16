@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:28.935Z",
+  "published_at": "2026-06-16T10:56:33.231Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -787,6 +787,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "U.S. hits Iran with more strikes, Trump threatens more",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-043",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/10/trump-strikes-iran-to-maintain-credibility/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump strikes Iran to maintain credibility",
       "excerpt": "",
       "translations": {
         "en": null,
