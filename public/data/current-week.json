@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:02:10.925Z",
+  "published_at": "2026-06-16T11:02:14.035Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1999,6 +1999,27 @@
         "fa": {
           "headline": "ترامپ از تهدید خود برای حمله به یک مرکز نفتی حیاتی ایران عقب‌نشینی کرد",
           "excerpt": "این جزیره کوچک در خلیج فارس به عنوان ترمینال اصلی نفت ایران عمل می‌کند و تقریباً ۹۰ درصد از صادرات نفت خام کشور از طریق آن انجام می‌شود. اخیراً، این جزیره به یک هدف با ارزش در جنگ آمریکا و اسرائیل علیه ایران تبدیل شده است."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-103",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/macrons-agenda-meets-trumps-at-the-g7-summit",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Macron’s Agenda Meets Trump’s at the G7 Summit",
+      "excerpt": "Repercussions from the Iran war and the growing economic challenge posed by China are expected to dominate the annual meeting of the Group of Seven (G7) economies in France, but the attendance of President Donald Trump adds uncertainty to the summit’s outcome.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "دستور کار مکرون در اجلاس گروه هفت با دستور کار ترامپ تلاقی می‌کند",
+          "excerpt": "انتظار می‌رود پیامدهای جنگ ایران و چالش اقتصادی رو به رشد چین، بر نشست سالانه گروه هفت (G7) در فرانسه سایه افکند، اما حضور دونالد ترامپ، رئیس جمهور آمریکا، بر عدم قطعیت در نتیجه این اجلاس می‌افزاید."
         }
       },
       "topics": []
