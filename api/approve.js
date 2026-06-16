@@ -20,6 +20,11 @@ module.exports = async (req, res) => {
     return res.status(403).send(page("403 Forbidden", "توکن اشتباه است.", "#e74c3c"));
   }
 
+  // Ping endpoint — used by admin page to validate token without side effects
+  if (id === "__ping__") {
+    return res.status(200).json({ ok: true });
+  }
+
   if (!id || (!id.startsWith("draft-") && id !== "all")) {
     return res.status(400).send(page("400 Bad Request", "شناسه خبر نامعتبر است.", "#e74c3c"));
   }
@@ -40,6 +45,9 @@ module.exports = async (req, res) => {
     );
 
     if (status === 204) {
+      if (req.query.format === "json") {
+        return res.status(200).json({ ok: true, id });
+      }
       return res.status(200).send(
         page(
           "✅ در حال انتشار",

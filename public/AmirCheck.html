@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sade Begam — Admin</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #F0F2F5;
+      color: #1C2233;
+      min-height: 100vh;
+    }
+
+    /* ── Login ── */
+    #loginScreen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .login-box {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: 0 4px 32px rgba(0,0,0,.12);
+      text-align: center;
+    }
+    .login-box h1 { font-size: 22px; color: #1A6FBF; margin-bottom: 6px; }
+    .login-box p  { font-size: 13px; color: #888; margin-bottom: 28px; }
+    .login-box input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #E0E4EC;
+      border-radius: 10px;
+      font-size: 15px;
+      outline: none;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+      transition: border-color .2s;
+    }
+    .login-box input:focus { border-color: #1A6FBF; }
+    .btn-primary {
+      width: 100%;
+      padding: 12px;
+      background: #1A6FBF;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-primary:hover { background: #155fa0; }
+    .btn-primary:disabled { background: #aaa; cursor: default; }
+    #loginError { color: #e74c3c; font-size: 13px; margin-top: 10px; min-height: 18px; }
+
+    /* ── Dashboard ── */
+    #dashboard { display: none; }
+
+    .top-bar {
+      background: #1A6FBF;
+      color: #fff;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    }
+    .top-bar h1 { font-size: 18px; flex: 1; }
+    .top-bar .count {
+      background: rgba(255,255,255,.2);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+    .btn-approve-all {
+      background: #FF6B35;
+      color: #fff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-approve-all:hover { background: #e05a28; }
+    .btn-approve-all:disabled { background: #aaa; cursor: default; }
+    .btn-logout {
+      background: rgba(255,255,255,.15);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.3);
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .items-wrap { padding: 24px; max-width: 820px; margin: 0 auto; }
+    .empty-msg { text-align: center; color: #888; padding: 60px 0; font-size: 16px; }
+
+    /* ── News card ── */
+    .item-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.07);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      transition: opacity .4s, transform .4s;
+    }
+    .item-card.done   { opacity: .35; pointer-events: none; }
+    .item-card.fading { opacity: 0; transform: translateY(-8px); }
+
+    .card-flag { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+
+    .card-body { flex: 1; min-width: 0; }
+    .card-meta { font-size: 11px; color: #999; margin-bottom: 5px; }
+    .card-meta strong { color: #555; }
+    .card-id   { background: #EEF4FF; color: #1A6FBF; border-radius: 4px;
+                 padding: 1px 6px; font-size: 11px; font-weight: 700; margin-right: 6px; }
+    .card-headline {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1C2233;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+    .card-excerpt { font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 10px; }
+
+    .card-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .btn-publish {
+      background: #1A6FBF;
+      color: #fff;
+      border: none;
+      padding: 7px 16px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-publish:hover   { background: #155fa0; }
+    .btn-publish:disabled { background: #aaa; cursor: default; }
+    .btn-skip {
+      background: none;
+      color: #aaa;
+      border: 1px solid #ddd;
+      padding: 7px 14px;
+      border-radius: 7px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-skip:hover { color: #e74c3c; border-color: #e74c3c; }
+    .card-source {
+      color: #1A6FBF;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    .card-source:hover { text-decoration: underline; }
+    .card-status { font-size: 12px; font-weight: 600; }
+    .card-status.ok  { color: #27ae60; }
+    .card-status.err { color: #e74c3c; }
+  </style>
+</head>
+<body>
+
+<!-- ── Login ─────────────────────────────────── -->
+<div id="loginScreen">
+  <div class="login-box">
+    <h1>Sade Begam Admin</h1>
+    <p>Bitte Admin-Passwort eingeben</p>
+    <input type="password" id="tokenInput" placeholder="••••••••••••"
+           onkeydown="if(event.key==='Enter') login()">
+    <button class="btn-primary" id="loginBtn" onclick="login()">Anmelden</button>
+    <div id="loginError"></div>
+  </div>
+</div>
+
+<!-- ── Dashboard ─────────────────────────────── -->
+<div id="dashboard">
+  <div class="top-bar">
+    <h1>📰 Sade Begam Admin</h1>
+    <span class="count" id="topCount"></span>
+    <button class="btn-approve-all" id="approveAllBtn" onclick="approveAll()">⚡ Alle veröffentlichen</button>
+    <button class="btn-logout" onclick="logout()">Abmelden</button>
+  </div>
+  <div class="items-wrap" id="itemsWrap"></div>
+</div>
+
+<script>
+const API = "/api/approve";
+let TOKEN = "";
+let ITEMS = [];
+
+// ── Startup ──────────────────────────────────────
+window.addEventListener("DOMContentLoaded", () => {
+  const saved = localStorage.getItem("sb_admin_token");
+  if (saved) { TOKEN = saved; verifyAndLoad(); }
+});
+
+// ── Login ─────────────────────────────────────────
+async function login() {
+  const input = document.getElementById("tokenInput");
+  const btn   = document.getElementById("loginBtn");
+  const err   = document.getElementById("loginError");
+  TOKEN = input.value.trim();
+  if (!TOKEN) return;
+
+  btn.disabled = true;
+  btn.textContent = "Prüfe…";
+  err.textContent = "";
+
+  const ok = await pingToken(TOKEN);
+  if (ok) {
+    localStorage.setItem("sb_admin_token", TOKEN);
+    await loadDashboard();
+  } else {
+    err.textContent = "Falsches Passwort.";
+    btn.disabled = false;
+    btn.textContent = "Anmelden";
+    TOKEN = "";
+  }
+}
+
+async function pingToken(t) {
+  try {
+    const r = await fetch(`${API}?token=${encodeURIComponent(t)}&id=__ping__`);
+    return r.status === 200;
+  } catch { return false; }
+}
+
+// ── Logout ────────────────────────────────────────
+function logout() {
+  localStorage.removeItem("sb_admin_token");
+  TOKEN = "";
+  ITEMS = [];
+  document.getElementById("dashboard").style.display = "none";
+  document.getElementById("loginScreen").style.display = "flex";
+  document.getElementById("tokenInput").value = "";
+}
+
+// ── Load draft items ──────────────────────────────
+async function verifyAndLoad() {
+  const ok = await pingToken(TOKEN);
+  if (!ok) { logout(); return; }
+  await loadDashboard();
+}
+
+async function loadDashboard() {
+  document.getElementById("loginScreen").style.display = "none";
+  document.getElementById("dashboard").style.display = "block";
+
+  const wrap = document.getElementById("itemsWrap");
+  wrap.innerHTML = "<p class='empty-msg'>Lade…</p>";
+
+  try {
+    const r = await fetch("data/draft-week.json?t=" + Date.now());
+    const data = await r.json();
+    ITEMS = data.items || [];
+  } catch (e) {
+    wrap.innerHTML = "<p class='empty-msg'>Fehler beim Laden der Warteliste.</p>";
+    return;
+  }
+
+  renderItems();
+}
+
+// ── Render ────────────────────────────────────────
+function renderItems() {
+  const wrap = document.getElementById("itemsWrap");
+  const count = document.getElementById("topCount");
+  const allBtn = document.getElementById("approveAllBtn");
+
+  if (!ITEMS.length) {
+    wrap.innerHTML = "<p class='empty-msg'>✓ Keine Nachrichten in der Warteliste.</p>";
+    count.textContent = "0 Nachrichten";
+    allBtn.disabled = true;
+    return;
+  }
+
+  count.textContent = ITEMS.length + " Nachrichten";
+  allBtn.disabled = false;
+
+  wrap.innerHTML = "";
+  ITEMS.forEach((item, i) => {
+    const card = document.createElement("div");
+    card.className = "item-card";
+    card.id = "card-" + item.id;
+
+    card.innerHTML = `
+      <div class="card-flag">${item.flag || "🏳️"}</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-id">${item.id}</span>
+          <strong>${item.source_organization}</strong> · ${item.country} · ${item.date}
+        </div>
+        <div class="card-headline">${item.headline || ""}</div>
+        <div class="card-excerpt">${(item.excerpt || "").slice(0, 220)}${(item.excerpt||"").length > 220 ? "…" : ""}</div>
+        <div class="card-actions">
+          <button class="btn-publish" id="pub-${item.id}" onclick="approveOne('${item.id}')">
+            ✅ Veröffentlichen
+          </button>
+          <button class="btn-skip" onclick="skipCard('${item.id}')">Überspringen</button>
+          <a class="card-source" href="${item.source_url}" target="_blank" rel="noopener">🔗 Quelle</a>
+          <span class="card-status" id="status-${item.id}"></span>
+        </div>
+      </div>`;
+    wrap.appendChild(card);
+  });
+}
+
+// ── Approve one ───────────────────────────────────
+async function approveOne(id) {
+  const btn = document.getElementById("pub-" + id);
+  const status = document.getElementById("status-" + id);
+
+  btn.disabled = true;
+  btn.textContent = "Wird veröffentlicht…";
+  status.textContent = "";
+
+  try {
+    const r = await fetch(`${API}?token=${encodeURIComponent(TOKEN)}&id=${encodeURIComponent(id)}&format=json`);
+    if (r.status === 200 || r.status === 202) {
+      status.className = "card-status ok";
+      status.textContent = "✓ Veröffentlicht";
+      fadeCard(id);
+    } else if (r.status === 403) {
+      status.className = "card-status err";
+      status.textContent = "Falsches Passwort";
+      btn.disabled = false;
+      btn.textContent = "✅ Veröffentlichen";
+    } else {
+      status.className = "card-status err";
+      status.textContent = "Fehler (" + r.status + ")";
+      btn.disabled = false;
+      btn.textContent = "✅ Veröffentlichen";
+    }
+  } catch {
+    status.className = "card-status err";
+    status.textContent = "Netzwerkfehler";
+    btn.disabled = false;
+    btn.textContent = "✅ Veröffentlichen";
+  }
+}
+
+// ── Approve all ───────────────────────────────────
+async function approveAll() {
+  const btn = document.getElementById("approveAllBtn");
+  btn.disabled = true;
+  btn.textContent = "Wird verarbeitet…";
+
+  const ids = [...document.querySelectorAll(".btn-publish:not(:disabled)")]
+    .map(b => b.id.replace("pub-", ""));
+
+  for (const id of ids) {
+    await approveOne(id);
+    await new Promise(r => setTimeout(r, 400));
+  }
+
+  btn.textContent = "⚡ Alle veröffentlichen";
+  btn.disabled = false;
+}
+
+// ── Skip (hide locally) ───────────────────────────
+function skipCard(id) {
+  fadeCard(id);
+}
+
+function fadeCard(id) {
+  const card = document.getElementById("card-" + id);
+  if (!card) return;
+  card.classList.add("fading");
+  setTimeout(() => card.classList.add("done"), 400);
+}
+</script>
+</body>
+</html>
