@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:44.862Z",
+  "published_at": "2026-06-16T10:56:46.275Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -914,6 +914,24 @@
       "lang_original": "en",
       "headline": "Kroenig interviewed on BBC on Iran negotiations",
       "excerpt": "On June 11, Atlantic Council vice president and Scowcroft Center senior director Matthew Kroenig was interviewed on BBC about ongoing negotiations with Iran.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-050",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/blogs/menasource/the-iran-war-is-a-game-of-liars-poker/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The Iran war is a game of liar’s poker",
+      "excerpt": "The central question has not simply been who possesses power, but who is willing to absorb pain, tolerate risk, and continue escalating when conventional logic suggests restraint.",
       "translations": {
         "en": null,
         "fa": null
