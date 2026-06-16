@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:52:30.495Z",
+  "published_at": "2026-06-16T10:52:39.630Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -302,6 +302,24 @@
       "lang_original": "en",
       "headline": "Is this the end of the Iran war?",
       "excerpt": "Our experts break down the latest strikes and Trump's announcement of a pending deal to end the conflict.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-016",
+      "date": "2026-06-11",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.20min.ch/story/fussball-wm-2026-sicherheit-irankrieg-terrorgefahr-103578079",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Fussball-WM während Iran-Krieg: Braut sich da etwas zusammen?",
+      "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus.",
       "translations": {
         "en": null,
         "fa": null
