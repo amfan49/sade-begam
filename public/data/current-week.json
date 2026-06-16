@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:00:20.320Z",
+  "published_at": "2026-06-16T11:00:23.548Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1138,6 +1138,27 @@
         "fa": {
           "headline": "خاورمیانه زنده: دبیرکل سازمان ملل متحد هشدار داد که دیپلماسی در کانون توجه است، زیرا تشدید تنش‌ها «در مرزها و قاره‌ها طنین‌انداز می‌شود».",
           "excerpt": "تقریباً چهار ماه پس از وقوع آخرین بحران خاورمیانه و با وجود آتش‌بس شکننده بین ایالات متحده و ایران، تنش‌ها همچنان در سراسر منطقه و فراتر از آن طنین‌انداز است. شورای امنیت سازمان ملل متحد روز سه‌شنبه بحثی در سطح بالا در مورد پیشبرد راه‌حل‌های سیاسی در خاورمیانه برگزار کرد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-062",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
+      "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nu…",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "توافق‌نامه پادمان‌های NPT با ایران: قطعنامه شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
+          "excerpt": "بیانیه‌ای از طرف فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) در جلسه هیئت مدیره آژانس بین‌المللی انرژی اتمی (IAEA) که قطعنامه‌ای را در مورد اجرای تعهدات ایران ذیل برجام ارائه می‌دهد..."
         }
       },
       "topics": []
