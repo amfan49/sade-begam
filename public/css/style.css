@@ -562,4 +562,41 @@ textarea.search { resize: vertical; font-family: inherit; }
   box-shadow: 0 4px 16px rgba(26,111,191,0.4);
   cursor: pointer; animation: slideDown 0.3s ease;
 }
+
+/* ── Pagination ─────────────────────────────────────────────────── */
+.pagination {
+  display: flex; align-items: center; justify-content: center;
+  gap: 16px; padding: 12px 0;
+}
+.pag-btn {
+  background: var(--brand-blue); color: #fff; border: none;
+  padding: 10px 22px; border-radius: 9px; font-size: 14px;
+  font-family: inherit; cursor: pointer; font-weight: 600;
+  transition: background 0.15s; min-width: 90px;
+}
+.pag-btn:hover:not(:disabled) { background: var(--brand-blue-deep); }
+.pag-btn:disabled { background: var(--border); color: var(--text-muted); cursor: default; }
+.pag-info { font-size: 14px; color: var(--text-muted); white-space: nowrap; }
+[data-theme="dark"] .pag-btn:disabled { background: var(--border); }
+
+/* ── Mobile improvements ────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .feed { padding: 4px 12px 40px; gap: 14px; }
+  .card { padding: 16px 16px; }
+  .card__headline { font-size: 17px; }
+  .card__excerpt { font-size: 14px; min-height: unset; }
+  .card__translation p:not(.card__disclaimer) { min-height: unset; }
+  .filterbar { padding: 12px; }
+  .hero { padding: 20px 16px; }
+  .hero__tagline { font-size: clamp(20px, 6vw, 30px); }
+  .weekstrip { font-size: 12px; }
+  .masthead__inner { padding: 10px 14px; gap: 10px; }
+  .logo__name { font-size: 16px; }
+  .pag-btn { padding: 9px 14px; font-size: 13px; min-width: 70px; }
+  .pag-info { font-size: 12px; }
+  .card__flag-badge { width: 40px; height: 40px; font-size: 22px; }
+  .card__country { font-size: 14px; }
+  .card__org { font-size: 12px; }
+  .badge { font-size: 10px; padding: 4px 8px; }
+}
 @keyframes slideDown { from { opacity: 0; transform: translateX(-50%) translateY(-10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }

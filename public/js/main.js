@@ -9,6 +9,8 @@
 let ALL_ITEMS = [];
 let ACTIVE_REGION = "all";
 let SEARCH = "";
+let CURRENT_PAGE = 0;
+const PAGE_SIZE = 20;
 
 document.addEventListener("DOMContentLoaded", () => {
   applyLanguageChrome();
@@ -122,6 +124,7 @@ function applyLanguageChrome() {
     search.placeholder = T.searchPlaceholder;
     search.addEventListener("input", (e) => {
       SEARCH = e.target.value.trim().toLowerCase();
+      CURRENT_PAGE = 0;
       renderFeed();
     });
   }
@@ -207,6 +210,7 @@ function buildRegionFilter() {
     b.textContent = label;
     b.addEventListener("click", () => {
       ACTIVE_REGION = key;
+      CURRENT_PAGE = 0;
       buildRegionFilter();
       renderFeed();
     });
@@ -243,8 +247,53 @@ function renderFeed() {
     return;
   }
 
+  const totalPages = Math.ceil(items.length / PAGE_SIZE);
+  if (CURRENT_PAGE >= totalPages) CURRENT_PAGE = totalPages - 1;
+  if (CURRENT_PAGE < 0) CURRENT_PAGE = 0;
+
+  const pageItems = items.slice(CURRENT_PAGE * PAGE_SIZE, (CURRENT_PAGE + 1) * PAGE_SIZE);
+
   feed.innerHTML = "";
-  items.forEach((item) => feed.appendChild(renderCard(item)));
+  if (totalPages > 1) feed.appendChild(buildPagination(totalPages));
+  pageItems.forEach((item) => feed.appendChild(renderCard(item)));
+  if (totalPages > 1) feed.appendChild(buildPagination(totalPages));
+}
+
+function buildPagination(totalPages) {
+  const nav = document.createElement("nav");
+  nav.className = "pagination";
+
+  const prev = document.createElement("button");
+  prev.className = "pag-btn";
+  prev.disabled = CURRENT_PAGE === 0;
+  prev.textContent = SB_LANG === "fa" ? "→ قبلی" : "← Prev";
+  prev.addEventListener("click", () => {
+    if (CURRENT_PAGE > 0) { CURRENT_PAGE--; renderFeed(); scrollToFeed(); }
+  });
+
+  const info = document.createElement("span");
+  info.className = "pag-info";
+  const p = SB_LANG === "fa" ? sbPersianDigits(String(CURRENT_PAGE + 1)) : String(CURRENT_PAGE + 1);
+  const t = SB_LANG === "fa" ? sbPersianDigits(String(totalPages)) : String(totalPages);
+  info.textContent = SB_LANG === "fa" ? `صفحه ${p} از ${t}` : `Page ${p} of ${t}`;
+
+  const next = document.createElement("button");
+  next.className = "pag-btn";
+  next.disabled = CURRENT_PAGE >= totalPages - 1;
+  next.textContent = SB_LANG === "fa" ? "بعدی ←" : "Next →";
+  next.addEventListener("click", () => {
+    if (CURRENT_PAGE < totalPages - 1) { CURRENT_PAGE++; renderFeed(); scrollToFeed(); }
+  });
+
+  nav.appendChild(prev);
+  nav.appendChild(info);
+  nav.appendChild(next);
+  return nav;
+}
+
+function scrollToFeed() {
+  const el = document.getElementById("feed");
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function renderCard(item) {
