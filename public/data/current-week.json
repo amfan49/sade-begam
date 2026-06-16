@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:54.873Z",
+  "published_at": "2026-06-16T10:55:56.427Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -482,6 +482,24 @@
       "lang_original": "en",
       "headline": "Iran Wants To Punish Jordan for Hosting U.S. Forces",
       "excerpt": "The Jordanian Armed Forces (JAF) announced on June 11 that they had intercepted 20 missiles launched from Iran toward Al-Azraq, a town about 50 miles east of Amman that is also home to a major air base...",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-026",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/israels-reaction-to-a-potential-iran-deal/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Israel’s reaction to a potential Iran deal",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
