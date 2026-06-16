@@ -129,7 +129,7 @@ Two jobs, runs **every hour** + **on every push to main**:
 
 | Job | Trigger | What it does |
 |---|---|---|
-| `collect` | hourly schedule / manual | Runs `collect.js`, commits `draft-week.json` if changed, deploys only if new items found |
+| `collect` | 4× daily (06/12/18/00 UTC) / manual | Runs `collect.js`, commits `draft-week.json` if changed |
 | `deploy-on-push` | push to `main` | Deploys to Vercel immediately (e.g. when Amir approves and pushes `current-week.json`) |
 
 Client-side also polls `current-week.json` every **5 minutes** (`startAutoRefresh()` in `main.js`) and shows a blue banner if new items appear.

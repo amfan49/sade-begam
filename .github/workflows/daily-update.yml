@@ -1,6 +1,6 @@
 name: News Collector
 
-# Collects candidate official news into draft-week.json every hour for
+# Collects candidate official news into draft-week.json 4× daily (06/12/18/00 UTC) for
 # human review. Does NOT auto-publish and does NOT deploy to Vercel.
 #
 # Deployment is handled two ways:
@@ -11,7 +11,7 @@ name: News Collector
 
 on:
   schedule:
-    - cron: "0 * * * *"   # every hour, every day
+    - cron: "0 6,12,18,0 * * *"   # 4× daily: 06:00, 12:00, 18:00, 00:00 UTC
   workflow_dispatch: {}
 
 permissions:
