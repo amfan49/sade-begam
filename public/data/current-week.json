@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:00:16.947Z",
+  "published_at": "2026-06-16T11:00:20.320Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1117,6 +1117,27 @@
         "fa": {
           "headline": "سازمان ملل از صحبت‌های مربوط به توافق احتمالی آتش‌بس بین آمریکا و ایران «دلگرم» شده است",
           "excerpt": "سخنگوی دبیرکل سازمان ملل متحد در نیویورک گفت، این سازمان همچنان در بحبوحه گزارش‌های متناقض روز جمعه مبنی بر توافق احتمالی آتش‌بس بین ایالات متحده و ایران، تحولات را زیر نظر دارد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-061",
+      "date": "2026-06-10",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
+      "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on We",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "خاورمیانه زنده: دبیرکل سازمان ملل متحد هشدار داد که دیپلماسی در کانون توجه است، زیرا تشدید تنش‌ها «در مرزها و قاره‌ها طنین‌انداز می‌شود».",
+          "excerpt": "تقریباً چهار ماه پس از وقوع آخرین بحران خاورمیانه و با وجود آتش‌بس شکننده بین ایالات متحده و ایران، تنش‌ها همچنان در سراسر منطقه و فراتر از آن طنین‌انداز است. شورای امنیت سازمان ملل متحد روز سه‌شنبه بحثی در سطح بالا در مورد پیشبرد راه‌حل‌های سیاسی در خاورمیانه برگزار کرد."
         }
       },
       "topics": []
