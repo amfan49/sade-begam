@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:02:17.383Z",
+  "published_at": "2026-06-16T11:02:19.307Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2041,6 +2041,27 @@
         "fa": {
           "headline": "ترول‌های ایران، آمریکا را غافلگیر کرد. در اینجا نحوه مقابله با آنها آمده است.",
           "excerpt": "استفاده ایران از میم‌ها و محتوای تولید شده توسط هوش مصنوعی در تهاجم رسانه‌های اجتماعی خود، زیرکانه، از نظر فرهنگی طنین‌انداز و نشان‌دهنده شکافی در دفاع واشنگتن است."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-105",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "FIFA World Cup 2026: The Geopolitical Tensions at Play Off the Pitch",
+      "excerpt": "The Iran war, immigration enforcement, and the Trump administration's travel bans have raised the stakes of this summer’s tournament.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "جام جهانی فیفا ۲۰۲۶: تنش‌های ژئوپلیتیکی در خارج از زمین بازی",
+          "excerpt": "جنگ ایران، اجرای قوانین مهاجرتی و ممنوعیت‌های مسافرتی دولت ترامپ، حساسیت مسابقات تابستانی امسال را افزایش داده است."
         }
       },
       "topics": []
