@@ -65,21 +65,38 @@ module.exports = async (req, res) => {
       .filter(n => !isNaN(n));
     let nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1;
 
-    const added = toApprove.map(item => ({
-      id: `${week}-${String(nextNum++).padStart(3, "0")}`,
-      date: item.date,
-      country: item.country,
-      region: item.region,
-      flag: item.flag,
-      source_organization: item.source_organization,
-      source_url: item.source_url,
-      is_official: true,
-      lang_original: item.lang_original || "en",
-      headline: clean(item.headline || ""),
-      excerpt: clean((item.excerpt || "").replace(/\s*The post .+ appeared first on .+\.$/, "").trim()),
-      translations: { en: null, fa: null },
-      topics: item.topics || []
-    }));
+    const added = [];
+    for (const item of toApprove) {
+      const headline = clean(item.headline || "");
+      const excerpt  = clean((item.excerpt || "").replace(/\s*The post .+ appeared first on .+\.$/, "").trim());
+      const srcLang  = item.lang_original || "en";
+
+      let faHeadline = null;
+      let faExcerpt  = null;
+      if (srcLang !== "fa") {
+        faHeadline = await translate(headline, srcLang, "fa");
+        if (excerpt) faExcerpt = await translate(excerpt, srcLang, "fa");
+      }
+
+      added.push({
+        id: `${week}-${String(nextNum++).padStart(3, "0")}`,
+        date: item.date,
+        country: item.country,
+        region: item.region,
+        flag: item.flag,
+        source_organization: item.source_organization,
+        source_url: item.source_url,
+        is_official: true,
+        lang_original: srcLang,
+        headline,
+        excerpt,
+        translations: {
+          en: null,
+          fa: faHeadline ? { headline: faHeadline, excerpt: faExcerpt || "" } : null
+        },
+        topics: item.topics || []
+      });
+    }
 
     current.items.push(...added);
     current.published_at = new Date().toISOString();
@@ -173,6 +190,24 @@ function ghPut(path, token, body) {
 }
 
 // ── Helpers ───────────────────────────────────────────────────────
+
+function translate(text, from, to) {
+  return new Promise((resolve) => {
+    if (!text) return resolve(null);
+    const q = encodeURIComponent(text.slice(0, 500));
+    const url = `/get?q=${q}&langpair=${from}%7C${to}&de=amfan49%40gmail.com`;
+    https.get({ hostname: "api.mymemory.translated.net", path: url, timeout: 7000 }, (r) => {
+      let raw = "";
+      r.on("data", c => raw += c);
+      r.on("end", () => {
+        try {
+          const json = JSON.parse(raw);
+          resolve(json.responseStatus === 200 ? json.responseData.translatedText : null);
+        } catch { resolve(null); }
+      });
+    }).on("error", () => resolve(null)).on("timeout", function() { this.destroy(); resolve(null); });
+  });
+}
 
 function clean(s) {
   return s
