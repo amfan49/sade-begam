@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:43.454Z",
+  "published_at": "2026-06-16T10:55:45.946Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -374,6 +374,24 @@
       "lang_original": "en",
       "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
       "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nu…",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-020",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-quad-statement-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Quad statement to the IAEA Board of Governors, June 2026",
+      "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement",
       "translations": {
         "en": null,
         "fa": null
