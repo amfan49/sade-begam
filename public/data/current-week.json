@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:35.672Z",
+  "published_at": "2026-06-16T10:56:37.130Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -823,6 +823,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "Escalating tensions between Iran and U.S.,Israel",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-045",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-iran-tensions-escalate-after-apache-helicopter-downed/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S.-Iran tensions escalate after Apache helicopter downed",
       "excerpt": "",
       "translations": {
         "en": null,
