@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:01:42.155Z",
+  "published_at": "2026-06-16T11:01:43.902Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1789,6 +1789,27 @@
         "fa": {
           "headline": "آمریکا پس از سرنگونی بالگرد، به ایران حمله کرد",
           "excerpt": "مصاحبه: تحلیل زنده و کامل حمله آمریکا به ایران و انتقام ایران با حضور دریاسالار مارک مونتگومری (@MarkCMontgomery)، افسر ارشد ارتش استفانو ریتوندیل (@artoriastech) و @realazadeh pic.twitter.com/YaIsFqIllW—... پست: آمریکا پس از سرنگونی هلیکوپتر، حملاتی را علیه ایران انجام می‌دهد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-093",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/10/trumps-dealmaker-in-chief-reputation-comes-under-attack-in-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump’s ‘dealmaker-in-chief’ reputation comes under attack in Iran",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "اعتبار «رئیس معامله‌گر» ترامپ در ایران مورد حمله قرار گرفته است",
+          "excerpt": ""
         }
       },
       "topics": []
