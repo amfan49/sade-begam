@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:33.231Z",
+  "published_at": "2026-06-16T10:56:35.672Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -805,6 +805,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "Trump strikes Iran to maintain credibility",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-044",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/escalating-tensions-between-iran-and-u-s-israel/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Escalating tensions between Iran and U.S.,Israel",
       "excerpt": "",
       "translations": {
         "en": null,
