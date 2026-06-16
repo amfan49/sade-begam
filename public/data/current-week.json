@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:57:01.725Z",
+  "published_at": "2026-06-16T10:57:04.197Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1058,6 +1058,24 @@
       "lang_original": "en",
       "headline": "Iran’s Trolling Caught the U.S. Off Guard. Here’s How to Push Back.",
       "excerpt": "Iran’s use of memes and AI-generated content in its social media offensive is nimble, culturally resonant, and revealing a gap in Washington’s defenses.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-058",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "FIFA World Cup 2026: The Geopolitical Tensions at Play Off the Pitch",
+      "excerpt": "The Iran war, immigration enforcement, and the Trump administration's travel bans have raised the stakes of this summer’s tournament.",
       "translations": {
         "en": null,
         "fa": null
