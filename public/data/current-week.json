@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:51.071Z",
+  "published_at": "2026-06-16T10:55:53.492Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -446,6 +446,24 @@
       "lang_original": "en",
       "headline": "Iran's Nuclear Enrichment Progress: 2008-2025 and Beyond",
       "excerpt": "...",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-024",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/iran-threatens-trump-with-hard-slap-for-any-wrong-move/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran threatens Trump with \"hard slap\" for any wrong move",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
