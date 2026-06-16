@@ -1,21 +1,17 @@
-name: News Collector & Deploy
+name: News Collector
 
-# Collects candidate official news into a DRAFT file every hour for
-# human review. It does NOT auto-publish — Amir reviews draft-week.json
-# and moves approved items into current-week.json manually.
+# Collects candidate official news into draft-week.json every hour for
+# human review. Does NOT auto-publish and does NOT deploy to Vercel.
 #
-# Deploy to Vercel also runs:
-#   • on every push to main (e.g. when Amir approves and pushes new items)
-#   • after each collection run that produced new draft items
+# Deployment is handled two ways:
+#   1. Vercel GitHub integration: auto-deploys when Amir pushes to main
+#   2. approve-single.yml: deploys via CLI after one-click email approval
 #
-# Free: GitHub Actions public repo = unlimited minutes.
-# Private repo estimate: ~1h/day for collect + occasional deploys < 2000 min/month.
+# The bot commits use [vercel skip] to block Vercel's integration on bot pushes.
 
 on:
   schedule:
     - cron: "0 * * * *"   # every hour, every day
-  push:
-    branches: [main]
   workflow_dispatch: {}
 
 permissions:
@@ -23,11 +19,7 @@ permissions:
 
 jobs:
   collect:
-    # Only run the collection job on schedule or manual dispatch — not on push
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -35,48 +27,19 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Collect candidate news (last 1 day)
+      - name: Collect candidate news (last 3 days)
         env:
-          DAYS: "1"
+          DAYS: "3"
         run: node agent/collect.js
 
       - name: Commit draft if changed
-        id: commit
         run: |
           git config user.name "Sade Begam Bot"
           git config user.email "bot@users.noreply.github.com"
           git add public/data/draft-week.json
           if git diff --staged --quiet; then
             echo "No new draft items."
-            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "News draft — $(TZ='Europe/London' date '+%Y-%m-%d %H:%M') [vercel skip]"
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      - name: Deploy to Vercel (only when new draft items found)
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: team_gySo3Th0dmEG0VY22J0UmLRR
-          VERCEL_PROJECT_ID: prj_oA3A64H6PtWXzwOwqXr27kMdqe4u
-        run: |
-          npm install -g vercel@latest --silent
-          vercel --prod --yes --token "$VERCEL_TOKEN"
-
-  deploy-on-push:
-    # Deploy immediately whenever Amir pushes changes (e.g. approving current-week.json)
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: team_gySo3Th0dmEG0VY22J0UmLRR
-          VERCEL_PROJECT_ID: prj_oA3A64H6PtWXzwOwqXr27kMdqe4u
-        run: |
-          npm install -g vercel@latest --silent
-          vercel --prod --yes --token "$VERCEL_TOKEN"
