@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:45.946Z",
+  "published_at": "2026-06-16T10:55:47.273Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -392,6 +392,24 @@
       "lang_original": "en",
       "headline": "NPT Safeguards Agreement with Iran: Quad statement to the IAEA Board of Governors, June 2026",
       "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-021",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
+      "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
       "translations": {
         "en": null,
         "fa": null
