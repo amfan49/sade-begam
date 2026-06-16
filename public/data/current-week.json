@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:54.144Z",
+  "published_at": "2026-06-16T10:56:56.624Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1004,6 +1004,24 @@
       "lang_original": "en",
       "headline": "The Limitations of Hard Power in Iran",
       "excerpt": "CFR President Michael Froman analyzes the war in Iran and the complications of the current geopolitical moment.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-055",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/kharg-island-irans-oil-lifeline-and-a-tempting-u-s-target",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump Walks Back Threat to Strike a Critical Iranian Oil Hub",
+      "excerpt": "The small island in the Persian Gulf serves as Iran’s primary oil terminal, handling roughly 90 percent of the country’s crude exports. Recently, it has become a high-value target in the U.S.-Israeli war on Iran.",
       "translations": {
         "en": null,
         "fa": null
