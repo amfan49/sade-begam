@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:55:57.785Z",
+  "published_at": "2026-06-16T10:55:59.150Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -518,6 +518,24 @@
       "lang_original": "en",
       "headline": "Trump backs off Iran strikes, claims agreement is near",
       "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-028",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/irans-uranium-enrichment-capabilities-must-be-eliminated-after-strait-of-hormuz-opened/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran's uranium enrichment capabilities must be eliminated after Strait of Hormuz opened",
+      "excerpt": "Listen ...",
       "translations": {
         "en": null,
         "fa": null
