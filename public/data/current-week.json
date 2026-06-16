@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:25.178Z",
+  "published_at": "2026-06-16T10:56:27.609Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -751,6 +751,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "President Trump hopes to 'keep a lid' on Iran strikes",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-041",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-completes-latest-wave-of-strikes-in-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S. completes latest wave of strikes in Iran",
       "excerpt": "",
       "translations": {
         "en": null,
