@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:51.702Z",
+  "published_at": "2026-06-16T10:56:54.144Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -986,6 +986,24 @@
       "lang_original": "en",
       "headline": "Is a U.S.-Iran Deal Within Reach? Six Key Issues That Could Shape a Ceasefire",
       "excerpt": "The United States and Iran are reportedly close to a long-awaited agreement, but it remains to be seen whether it resolves their major differences—including nuclear and missile programs, the Strait of Hormuz, and Israel’s war with Iranian proxies.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-054",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-limitations-of-hard-power-in-iran",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The Limitations of Hard Power in Iran",
+      "excerpt": "CFR President Michael Froman analyzes the war in Iran and the complications of the current geopolitical moment.",
       "translations": {
         "en": null,
         "fa": null
