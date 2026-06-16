@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:01:43.902Z",
+  "published_at": "2026-06-16T11:01:46.951Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1810,6 +1810,27 @@
         "fa": {
           "headline": "اعتبار «رئیس معامله‌گر» ترامپ در ایران مورد حمله قرار گرفته است",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-094",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/dispatches/its-not-a-deal-but-trumps-memorandum-with-iran-can-be-the-start-of-something-bigger/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "It's not a 'deal.’ But Trump's memorandum with Iran can be the start of something bigger.",
+      "excerpt": "What appears to be emerging now is a rough outline and high-level explanation of the concepts that an eventual deal could include.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "این یک «توافق» نیست. اما تفاهم‌نامه ترامپ با ایران می‌تواند آغاز چیزی بزرگتر باشد.",
+          "excerpt": "آنچه اکنون به نظر می‌رسد در حال ظهور است، یک طرح کلی و توضیح سطح بالا از مفاهیمی است که یک توافق نهایی می‌تواند شامل آنها باشد."
         }
       },
       "topics": []
