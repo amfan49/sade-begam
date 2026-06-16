@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:22.118Z",
+  "published_at": "2026-06-16T10:56:23.561Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -716,6 +716,24 @@
       "lang_original": "en",
       "headline": "Don’t buy Iran’s charade — this regime can’t afford peace at ANY price",
       "excerpt": "For the last two months, President Donald Trump’s rhetoric on Iran has seesawed between expressing optimism on negotiations and making explicit threats to remove the mullahs from power. This week,... The post Don’t buy Iran’s charade — this regime can’t afford peace at ANY price appeared first on FD",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-039",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/iran-conflict-reflects-a-pattern-of-regime-aggression-and-instability/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran conflict reflects a pattern of regime aggression and instability",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
