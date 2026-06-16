@@ -1,26 +1,34 @@
 // api/approve.js — Vercel serverless function
-// GET /api/approve?token=SECRET&id=draft-001
+// GET /api/approve?token=PASSWORD&id=draft-001
 //
-// Verifies the secret token, then calls the GitHub API to trigger the
-// "approve-single" workflow, which runs approve.js and pushes the result.
-//
-// Env vars (set in Vercel dashboard):
-//   APPROVE_SECRET  — same random string stored in GitHub Actions secret
-//   GH_PAT          — GitHub Personal Access Token with "workflow" scope
+// Password is verified via SHA-256 hash (no env var needed for auth).
+// Env var needed: GH_PAT — GitHub Personal Access Token with "workflow" scope
 
-const https = require("https");
+const https  = require("https");
+const crypto = require("crypto");
 
-const REPO = "amfan49/sade-begam";
+const REPO          = "amfan49/sade-begam";
 const WORKFLOW_FILE = "approve-single.yml";
+// SHA-256 of the admin password — safe to store in source code
+const PW_HASH = "680cd13e1975705c243cc562eb06a655cc0d8a5fa872e153f9d347e3f8e5b3a2";
+
+function checkToken(t) {
+  if (!t) return false;
+  const hash = crypto.createHash("sha256").update(t).digest("hex");
+  return hash === PW_HASH;
+}
 
 module.exports = async (req, res) => {
   const { token, id } = req.query || {};
 
-  if (!token || token !== process.env.APPROVE_SECRET) {
-    return res.status(403).send(page("403 Forbidden", "توکن اشتباه است.", "#e74c3c"));
+  if (!checkToken(token)) {
+    if ((req.query.format === "json") || id === "__ping__") {
+      return res.status(403).json({ ok: false });
+    }
+    return res.status(403).send(page("403 Forbidden", "رمز عبور اشتباه است.", "#e74c3c"));
   }
 
-  // Ping endpoint — used by admin page to validate token without side effects
+  // Ping endpoint — used by admin page to validate password without side effects
   if (id === "__ping__") {
     return res.status(200).json({ ok: true });
   }
@@ -51,8 +59,7 @@ module.exports = async (req, res) => {
       return res.status(200).send(
         page(
           "✅ در حال انتشار",
-          `خبر <strong>${id}</strong> در حال انتشار است.<br>
-           در عرض ۲–۳ دقیقه روی سایت ظاهر می‌شود.`,
+          `خبر <strong>${id}</strong> در حال انتشار است.<br>در عرض ۲–۳ دقیقه روی سایت ظاهر می‌شود.`,
           "#27ae60",
           `<a href="https://sade-begam.vercel.app"
               style="display:inline-block;margin-top:20px;background:#1A6FBF;color:#fff;
@@ -62,9 +69,7 @@ module.exports = async (req, res) => {
         )
       );
     } else {
-      return res.status(500).send(
-        page("خطا", `GitHub پاسخ داد: ${status}`, "#e74c3c")
-      );
+      return res.status(500).send(page("خطا", `GitHub پاسخ داد: ${status}`, "#e74c3c"));
     }
   } catch (err) {
     return res.status(500).send(page("خطا", err.message, "#e74c3c"));
@@ -73,7 +78,10 @@ module.exports = async (req, res) => {
 
 function callGitHub(url, method, token, body) {
   return new Promise((resolve, reject) => {
-    const opts = {
+    const u = new URL(url);
+    const req = https.request({
+      hostname: u.hostname,
+      path: u.pathname + u.search,
       method,
       headers: {
         Authorization: `Bearer ${token}`,
@@ -83,12 +91,7 @@ function callGitHub(url, method, token, body) {
         "Content-Length": Buffer.byteLength(body),
         "User-Agent": "sade-begam-approve-fn"
       }
-    };
-    const u = new URL(url);
-    const req = https.request(
-      { hostname: u.hostname, path: u.pathname + u.search, ...opts },
-      (r) => { r.resume(); resolve(r.statusCode); }
-    );
+    }, (r) => { r.resume(); resolve(r.statusCode); });
     req.on("error", reject);
     req.write(body);
     req.end();
@@ -99,24 +102,16 @@ function page(title, msg, color, extra = "") {
   return `<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${title}</title>
   <style>
     body{margin:0;background:#F5F7FA;display:flex;align-items:center;
          justify-content:center;min-height:100vh;font-family:Tahoma,Arial,sans-serif;}
     .box{background:#fff;border-radius:14px;padding:40px 48px;text-align:center;
          box-shadow:0 4px 24px rgba(0,0,0,.1);max-width:420px;}
-    h1{color:${color};margin:0 0 12px;}
-    p{color:#444;line-height:1.6;margin:0;}
+    h1{color:${color};margin:0 0 12px;} p{color:#444;line-height:1.6;margin:0;}
   </style>
 </head>
-<body>
-  <div class="box">
-    <h1>${title}</h1>
-    <p>${msg}</p>
-    ${extra}
-  </div>
-</body>
+<body><div class="box"><h1>${title}</h1><p>${msg}</p>${extra}</div></body>
 </html>`;
 }
