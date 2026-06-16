@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:01:33.807Z",
+  "published_at": "2026-06-16T11:01:35.670Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1704,6 +1704,27 @@
         "en": null,
         "fa": {
           "headline": "ترامپ برای حفظ اعتبار به ایران حمله می‌کند",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-089",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/escalating-tensions-between-iran-and-u-s-israel/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Escalating tensions between Iran and U.S.,Israel",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "تشدید تنش‌ها بین ایران و آمریکا و اسرائیل",
           "excerpt": ""
         }
       },
