@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:56.624Z",
+  "published_at": "2026-06-16T10:56:59.157Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1022,6 +1022,24 @@
       "lang_original": "en",
       "headline": "Trump Walks Back Threat to Strike a Critical Iranian Oil Hub",
       "excerpt": "The small island in the Persian Gulf serves as Iran’s primary oil terminal, handling roughly 90 percent of the country’s crude exports. Recently, it has become a high-value target in the U.S.-Israeli war on Iran.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-056",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/macrons-agenda-meets-trumps-at-the-g7-summit",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Macron’s Agenda Meets Trump’s at the G7 Summit",
+      "excerpt": "Repercussions from the Iran war and the growing economic challenge posed by China are expected to dominate the annual meeting of the Group of Seven (G7) economies in France, but the attendance of President Donald Trump adds uncertainty to the summit’s outcome.",
       "translations": {
         "en": null,
         "fa": null
