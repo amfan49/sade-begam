@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:40.969Z",
+  "published_at": "2026-06-16T10:56:42.305Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -878,6 +878,24 @@
       "lang_original": "en",
       "headline": "U.S. conducts strikes on Iran after helicopter downing",
       "excerpt": "INTERVIEW: FULL LIVE ANALYSIS OF THE U.S ATTACK ON IRAN, AND IRAN’S RETALIATIONW/ Admiral Mark Montgomery (@MarkCMontgomery), Fmr Army Officer Stefano Ritondale (@artoriastech), and @realazadeh pic.twitter.com/YaIsFqIllW&#8212;... The post U.S. conducts strikes on Iran after helicopter downing appea",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-048",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/10/trumps-dealmaker-in-chief-reputation-comes-under-attack-in-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump’s ‘dealmaker-in-chief’ reputation comes under attack in Iran",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
