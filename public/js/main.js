@@ -242,6 +242,11 @@ function renderFeed() {
     });
   }
 
+  // Persian page: only show items that have a Persian translation (or are originally Persian)
+  if (SB_LANG === "fa") {
+    items = items.filter(i => i.lang_original === "fa" || i.translations?.fa?.headline);
+  }
+
   if (!items.length) {
     feed.innerHTML = `<p class="muted">${T.noItems}</p>`;
     return;

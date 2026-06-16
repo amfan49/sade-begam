@@ -20,7 +20,10 @@
       "excerpt": "The United Nations continues to monitor developments amid conflicting reports on Friday of a possible ceasefire deal between the United States and Iran, the Spokesperson for the Secretary-General said in New York.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "سازمان ملل از صحبت‌های مربوط به توافق احتمالی آتش‌بس بین آمریکا و ایران «دلگرم» شده است",
+          "excerpt": "سخنگوی دبیرکل سازمان ملل متحد در نیویورک گفت، این سازمان همچنان در بحبوحه گزارش‌های متناقض روز جمعه مبنی بر توافق احتمالی آتش‌بس بین ایالات متحده و ایران، تحولات را زیر نظر دارد."
+        }
       },
       "topics": [
         "ceasefire",
@@ -41,7 +44,10 @@
       "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "خاورمیانه زنده: دبیرکل سازمان ملل متحد هشدار داد که دیپلماسی در کانون توجه است، زیرا تشدید تنش‌ها «در مرزها و قاره‌ها طنین‌انداز می‌شود».",
+          "excerpt": "تقریباً چهار ماه پس از وقوع آخرین بحران خاورمیانه و با وجود آتش‌بس شکننده بین ایالات متحده و ایران، تنش‌ها همچنان در سراسر منطقه و فراتر از آن طنین‌انداز است. شورای امنیت سازمان ملل متحد بحثی در سطح بالا در مورد پیشبرد راه‌حل‌های سیاسی در خاورمیانه برگزار کرد."
+        }
       },
       "topics": [
         "diplomacy",
@@ -62,7 +68,10 @@
       "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nuclear Non-Proliferation Treaty Safeguards Agreement.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "توافق‌نامه پادمان‌های NPT با ایران: قطعنامه شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
+          "excerpt": "بیانیه‌ای از طرف فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) در جلسه هیئت مدیره آژانس بین‌المللی انرژی اتمی (IAEA) که قطعنامه‌ای را در مورد اجرای تعهدات ایران ذیل توافقنامه پادمان‌های پیمان منع گسترش سلاح‌های هسته‌ای ارائه می‌دهد."
+        }
       },
       "topics": [
         "nuclear",
@@ -84,7 +93,10 @@
       "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "توافقنامه پادمان‌های NPT با ایران: بیانیه چهارگانه به شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
+          "excerpt": "فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) بیانیه مشترکی را به شورای حکام آژانس بین‌المللی انرژی اتمی (IAEA) در مورد توافقنامه پادمان‌های پیمان منع گسترش سلاح‌های هسته‌ای (NPT) ایران ارائه کردند."
+        }
       },
       "topics": [
         "nuclear",
@@ -106,7 +118,10 @@
       "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "بیانیه مشترک در مورد تهدیدات دولت ایران و حملات ادعایی HAYI",
+          "excerpt": "بیانیه مشترک ۲۴ کشور در مورد تهدیدات دولتی مربوط به سرویس‌های امنیتی ایران و محکومیت حملات اخیر که گروه حرکت اصحاب یمین الاسلامیه (HAYI) مسئولیت آن را بر عهده گرفت - در سراسر اروپا."
+        }
       },
       "topics": [
         "security",
@@ -127,7 +142,10 @@
       "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d'Affaires to the UN, at the UN Security Council meeting on Iran.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "بیانیه بریتانیا در شورای امنیت سازمان ملل: اجرای کامل و مؤثر تحریم‌های سازمان ملل علیه ایران همچنان ضروری است",
+          "excerpt": "بیانیه سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در جلسه شورای امنیت سازمان ملل متحد درباره ایران."
+        }
       },
       "topics": [
         "sanctions",
@@ -232,7 +250,10 @@
       "excerpt": "The United Nations continues to monitor developments amid conflicting reports on Friday of a possible ceasefire deal between the United States and Iran, the Spokesperson for the Secretary-General said in New York.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "سازمان ملل از صحبت‌های مربوط به توافق احتمالی آتش‌بس بین آمریکا و ایران «دلگرم» شده است",
+          "excerpt": "سخنگوی دبیرکل سازمان ملل متحد در نیویورک گفت، این سازمان همچنان در بحبوحه گزارش‌های متناقض روز جمعه مبنی بر توافق احتمالی آتش‌بس بین ایالات متحده و ایران، تحولات را زیر نظر دارد."
+        }
       },
       "topics": []
     },
@@ -250,7 +271,10 @@
       "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on We",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "خاورمیانه زنده: دبیرکل سازمان ملل متحد هشدار داد که دیپلماسی در کانون توجه است، زیرا تشدید تنش‌ها «در مرزها و قاره‌ها طنین‌انداز می‌شود».",
+          "excerpt": "تقریباً چهار ماه پس از وقوع آخرین بحران خاورمیانه و با وجود آتش‌بس شکننده بین ایالات متحده و ایران، تنش‌ها همچنان در سراسر منطقه و فراتر از آن طنین‌انداز است. شورای امنیت سازمان ملل متحد روز سه‌شنبه بحثی در سطح بالا در مورد پیشبرد راه‌حل‌های سیاسی در خاورمیانه برگزار کرد."
+        }
       },
       "topics": []
     },
@@ -268,7 +292,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "چرخش ۱۸۰ درجه‌ای ترامپ در قبال ایران",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -286,7 +313,10 @@
       "excerpt": "What appears to be emerging now is a rough outline and high-level explanation of the concepts that an eventual deal could include.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "این یک «توافق» نیست. اما تفاهم‌نامه ترامپ با ایران می‌تواند آغاز چیزی بزرگتر باشد.",
+          "excerpt": "آنچه اکنون به نظر می‌رسد در حال ظهور است، یک طرح کلی و توضیح سطح بالا از مفاهیمی است که یک توافق نهایی می‌تواند شامل آنها باشد."
+        }
       },
       "topics": []
     },
@@ -304,7 +334,10 @@
       "excerpt": "Our experts break down the latest strikes and Trump's announcement of a pending deal to end the conflict.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آیا این پایان جنگ ایران است؟",
+          "excerpt": "کارشناسان ما آخرین حملات و اعلام ترامپ مبنی بر توافق قریب‌الوقوع برای پایان دادن به درگیری را بررسی می‌کنند."
+        }
       },
       "topics": []
     },
@@ -322,7 +355,10 @@
       "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "Fussball-WM während Iran-Krieg: Braut sich da etwas zusammen?",
+          "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus."
+        }
       },
       "topics": []
     },
@@ -340,7 +376,10 @@
       "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen, politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes, Ex-UN-Untergeneralsekretär, zeigt, wo die Anknüpfungspunkte liegen.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
+          "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen، politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes، سابق سازمان ملل متحد Untergeneralsekretär، zeigt، wo die Anknüpfungspunkte liegen."
+        }
       },
       "topics": []
     },
@@ -358,7 +397,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "«Er muss diesen Krieg beenden» – Nahostexperte Steinberg über Trumps Iran-Dilema",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -376,7 +418,10 @@
       "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nu…",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "توافق‌نامه پادمان‌های NPT با ایران: قطعنامه شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
+          "excerpt": "بیانیه‌ای از طرف فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) در جلسه هیئت مدیره آژانس بین‌المللی انرژی اتمی (IAEA) که قطعنامه‌ای را در مورد اجرای تعهدات ایران ذیل برجام ارائه می‌دهد..."
+        }
       },
       "topics": []
     },
@@ -394,7 +439,10 @@
       "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "توافقنامه پادمان‌های NPT با ایران: بیانیه چهارگانه به شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
+          "excerpt": "فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) بیانیه مشترکی را به شورای حکام آژانس بین‌المللی انرژی اتمی (IAEA) در مورد توافقنامه پادمان‌های پیمان منع گسترش سلاح‌های هسته‌ای (NPT) ایران ارائه کردند."
+        }
       },
       "topics": []
     },
@@ -412,7 +460,10 @@
       "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "بیانیه مشترک در مورد تهدیدات دولت ایران و حملات ادعایی HAYI",
+          "excerpt": "بیانیه مشترک ۲۴ کشور در مورد تهدیدات دولتی مربوط به سرویس‌های امنیتی ایران و محکومیت حملات اخیر که گروه حرکت اصحاب یمین الاسلامیه (HAYI) مسئولیت آن را بر عهده گرفت - در سراسر اروپا."
+        }
       },
       "topics": []
     },
@@ -430,7 +481,10 @@
       "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "بیانیه بریتانیا در شورای امنیت سازمان ملل: اجرای کامل و مؤثر تحریم‌های سازمان ملل علیه ایران همچنان ضروری است",
+          "excerpt": "بیانیه سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در جلسه شورای امنیت سازمان ملل متحد درباره ایران."
+        }
       },
       "topics": []
     },
@@ -448,7 +502,10 @@
       "excerpt": "...",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "پیشرفت غنی‌سازی هسته‌ای ایران: ۲۰۰۸-۲۰۲۵ و پس از آن",
+          "excerpt": "اا"
+        }
       },
       "topics": []
     },
@@ -466,7 +523,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ایران ترامپ را به خاطر هرگونه حرکت اشتباه با «سیلی محکم» تهدید می‌کند",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -484,7 +544,10 @@
       "excerpt": "The Jordanian Armed Forces (JAF) announced on June 11 that they had intercepted 20 missiles launched from Iran toward Al-Azraq, a town about 50 miles east of Amman that is also home to a major air base...",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ایران می‌خواهد اردن را به خاطر میزبانی از نیروهای آمریکایی مجازات کند",
+          "excerpt": "نیروهای مسلح اردن (JAF) در ۱۱ ژوئن اعلام کردند که ۲۰ موشک شلیک شده از ایران به سمت الازرق، شهری در حدود ۵۰ مایلی شرق امان که محل یک پایگاه هوایی بزرگ نیز هست، را رهگیری کرده‌اند."
+        }
       },
       "topics": []
     },
@@ -502,7 +565,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "واکنش اسرائیل به توافق احتمالی با ایران",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -520,7 +586,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ترامپ از حمله به ایران عقب‌نشینی کرد و ادعا کرد که توافق نزدیک است",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -538,7 +607,10 @@
       "excerpt": "Listen ...",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "قابلیت‌های غنی‌سازی اورانیوم ایران باید پس از باز شدن تنگه هرمز از بین برود.",
+          "excerpt": "... گوش کن"
+        }
       },
       "topics": []
     },
@@ -556,7 +628,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "نگرانی واقعی «تشدید تصادفی» تنش بین ایالات متحده و ایران است",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -574,7 +649,10 @@
       "excerpt": "INTERVIEW: U.S. ATTACK ON IRAN’S WATER FACILITIES, ISRAEL ATTACKS SOUTHERN LEBANON – w/ Jonathan Conricus pic.twitter.com/FUpxHOym84&#8212; Mario Nawfal (@MarioNawfal) June 11, 2026 ...",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "حمله آمریکا به تأسیسات آبی ایران و حمله اسرائیل به جنوب لبنان",
+          "excerpt": "مصاحبه: حمله آمریکا به تأسیسات آبی ایران، حمله اسرائیل به جنوب لبنان – با جاناتان کونریکوس pic.twitter.com/FUpxHOym84— ماریو نوفال (@MarioNawfal) 11 ژوئن 2026 ..."
+        }
       },
       "topics": []
     },
@@ -592,7 +670,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ترامپ در حالی که آتش‌بس در هاله‌ای از ابهام است، حملات جدید آمریکا به ایران را اعلام کرد",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -610,7 +691,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آیا بمب‌ها می‌توانند ایران را به میز مذاکره بازگردانند؟",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -628,7 +712,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "چگونه جنگ ایران به چین فرصت ورود به بازار پهپادهای خلیج فارس را می‌دهد؟",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -646,7 +733,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ترامپ در حالی که توافق ایران را به تعویق می‌اندازد، روی حملات هوایی متمرکز می‌شود و می‌سنجد که آیا تهران کوتاه می‌آید یا نه",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -664,7 +754,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "با عقب‌نشینی ترامپ از تهدید حمله به ایران، قیمت جهانی نفت به پایین‌ترین حد خود در ۸ هفته گذشته رسید.",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -682,7 +775,10 @@
       "excerpt": "Iraqi Prime Minister Ali al Zaidi is preparing for an upcoming trip to Washington, DC, Iraqi media outlets recently reported. The prime minister has been working since his May appointment... The post Iraq’s prime minister prepares US visit amid Iran threats and militia focus appe",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "نخست وزیر عراق در بحبوحه تهدیدهای ایران و تمرکز شبه نظامیان، خود را برای سفر به آمریکا آماده می‌کند.",
+          "excerpt": "رسانه‌های عراقی اخیراً گزارش دادند که علی الزیدی، نخست وزیر عراق، در حال آماده شدن برای سفر قریب‌الوقوع به واشنگتن دی سی است. نخست وزیر از زمان انتصابش در ماه مه مشغول به کار بوده است... این پست نخست وزیر عراق در بحبوحه تهدیدات ایران و تمرکز شبه‌نظامیان، سفر خود به ایالات متحده را آماده می‌کند."
+        }
       },
       "topics": []
     },
@@ -700,7 +796,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "حمله تلافی‌جویانه آمریکا به ایران",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -718,7 +817,10 @@
       "excerpt": "For the last two months, President Donald Trump’s rhetoric on Iran has seesawed between expressing optimism on negotiations and making explicit threats to remove the mullahs from power. This week,... The post Don’t buy Iran’s charade — this regime can’t afford peace at ANY price appeared first on FD",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "فریب ایران را نخورید - این رژیم به هیچ قیمتی نمی‌تواند صلح را بپذیرد",
+          "excerpt": "در دو ماه گذشته، لفاظی‌های رئیس جمهور دونالد ترامپ در مورد ایران بین ابراز خوش‌بینی در مورد مذاکرات و تهدیدهای صریح برای برکناری ملاها از قدرت، نوسان داشته است. این هفته،... پست «به حرف‌های ایران گوش ندهید - این رژیم نمی‌تواند به هیچ قیمتی صلح را تحمل کند» برای اولین بار در FD منتشر شد."
+        }
       },
       "topics": []
     },
@@ -736,7 +838,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "درگیری ایران منعکس کننده الگویی از تجاوز و بی‌ثباتی رژیم است",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -754,7 +859,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "پرزیدنت ترامپ امیدوار است که حملات به ایران را «مهار» کند",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -772,7 +880,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آمریکا موج جدید حملات هوایی خود به ایران را تکمیل کرد",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -790,7 +901,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آمریکا با حملات بیشتری به ایران حمله می‌کند، ترامپ تهدید به حملات بیشتر می‌کند",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -808,7 +922,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ترامپ برای حفظ اعتبار به ایران حمله می‌کند",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -826,7 +943,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "تشدید تنش‌ها بین ایران و آمریکا و اسرائیل",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -844,7 +964,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "تشدید تنش‌ها بین ایران و آمریکا پس از سرنگونی بالگرد آپاچی",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -862,7 +985,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آمریکا ۲۰ هدف در داخل ایران را هدف قرار داد، تهران تهدید به تلافی کرد",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -880,7 +1006,10 @@
       "excerpt": "INTERVIEW: FULL LIVE ANALYSIS OF THE U.S ATTACK ON IRAN, AND IRAN’S RETALIATIONW/ Admiral Mark Montgomery (@MarkCMontgomery), Fmr Army Officer Stefano Ritondale (@artoriastech), and @realazadeh pic.twitter.com/YaIsFqIllW&#8212;... The post U.S. conducts strikes on Iran after helicopter downing appea",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آمریکا پس از سرنگونی بالگرد، به ایران حمله کرد",
+          "excerpt": "مصاحبه: تحلیل زنده و کامل حمله آمریکا به ایران و انتقام ایران با حضور دریاسالار مارک مونتگومری (@MarkCMontgomery)، افسر ارشد ارتش استفانو ریتوندیل (@artoriastech) و @realazadeh pic.twitter.com/YaIsFqIllW—... پست: آمریکا پس از سرنگونی هلیکوپتر، حملاتی را علیه ایران انجام می‌دهد."
+        }
       },
       "topics": []
     },
@@ -898,7 +1027,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "اعتبار «رئیس معامله‌گر» ترامپ در ایران مورد حمله قرار گرفته است",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
@@ -916,7 +1048,10 @@
       "excerpt": "On June 11, Atlantic Council vice president and Scowcroft Center senior director Matthew Kroenig was interviewed on BBC about ongoing negotiations with Iran.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "مصاحبه کرونیگ با بی‌بی‌سی درباره مذاکرات ایران",
+          "excerpt": "در ۱۱ ژوئن، متیو کرونیگ، معاون رئیس شورای آتلانتیک و مدیر ارشد مرکز اسکوکرافت، در مصاحبه‌ای با بی‌بی‌سی درباره مذاکرات جاری با ایران صحبت کرد."
+        }
       },
       "topics": []
     },
@@ -934,7 +1069,10 @@
       "excerpt": "The central question has not simply been who possesses power, but who is willing to absorb pain, tolerate risk, and continue escalating when conventional logic suggests restraint.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "جنگ ایران، بازی پوکر دروغگوهاست",
+          "excerpt": "سوال اصلی صرفاً این نبوده که چه کسی قدرت را در دست دارد، بلکه این بوده که چه کسی حاضر است درد را تحمل کند، ریسک را تحمل کند و در حالی که منطق متعارف، خویشتن‌داری را ایجاب می‌کند، به تشدید تنش ادامه دهد."
+        }
       },
       "topics": []
     },
@@ -952,7 +1090,10 @@
       "excerpt": "The once-modest gap between Israeli Prime Minister Benjamin Netanyahu and US President Donald Trump has widened in recent weeks.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "از شکاف تا شکاف عمیق: منافع متضاد آمریکا و اسرائیل در جنگ با ایران",
+          "excerpt": "اختلاف نظر میان بنیامین نتانیاهو، نخست وزیر اسرائیل، و دونالد ترامپ، رئیس جمهور آمریکا که زمانی اندک بود، در هفته‌های اخیر عمیق‌تر شده است."
+        }
       },
       "topics": []
     },
@@ -970,7 +1111,10 @@
       "excerpt": "At the tenth annual Global Energy Forum, Wright said that “the price” of this crisis “will be wildly worth paying,” if it means that Iran eventually ceases to be “a constant threat to its neighbors.\" The post US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after th",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "کریس رایت، وزیر انرژی آمریکا، می‌گوید بازگشت به حالت عادی پس از این بحران انرژی «ماه‌ها» طول خواهد کشید.",
+          "excerpt": "رایت در دهمین مجمع جهانی انرژی سالانه گفت که «بهای» این بحران «ارزش پرداخت فوق‌العاده‌ای خواهد داشت»، اگر به این معنی باشد که ایران در نهایت دیگر «تهدیدی دائمی برای همسایگانش» نباشد. کریس رایت، وزیر انرژی ایالات متحده، پس از ...: «ماه‌های زیادی» طول خواهد کشید تا پس از ... به حالت عادی برگردیم."
+        }
       },
       "topics": []
     },
@@ -988,7 +1132,10 @@
       "excerpt": "The United States and Iran are reportedly close to a long-awaited agreement, but it remains to be seen whether it resolves their major differences—including nuclear and missile programs, the Strait of Hormuz, and Israel’s war with Iranian proxies.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "آیا توافق ایران و آمریکا در دسترس است؟ شش مسئله کلیدی که می‌توانند آتش‌بس را شکل دهند",
+          "excerpt": "بنا به گزارش‌ها، ایالات متحده و ایران به توافقی که مدت‌ها انتظار آن می‌رفت نزدیک شده‌اند، اما هنوز مشخص نیست که آیا این توافق، اختلافات عمده آنها - از جمله برنامه‌های هسته‌ای و موشکی، تنگه هرمز و جنگ اسرائیل با نیروهای نیابتی ایران - را حل خواهد کرد یا خیر."
+        }
       },
       "topics": []
     },
@@ -1006,7 +1153,10 @@
       "excerpt": "CFR President Michael Froman analyzes the war in Iran and the complications of the current geopolitical moment.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "محدودیت‌های قدرت سخت در ایران",
+          "excerpt": "مایکل فرومن، رئیس شورای روابط خارجی، جنگ در ایران و پیچیدگی‌های موقعیت ژئوپلیتیکی فعلی را تحلیل می‌کند."
+        }
       },
       "topics": []
     },
@@ -1024,7 +1174,10 @@
       "excerpt": "The small island in the Persian Gulf serves as Iran’s primary oil terminal, handling roughly 90 percent of the country’s crude exports. Recently, it has become a high-value target in the U.S.-Israeli war on Iran.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ترامپ از تهدید خود برای حمله به یک مرکز نفتی حیاتی ایران عقب‌نشینی کرد",
+          "excerpt": "این جزیره کوچک در خلیج فارس به عنوان ترمینال اصلی نفت ایران عمل می‌کند و تقریباً ۹۰ درصد از صادرات نفت خام کشور از طریق آن انجام می‌شود. اخیراً، این جزیره به یک هدف با ارزش در جنگ آمریکا و اسرائیل علیه ایران تبدیل شده است."
+        }
       },
       "topics": []
     },
@@ -1042,7 +1195,10 @@
       "excerpt": "Repercussions from the Iran war and the growing economic challenge posed by China are expected to dominate the annual meeting of the Group of Seven (G7) economies in France, but the attendance of President Donald Trump adds uncertainty to the summit’s outcome.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "دستور کار مکرون در اجلاس گروه هفت با دستور کار ترامپ تلاقی می‌کند",
+          "excerpt": "انتظار می‌رود پیامدهای جنگ ایران و چالش اقتصادی رو به رشد چین، بر نشست سالانه گروه هفت (G7) در فرانسه سایه افکند، اما حضور دونالد ترامپ، رئیس جمهور آمریکا، بر عدم قطعیت در نتیجه این اجلاس می‌افزاید."
+        }
       },
       "topics": []
     },
@@ -1060,7 +1216,10 @@
       "excerpt": "Iran’s use of memes and AI-generated content in its social media offensive is nimble, culturally resonant, and revealing a gap in Washington’s defenses.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "ترول‌های ایران، آمریکا را غافلگیر کرد. در اینجا نحوه مقابله با آنها آمده است.",
+          "excerpt": "استفاده ایران از میم‌ها و محتوای تولید شده توسط هوش مصنوعی در تهاجم رسانه‌های اجتماعی خود، زیرکانه، از نظر فرهنگی طنین‌انداز و نشان‌دهنده شکافی در دفاع واشنگتن است."
+        }
       },
       "topics": []
     },
@@ -1078,7 +1237,10 @@
       "excerpt": "The Iran war, immigration enforcement, and the Trump administration's travel bans have raised the stakes of this summer’s tournament.",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "جام جهانی فیفا ۲۰۲۶: تنش‌های ژئوپلیتیکی در خارج از زمین بازی",
+          "excerpt": "جنگ ایران، اجرای قوانین مهاجرتی و ممنوعیت‌های مسافرتی دولت ترامپ، حساسیت مسابقات تابستانی امسال را افزایش داده است."
+        }
       },
       "topics": []
     },
@@ -1096,7 +1258,10 @@
       "excerpt": "",
       "translations": {
         "en": null,
-        "fa": null
+        "fa": {
+          "headline": "بن‌بست ایران، نگرانی‌ها از درگیری منطقه‌ای گسترده‌تر را افزایش می‌دهد",
+          "excerpt": ""
+        }
       },
       "topics": []
     },
