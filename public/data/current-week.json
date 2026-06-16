@@ -1,7 +1,10 @@
 {
   "week": "2026-W24",
-  "date_range": { "start": "2026-06-08", "end": "2026-06-14" },
-  "published_at": "2026-06-14T19:30:00Z",
+  "date_range": {
+    "start": "2026-06-08",
+    "end": "2026-06-14"
+  },
+  "published_at": "2026-06-16T10:30:42.516Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -19,7 +22,10 @@
         "en": null,
         "fa": null
       },
-      "topics": ["ceasefire", "diplomacy"]
+      "topics": [
+        "ceasefire",
+        "diplomacy"
+      ]
     },
     {
       "id": "2026-W24-002",
@@ -37,7 +43,10 @@
         "en": null,
         "fa": null
       },
-      "topics": ["diplomacy", "security-council"]
+      "topics": [
+        "diplomacy",
+        "security-council"
+      ]
     },
     {
       "id": "2026-W24-003",
@@ -55,7 +64,11 @@
         "en": null,
         "fa": null
       },
-      "topics": ["nuclear", "iaea", "npt"]
+      "topics": [
+        "nuclear",
+        "iaea",
+        "npt"
+      ]
     },
     {
       "id": "2026-W24-004",
@@ -73,7 +86,11 @@
         "en": null,
         "fa": null
       },
-      "topics": ["nuclear", "iaea", "npt"]
+      "topics": [
+        "nuclear",
+        "iaea",
+        "npt"
+      ]
     },
     {
       "id": "2026-W24-005",
@@ -91,7 +108,10 @@
         "en": null,
         "fa": null
       },
-      "topics": ["security", "sanctions"]
+      "topics": [
+        "security",
+        "sanctions"
+      ]
     },
     {
       "id": "2026-W24-006",
@@ -109,7 +129,31 @@
         "en": null,
         "fa": null
       },
-      "topics": ["sanctions", "security-council"]
+      "topics": [
+        "sanctions",
+        "security-council"
+      ]
+    },
+    {
+      "id": "2026-W24-007",
+      "date": "2026-06-10",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
+      "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on We",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "خاورمیانه زنده: دبیرکل سازمان ملل متحد هشدار داد که دیپلماسی در کانون توجه است، زیرا تشدید تنش‌ها «در مرزها و قاره‌ها طنین‌انداز می‌شود».",
+          "excerpt": "تقریباً چهار ماه پس از وقوع آخرین بحران خاورمیانه و با وجود آتش‌بس شکننده بین ایالات متحده و ایران، تنش‌ها همچنان در سراسر منطقه و فراتر از آن طنین‌انداز است. شورای امنیت سازمان ملل متحد روز سه‌شنبه بحثی در سطح بالا در مورد پیشبرد راه‌حل‌های سیاسی در خاورمیانه برگزار کرد."
+        }
+      },
+      "topics": []
     }
   ]
 }
