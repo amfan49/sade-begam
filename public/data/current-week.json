@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:12.097Z",
+  "published_at": "2026-06-16T10:56:14.660Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -643,6 +643,24 @@
       "is_official": true,
       "lang_original": "en",
       "headline": "Trump pivots on strikes while dangling Iran deal, testing whether Tehran blinks",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-035",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/global-oil-prices-end-near-an-8-week-low-as-trump-backs-away-from-his-threat-of-strikes-on-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Global oil prices end near an 8-week low as Trump backs away from his threat of strikes on Iran",
       "excerpt": "",
       "translations": {
         "en": null,
