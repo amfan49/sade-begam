@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:52:41.822Z",
+  "published_at": "2026-06-16T10:52:42.594Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -338,6 +338,24 @@
       "lang_original": "en",
       "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
       "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen, politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes, Ex-UN-Untergeneralsekretär, zeigt, wo die Anknüpfungspunkte liegen.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-018",
+      "date": "2026-06-09",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.faz.net/podcasts/f-a-z-podcast-fuer-deutschland/er-muss-diesen-krieg-beenden-nahostexperte-guido-steinberg-ueber-trumps-iran-dilemma-200911831.html",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "„Er muss diesen Krieg beenden“ – Nahostexperte Steinberg über Trumps Iran-Dilemma",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
