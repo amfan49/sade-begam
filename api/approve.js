@@ -1,108 +1,202 @@
 // api/approve.js — Vercel serverless function
 // GET /api/approve?token=PASSWORD&id=draft-001
 //
-// Password is verified via SHA-256 hash (no env var needed for auth).
-// Env var needed: GH_PAT — GitHub Personal Access Token with "workflow" scope
+// Reads draft-week.json from GitHub, approves the item, commits
+// current-week.json directly via GitHub API (as the PAT owner = Amir).
+// Vercel GitHub integration sees Amir's commit → auto-deploys.
+//
+// Env var needed: GH_PAT — GitHub Personal Access Token (workflow scope)
 
 const https  = require("https");
 const crypto = require("crypto");
 
-const REPO          = "amfan49/sade-begam";
-const WORKFLOW_FILE = "approve-single.yml";
-// SHA-256 of the admin password — safe to store in source code
+const REPO    = "amfan49/sade-begam";
+const BRANCH  = "main";
 const PW_HASH = "680cd13e1975705c243cc562eb06a655cc0d8a5fa872e153f9d347e3f8e5b3a2";
 
 function checkToken(t) {
   if (!t) return false;
-  const hash = crypto.createHash("sha256").update(t).digest("hex");
-  return hash === PW_HASH;
+  return crypto.createHash("sha256").update(t).digest("hex") === PW_HASH;
 }
 
 module.exports = async (req, res) => {
-  const { token, id } = req.query || {};
+  const { token, id, format } = req.query || {};
+  const isJson = format === "json" || id === "__ping__";
 
   if (!checkToken(token)) {
-    if ((req.query.format === "json") || id === "__ping__") {
-      return res.status(403).json({ ok: false });
-    }
-    return res.status(403).send(page("403 Forbidden", "رمز عبور اشتباه است.", "#e74c3c"));
+    return isJson
+      ? res.status(403).json({ ok: false, error: "Falsches Passwort" })
+      : res.status(403).send(htmlPage("403", "رمز عبور اشتباه است.", "#e74c3c"));
   }
 
-  // Ping endpoint — used by admin page to validate password without side effects
-  if (id === "__ping__") {
-    return res.status(200).json({ ok: true });
-  }
+  if (id === "__ping__") return res.status(200).json({ ok: true });
 
   if (!id || (!id.startsWith("draft-") && id !== "all")) {
-    return res.status(400).send(page("400 Bad Request", "شناسه خبر نامعتبر است.", "#e74c3c"));
+    return res.status(400).json({ ok: false, error: "Ungültige ID" });
   }
 
   const ghPat = process.env.GH_PAT;
   if (!ghPat) {
-    return res.status(500).send(page("500 Server Error", "GH_PAT تنظیم نشده است.", "#e74c3c"));
+    return res.status(500).json({ ok: false, error: "GH_PAT fehlt in Vercel Environment Variables" });
   }
 
-  const body = JSON.stringify({ ref: "main", inputs: { item_id: id } });
-
   try {
-    const status = await callGitHub(
-      `https://api.github.com/repos/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
-      "POST",
-      ghPat,
-      body
-    );
+    // 1. Read draft-week.json from GitHub
+    const draftFile = await ghGet(`/repos/${REPO}/contents/public/data/draft-week.json`, ghPat);
+    const draft = JSON.parse(Buffer.from(draftFile.content, "base64").toString("utf8"));
 
-    if (status === 204) {
-      if (req.query.format === "json") {
-        return res.status(200).json({ ok: true, id });
-      }
-      return res.status(200).send(
-        page(
-          "✅ در حال انتشار",
-          `خبر <strong>${id}</strong> در حال انتشار است.<br>در عرض ۲–۳ دقیقه روی سایت ظاهر می‌شود.`,
-          "#27ae60",
-          `<a href="https://sade-begam.vercel.app"
-              style="display:inline-block;margin-top:20px;background:#1A6FBF;color:#fff;
-                     text-decoration:none;padding:10px 24px;border-radius:8px;font-size:14px;">
-             → رفتن به سایت
-           </a>`
-        )
-      );
-    } else {
-      return res.status(500).send(page("خطا", `GitHub پاسخ داد: ${status}`, "#e74c3c"));
+    // 2. Read current-week.json from GitHub
+    const currentFile = await ghGet(`/repos/${REPO}/contents/public/data/current-week.json`, ghPat);
+    const current = JSON.parse(Buffer.from(currentFile.content, "base64").toString("utf8"));
+
+    // 3. Find items to approve
+    const toApprove = id === "all"
+      ? draft.items
+      : draft.items.filter(item => item.id === id);
+
+    if (toApprove.length === 0) {
+      return res.status(404).json({ ok: false, error: `${id} nicht in der Warteliste gefunden` });
     }
+
+    // 4. Assign new IDs continuing from current-week
+    const week = current.week || getISOWeekLabel();
+    const existingNums = current.items
+      .map(i => parseInt(i.id.split("-").pop(), 10))
+      .filter(n => !isNaN(n));
+    let nextNum = existingNums.length > 0 ? Math.max(...existingNums) + 1 : 1;
+
+    const added = toApprove.map(item => ({
+      id: `${week}-${String(nextNum++).padStart(3, "0")}`,
+      date: item.date,
+      country: item.country,
+      region: item.region,
+      flag: item.flag,
+      source_organization: item.source_organization,
+      source_url: item.source_url,
+      is_official: true,
+      lang_original: item.lang_original || "en",
+      headline: clean(item.headline || ""),
+      excerpt: clean((item.excerpt || "").replace(/\s*The post .+ appeared first on .+\.$/, "").trim()),
+      translations: { en: null, fa: null },
+      topics: item.topics || []
+    }));
+
+    current.items.push(...added);
+    current.published_at = new Date().toISOString();
+    delete current.is_sample;
+
+    // 5. Commit updated current-week.json via GitHub API
+    //    Commit is attributed to the PAT owner (amfan49) → Vercel auto-deploys
+    const newContent = Buffer.from(JSON.stringify(current, null, 2)).toString("base64");
+    await ghPut(`/repos/${REPO}/contents/public/data/current-week.json`, ghPat, {
+      message: `Publish ${id} via AmirCheck`,
+      content: newContent,
+      sha: currentFile.sha,
+      branch: BRANCH
+    });
+
+    if (isJson) return res.status(200).json({ ok: true, id, added: added.length });
+
+    return res.status(200).send(htmlPage(
+      "✅ منتشر شد",
+      `خبر <strong>${id}</strong> منتشر شد.<br>در عرض ۱–۲ دقیقه روی سایت ظاهر می‌شود.`,
+      "#27ae60",
+      `<a href="https://sade-begam.vercel.app"
+          style="display:inline-block;margin-top:20px;background:#1A6FBF;color:#fff;
+                 text-decoration:none;padding:10px 24px;border-radius:8px;font-size:14px;">
+         → رفتن به سایت
+       </a>`
+    ));
+
   } catch (err) {
-    return res.status(500).send(page("خطا", err.message, "#e74c3c"));
+    console.error(err);
+    const msg = err.message || "Unbekannter Fehler";
+    return isJson
+      ? res.status(500).json({ ok: false, error: msg })
+      : res.status(500).send(htmlPage("خطا", msg, "#e74c3c"));
   }
 };
 
-function callGitHub(url, method, token, body) {
+// ── GitHub API helpers ────────────────────────────────────────────
+
+function ghGet(path, token) {
   return new Promise((resolve, reject) => {
-    const u = new URL(url);
+    https.get({
+      hostname: "api.github.com",
+      path,
+      headers: {
+        Authorization: `Bearer ${token}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "sade-begam-approve"
+      }
+    }, (r) => {
+      let data = "";
+      r.on("data", c => data += c);
+      r.on("end", () => {
+        if (r.statusCode !== 200)
+          return reject(new Error(`GitHub GET ${path} → ${r.statusCode}`));
+        resolve(JSON.parse(data));
+      });
+    }).on("error", reject);
+  });
+}
+
+function ghPut(path, token, body) {
+  const raw = JSON.stringify(body);
+  return new Promise((resolve, reject) => {
     const req = https.request({
-      hostname: u.hostname,
-      path: u.pathname + u.search,
-      method,
+      hostname: "api.github.com",
+      path,
+      method: "PUT",
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28",
         "Content-Type": "application/json",
-        "Content-Length": Buffer.byteLength(body),
-        "User-Agent": "sade-begam-approve-fn"
+        "Content-Length": Buffer.byteLength(raw),
+        "User-Agent": "sade-begam-approve"
       }
-    }, (r) => { r.resume(); resolve(r.statusCode); });
+    }, (r) => {
+      let data = "";
+      r.on("data", c => data += c);
+      r.on("end", () => {
+        if (r.statusCode < 200 || r.statusCode > 299)
+          return reject(new Error(`GitHub PUT ${path} → ${r.statusCode}: ${data}`));
+        resolve(JSON.parse(data));
+      });
+    });
     req.on("error", reject);
-    req.write(body);
+    req.write(raw);
     req.end();
   });
 }
 
-function page(title, msg, color, extra = "") {
+// ── Helpers ───────────────────────────────────────────────────────
+
+function clean(s) {
+  return s
+    .replace(/&#8217;/g, "'").replace(/&#8216;/g, "'")
+    .replace(/&#8220;/g, '"').replace(/&#8221;/g, '"')
+    .replace(/&#8230;/g, "…").replace(/&#160;/g, " ")
+    .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+}
+
+function getISOWeekLabel() {
+  const now = new Date();
+  const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  const week = Math.ceil(((d - yearStart) / 86400000 + 1) / 7);
+  return `${d.getUTCFullYear()}-W${String(week).padStart(2, "0")}`;
+}
+
+function htmlPage(title, msg, color, extra = "") {
   return `<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${title}</title>
   <style>
     body{margin:0;background:#F5F7FA;display:flex;align-items:center;
