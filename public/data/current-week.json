@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:42.305Z",
+  "published_at": "2026-06-16T10:56:44.862Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -896,6 +896,24 @@
       "lang_original": "en",
       "headline": "Trump’s ‘dealmaker-in-chief’ reputation comes under attack in Iran",
       "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-049",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/insight-impact/in-the-news/kroenig-interviewed-on-bbc-on-iran-negotiations/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Kroenig interviewed on BBC on Iran negotiations",
+      "excerpt": "On June 11, Atlantic Council vice president and Scowcroft Center senior director Matthew Kroenig was interviewed on BBC about ongoing negotiations with Iran.",
       "translations": {
         "en": null,
         "fa": null
