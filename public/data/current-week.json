@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:56:03.045Z",
+  "published_at": "2026-06-16T10:56:05.490Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -572,6 +572,24 @@
       "lang_original": "en",
       "headline": "U.S. attacks Iran’s water facilities, Israel attacks southern Lebanon",
       "excerpt": "INTERVIEW: U.S. ATTACK ON IRAN’S WATER FACILITIES, ISRAEL ATTACKS SOUTHERN LEBANON – w/ Jonathan Conricus pic.twitter.com/FUpxHOym84&#8212; Mario Nawfal (@MarioNawfal) June 11, 2026 ...",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-031",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-announces-fresh-us-strikes-on-iran-as-cease-fire-hangs-in-balance/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump Announces Fresh US Strikes On Iran As Cease-Fire Hangs In Balance",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
