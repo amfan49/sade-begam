@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:50:47.982Z",
+  "published_at": "2026-06-16T10:51:17.123Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -248,6 +248,24 @@
       "lang_original": "en",
       "headline": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
       "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on We",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-013",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/trumps-180-degree-turn-on-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump's 180 degree turn on Iran",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
