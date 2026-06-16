@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T10:57:04.197Z",
+  "published_at": "2026-06-16T10:57:08.686Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -1076,6 +1076,24 @@
       "lang_original": "en",
       "headline": "FIFA World Cup 2026: The Geopolitical Tensions at Play Off the Pitch",
       "excerpt": "The Iran war, immigration enforcement, and the Trump administration's travel bans have raised the stakes of this summer’s tournament.",
+      "translations": {
+        "en": null,
+        "fa": null
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-059",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/iran-standoff-raises-fears-of-broader-regional-conflict/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran standoff raises fears of broader regional conflict",
+      "excerpt": "",
       "translations": {
         "en": null,
         "fa": null
