@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:17.087Z",
+  "published_at": "2026-06-21T08:44:18.796Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3507,6 +3507,27 @@
         "en": null,
         "fa": {
           "headline": "بن‌بست ایران، نگرانی‌ها از درگیری منطقه‌ای گسترده‌تر را افزایش می‌دهد",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-167",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/10/trump-strikes-iran-to-maintain-credibility/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump strikes Iran to maintain credibility",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ترامپ برای حفظ اعتبار به ایران حمله می‌کند",
           "excerpt": ""
         }
       },
