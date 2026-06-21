@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:38.016Z",
+  "published_at": "2026-06-21T08:44:39.999Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3676,6 +3676,27 @@
         "fa": {
           "headline": "آیا توافق ایران و آمریکا در دسترس است؟ شش مسئله کلیدی که می‌توانند آتش‌بس را شکل دهند",
           "excerpt": "بنا به گزارش‌ها، ایالات متحده و ایران به توافقی که مدت‌ها انتظار آن می‌رفت نزدیک شده‌اند، اما هنوز مشخص نیست که آیا این توافق، اختلافات عمده آنها - از جمله برنامه‌های هسته‌ای و موشکی، تنگه هرمز و جنگ اسرائیل با نیروهای نیابتی ایران - را حل خواهد کرد یا خیر."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-175",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-limitations-of-hard-power-in-iran",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The Limitations of Hard Power in Iran",
+      "excerpt": "CFR President Michael Froman analyzes the war in Iran and the complications of the current geopolitical moment.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "محدودیت‌های قدرت سخت در ایران",
+          "excerpt": "مایکل فرومن، رئیس شورای روابط خارجی، جنگ در ایران و پیچیدگی‌های موقعیت ژئوپلیتیکی فعلی را تحلیل می‌کند."
         }
       },
       "topics": []
