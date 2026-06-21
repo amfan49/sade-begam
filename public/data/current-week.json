@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-16T11:02:26.991Z",
+  "published_at": "2026-06-21T07:42:43.745Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2290,6 +2290,27 @@
         "fa": {
           "headline": "«Er muss diesen Krieg beenden» – Nahostexperte Steinberg über Trumps Iran-Dilema",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-109",
+      "date": "2026-06-12",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167713",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "UN ‘encouraged’ by talk of possible US-Iran ceasefire deal",
+      "excerpt": "The United Nations continues to monitor developments amid conflicting reports on Friday of a possible ceasefire deal between the United States and Iran, the Spokesperson for the Secretary-General said in New York.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "سازمان ملل از صحبت‌های مربوط به توافق احتمالی آتش‌بس بین آمریکا و ایران «دلگرم» شده است",
+          "excerpt": "سخنگوی دبیرکل سازمان ملل متحد در نیویورک گفت، این سازمان همچنان در بحبوحه گزارش‌های متناقض روز جمعه مبنی بر توافق احتمالی آتش‌بس بین ایالات متحده و ایران، تحولات را زیر نظر دارد."
         }
       },
       "topics": []
