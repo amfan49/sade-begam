@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:42:52.705Z",
+  "published_at": "2026-06-21T07:42:58.219Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2374,6 +2374,27 @@
         "fa": {
           "headline": "بیانیه بریتانیا در شورای امنیت سازمان ملل: اجرای کامل و مؤثر تحریم‌های سازمان ملل علیه ایران همچنان ضروری است",
           "excerpt": "بیانیه سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در جلسه شورای امنیت سازمان ملل متحد درباره ایران."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-113",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/israels-reaction-to-a-potential-iran-deal/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Israel’s reaction to a potential Iran deal",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "واکنش اسرائیل به توافق احتمالی با ایران",
+          "excerpt": ""
         }
       },
       "topics": []
