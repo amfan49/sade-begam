@@ -298,12 +298,61 @@ textarea.search { resize: vertical; font-family: inherit; }
 
 .card { cursor: pointer; }
 
+/* ── Hamburger button (hidden on desktop) ── */
+.nav__burger {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px 11px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
 @media (max-width: 600px) {
   .detail-panel { padding: 16px 18px 48px; }
   .detail-headline { font-size: 18px; }
-  .nav .nav__link { display: none; }
   .logo__tag { display: none; }
+
+  /* Show burger, hide nav links by default */
+  .nav__burger { display: flex; align-items: center; }
+  .nav .nav__link { display: none; }
+
+  /* Mobile dropdown — slides out of sticky header */
+  .masthead.nav-open {
+    position: sticky; /* keep sticky */
+  }
+  .masthead.nav-open .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--bg-card);
+    border-bottom: 2px solid var(--border);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    z-index: 100;
+    padding: 0;
+  }
+  .masthead.nav-open .nav .nav__link {
+    display: block;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+  .masthead.nav-open .nav .nav__link:hover { background: var(--bg-page); }
+  .masthead.nav-open .nav .langswitch {
+    padding: 14px 20px;
+  }
+  .masthead.nav-open .nav .nav__burger { display: none; }
 }
+
+[data-theme="dark"] .nav__burger { border-color: var(--border); color: var(--text-primary); }
 
 /* ── Dark Mode ─────────────────────────────────────────────────── */
 [data-theme="dark"] {
@@ -592,11 +641,18 @@ textarea.search { resize: vertical; font-family: inherit; }
   .weekstrip { font-size: 12px; }
   .masthead__inner { padding: 10px 14px; gap: 10px; }
   .logo__name { font-size: 16px; }
-  .pag-btn { padding: 9px 14px; font-size: 13px; min-width: 70px; }
-  .pag-info { font-size: 12px; }
+  .pag-btn { padding: 10px 18px; font-size: 14px; min-width: 80px; flex: 1; }
+  .pagination { gap: 10px; padding: 12px 12px; }
+  .pag-info { font-size: 13px; }
   .card__flag-badge { width: 40px; height: 40px; font-size: 22px; }
   .card__country { font-size: 14px; }
   .card__org { font-size: 12px; }
   .badge { font-size: 10px; padding: 4px 8px; }
+  .search { font-size: 16px; /* prevents iOS zoom on focus */ }
+  .chips { gap: 6px; }
+  .chip { padding: 8px 13px; font-size: 13px; }
+  .footer__inner { padding: 20px 16px; }
+  .sb-chat-widget { bottom: 16px; inset-inline-end: 14px; }
+  .container { padding-inline: 12px; }
 }
 @keyframes slideDown { from { opacity: 0; transform: translateX(-50%) translateY(-10px); } to { opacity: 1; transform: translateX(-50%) translateY(0); } }
