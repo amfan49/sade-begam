@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:33.907Z",
+  "published_at": "2026-06-21T08:43:37.533Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3151,6 +3151,27 @@
         "fa": {
           "headline": "توافقنامه پادمان‌های NPT با ایران: بیانیه چهارگانه به شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
           "excerpt": "فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) بیانیه مشترکی را به شورای حکام آژانس بین‌المللی انرژی اتمی (IAEA) در مورد توافقنامه پادمان‌های پیمان منع گسترش سلاح‌های هسته‌ای (NPT) ایران ارائه کردند."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-150",
+      "date": "2026-06-09",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
+      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "بیانیه بریتانیا در شورای امنیت سازمان ملل: اجرای کامل و مؤثر تحریم‌های سازمان ملل علیه ایران همچنان ضروری است",
+          "excerpt": "بیانیه سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در جلسه شورای امنیت سازمان ملل متحد درباره ایران."
         }
       },
       "topics": []
