@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:28.373Z",
+  "published_at": "2026-06-21T08:43:31.961Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3109,6 +3109,27 @@
         "fa": {
           "headline": "سازمان ملل از صحبت‌های مربوط به توافق احتمالی آتش‌بس بین آمریکا و ایران «دلگرم» شده است",
           "excerpt": "سخنگوی دبیرکل سازمان ملل متحد در نیویورک گفت، این سازمان همچنان در بحبوحه گزارش‌های متناقض روز جمعه مبنی بر توافق احتمالی آتش‌بس بین ایالات متحده و ایران، تحولات را زیر نظر دارد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-148",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
+      "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nu…",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "توافق‌نامه پادمان‌های NPT با ایران: قطعنامه شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
+          "excerpt": "بیانیه‌ای از طرف فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) در جلسه هیئت مدیره آژانس بین‌المللی انرژی اتمی (IAEA) که قطعنامه‌ای را در مورد اجرای تعهدات ایران ذیل برجام ارائه می‌دهد..."
         }
       },
       "topics": []
