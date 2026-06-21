@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:51.637Z",
+  "published_at": "2026-06-21T08:43:53.666Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3297,6 +3297,27 @@
         "en": null,
         "fa": {
           "headline": "چرخش ۱۸۰ درجه‌ای ترامپ در قبال ایران",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-157",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/real-concern-is-accidental-escalation-between-u-s-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Real concern is 'accidental escalation' between U.S., Iran",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "نگرانی واقعی «تشدید تصادفی» تنش بین ایالات متحده و ایران است",
           "excerpt": ""
         }
       },
