@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:48.684Z",
+  "published_at": "2026-06-21T07:43:50.926Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2752,6 +2752,27 @@
         "fa": {
           "headline": "حمله تلافی‌جویانه آمریکا به ایران",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-131",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/11/dont-buy-irans-charade-this-regime-cant-afford-peace-at-any-price/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Don’t buy Iran’s charade — this regime can’t afford peace at ANY price",
+      "excerpt": "For the last two months, President Donald Trump’s rhetoric on Iran has seesawed between expressing optimism on negotiations and making explicit threats to remove the mullahs from power. This week,... The post Don’t buy Iran’s charade — this regime can’t afford peace at ANY price appeared first on FD",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "فریب ایران را نخورید - این رژیم به هیچ قیمتی نمی‌تواند صلح را بپذیرد",
+          "excerpt": "در دو ماه گذشته، لفاظی‌های رئیس جمهور دونالد ترامپ در مورد ایران بین ابراز خوش‌بینی در مورد مذاکرات و تهدیدهای صریح برای برکناری ملاها از قدرت، نوسان داشته است. این هفته،... پست «به حرف‌های ایران گوش ندهید - این رژیم نمی‌تواند به هیچ قیمتی صلح را تحمل کند» برای اولین بار در FD منتشر شد."
         }
       },
       "topics": []
