@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:44:00.701Z",
+  "published_at": "2026-06-21T07:44:05.277Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2835,6 +2835,27 @@
         "en": null,
         "fa": {
           "headline": "بن‌بست ایران، نگرانی‌ها از درگیری منطقه‌ای گسترده‌تر را افزایش می‌دهد",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-135",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-iran-tensions-escalate-after-apache-helicopter-downed/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S.-Iran tensions escalate after Apache helicopter downed",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "تشدید تنش‌ها بین ایران و آمریکا پس از سرنگونی بالگرد آپاچی",
           "excerpt": ""
         }
       },
