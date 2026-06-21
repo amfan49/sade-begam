@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:22.398Z",
+  "published_at": "2026-06-21T07:43:25.384Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2562,6 +2562,27 @@
         "en": null,
         "fa": {
           "headline": "ایران ترامپ را به خاطر هرگونه حرکت اشتباه با «سیلی محکم» تهدید می‌کند",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-122",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/israels-reaction-to-a-potential-iran-deal/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Israel’s reaction to a potential Iran deal",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "واکنش اسرائیل به توافق احتمالی با ایران",
           "excerpt": ""
         }
       },
