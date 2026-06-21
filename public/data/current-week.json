@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:14.293Z",
+  "published_at": "2026-06-21T08:44:17.087Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3486,6 +3486,27 @@
         "en": null,
         "fa": {
           "headline": "آمریکا موج جدید حملات هوایی خود به ایران را تکمیل کرد",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-166",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/iran-standoff-raises-fears-of-broader-regional-conflict/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran standoff raises fears of broader regional conflict",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "بن‌بست ایران، نگرانی‌ها از درگیری منطقه‌ای گسترده‌تر را افزایش می‌دهد",
           "excerpt": ""
         }
       },
