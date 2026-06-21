@@ -304,16 +304,19 @@ function scrollToFeed() {
 function renderCard(item) {
   const card = document.createElement("article");
   card.className = "card";
+  const _tr = item.translations ? item.translations[SB_LANG] : null;
+  const _hasTr = item.lang_original !== SB_LANG && _tr && _tr.headline;
   card.addEventListener("click", (e) => {
     if (e.target.closest(".card__source")) return;
-    if (e.target.closest(".card__translation")) {
+    // On Persian page: clicking anywhere on the card opens the translation window
+    if (_hasTr && (e.target.closest(".card__translation") || SB_LANG === "fa")) {
       openTranslationWindow(item);
       return;
     }
     openDetail(item);
   });
   card.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && e.target.closest(".card__translation")) {
+    if (e.key === "Enter" && (e.target.closest(".card__translation") || (SB_LANG === "fa" && _hasTr))) {
       openTranslationWindow(item);
     }
   });
@@ -463,59 +466,105 @@ function openTranslationWindow(item) {
   const headline = hasFullTr ? tr.headline : item.headline;
   const excerpt  = hasFullTr ? (tr.excerpt || "") : (item.excerpt || "");
   const dir      = SB_LANG === "fa" ? "rtl" : "ltr";
+  const ttsLang  = SB_LANG === "fa" ? "fa-IR" : "en-US";
   const fontUrl  = SB_LANG === "fa"
     ? "https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
     : "https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap";
-  const fontFam  = SB_LANG === "fa" ? "Vazirmatn, sans-serif" : "Outfit, sans-serif";
-  const disclaimer = T.trModalDisclaimer || "";
-  const sourceLabel = T.trModalSource || "View Official Source";
-  const closeLabel  = T.trModalClose  || "Close";
+  const fontFam      = SB_LANG === "fa" ? "Vazirmatn, sans-serif" : "Outfit, sans-serif";
+  const disclaimer   = T.trModalDisclaimer || "";
+  const sourceLabel  = T.trModalSource || "View Official Source";
+  const closeLabel   = T.trModalClose  || "Close";
+  const listenLabel  = SB_LANG === "fa" ? "🔊 شنیدن" : "🔊 Listen";
+  const stopLabel    = SB_LANG === "fa" ? "⏹ توقف" : "⏹ Stop";
+  const ttsNoSupport = SB_LANG === "fa"
+    ? "مرورگر شما از خواندن صوتی پشتیبانی نمی‌کند."
+    : "Your browser does not support text-to-speech.";
 
   const win = window.open("", "_blank");
   if (!win) { openTranslationModal(item); return; }
 
-  win.document.write(`<!DOCTYPE html>
-<html dir="${dir}" lang="${SB_LANG}">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${item.flag || ""} ${item.country} — Sade Begam</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="${fontUrl}" rel="stylesheet">
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:${fontFam};background:#F5F7FA;color:#1C2233;line-height:1.75;padding:16px}
-.card{background:#fff;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,.09);max-width:680px;margin:20px auto;padding:28px 28px 32px}
-.meta-row{display:flex;align-items:center;gap:12px;margin-bottom:20px}
-.flag{font-size:36px;flex-shrink:0}
-.country{font-weight:700;font-size:16px}
-.org{color:#1A6FBF;font-size:13px;margin-top:2px}
-.date{font-size:12px;color:#6B7A94;margin-top:2px}
-h1{font-size:21px;font-weight:700;line-height:1.4;margin-bottom:16px;color:#1C2233}
-p{font-size:16px;line-height:1.85;color:#3D4560;margin-bottom:16px}
-.disclaimer{font-size:12px;color:#9AA3B5;padding-top:14px;border-top:1px solid #E8ECF2}
-.source-btn{display:block;text-align:center;background:#1A6FBF;color:#fff;text-decoration:none;padding:14px 20px;border-radius:10px;font-size:15px;font-weight:700;margin-top:22px;transition:background .15s}
-.source-btn:hover{background:#155A9A}
-.close-btn{display:block;text-align:center;background:none;border:none;color:#9AA3B5;font-size:13px;margin:14px auto 0;cursor:pointer;font-family:inherit}
-</style>
-</head>
-<body>
-<div class="card">
-  <div class="meta-row">
-    <span class="flag">${item.flag || "🌍"}</span>
-    <div>
-      <div class="country">${item.country}</div>
-      <div class="org">${item.source_organization}</div>
-      <div class="date">${item.date || ""}</div>
-    </div>
-  </div>
-  <h1>${headline}</h1>
-  <p>${excerpt}</p>
-  <p class="disclaimer">${disclaimer}</p>
-  <a class="source-btn" href="${item.source_url}" target="_blank" rel="noopener noreferrer">🔗 ${sourceLabel}</a>
-  <button class="close-btn" onclick="window.close()">✕ ${closeLabel}</button>
-</div>
-</body>
-</html>`);
+  const html = "<!DOCTYPE html>\n" +
+"<html dir=\"" + dir + "\" lang=\"" + SB_LANG + "\">\n" +
+"<head>\n" +
+"<meta charset=\"utf-8\">\n" +
+"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
+"<title>" + (item.flag || "") + " " + item.country + " — Sade Begam</title>\n" +
+"<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
+"<link href=\"" + fontUrl + "\" rel=\"stylesheet\">\n" +
+"<style>\n" +
+"*{box-sizing:border-box;margin:0;padding:0}\n" +
+"body{font-family:" + fontFam + ";background:#F5F7FA;color:#1C2233;line-height:1.75;padding:16px}\n" +
+".card{background:#fff;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,.09);max-width:700px;margin:20px auto;padding:28px 28px 32px}\n" +
+".meta-row{display:flex;align-items:center;gap:12px;margin-bottom:20px}\n" +
+".flag{font-size:36px;flex-shrink:0}\n" +
+".country{font-weight:700;font-size:16px}\n" +
+".org{color:#1A6FBF;font-size:13px;margin-top:2px}\n" +
+".date{font-size:12px;color:#6B7A94;margin-top:2px}\n" +
+"h1{font-size:22px;font-weight:700;line-height:1.45;margin-bottom:18px;color:#1C2233}\n" +
+"p{font-size:16px;line-height:1.9;color:#3D4560;margin-bottom:16px;white-space:pre-line}\n" +
+".disclaimer{font-size:12px;color:#9AA3B5;padding-top:14px;border-top:1px solid #E8ECF2;white-space:normal}\n" +
+".tts-row{display:flex;gap:10px;margin-top:20px;margin-bottom:4px}\n" +
+".tts-btn{flex:1;padding:13px;border-radius:10px;border:none;font-size:15px;font-family:inherit;cursor:pointer;font-weight:700;transition:background .15s}\n" +
+".tts-play{background:#FF6B35;color:#fff}\n" +
+".tts-play:hover{background:#e05a28}\n" +
+".tts-stop{background:#E8ECF2;color:#3D4560}\n" +
+".tts-stop:hover{background:#d0d6e0}\n" +
+".source-btn{display:block;text-align:center;background:#1A6FBF;color:#fff;text-decoration:none;padding:14px 20px;border-radius:10px;font-size:15px;font-weight:700;margin-top:16px;transition:background .15s}\n" +
+".source-btn:hover{background:#155A9A}\n" +
+".close-btn{display:block;text-align:center;background:none;border:none;color:#9AA3B5;font-size:13px;margin:14px auto 0;cursor:pointer;font-family:inherit}\n" +
+"</style>\n" +
+"</head>\n" +
+"<body>\n" +
+"<div class=\"card\">\n" +
+"  <div class=\"meta-row\">\n" +
+"    <span class=\"flag\">" + (item.flag || "🌍") + "</span>\n" +
+"    <div>\n" +
+"      <div class=\"country\">" + item.country + "</div>\n" +
+"      <div class=\"org\">" + item.source_organization + "</div>\n" +
+"      <div class=\"date\">" + (item.date || "") + "</div>\n" +
+"    </div>\n" +
+"  </div>\n" +
+"  <h1 id=\"trH\">" + headline + "</h1>\n" +
+"  <p id=\"trP\">" + excerpt + "</p>\n" +
+"  <p class=\"disclaimer\">" + disclaimer + "</p>\n" +
+"  <div class=\"tts-row\">\n" +
+"    <button class=\"tts-btn tts-play\" id=\"ttsPlay\" onclick=\"ttsSpeak()\">" + listenLabel + "</button>\n" +
+"    <button class=\"tts-btn tts-stop\" id=\"ttsStop\" onclick=\"ttsStop()\" style=\"display:none\">" + stopLabel + "</button>\n" +
+"  </div>\n" +
+"  <a class=\"source-btn\" href=\"" + item.source_url + "\" target=\"_blank\" rel=\"noopener noreferrer\">🔗 " + sourceLabel + "</a>\n" +
+"  <button class=\"close-btn\" onclick=\"window.close()\">✕ " + closeLabel + "</button>\n" +
+"</div>\n" +
+"<script>\n" +
+"var TTS_LANG=\"" + ttsLang + "\";\n" +
+"var TTS_NO_SUPPORT=\"" + ttsNoSupport + "\";\n" +
+"function ttsSpeak(){\n" +
+"  if(!window.speechSynthesis){alert(TTS_NO_SUPPORT);return;}\n" +
+"  window.speechSynthesis.cancel();\n" +
+"  var text=document.getElementById('trH').textContent+'. '+document.getElementById('trP').textContent;\n" +
+"  var u=new SpeechSynthesisUtterance(text);\n" +
+"  u.lang=TTS_LANG;u.rate=0.88;\n" +
+"  function setVoice(){\n" +
+"    var voices=window.speechSynthesis.getVoices();\n" +
+"    var v=voices.find(function(x){return x.lang===TTS_LANG||x.lang.startsWith(TTS_LANG.split('-')[0]);});\n" +
+"    if(v)u.voice=v;\n" +
+"    window.speechSynthesis.speak(u);\n" +
+"  }\n" +
+"  if(window.speechSynthesis.getVoices().length){setVoice();}else{window.speechSynthesis.addEventListener('voiceschanged',setVoice,{once:true});}\n" +
+"  document.getElementById('ttsPlay').style.display='none';\n" +
+"  document.getElementById('ttsStop').style.display='block';\n" +
+"  u.onend=function(){document.getElementById('ttsPlay').style.display='block';document.getElementById('ttsStop').style.display='none';};\n" +
+"  u.onerror=function(){document.getElementById('ttsPlay').style.display='block';document.getElementById('ttsStop').style.display='none';};\n" +
+"}\n" +
+"function ttsStop(){\n" +
+"  window.speechSynthesis.cancel();\n" +
+"  document.getElementById('ttsPlay').style.display='block';\n" +
+"  document.getElementById('ttsStop').style.display='none';\n" +
+"}\n" +
+"window.addEventListener('beforeunload',function(){window.speechSynthesis.cancel();});\n" +
+"<\/script>\n" +
+"</body>\n" +
+"</html>";
+
+  win.document.write(html);
   win.document.close();
 }
