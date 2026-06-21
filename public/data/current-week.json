@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:34.678Z",
+  "published_at": "2026-06-21T08:44:38.016Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3655,6 +3655,27 @@
         "fa": {
           "headline": "از شکاف تا شکاف عمیق: منافع متضاد آمریکا و اسرائیل در جنگ با ایران",
           "excerpt": "اختلاف نظر میان بنیامین نتانیاهو، نخست وزیر اسرائیل، و دونالد ترامپ، رئیس جمهور آمریکا که زمانی اندک بود، در هفته‌های اخیر عمیق‌تر شده است."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-174",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/is-a-u-s-iran-deal-within-reach-six-key-issues-that-could-shape-a-ceasefire",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Is a U.S.-Iran Deal Within Reach? Six Key Issues That Could Shape a Ceasefire",
+      "excerpt": "The United States and Iran are reportedly close to a long-awaited agreement, but it remains to be seen whether it resolves their major differences—including nuclear and missile programs, the Strait of Hormuz, and Israel’s war with Iranian proxies.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "آیا توافق ایران و آمریکا در دسترس است؟ شش مسئله کلیدی که می‌توانند آتش‌بس را شکل دهند",
+          "excerpt": "بنا به گزارش‌ها، ایالات متحده و ایران به توافقی که مدت‌ها انتظار آن می‌رفت نزدیک شده‌اند، اما هنوز مشخص نیست که آیا این توافق، اختلافات عمده آنها - از جمله برنامه‌های هسته‌ای و موشکی، تنگه هرمز و جنگ اسرائیل با نیروهای نیابتی ایران - را حل خواهد کرد یا خیر."
         }
       },
       "topics": []
