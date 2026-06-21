@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:01.648Z",
+  "published_at": "2026-06-21T08:44:03.675Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3381,6 +3381,27 @@
         "en": null,
         "fa": {
           "headline": "چگونه جنگ ایران به چین فرصت ورود به بازار پهپادهای خلیج فارس را می‌دهد؟",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-161",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-pivots-on-strikes-while-dangling-iran-deal-testing-whether-tehran-blinks/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump pivots on strikes while dangling Iran deal, testing whether Tehran blinks",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ترامپ در حالی که توافق ایران را به تعویق می‌اندازد، روی حملات هوایی متمرکز می‌شود و می‌سنجد که آیا تهران کوتاه می‌آید یا نه",
           "excerpt": ""
         }
       },
