@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:34.808Z",
+  "published_at": "2026-06-21T07:43:40.659Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2668,6 +2668,27 @@
         "fa": {
           "headline": "حمله آمریکا به تأسیسات آبی ایران و حمله اسرائیل به جنوب لبنان",
           "excerpt": "مصاحبه: حمله آمریکا به تأسیسات آبی ایران، حمله اسرائیل به جنوب لبنان – با جاناتان کونریکوس pic.twitter.com/FUpxHOym84— ماریو نوفال (@MarioNawfal) 11 ژوئن 2026 ..."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-127",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/how-iran-war-is-giving-china-an-opening-in-gulf-drone-market/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "How Iran war is giving China an opening in Gulf drone market",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "چگونه جنگ ایران به چین فرصت ورود به بازار پهپادهای خلیج فارس را می‌دهد؟",
+          "excerpt": ""
         }
       },
       "topics": []
