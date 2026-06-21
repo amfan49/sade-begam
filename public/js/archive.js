@@ -64,7 +64,10 @@ async function loadArchive() {
 
     const byId = new Map();
     [...(arc.items || []), ...(week.items || [])].forEach((it) => { if (it && it.id) byId.set(it.id, it); });
-    ARC_ITEMS = [...byId.values()].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    ARC_ITEMS = [...byId.values()].sort((a, b) => {
+      const da = a.date || "", db = b.date || "";
+      return db > da ? 1 : db < da ? -1 : (b.id || "") > (a.id || "") ? 1 : -1;
+    });
 
     try { localStorage.setItem(ARC_CACHE_KEY, JSON.stringify({ at: Date.now(), items: ARC_ITEMS })); } catch (_) {}
     renderGroups();

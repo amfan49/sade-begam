@@ -112,6 +112,9 @@ async function main() {
     }
   }
 
+  // Sort newest first so Amir sees the most recent items at the top when reviewing
+  collected.sort((a, b) => (b.date || "") > (a.date || "") ? 1 : (b.date || "") < (a.date || "") ? -1 : 0);
+
   const draft = {
     generated_at: new Date().toISOString(),
     window_days: WINDOW_DAYS,

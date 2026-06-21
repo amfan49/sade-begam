@@ -227,7 +227,10 @@ function renderFeed() {
   const feed = document.getElementById("feed");
   if (!feed) return;
 
-  let items = [...ALL_ITEMS].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  let items = [...ALL_ITEMS].sort((a, b) => {
+    const da = a.date || "", db = b.date || "";
+    return db > da ? 1 : db < da ? -1 : (b.id || "") > (a.id || "") ? 1 : -1;
+  });
   if (ACTIVE_REGION !== "all") items = items.filter((i) => i.region === ACTIVE_REGION);
   if (SEARCH) {
     items = items.filter((i) => {
