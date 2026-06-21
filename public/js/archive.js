@@ -23,7 +23,7 @@ function applyChrome() {
   set("brandName", T.brandName); set("tagline", T.tagline);
   set("navHome", T.navHome); set("navAbout", T.navAbout);
   set("navArchive", T.navArchive);
-  set("navNewsletter", T.navNewsletter); set("navOrders", T.navOrders);
+  set("navNewsletter", T.navNewsletter); set("navOrders", T.navOrders); set("navChat", T.navChat);
   set("footerNote", T.footerNote); set("rights", T.rights);
   sbRenderCommonFooter();
 

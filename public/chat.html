@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بگم‌بات — دستیار هوشمند ساده بگم</title>
+  <meta name="description" content="دستیار هوشمند فارسی‌زبان ساده بگم — جستجو در اخبار رسمی درباره ایران" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__mark">SB</span>
+        <span class="logo__text">
+          <span class="logo__name" id="brandName">Sade Begam</span>
+          <span class="logo__tag" id="tagline">Official News. No Filter.</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__link" href="index.html"      id="navHome">Home</a>
+        <a class="nav__link" href="about.html"      id="navAbout">About</a>
+        <a class="nav__link" href="archive.html"    id="navArchive">Archive</a>
+        <a class="nav__link" href="newsletter.html" id="navNewsletter">Newsletter</a>
+        <a class="nav__link" href="orders.html"     id="navOrders">Orders</a>
+        <a class="nav__link active" href="chat.html" id="navChat">AI Chat</a>
+        <span class="langswitch">
+          <button data-setlang="fa">فا</button>
+          <button data-setlang="en">EN</button>
+        </span>
+        <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Chat layout -->
+  <main class="chat-page" role="main" aria-label="چت">
+
+    <!-- Bot header strip -->
+    <div class="chat-page__header">
+      <div class="chat-page__avatar" aria-hidden="true">🤖</div>
+      <div>
+        <div class="chat-page__name" id="chatBotName">بگم‌بات</div>
+        <div class="chat-page__status" id="chatBotStatus">آنلاین · دستیار هوشمند</div>
+      </div>
+    </div>
+
+    <!-- Message stream -->
+    <div class="chat-page__messages" id="chatMessages" aria-live="polite" aria-label="مکالمه"></div>
+
+    <!-- Quick suggestion chips (shown initially) -->
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="chat-suggestions__chip" data-q="آخرین اخبار مربوط به برجام چیست؟">📰 برجام</button>
+      <button class="chat-suggestions__chip" data-q="اظهارات اخیر وزارت خارجه آمریکا درباره ایران">🇺🇸 آمریکا</button>
+      <button class="chat-suggestions__chip" data-q="آخرین اخبار آژانس بین‌المللی انرژی اتمی">⚛️ آژانس اتمی</button>
+      <button class="chat-suggestions__chip" data-q="می‌خواهم در خبرنامه ثبت نام کنم">✉️ خبرنامه</button>
+    </div>
+
+    <!-- Input bar -->
+    <div class="chat-page__input-bar">
+      <textarea
+        class="chat-page__textarea"
+        id="chatInput"
+        placeholder="پیامتان را بنویسید…"
+        rows="1"
+        aria-label="پیام"
+      ></textarea>
+      <button class="chat-page__send" id="chatSend" aria-label="ارسال" disabled>
+        ↑
+      </button>
+    </div>
+  </main>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script src="js/chat-page.js"></script>
+</body>
+</html>

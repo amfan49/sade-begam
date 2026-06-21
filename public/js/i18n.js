@@ -16,6 +16,7 @@ const STRINGS = {
     navNewsletter: "خبرنامه",
     navOrders: "سفارش خبر",
     navArchive: "آرشیو",
+    navChat: "چت هوشمند",
     todayLabel: "امروز",
     weekLabel: "هفته‌ی",
     lastUpdated: "آخرین به‌روزرسانی",
@@ -37,6 +38,13 @@ const STRINGS = {
     fontLarger: "بزرگ‌تر",
     fontSmaller: "کوچک‌تر",
     a11yBar: "دسترس‌پذیری",
+    aiChat: {
+      botName:     "بگم‌بات",
+      botStatus:   "آنلاین · دستیار هوشمند",
+      placeholder: "پیامتان را بنویسید…",
+      greeting:    "سلام! 👋 من بگم‌بات هستم — دستیار هوشمند سایت «ساده بگم».\n\nمی‌توانید درباره اخبار رسمی ایران بپرسید، وضعیت اشتراک را بررسی کنید، یا اطلاعات تماس خود را ثبت کنید.",
+      error:       "متأسفانه خطایی رخ داد. لطفاً دوباره تلاش کنید."
+    },
     chat: {
       title: "ساده بگم — چت و جستجو",
       open: "باز کردن چت",
@@ -142,6 +150,7 @@ const STRINGS = {
     navNewsletter: "Newsletter",
     navOrders: "Orders",
     navArchive: "Archive",
+    navChat: "AI Chat",
     todayLabel: "Today",
     weekLabel: "Week",
     lastUpdated: "Last updated",
@@ -163,6 +172,13 @@ const STRINGS = {
     fontLarger: "Larger text",
     fontSmaller: "Smaller text",
     a11yBar: "Accessibility",
+    aiChat: {
+      botName:     "SaBot",
+      botStatus:   "Online · AI Assistant",
+      placeholder: "Type your message…",
+      greeting:    "Hello! 👋 I'm SaBot — the AI assistant for Sade Begam.\n\nYou can ask me about official news on Iran, check your subscription status, or register your contact information.",
+      error:       "Sorry, an error occurred. Please try again."
+    },
     chat: {
       title: "Sade Begam — Chat & Search",
       open: "Open chat",

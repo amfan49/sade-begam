@@ -116,6 +116,7 @@ function applyLanguageChrome() {
   setText("navArchive", T.navArchive);
   setText("navNewsletter", T.navNewsletter);
   setText("navOrders", T.navOrders);
+  setText("navChat",   T.navChat);
   setText("footerNote", T.footerNote);
   setText("rights", T.rights);
 
