@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:17.521Z",
+  "published_at": "2026-06-21T07:43:20.802Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2521,6 +2521,27 @@
         "fa": {
           "headline": "بیانیه مشترک در مورد تهدیدات دولت ایران و حملات ادعایی HAYI",
           "excerpt": "بیانیه مشترک ۲۴ کشور در مورد تهدیدات دولتی مربوط به سرویس‌های امنیتی ایران و محکومیت حملات اخیر که گروه حرکت اصحاب یمین الاسلامیه (HAYI) مسئولیت آن را بر عهده گرفت - در سراسر اروپا."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-120",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/12/irans-nuclear-enrichment-progress-2008-2025-and-beyond/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran's Nuclear Enrichment Progress: 2008-2025 and Beyond",
+      "excerpt": "...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "پیشرفت غنی‌سازی هسته‌ای ایران: ۲۰۰۸-۲۰۲۵ و پس از آن",
+          "excerpt": "اا"
         }
       },
       "topics": []
