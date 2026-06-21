@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:49.344Z",
+  "published_at": "2026-06-21T08:43:51.637Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3277,6 +3277,27 @@
         "fa": {
           "headline": "قابلیت‌های غنی‌سازی اورانیوم ایران باید پس از باز شدن تنگه هرمز از بین برود.",
           "excerpt": "... گوش کن"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-156",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/trumps-180-degree-turn-on-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump's 180 degree turn on Iran",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "چرخش ۱۸۰ درجه‌ای ترامپ در قبال ایران",
+          "excerpt": ""
         }
       },
       "topics": []
