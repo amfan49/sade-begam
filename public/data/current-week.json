@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:47.984Z",
+  "published_at": "2026-06-21T08:44:49.762Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3760,6 +3760,27 @@
         "fa": {
           "headline": "Fussball-WM während Iran-Krieg: Braut sich da etwas zusammen?",
           "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-179",
+      "date": "2026-06-11",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-global-challenges-der-irankrieg-veraendert-die-golfregion-europa-muss-handeln/100230194.html",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
+      "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen, politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes, Ex-UN-Untergeneralsekretär, zeigt, wo die Anknüpfungspunkte liegen.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
+          "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen، politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes، سابق سازمان ملل متحد Untergeneralsekretär، zeigt، wo die Anknüpfungspunkte liegen."
         }
       },
       "topics": []
