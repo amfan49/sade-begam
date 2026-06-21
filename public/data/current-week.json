@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:22.650Z",
+  "published_at": "2026-06-21T08:44:24.428Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3550,6 +3550,27 @@
         "fa": {
           "headline": "آمریکا ۲۰ هدف در داخل ایران را هدف قرار داد، تهران تهدید به تلافی کرد",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-169",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-conducts-strikes-on-iran-after-helicopter-downing/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S. conducts strikes on Iran after helicopter downing",
+      "excerpt": "INTERVIEW: FULL LIVE ANALYSIS OF THE U.S ATTACK ON IRAN, AND IRAN’S RETALIATIONW/ Admiral Mark Montgomery (@MarkCMontgomery), Fmr Army Officer Stefano Ritondale (@artoriastech), and @realazadeh pic.twitter.com/YaIsFqIllW&#8212;... The post U.S. conducts strikes on Iran after helicopter downing appea",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "آمریکا پس از سرنگونی بالگرد، به ایران حمله کرد",
+          "excerpt": "مصاحبه: تحلیل زنده و کامل حمله آمریکا به ایران و انتقام ایران با حضور دریاسالار مارک مونتگومری (@MarkCMontgomery)، افسر ارشد ارتش استفانو ریتوندیل (@artoriastech) و @realazadeh pic.twitter.com/YaIsFqIllW—... پست: آمریکا پس از سرنگونی هلیکوپتر، حملاتی را علیه ایران انجام می‌دهد."
         }
       },
       "topics": []
