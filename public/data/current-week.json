@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:24.428Z",
+  "published_at": "2026-06-21T08:44:27.466Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3571,6 +3571,27 @@
         "fa": {
           "headline": "آمریکا پس از سرنگونی بالگرد، به ایران حمله کرد",
           "excerpt": "مصاحبه: تحلیل زنده و کامل حمله آمریکا به ایران و انتقام ایران با حضور دریاسالار مارک مونتگومری (@MarkCMontgomery)، افسر ارشد ارتش استفانو ریتوندیل (@artoriastech) و @realazadeh pic.twitter.com/YaIsFqIllW—... پست: آمریکا پس از سرنگونی هلیکوپتر، حملاتی را علیه ایران انجام می‌دهد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-170",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/dispatches/its-not-a-deal-but-trumps-memorandum-with-iran-can-be-the-start-of-something-bigger/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "It's not a 'deal.’ But Trump's memorandum with Iran can be the start of something bigger.",
+      "excerpt": "What appears to be emerging now is a rough outline and high-level explanation of the concepts that an eventual deal could include.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "این یک «توافق» نیست. اما تفاهم‌نامه ترامپ با ایران می‌تواند آغاز چیزی بزرگتر باشد.",
+          "excerpt": "آنچه اکنون به نظر می‌رسد در حال ظهور است، یک طرح کلی و توضیح سطح بالا از مفاهیمی است که یک توافق نهایی می‌تواند شامل آنها باشد."
         }
       },
       "topics": []
