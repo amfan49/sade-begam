@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:15.614Z",
+  "published_at": "2026-06-21T07:43:17.521Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2500,6 +2500,27 @@
         "fa": {
           "headline": "توافقنامه پادمان‌های NPT با ایران: بیانیه چهارگانه به شورای حکام آژانس بین‌المللی انرژی اتمی، ژوئن ۲۰۲۶",
           "excerpt": "فرانسه، آلمان، بریتانیا و ایالات متحده (گروه چهارجانبه) بیانیه مشترکی را به شورای حکام آژانس بین‌المللی انرژی اتمی (IAEA) در مورد توافقنامه پادمان‌های پیمان منع گسترش سلاح‌های هسته‌ای (NPT) ایران ارائه کردند."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-119",
+      "date": "2026-06-10",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
+      "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "بیانیه مشترک در مورد تهدیدات دولت ایران و حملات ادعایی HAYI",
+          "excerpt": "بیانیه مشترک ۲۴ کشور در مورد تهدیدات دولتی مربوط به سرویس‌های امنیتی ایران و محکومیت حملات اخیر که گروه حرکت اصحاب یمین الاسلامیه (HAYI) مسئولیت آن را بر عهده گرفت - در سراسر اروپا."
         }
       },
       "topics": []
