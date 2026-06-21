@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:44:14.874Z",
+  "published_at": "2026-06-21T07:44:17.048Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2920,6 +2920,27 @@
         "fa": {
           "headline": "جنگ ایران، بازی پوکر دروغگوهاست",
           "excerpt": "سوال اصلی صرفاً این نبوده که چه کسی قدرت را در دست دارد، بلکه این بوده که چه کسی حاضر است درد را تحمل کند، ریسک را تحمل کند و در حالی که منطق متعارف، خویشتن‌داری را ایجاب می‌کند، به تشدید تنش ادامه دهد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-139",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/content-series/fastthinking/is-this-the-end-of-the-iran-war/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Is this the end of the Iran war?",
+      "excerpt": "Our experts break down the latest strikes and Trump's announcement of a pending deal to end the conflict.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "آیا این پایان جنگ ایران است؟",
+          "excerpt": "کارشناسان ما آخرین حملات و اعلام ترامپ مبنی بر توافق قریب‌الوقوع برای پایان دادن به درگیری را بررسی می‌کنند."
         }
       },
       "topics": []
