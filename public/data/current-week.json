@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:39.461Z",
+  "published_at": "2026-06-21T08:43:42.484Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3193,6 +3193,27 @@
         "fa": {
           "headline": "پیشرفت غنی‌سازی هسته‌ای ایران: ۲۰۰۸-۲۰۲۵ و پس از آن",
           "excerpt": "اا"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-152",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/12/iran-wants-to-punish-jordan-for-hosting-u-s-forces/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran Wants To Punish Jordan for Hosting U.S. Forces",
+      "excerpt": "The Jordanian Armed Forces (JAF) announced on June 11 that they had intercepted 20 missiles launched from Iran toward Al-Azraq, a town about 50 miles east of Amman that is also home to a major air base...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ایران می‌خواهد اردن را به خاطر میزبانی از نیروهای آمریکایی مجازات کند",
+          "excerpt": "نیروهای مسلح اردن (JAF) در ۱۱ ژوئن اعلام کردند که ۲۰ موشک شلیک شده از ایران به سمت الازرق، شهری در حدود ۵۰ مایلی شرق امان که محل یک پایگاه هوایی بزرگ نیز هست، را رهگیری کرده‌اند."
         }
       },
       "topics": []
