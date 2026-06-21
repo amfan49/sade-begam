@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-21T17:15:12.064Z",
+  "generated_at": "2026-06-21T22:41:40.903Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 7,
+  "total": 4,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
@@ -54,7 +54,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-003",
       "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +78,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-004",
       "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
@@ -91,78 +91,6 @@
       "headline": "Was It Worth It? The True Cost of Trump’s Iran War",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The war ended with a deal that gives Iran sanctions relief, reconstruction funds, and the ability to charge tolls on the world&#8217;s most critical waterway. While the White House may call it a victory, the costs suggest otherwise.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-003",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/u-s-iran-memorandum-of-understanding/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S.-Iran Memorandum of Understanding",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S.-Iran Memorandum of Understanding appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-004",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/trumps-iran-deal-creates-more-risks-for-the-region/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump&#8217;s Iran deal creates more risks for the region",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump&#8217;s Iran deal creates more risks for the region appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-007",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/trumps-iran-deal-reopens-the-strait-much-remains-to-be-done",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Iran Deal Reopens the Strait. Much Remains to Be Done.",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "CFR President Michael Froman and four leading regional experts assess the details of Trump’s U.S.-Iran deal: what it achieves, what it defers, and what it means for Iran, Israel, Lebanon, and the Gulf.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
