@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:27.466Z",
+  "published_at": "2026-06-21T08:44:29.318Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3592,6 +3592,27 @@
         "fa": {
           "headline": "این یک «توافق» نیست. اما تفاهم‌نامه ترامپ با ایران می‌تواند آغاز چیزی بزرگتر باشد.",
           "excerpt": "آنچه اکنون به نظر می‌رسد در حال ظهور است، یک طرح کلی و توضیح سطح بالا از مفاهیمی است که یک توافق نهایی می‌تواند شامل آنها باشد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-171",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/insight-impact/in-the-news/kroenig-interviewed-on-bbc-on-iran-negotiations/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Kroenig interviewed on BBC on Iran negotiations",
+      "excerpt": "On June 11, Atlantic Council vice president and Scowcroft Center senior director Matthew Kroenig was interviewed on BBC about ongoing negotiations with Iran.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "مصاحبه کرونیگ با بی‌بی‌سی درباره مذاکرات ایران",
+          "excerpt": "در ۱۱ ژوئن، متیو کرونیگ، معاون رئیس شورای آتلانتیک و مدیر ارشد مرکز اسکوکرافت، در مصاحبه‌ای با بی‌بی‌سی درباره مذاکرات جاری با ایران صحبت کرد."
         }
       },
       "topics": []
