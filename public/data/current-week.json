@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:44.862Z",
+  "published_at": "2026-06-21T08:44:47.984Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3739,6 +3739,27 @@
         "fa": {
           "headline": "ترول‌های ایران، آمریکا را غافلگیر کرد. در اینجا نحوه مقابله با آنها آمده است.",
           "excerpt": "استفاده ایران از میم‌ها و محتوای تولید شده توسط هوش مصنوعی در تهاجم رسانه‌های اجتماعی خود، زیرکانه، از نظر فرهنگی طنین‌انداز و نشان‌دهنده شکافی در دفاع واشنگتن است."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-178",
+      "date": "2026-06-11",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.20min.ch/story/fussball-wm-2026-sicherheit-irankrieg-terrorgefahr-103578079",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Fussball-WM während Iran-Krieg: Braut sich da etwas zusammen?",
+      "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "Fussball-WM während Iran-Krieg: Braut sich da etwas zusammen?",
+          "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus."
         }
       },
       "topics": []
