@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:43.033Z",
+  "published_at": "2026-06-21T08:44:44.862Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3718,6 +3718,27 @@
         "fa": {
           "headline": "دستور کار مکرون در اجلاس گروه هفت با دستور کار ترامپ تلاقی می‌کند",
           "excerpt": "انتظار می‌رود پیامدهای جنگ ایران و چالش اقتصادی رو به رشد چین، بر نشست سالانه گروه هفت (G7) در فرانسه سایه افکند، اما حضور دونالد ترامپ، رئیس جمهور آمریکا، بر عدم قطعیت در نتیجه این اجلاس می‌افزاید."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-177",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/irans-trolling-caught-the-u-s-off-guard-heres-how-to-push-back",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran’s Trolling Caught the U.S. Off Guard. Here’s How to Push Back.",
+      "excerpt": "Iran’s use of memes and AI-generated content in its social media offensive is nimble, culturally resonant, and revealing a gap in Washington’s defenses.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ترول‌های ایران، آمریکا را غافلگیر کرد. در اینجا نحوه مقابله با آنها آمده است.",
+          "excerpt": "استفاده ایران از میم‌ها و محتوای تولید شده توسط هوش مصنوعی در تهاجم رسانه‌های اجتماعی خود، زیرکانه، از نظر فرهنگی طنین‌انداز و نشان‌دهنده شکافی در دفاع واشنگتن است."
         }
       },
       "topics": []
