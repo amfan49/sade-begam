@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:44:20.501Z",
+  "published_at": "2026-06-21T07:44:23.803Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2962,6 +2962,27 @@
         "fa": {
           "headline": "کریس رایت، وزیر انرژی آمریکا، می‌گوید بازگشت به حالت عادی پس از این بحران انرژی «ماه‌ها» طول خواهد کشید.",
           "excerpt": "رایت در دهمین مجمع جهانی انرژی سالانه گفت که «بهای» این بحران «ارزش پرداخت فوق‌العاده‌ای خواهد داشت»، اگر به این معنی باشد که ایران در نهایت دیگر «تهدیدی دائمی برای همسایگانش» نباشد. کریس رایت، وزیر انرژی ایالات متحده، پس از ...: «ماه‌های زیادی» طول خواهد کشید تا پس از ... به حالت عادی برگردیم."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-141",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-limitations-of-hard-power-in-iran",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The Limitations of Hard Power in Iran",
+      "excerpt": "CFR President Michael Froman analyzes the war in Iran and the complications of the current geopolitical moment.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "محدودیت‌های قدرت سخت در ایران",
+          "excerpt": "مایکل فرومن، رئیس شورای روابط خارجی، جنگ در ایران و پیچیدگی‌های موقعیت ژئوپلیتیکی فعلی را تحلیل می‌کند."
         }
       },
       "topics": []
