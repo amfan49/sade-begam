@@ -226,7 +226,7 @@ function renderFeed() {
   const feed = document.getElementById("feed");
   if (!feed) return;
 
-  let items = ALL_ITEMS;
+  let items = [...ALL_ITEMS].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
   if (ACTIVE_REGION !== "all") items = items.filter((i) => i.region === ACTIVE_REGION);
   if (SEARCH) {
     items = items.filter((i) => {
@@ -307,14 +307,14 @@ function renderCard(item) {
   card.addEventListener("click", (e) => {
     if (e.target.closest(".card__source")) return;
     if (e.target.closest(".card__translation")) {
-      openTranslationModal(item);
+      openTranslationWindow(item);
       return;
     }
     openDetail(item);
   });
   card.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && e.target.closest(".card__translation")) {
-      openTranslationModal(item);
+      openTranslationWindow(item);
     }
   });
 
@@ -346,7 +346,7 @@ function renderCard(item) {
           ? `<div class="card__translation" role="button" tabindex="0" title="${T.trModalTitle}" aria-label="${T.trModalTitle}">
                <span class="card__quote-label">${T.translationLabel} ↗</span>
                <h4 class="card__headline-tr">${tr.headline}</h4>
-               <p>${tr.excerpt ? tr.excerpt.slice(0, 200) + (tr.excerpt.length > 200 ? "…" : "") : ""}</p>
+               <p>${tr.excerpt || ""}</p>
                <p class="card__disclaimer"><small>${T.translationDisclaimer}</small></p>
              </div>`
           : ""
@@ -455,4 +455,67 @@ function closeTranslationModal() {
     const body = document.getElementById("trModalBody");
     if (body) body.innerHTML = "";
   }, 220);
+}
+
+function openTranslationWindow(item) {
+  const tr = item.translations ? item.translations[SB_LANG] : null;
+  const hasFullTr = tr && tr.headline;
+  const headline = hasFullTr ? tr.headline : item.headline;
+  const excerpt  = hasFullTr ? (tr.excerpt || "") : (item.excerpt || "");
+  const dir      = SB_LANG === "fa" ? "rtl" : "ltr";
+  const fontUrl  = SB_LANG === "fa"
+    ? "https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+    : "https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap";
+  const fontFam  = SB_LANG === "fa" ? "Vazirmatn, sans-serif" : "Outfit, sans-serif";
+  const disclaimer = T.trModalDisclaimer || "";
+  const sourceLabel = T.trModalSource || "View Official Source";
+  const closeLabel  = T.trModalClose  || "Close";
+
+  const win = window.open("", "_blank");
+  if (!win) { openTranslationModal(item); return; }
+
+  win.document.write(`<!DOCTYPE html>
+<html dir="${dir}" lang="${SB_LANG}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${item.flag || ""} ${item.country} — Sade Begam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="${fontUrl}" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:${fontFam};background:#F5F7FA;color:#1C2233;line-height:1.75;padding:16px}
+.card{background:#fff;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,.09);max-width:680px;margin:20px auto;padding:28px 28px 32px}
+.meta-row{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.flag{font-size:36px;flex-shrink:0}
+.country{font-weight:700;font-size:16px}
+.org{color:#1A6FBF;font-size:13px;margin-top:2px}
+.date{font-size:12px;color:#6B7A94;margin-top:2px}
+h1{font-size:21px;font-weight:700;line-height:1.4;margin-bottom:16px;color:#1C2233}
+p{font-size:16px;line-height:1.85;color:#3D4560;margin-bottom:16px}
+.disclaimer{font-size:12px;color:#9AA3B5;padding-top:14px;border-top:1px solid #E8ECF2}
+.source-btn{display:block;text-align:center;background:#1A6FBF;color:#fff;text-decoration:none;padding:14px 20px;border-radius:10px;font-size:15px;font-weight:700;margin-top:22px;transition:background .15s}
+.source-btn:hover{background:#155A9A}
+.close-btn{display:block;text-align:center;background:none;border:none;color:#9AA3B5;font-size:13px;margin:14px auto 0;cursor:pointer;font-family:inherit}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="meta-row">
+    <span class="flag">${item.flag || "🌍"}</span>
+    <div>
+      <div class="country">${item.country}</div>
+      <div class="org">${item.source_organization}</div>
+      <div class="date">${item.date || ""}</div>
+    </div>
+  </div>
+  <h1>${headline}</h1>
+  <p>${excerpt}</p>
+  <p class="disclaimer">${disclaimer}</p>
+  <a class="source-btn" href="${item.source_url}" target="_blank" rel="noopener noreferrer">🔗 ${sourceLabel}</a>
+  <button class="close-btn" onclick="window.close()">✕ ${closeLabel}</button>
+</div>
+</body>
+</html>`);
+  win.document.close();
 }
