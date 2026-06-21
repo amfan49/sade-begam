@@ -268,24 +268,43 @@ function sbReadNews() {
   SB_READING = true;
   SB_READ_IDX = 0;
   sbBotMsg(chat.readingNews || "Reading news…", false);
-  _sbReadItem(items, lang);
+
+  // getVoices() is async on first page load — wait if list is empty
+  const voices = window.speechSynthesis.getVoices();
+  if (voices.length > 0) {
+    _sbReadItem(items, lang);
+  } else {
+    window.speechSynthesis.addEventListener("voiceschanged", () => _sbReadItem(items, lang), { once: true });
+  }
 }
 
 function _sbReadItem(items, lang) {
   if (!SB_READING || SB_READ_IDX >= items.length) { SB_READING = false; return; }
   const item = items[SB_READ_IDX];
-  const tr = item.translations?.[lang];
-  const hasTr = item.lang_original !== lang && tr?.headline;
+
+  // Persian TTS voices are almost never installed in browsers.
+  // When voiceLang = "fa-IR" has no matching voice, the browser's fallback
+  // voice silently skips Arabic-script characters and reads only the "."
+  // separator aloud — which sounds like "Punkt" in German browsers.
+  // Fix: only use fa-IR when a Persian voice is actually available;
+  // otherwise read the English translation so the user hears real content.
+  const voices = window.speechSynthesis.getVoices();
+  const hasFaVoice = voices.some(v => v.lang && v.lang.startsWith("fa"));
 
   let text, voiceLang;
-  if (lang === "fa" && hasTr) {
-    text = `${tr.headline}. ${tr.excerpt || ""}`;
-    voiceLang = "fa-IR";
-  } else if (lang === "fa" && item.lang_original === "fa") {
-    text = `${item.headline}. ${item.excerpt || ""}`;
+
+  if (lang === "fa" && hasFaVoice) {
+    const trFa = item.translations?.fa;
+    const faHead = item.lang_original === "fa" ? item.headline : (trFa?.headline || item.headline);
+    const faExc  = item.lang_original === "fa" ? (item.excerpt || "") : (trFa?.excerpt || "");
+    text = `${faHead}. ${faExc}`;
     voiceLang = "fa-IR";
   } else {
-    text = `${item.headline}. ${item.excerpt || ""}`;
+    // No Persian voice — read English text with English voice
+    const trEn = item.translations?.en;
+    const enHead = item.lang_original === "en" ? item.headline : (trEn?.headline || item.headline);
+    const enExc  = item.lang_original === "en" ? (item.excerpt || "") : (trEn?.excerpt || item.excerpt || "");
+    text = `${enHead}. ${enExc}`;
     voiceLang = "en-US";
   }
 
