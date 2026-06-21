@@ -5,7 +5,7 @@
 // Uses the same client-side cache idea as the home feed.
 
 const ARC_CACHE_KEY = "sb_archive_v1";
-const ARC_CACHE_TTL = 60 * 60 * 1000; // 1h
+const ARC_CACHE_TTL = 0; // always revalidate
 
 let ARC_ITEMS = [];
 let ARC_GRANULARITY = "month"; // day | week | month | year
@@ -58,8 +58,8 @@ async function loadArchive() {
 
   try {
     const [arc, week] = await Promise.all([
-      fetch("data/archive.json", { cache: "default" }).then((r) => r.json()).catch(() => ({ items: [] })),
-      fetch("data/current-week.json", { cache: "default" }).then((r) => r.json()).catch(() => ({ items: [] }))
+      fetch("data/archive.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({ items: [] })),
+      fetch("data/current-week.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({ items: [] }))
     ]);
 
     const byId = new Map();

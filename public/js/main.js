@@ -143,7 +143,7 @@ function applyLanguageChrome() {
 // the background (stale-while-revalidate). Saves bandwidth and renders fast
 // on repeat visits. News + translations live together in current-week.json.
 const NEWS_CACHE_KEY = "sb_current_week_v1";
-const NEWS_CACHE_TTL = 60 * 60 * 1000; // 1h — treat cache as "fresh" within this
+const NEWS_CACHE_TTL = 0; // always revalidate — show cached instantly, then fetch fresh
 
 function renderNews(data) {
   ALL_ITEMS = data.items || [];
@@ -165,7 +165,7 @@ async function loadNews() {
   if (fresh) return;
 
   try {
-    const res = await fetch("data/current-week.json", { cache: "default" });
+    const res = await fetch("data/current-week.json", { cache: "no-cache" });
     const data = await res.json();
     try {
       localStorage.setItem(NEWS_CACHE_KEY, JSON.stringify({ at: Date.now(), data }));
