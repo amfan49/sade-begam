@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:59.869Z",
+  "published_at": "2026-06-21T08:44:01.648Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3360,6 +3360,27 @@
         "en": null,
         "fa": {
           "headline": "آیا بمب‌ها می‌توانند ایران را به میز مذاکره بازگردانند؟",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-160",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/how-iran-war-is-giving-china-an-opening-in-gulf-drone-market/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "How Iran war is giving China an opening in Gulf drone market",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "چگونه جنگ ایران به چین فرصت ورود به بازار پهپادهای خلیج فارس را می‌دهد؟",
           "excerpt": ""
         }
       },
