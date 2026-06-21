@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:42.643Z",
+  "published_at": "2026-06-21T07:43:46.904Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2710,6 +2710,27 @@
         "fa": {
           "headline": "ترامپ در حالی که توافق ایران را به تعویق می‌اندازد، روی حملات هوایی متمرکز می‌شود و می‌سنجد که آیا تهران کوتاه می‌آید یا نه",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-129",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/11/iraqs-prime-minister-prepares-us-visit-amid-iran-threats-and-militia-focus/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iraq’s prime minister prepares US visit amid Iran threats and militia focus",
+      "excerpt": "Iraqi Prime Minister Ali al Zaidi is preparing for an upcoming trip to Washington, DC, Iraqi media outlets recently reported. The prime minister has been working since his May appointment... The post Iraq’s prime minister prepares US visit amid Iran threats and militia focus appe",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "نخست وزیر عراق در بحبوحه تهدیدهای ایران و تمرکز شبه نظامیان، خود را برای سفر به آمریکا آماده می‌کند.",
+          "excerpt": "رسانه‌های عراقی اخیراً گزارش دادند که علی الزیدی، نخست وزیر عراق، در حال آماده شدن برای سفر قریب‌الوقوع به واشنگتن دی سی است. نخست وزیر از زمان انتصابش در ماه مه مشغول به کار بوده است... این پست نخست وزیر عراق در بحبوحه تهدیدات ایران و تمرکز شبه‌نظامیان، سفر خود به ایالات متحده را آماده می‌کند."
         }
       },
       "topics": []
