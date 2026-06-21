@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:08.709Z",
+  "published_at": "2026-06-21T08:44:12.700Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3444,6 +3444,27 @@
         "en": null,
         "fa": {
           "headline": "حمله تلافی‌جویانه آمریکا به ایران",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-164",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/president-trump-hopes-to-keep-a-lid-on-iran-strikes/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "President Trump hopes to 'keep a lid' on Iran strikes",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "پرزیدنت ترامپ امیدوار است که حملات به ایران را «مهار» کند",
           "excerpt": ""
         }
       },
