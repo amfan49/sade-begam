@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:18.796Z",
+  "published_at": "2026-06-21T08:44:22.650Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3528,6 +3528,27 @@
         "en": null,
         "fa": {
           "headline": "ترامپ برای حفظ اعتبار به ایران حمله می‌کند",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-168",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-hits-20-targets-inside-iran-tehran-threatens-to-retaliate/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S. hits 20 targets inside Iran, Tehran threatens to retaliate",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "آمریکا ۲۰ هدف در داخل ایران را هدف قرار داد، تهران تهدید به تلافی کرد",
           "excerpt": ""
         }
       },
