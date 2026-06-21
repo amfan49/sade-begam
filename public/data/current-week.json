@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:50.926Z",
+  "published_at": "2026-06-21T07:43:56.705Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2773,6 +2773,27 @@
         "fa": {
           "headline": "فریب ایران را نخورید - این رژیم به هیچ قیمتی نمی‌تواند صلح را بپذیرد",
           "excerpt": "در دو ماه گذشته، لفاظی‌های رئیس جمهور دونالد ترامپ در مورد ایران بین ابراز خوش‌بینی در مورد مذاکرات و تهدیدهای صریح برای برکناری ملاها از قدرت، نوسان داشته است. این هفته،... پست «به حرف‌های ایران گوش ندهید - این رژیم نمی‌تواند به هیچ قیمتی صلح را تحمل کند» برای اولین بار در FD منتشر شد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-132",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-completes-latest-wave-of-strikes-in-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S. completes latest wave of strikes in Iran",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "آمریکا موج جدید حملات هوایی خود به ایران را تکمیل کرد",
+          "excerpt": ""
         }
       },
       "topics": []
