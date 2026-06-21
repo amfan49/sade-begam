@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:37.533Z",
+  "published_at": "2026-06-21T08:43:39.461Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3172,6 +3172,27 @@
         "fa": {
           "headline": "بیانیه بریتانیا در شورای امنیت سازمان ملل: اجرای کامل و مؤثر تحریم‌های سازمان ملل علیه ایران همچنان ضروری است",
           "excerpt": "بیانیه سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در جلسه شورای امنیت سازمان ملل متحد درباره ایران."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-151",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/12/irans-nuclear-enrichment-progress-2008-2025-and-beyond/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran's Nuclear Enrichment Progress: 2008-2025 and Beyond",
+      "excerpt": "...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "پیشرفت غنی‌سازی هسته‌ای ایران: ۲۰۰۸-۲۰۲۵ و پس از آن",
+          "excerpt": "اا"
         }
       },
       "topics": []
