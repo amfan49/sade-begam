@@ -1,36 +1,12 @@
 {
-  "generated_at": "2026-06-21T11:36:05.137Z",
+  "generated_at": "2026-06-21T17:15:12.064Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 17,
+  "total": 7,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
-      "date": "2026-06-19",
-      "country": "United Nations",
-      "region": "International Bodies",
-      "flag": "🇺🇳",
-      "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167768",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "UN welcomes fresh Lebanon ceasefire reports as rights experts urge Iran accountability",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The United Nations has welcomed reports of a new ceasefire agreement between Israel and Hezbollah on Friday while warning that civilians on the ground are still fleeing amid ongoing insecurity.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-004",
       "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +30,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-002",
       "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +54,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-005",
       "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +78,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-006",
       "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,55 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
-      "date": "2026-06-18",
-      "country": "United Nations",
-      "region": "International Bodies",
-      "flag": "🇺🇳",
-      "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167758",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "UN upholds freedom of movement for peacekeepers in Lebanon",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The United Nations has again called for freedom of movement for its peacekeepers in Lebanon who continue to closely monitor developments in the south of the country, including in the wake of the recent provisional agreement signed by the United States and Iran.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
       "id": "draft-003",
-      "date": "2026-06-18",
-      "country": "United Nations",
-      "region": "International Bodies",
-      "flag": "🇺🇳",
-      "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167748",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "US-Iran deal: technical work can begin, says atomic energy agency",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The head of the UN-affiliated atomic energy agency on Thursday welcomed the signing of an initial Iran-US memorandum aimed at ending the war, before proposing “to sit down” with both parties to assist with concrete measures such as verification of Iran’s nuclear programme, a key sticking point.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-006",
       "date": "2026-06-18",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-004",
       "date": "2026-06-18",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,151 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/18/no-trump-isnt-paying-iran-24-billion-to-end-the-war/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "No, Trump Isn&#8217;t &#8216;Paying&#8217; Iran $24 Billion To End the War",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post No, Trump Isn&#8217;t &#8216;Paying&#8217; Iran $24 Billion To End the War appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-009",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/u-s-and-iran-sign-memorandum-of-understanding/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. and Iran sign memorandum of understanding",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. and Iran sign memorandum of understanding appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-010",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/iran-warns-that-israeli-strike-on-beirut-would-violate-ceasefire/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran warns that Israeli strike on Beirut would violate ceasefire",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran warns that Israeli strike on Beirut would violate ceasefire appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-011",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/trump-signs-iran-memorandum-of-understanding-despite-risks/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump signs Iran memorandum of understanding despite risks",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump signs Iran memorandum of understanding despite risks appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-012",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/the-iran-peace-deal-and-trading-away-lebanon/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Iran peace deal and trading away Lebanon",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post The Iran peace deal and trading away Lebanon appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-013",
-      "date": "2026-06-18",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/economic-relief-for-iran-means-higher-demands-and-fewer-concessions/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Economic relief for Iran means higher demands and fewer concessions",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Economic relief for Iran means higher demands and fewer concessions appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-016",
+      "id": "draft-007",
       "date": "2026-06-18",
       "country": "United States",
       "region": "Think Tanks",
@@ -379,30 +163,6 @@
       "headline": "The Iran Deal Reopens the Strait. Much Remains to Be Done.",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "CFR President Michael Froman and four leading regional experts assess the details of Trump’s U.S.-Iran deal: what it achieves, what it defers, and what it means for Iran, Israel, Lebanon, and the Gulf.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-017",
-      "date": "2026-06-18",
-      "country": "Germany",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "SWP Berlin",
-      "source_url": "https://www.zdf.de/play/talk/maybrit-illner-128/maybrit-illner-vom-18-juni-2026-100",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trumps Frieden mit Iran - Desaster oder Durchbruch?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Zu Gast am 18. Juni 2026 (u.a.): Guido Steinberg, Islamwissenschaftler und Nahostexperte, Stiftung für Wissenschaft und Politik (SWP)",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
