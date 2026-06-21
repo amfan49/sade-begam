@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:46.666Z",
+  "published_at": "2026-06-21T08:43:49.344Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3256,6 +3256,27 @@
         "fa": {
           "headline": "ترامپ از حمله به ایران عقب‌نشینی کرد و ادعا کرد که توافق نزدیک است",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-155",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/irans-uranium-enrichment-capabilities-must-be-eliminated-after-strait-of-hormuz-opened/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran's uranium enrichment capabilities must be eliminated after Strait of Hormuz opened",
+      "excerpt": "Listen ...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "قابلیت‌های غنی‌سازی اورانیوم ایران باید پس از باز شدن تنگه هرمز از بین برود.",
+          "excerpt": "... گوش کن"
         }
       },
       "topics": []
