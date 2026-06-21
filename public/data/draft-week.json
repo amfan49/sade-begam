@@ -1,72 +1,24 @@
 {
-  "generated_at": "2026-06-14T18:57:39.269Z",
-  "window_days": 7,
+  "generated_at": "2026-06-21T11:36:05.137Z",
+  "window_days": 3,
   "keyword": "iran",
-  "total": 49,
+  "total": 17,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
-      "date": "2026-06-12",
+      "date": "2026-06-19",
       "country": "United Nations",
       "region": "International Bodies",
       "flag": "🇺🇳",
       "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167713",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167768",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "UN ‘encouraged’ by talk of possible US-Iran ceasefire deal",
+      "headline": "UN welcomes fresh Lebanon ceasefire reports as rights experts urge Iran accountability",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The United Nations continues to monitor developments amid conflicting reports on Friday of a possible ceasefire deal between the United States and Iran, the Spokesperson for the Secretary-General said in New York.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-002",
-      "date": "2026-06-10",
-      "country": "United Nations",
-      "region": "International Bodies",
-      "flag": "🇺🇳",
-      "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167689",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Middle East LIVE: Diplomacy in focus as escalation ‘reverberates across borders and continents’, warns UN chief",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Nearly four months after the latest Middle East crisis erupted and despite a fragile ceasefire between the United States and Iran, tensions continue to reverberate across the region and beyond. The UN Security Council held a high-level debate on advancing political solutions in the Middle East on We",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-003",
-      "date": "2026-06-10",
-      "country": "United Kingdom",
-      "region": "Europe",
-      "flag": "🇬🇧",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-resolution-to-the-iaea-board-of-governors-june-2026",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "NPT Safeguards Agreement with Iran: Resolution to the IAEA Board of Governors, June 2026",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Statement on behalf of France, Germany, the UK and United States (the Quad) to the International Atomic Energy Agency (IAEA) Board meeting introducing a resolution on Iran's implementation of its obligations under its Nu…",
+      "excerpt": "The United Nations has welcomed reports of a new ceasefire agreement between Israel and Hezbollah on Friday while warning that civilians on the ground are still fleeing amid ongoing insecurity.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -79,18 +31,18 @@
     },
     {
       "id": "draft-004",
-      "date": "2026-06-10",
-      "country": "United Kingdom",
-      "region": "Europe",
-      "flag": "🇬🇧",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/speeches/npt-safeguards-agreement-with-iran-quad-statement-to-the-iaea-board-of-governors-june-2026",
+      "date": "2026-06-19",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/podcasts/the-iran-breakdown/2026/06/19/strait-talk-unpacking-the-us-iran-mou/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "NPT Safeguards Agreement with Iran: Quad statement to the IAEA Board of Governors, June 2026",
+      "headline": "Strait Talk: Unpacking the US-Iran MOU",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "France, Germany, the UK and the United States (the Quad) delivered a joint statement to the International Atomic Energy Agency (IAEA) Board on Iran's Nuclear Non-Proliferation Treaty (NPT) Safeguards Agreement",
+      "excerpt": "The post Strait Talk: Unpacking the US-Iran MOU appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -103,210 +55,18 @@
     },
     {
       "id": "draft-005",
-      "date": "2026-06-10",
-      "country": "United Kingdom",
-      "region": "Europe",
-      "flag": "🇬🇧",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/news/joint-statement-on-iranian-state-threats-and-hayi-claimed-attacks",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Joint statement on Iranian State Threats and HAYI-claimed attacks",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Joint statement from 24 countries on state threats relating to Iranian security services and the condemnation of recent Harakat Ashab al-Yamin al-Islamiya (HAYI) claimed-attacks across Europe.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-006",
-      "date": "2026-06-09",
-      "country": "United Kingdom",
-      "region": "Europe",
-      "flag": "🇬🇧",
-      "source_organization": "Foreign, Commonwealth & Development Office",
-      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-007",
-      "date": "2026-06-12",
+      "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/12/irans-nuclear-enrichment-progress-2008-2025-and-beyond/",
+      "source_url": "https://www.fdd.org/analysis/2026/06/19/iran-prioritizes-protection-of-hezbollah-over-negotiations-with-u-s/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Iran&#8217;s Nuclear Enrichment Progress: 2008-2025 and Beyond",
+      "headline": "Iran Prioritizes Protection of Hezbollah Over Negotiations With U.S.",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "... The post Iran&#8217;s Nuclear Enrichment Progress: 2008-2025 and Beyond appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-008",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/iran-threatens-trump-with-hard-slap-for-any-wrong-move/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran threatens Trump with &#8220;hard slap&#8221; for any wrong move",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran threatens Trump with &#8220;hard slap&#8221; for any wrong move appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-009",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/12/iran-wants-to-punish-jordan-for-hosting-u-s-forces/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran Wants To Punish Jordan for Hosting U.S. Forces",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The Jordanian Armed Forces (JAF) announced on June 11 that they had intercepted 20 missiles launched from Iran toward Al-Azraq, a town about 50 miles east of Amman that is also home to a major air base... The post Iran Wants To Punish Jordan for Hosting U.S. Forces appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-010",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/israels-reaction-to-a-potential-iran-deal/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Israel’s reaction to a potential Iran deal",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Israel’s reaction to a potential Iran deal appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-011",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/trump-backs-off-iran-strikes-claims-agreement-is-near/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump backs off Iran strikes, claims agreement is near",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump backs off Iran strikes, claims agreement is near appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-012",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/irans-uranium-enrichment-capabilities-must-be-eliminated-after-strait-of-hormuz-opened/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran&#8217;s uranium enrichment capabilities must be eliminated after Strait of Hormuz opened",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Listen ... The post Iran&#8217;s uranium enrichment capabilities must be eliminated after Strait of Hormuz opened appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-013",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/trumps-180-degree-turn-on-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump&#8217;s 180 degree turn on Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump&#8217;s 180 degree turn on Iran appeared first on FDD.",
+      "excerpt": "Days after signing a Memorandum of Understanding (MOU) to end the U.S.-Iran war, the Tehran regime is testing whether it can use Lebanon — and its Lebanese terror proxy Hezbollah — as leverage over... The post Iran Prioritizes Protection of Hezbollah Over Negotiations With U.S. appeared first on FDD",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -319,18 +79,18 @@
     },
     {
       "id": "draft-014",
-      "date": "2026-06-11",
+      "date": "2026-06-19",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/real-concern-is-accidental-escalation-between-u-s-iran/",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/blogs/econographics/central-banks-cant-afford-to-keep-missing-their-inflation-targets/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Real concern is &#8216;accidental escalation&#8217; between U.S., Iran",
+      "headline": "Central banks can’t afford to keep missing their inflation targets",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Real concern is &#8216;accidental escalation&#8217; between U.S., Iran appeared first on FDD.",
+      "excerpt": "While the Iran war explains the sudden rise in inflation, relying on this excuse obscures that there is potentially a long-term problem central banks will need to confront as they manage the long tail of this crisis. The post Central banks can’t afford to keep missing their inflation targets appeare",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -343,18 +103,258 @@
     },
     {
       "id": "draft-015",
-      "date": "2026-06-11",
+      "date": "2026-06-19",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/was-it-worth-it-the-true-cost-of-trumps-iran-war",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Was It Worth It? The True Cost of Trump’s Iran War",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The war ended with a deal that gives Iran sanctions relief, reconstruction funds, and the ability to charge tolls on the world&#8217;s most critical waterway. While the White House may call it a victory, the costs suggest otherwise.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-18",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167758",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "UN upholds freedom of movement for peacekeepers in Lebanon",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The United Nations has again called for freedom of movement for its peacekeepers in Lebanon who continue to closely monitor developments in the south of the country, including in the wake of the recent provisional agreement signed by the United States and Iran.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-18",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167748",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "US-Iran deal: technical work can begin, says atomic energy agency",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The head of the UN-affiliated atomic energy agency on Thursday welcomed the signing of an initial Iran-US memorandum aimed at ending the war, before proposing “to sit down” with both parties to assist with concrete measures such as verification of Iran’s nuclear programme, a key sticking point.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-006",
+      "date": "2026-06-18",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/u-s-attacks-irans-water-facilities-israel-attacks-southern-lebanon/",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/u-s-iran-memorandum-of-understanding/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "U.S. attacks Iran’s water facilities, Israel attacks southern Lebanon",
+      "headline": "U.S.-Iran Memorandum of Understanding",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "INTERVIEW: U.S. ATTACK ON IRAN’S WATER FACILITIES, ISRAEL ATTACKS SOUTHERN LEBANON – w/ Jonathan Conricus pic.twitter.com/FUpxHOym84&#8212; Mario Nawfal (@MarioNawfal) June 11, 2026 ... The post U.S. attacks Iran’s water facilities, Israel attacks southern Lebanon appeared first on FDD.",
+      "excerpt": "The post U.S.-Iran Memorandum of Understanding appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-007",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/trumps-iran-deal-creates-more-risks-for-the-region/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump&#8217;s Iran deal creates more risks for the region",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump&#8217;s Iran deal creates more risks for the region appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-008",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/18/no-trump-isnt-paying-iran-24-billion-to-end-the-war/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "No, Trump Isn&#8217;t &#8216;Paying&#8217; Iran $24 Billion To End the War",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post No, Trump Isn&#8217;t &#8216;Paying&#8217; Iran $24 Billion To End the War appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-009",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/u-s-and-iran-sign-memorandum-of-understanding/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S. and Iran sign memorandum of understanding",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S. and Iran sign memorandum of understanding appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-010",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/iran-warns-that-israeli-strike-on-beirut-would-violate-ceasefire/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran warns that Israeli strike on Beirut would violate ceasefire",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran warns that Israeli strike on Beirut would violate ceasefire appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-011",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/trump-signs-iran-memorandum-of-understanding-despite-risks/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump signs Iran memorandum of understanding despite risks",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump signs Iran memorandum of understanding despite risks appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-012",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/the-iran-peace-deal-and-trading-away-lebanon/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "The Iran peace deal and trading away Lebanon",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post The Iran peace deal and trading away Lebanon appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-013",
+      "date": "2026-06-18",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/18/economic-relief-for-iran-means-higher-demands-and-fewer-concessions/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Economic relief for Iran means higher demands and fewer concessions",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Economic relief for Iran means higher demands and fewer concessions appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -367,18 +367,18 @@
     },
     {
       "id": "draft-016",
-      "date": "2026-06-11",
+      "date": "2026-06-18",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-announces-fresh-us-strikes-on-iran-as-cease-fire-hangs-in-balance/",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/trumps-iran-deal-reopens-the-strait-much-remains-to-be-done",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Trump Announces Fresh US Strikes On Iran As Cease-Fire Hangs In Balance",
+      "headline": "The Iran Deal Reopens the Strait. Much Remains to Be Done.",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump Announces Fresh US Strikes On Iran As Cease-Fire Hangs In Balance appeared first on FDD.",
+      "excerpt": "CFR President Michael Froman and four leading regional experts assess the details of Trump’s U.S.-Iran deal: what it achieves, what it defers, and what it means for Iran, Israel, Lebanon, and the Gulf.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -391,786 +391,18 @@
     },
     {
       "id": "draft-017",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/can-bombs-bring-iran-back-to-the-negotiating-table/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Can bombs bring Iran back to the negotiating table?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Can bombs bring Iran back to the negotiating table? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-018",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/how-iran-war-is-giving-china-an-opening-in-gulf-drone-market/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "How Iran war is giving China an opening in Gulf drone market",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post How Iran war is giving China an opening in Gulf drone market appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-019",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-pivots-on-strikes-while-dangling-iran-deal-testing-whether-tehran-blinks/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump pivots on strikes while dangling Iran deal, testing whether Tehran blinks",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump pivots on strikes while dangling Iran deal, testing whether Tehran blinks appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-020",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/global-oil-prices-end-near-an-8-week-low-as-trump-backs-away-from-his-threat-of-strikes-on-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Global oil prices end near an 8-week low as Trump backs away from his threat of strikes on Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Global oil prices end near an 8-week low as Trump backs away from his threat of strikes on Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-021",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/11/iraqs-prime-minister-prepares-us-visit-amid-iran-threats-and-militia-focus/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iraq’s prime minister prepares US visit amid Iran threats and militia focus",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Iraqi Prime Minister Ali al Zaidi is&#160;preparing&#160;for an upcoming trip to Washington, DC, Iraqi media outlets&#160;recently&#160;reported. The prime minister has been working since his May appointment... The post Iraq’s prime minister prepares US visit amid Iran threats and militia focus appe",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-022",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/the-u-s-retaliatory-strikes-on-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The U.S. retaliatory strikes on Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post The U.S. retaliatory strikes on Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-023",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/11/dont-buy-irans-charade-this-regime-cant-afford-peace-at-any-price/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Don’t buy Iran’s charade — this regime can’t afford peace at ANY price",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "For the last two months, President Donald Trump’s rhetoric on Iran has seesawed between expressing optimism on negotiations and making explicit threats to remove the mullahs from power. This week,... The post Don’t buy Iran’s charade — this regime can’t afford peace at ANY price appeared first on FD",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-024",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/iran-conflict-reflects-a-pattern-of-regime-aggression-and-instability/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran conflict reflects a pattern of regime aggression and instability",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran conflict reflects a pattern of regime aggression and instability appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-025",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/president-trump-hopes-to-keep-a-lid-on-iran-strikes/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "President Trump hopes to &#8216;keep a lid&#8217; on Iran strikes",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post President Trump hopes to &#8216;keep a lid&#8217; on Iran strikes appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-026",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-completes-latest-wave-of-strikes-in-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. completes latest wave of strikes in Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. completes latest wave of strikes in Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-027",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-hits-iran-with-more-strikes-trump-threatens-more/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. hits Iran with more strikes, Trump threatens more",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. hits Iran with more strikes, Trump threatens more appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-028",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/iran-standoff-raises-fears-of-broader-regional-conflict/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran standoff raises fears of broader regional conflict",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran standoff raises fears of broader regional conflict appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-029",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/10/trump-strikes-iran-to-maintain-credibility/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump strikes Iran to maintain credibility",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump strikes Iran to maintain credibility appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-030",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/escalating-tensions-between-iran-and-u-s-israel/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Escalating tensions between Iran and U.S.,Israel",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Escalating tensions between Iran and U.S.,Israel appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-031",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-iran-tensions-escalate-after-apache-helicopter-downed/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S.-Iran tensions escalate after Apache helicopter downed",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S.-Iran tensions escalate after Apache helicopter downed appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-032",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-hits-20-targets-inside-iran-tehran-threatens-to-retaliate/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. hits 20 targets inside Iran, Tehran threatens to retaliate",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. hits 20 targets inside Iran, Tehran threatens to retaliate appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-033",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/10/u-s-conducts-strikes-on-iran-after-helicopter-downing/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. conducts strikes on Iran after helicopter downing",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "INTERVIEW: FULL LIVE ANALYSIS OF THE U.S ATTACK ON IRAN, AND IRAN’S RETALIATIONW/ Admiral Mark Montgomery (@MarkCMontgomery), Fmr Army Officer Stefano Ritondale (@artoriastech), and @realazadeh pic.twitter.com/YaIsFqIllW&#8212;... The post U.S. conducts strikes on Iran after helicopter downing appea",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-034",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/10/trumps-dealmaker-in-chief-reputation-comes-under-attack-in-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump’s ‘dealmaker-in-chief’ reputation comes under attack in Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump’s ‘dealmaker-in-chief’ reputation comes under attack in Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-035",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/dispatches/its-not-a-deal-but-trumps-memorandum-with-iran-can-be-the-start-of-something-bigger/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "It&#8217;s not a &#8216;deal.’ But Trump&#8217;s memorandum with Iran can be the start of something bigger.",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "What appears to be emerging now is a rough outline and high-level explanation of the concepts that an eventual deal could include. The post It&#8217;s not a &#8216;deal.’ But Trump&#8217;s memorandum with Iran can be the start of something bigger. appeared first on Atlantic Council.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-036",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/insight-impact/in-the-news/kroenig-interviewed-on-bbc-on-iran-negotiations/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Kroenig interviewed on BBC on Iran negotiations",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "On June 11, Atlantic Council vice president and Scowcroft Center senior director Matthew Kroenig was interviewed on BBC about ongoing negotiations with Iran. The post Kroenig interviewed on BBC on Iran negotiations appeared first on Atlantic Council.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-037",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/blogs/menasource/the-iran-war-is-a-game-of-liars-poker/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Iran war is a game of liar’s poker",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The central question has not simply been who possesses power, but who is willing to absorb pain, tolerate risk, and continue escalating when conventional logic suggests restraint. The post The Iran war is a game of liar’s poker appeared first on Atlantic Council.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-038",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/content-series/fastthinking/is-this-the-end-of-the-iran-war/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Is this the end of the Iran war?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Our experts break down the latest strikes and Trump's announcement of a pending deal to end the conflict. The post Is this the end of the Iran war? appeared first on Atlantic Council.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-039",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/dispatches/from-a-gap-to-a-chasm-diverging-us-and-israeli-interests-in-the-war-with-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "From a gap to a chasm: Diverging US and Israeli interests in the war with Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The once-modest gap between Israeli Prime Minister Benjamin Netanyahu and US President Donald Trump has widened in recent weeks. The post From a gap to a chasm: Diverging US and Israeli interests in the war with Iran appeared first on Atlantic Council.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-040",
-      "date": "2026-06-09",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/blogs/energysource/us-energy-secretary-chris-wright-it-will-take-many-months-to-get-back-to-normal-after-this-energy-crisis/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after this energy crisis",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "At the tenth annual Global Energy Forum, Wright said that “the price” of this crisis “will be wildly worth paying,” if it means that Iran eventually ceases to be “a constant threat to its neighbors.\" The post US Energy Secretary Chris Wright: It will take ‘many months’ to get back to normal after th",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-041",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/is-a-u-s-iran-deal-within-reach-six-key-issues-that-could-shape-a-ceasefire",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Is a U.S.-Iran Deal Within Reach? Six Key Issues That Could Shape a Ceasefire",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The United States and Iran are reportedly close to a long-awaited agreement, but it remains to be seen whether it resolves their major differences—including nuclear and missile programs, the Strait of Hormuz, and Israel’s war with Iranian proxies.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-042",
-      "date": "2026-06-12",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/the-limitations-of-hard-power-in-iran",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Limitations of Hard Power in Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "CFR President Michael Froman analyzes the war in Iran and the complications of the current geopolitical moment.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-043",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/kharg-island-irans-oil-lifeline-and-a-tempting-u-s-target",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump Walks Back Threat to Strike a Critical Iranian Oil Hub",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The small island in the Persian Gulf serves as Iran’s primary oil terminal, handling roughly 90 percent of the country’s crude exports. Recently, it has become a high-value target in the U.S.-Israeli war on Iran.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-044",
-      "date": "2026-06-11",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/macrons-agenda-meets-trumps-at-the-g7-summit",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Macron’s Agenda Meets Trump’s at the G7 Summit",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Repercussions from the Iran war and the growing economic challenge posed by China are expected to dominate the annual meeting of the Group of Seven (G7) economies in France, but the attendance of President Donald Trump adds uncertainty to the summit’s outcome.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-045",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/irans-trolling-caught-the-u-s-off-guard-heres-how-to-push-back",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran’s Trolling Caught the U.S. Off Guard. Here’s How to Push Back.",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Iran’s use of memes and AI-generated content in its social media offensive is nimble, culturally resonant, and revealing a gap in Washington’s defenses.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-046",
-      "date": "2026-06-10",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/the-u-s-is-co-hosting-the-world-cup-but-much-of-the-world-cant-attend",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "FIFA World Cup 2026: The Geopolitical Tensions at Play Off the Pitch",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The Iran war, immigration enforcement, and the Trump administration&#8217;s travel bans have raised the stakes of this summer’s tournament.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-047",
-      "date": "2026-06-11",
+      "date": "2026-06-18",
       "country": "Germany",
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "SWP Berlin",
-      "source_url": "https://www.20min.ch/story/fussball-wm-2026-sicherheit-irankrieg-terrorgefahr-103578079",
+      "source_url": "https://www.zdf.de/play/talk/maybrit-illner-128/maybrit-illner-vom-18-juni-2026-100",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Fussball-WM während Iran-Krieg: Braut sich da etwas zusammen?",
+      "headline": "Trumps Frieden mit Iran - Desaster oder Durchbruch?",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Jihadistische Einzeltäter bleiben an der Fussballweltmeisterschaft ein Risiko. Die grösste Gefahr für die WM geht laut Terrorexperte Guido Steinberg aber nicht von ihnen aus.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-048",
-      "date": "2026-06-11",
-      "country": "Germany",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "SWP Berlin",
-      "source_url": "https://www.handelsblatt.com/meinung/gastbeitraege/gastkommentar-global-challenges-der-irankrieg-veraendert-die-golfregion-europa-muss-handeln/100230194.html",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen, politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes, Ex-UN-Untergeneralsekretär, zeigt, wo die Anknüpfungspunkte liegen.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-049",
-      "date": "2026-06-09",
-      "country": "Germany",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "SWP Berlin",
-      "source_url": "https://www.faz.net/podcasts/f-a-z-podcast-fuer-deutschland/er-muss-diesen-krieg-beenden-nahostexperte-guido-steinberg-ueber-trumps-iran-dilemma-200911831.html",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "„Er muss diesen Krieg beenden“ – Nahostexperte Steinberg über Trumps Iran-Dilemma",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "",
+      "excerpt": "Zu Gast am 18. Juni 2026 (u.a.): Guido Steinberg, Islamwissenschaftler und Nahostexperte, Stiftung für Wissenschaft und Politik (SWP)",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
