@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:53.666Z",
+  "published_at": "2026-06-21T08:43:57.707Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3318,6 +3318,27 @@
         "en": null,
         "fa": {
           "headline": "نگرانی واقعی «تشدید تصادفی» تنش بین ایالات متحده و ایران است",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-158",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/11/trump-announces-fresh-us-strikes-on-iran-as-cease-fire-hangs-in-balance/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Trump Announces Fresh US Strikes On Iran As Cease-Fire Hangs In Balance",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ترامپ در حالی که آتش‌بس در هاله‌ای از ابهام است، حملات جدید آمریکا به ایران را اعلام کرد",
           "excerpt": ""
         }
       },
