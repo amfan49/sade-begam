@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:39.999Z",
+  "published_at": "2026-06-21T08:44:43.033Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3697,6 +3697,27 @@
         "fa": {
           "headline": "محدودیت‌های قدرت سخت در ایران",
           "excerpt": "مایکل فرومن، رئیس شورای روابط خارجی، جنگ در ایران و پیچیدگی‌های موقعیت ژئوپلیتیکی فعلی را تحلیل می‌کند."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-176",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/macrons-agenda-meets-trumps-at-the-g7-summit",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Macron’s Agenda Meets Trump’s at the G7 Summit",
+      "excerpt": "Repercussions from the Iran war and the growing economic challenge posed by China are expected to dominate the annual meeting of the Group of Seven (G7) economies in France, but the attendance of President Donald Trump adds uncertainty to the summit’s outcome.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "دستور کار مکرون در اجلاس گروه هفت با دستور کار ترامپ تلاقی می‌کند",
+          "excerpt": "انتظار می‌رود پیامدهای جنگ ایران و چالش اقتصادی رو به رشد چین، بر نشست سالانه گروه هفت (G7) در فرانسه سایه افکند، اما حضور دونالد ترامپ، رئیس جمهور آمریکا، بر عدم قطعیت در نتیجه این اجلاس می‌افزاید."
         }
       },
       "topics": []
