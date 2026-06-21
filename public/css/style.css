@@ -389,8 +389,8 @@ textarea.search { resize: vertical; font-family: inherit; }
 [data-theme="dark"] .about-divider { border-color: var(--border); }
 
 /* ── Font size accessibility ───────────────────────────────────── */
-[data-fontsize="large"]  { font-size: 110%; }
-[data-fontsize="xlarge"] { font-size: 125%; }
+[data-fontsize="large"]  { zoom: 1.12; }
+[data-fontsize="xlarge"] { zoom: 1.28; }
 
 /* ── Accessibility floating bar ────────────────────────────────── */
 .sb-a11y-bar {
