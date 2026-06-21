@@ -51,6 +51,22 @@
       <ul class="about__sources" id="aboutFeeds" style="list-style: none; padding: 0;"></ul>
 
       <hr class="about-divider" />
+
+      <section class="impressum-section">
+        <h2 class="about__subtitle" id="impressumTitle"></h2>
+
+        <h3 class="impressum__sub" id="impressumNewsletterTitle"></h3>
+        <p id="impressumNewsletterText"></p>
+        <p class="impressum__badge" id="impressumInactiveNote"></p>
+
+        <h3 class="impressum__sub" id="impressumDataTitle"></h3>
+        <p id="impressumDataText"></p>
+
+        <h3 class="impressum__sub" id="impressumContactTitle"></h3>
+        <p id="impressumContactText"></p>
+      </section>
+
+      <hr class="about-divider" />
       <p class="about__legal" id="aboutLegal"></p>
     </section>
   </main>
@@ -107,7 +123,18 @@
       btn.addEventListener("click", () => setLang(btn.dataset.setlang));
     });
 
+    set("navChat", T.navChat);
     set("aboutFeedsTitle", T.about.officialFeedsTitle);
+
+    // Impressum / Privacy
+    set("impressumTitle",           T.impressum.title);
+    set("impressumNewsletterTitle", T.impressum.newsletterTitle);
+    set("impressumNewsletterText",  T.impressum.newsletterText);
+    set("impressumInactiveNote",    T.impressum.inactiveNote);
+    set("impressumDataTitle",       T.impressum.dataTitle);
+    set("impressumDataText",        T.impressum.dataText);
+    set("impressumContactTitle",    T.impressum.contactTitle);
+    set("impressumContactText",     T.impressum.contactText);
     fetch("data/sources.json")
       .then((r) => r.json())
       .then((data) => {

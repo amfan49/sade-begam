@@ -135,6 +135,16 @@ const STRINGS = {
       "South America": "آمریکای جنوبی",
       "Oceania": "اقیانوسیه",
       "International Bodies": "نهادهای بین‌المللی"
+    },
+    impressum: {
+      title: "حریم خصوصی و داده‌های شما",
+      newsletterTitle: "خبرنامه و داده‌های شخصی",
+      newsletterText: "نشانی ایمیل شما تنها برای ارسال خبرنامه‌ی «ساده بگم» استفاده می‌شود. درج نام کاملاً داوطلبانه است. هیچ داده‌ای به اشخاص ثالث فروخته، اجاره داده یا منتقل نمی‌شود. خبرنامه‌ی ساده بگم در حال حاضر فعال نیست؛ به محض راه‌اندازی، مشترکین اطلاع‌رسانی خواهند شد.",
+      inactiveNote: "وضعیت خبرنامه: در حال حاضر فعال نیست",
+      dataTitle: "چه داده‌ای جمع‌آوری می‌شود؟",
+      dataText: "هیچ داده‌ای بدون رضایت صریح شما جمع‌آوری نمی‌شود. در صورت ثبت ایمیل برای خبرنامه، تنها ایمیل (و در صورت تمایل، نام) ذخیره می‌شود. این اطلاعات هرگز به اشخاص یا شرکت‌های دیگر داده نمی‌شود.",
+      contactTitle: "تماس",
+      contactText: "برای هرگونه سؤال درباره‌ی داده‌های شخصی‌تان می‌توانید از طریق hello@sadebegam.com با ما در تماس باشید."
     }
   },
   en: {
@@ -269,6 +279,16 @@ const STRINGS = {
       "South America": "South America",
       "Oceania": "Oceania",
       "International Bodies": "International Bodies"
+    },
+    impressum: {
+      title: "Privacy & Your Data",
+      newsletterTitle: "Newsletter & Personal Data",
+      newsletterText: "Your email address is used solely for the Sade Begam newsletter. Providing a name is entirely voluntary. No data is ever sold, rented, or shared with third parties. The Sade Begam newsletter is currently inactive; subscribers will be notified as soon as it launches.",
+      inactiveNote: "Newsletter status: currently inactive",
+      dataTitle: "What data is collected?",
+      dataText: "No data is collected without your explicit consent. If you register your email for the newsletter, only your email (and optionally your name) is stored. This information is never passed on to any other person or company.",
+      contactTitle: "Contact",
+      contactText: "For any questions about your personal data, please contact us at hello@sadebegam.com."
     }
   }
 };

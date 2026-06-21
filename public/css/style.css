@@ -512,6 +512,19 @@ textarea.search { resize: vertical; font-family: inherit; }
 .about-feed-tw { font-size: 12px; color: var(--text-muted); margin-inline-start: 6px; text-decoration: none; }
 .about-feed-tw:hover { color: var(--brand-blue); }
 
+/* ── Impressum / Privacy section ──────────────────────────────── */
+.impressum-section { margin-top: 2rem; }
+.impressum__sub {
+  font-size: 15px; font-weight: 600; color: var(--brand-blue-deep);
+  margin: 1.4rem 0 0.5rem;
+}
+.impressum__badge {
+  display: inline-block; background: #FFF3E0; color: #E65100;
+  border: 1px solid #FFB74D; border-radius: 6px;
+  font-size: 13px; font-weight: 600; padding: 4px 12px; margin-top: 6px;
+}
+[data-theme="dark"] .impressum__badge { background: #3A2800; color: #FFB74D; border-color: #7A5A00; }
+
 /* ── Detail overlay top bar ────────────────────────────────────── */
 .detail-top-bar {
   display: flex; align-items: center; gap: 10px; flex-shrink: 0; margin-bottom: 4px;
