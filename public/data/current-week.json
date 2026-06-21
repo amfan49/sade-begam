@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:44:08.681Z",
+  "published_at": "2026-06-21T07:44:14.874Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2899,6 +2899,27 @@
         "fa": {
           "headline": "آمریکا پس از سرنگونی بالگرد، به ایران حمله کرد",
           "excerpt": "مصاحبه: تحلیل زنده و کامل حمله آمریکا به ایران و انتقام ایران با حضور دریاسالار مارک مونتگومری (@MarkCMontgomery)، افسر ارشد ارتش استفانو ریتوندیل (@artoriastech) و @realazadeh pic.twitter.com/YaIsFqIllW—... پست: آمریکا پس از سرنگونی هلیکوپتر، حملاتی را علیه ایران انجام می‌دهد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-138",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/blogs/menasource/the-iran-war-is-a-game-of-liars-poker/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The Iran war is a game of liar’s poker",
+      "excerpt": "The central question has not simply been who possesses power, but who is willing to absorb pain, tolerate risk, and continue escalating when conventional logic suggests restraint.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "جنگ ایران، بازی پوکر دروغگوهاست",
+          "excerpt": "سوال اصلی صرفاً این نبوده که چه کسی قدرت را در دست دارد، بلکه این بوده که چه کسی حاضر است درد را تحمل کند، ریسک را تحمل کند و در حالی که منطق متعارف، خویشتن‌داری را ایجاب می‌کند، به تشدید تنش ادامه دهد."
         }
       },
       "topics": []
