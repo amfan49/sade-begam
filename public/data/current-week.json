@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:43:20.802Z",
+  "published_at": "2026-06-21T07:43:22.398Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2542,6 +2542,27 @@
         "fa": {
           "headline": "پیشرفت غنی‌سازی هسته‌ای ایران: ۲۰۰۸-۲۰۲۵ و پس از آن",
           "excerpt": "اا"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-121",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/iran-threatens-trump-with-hard-slap-for-any-wrong-move/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran threatens Trump with \"hard slap\" for any wrong move",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ایران ترامپ را به خاطر هرگونه حرکت اشتباه با «سیلی محکم» تهدید می‌کند",
+          "excerpt": ""
         }
       },
       "topics": []
