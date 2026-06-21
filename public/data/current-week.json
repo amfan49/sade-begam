@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:07.027Z",
+  "published_at": "2026-06-21T08:44:08.709Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3424,6 +3424,27 @@
         "fa": {
           "headline": "نخست وزیر عراق در بحبوحه تهدیدهای ایران و تمرکز شبه نظامیان، خود را برای سفر به آمریکا آماده می‌کند.",
           "excerpt": "رسانه‌های عراقی اخیراً گزارش دادند که علی الزیدی، نخست وزیر عراق، در حال آماده شدن برای سفر قریب‌الوقوع به واشنگتن دی سی است. نخست وزیر از زمان انتصابش در ماه مه مشغول به کار بوده است... این پست نخست وزیر عراق در بحبوحه تهدیدات ایران و تمرکز شبه‌نظامیان، سفر خود به ایالات متحده را آماده می‌کند."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-163",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/11/the-u-s-retaliatory-strikes-on-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The U.S. retaliatory strikes on Iran",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "حمله تلافی‌جویانه آمریکا به ایران",
+          "excerpt": ""
         }
       },
       "topics": []
