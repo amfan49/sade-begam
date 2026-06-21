@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T07:42:50.788Z",
+  "published_at": "2026-06-21T07:42:52.705Z",
   "items": [
     {
       "id": "2026-W24-001",
@@ -2353,6 +2353,27 @@
         "fa": {
           "headline": "بیانیه مشترک در مورد تهدیدات دولت ایران و حملات ادعایی HAYI",
           "excerpt": "بیانیه مشترک ۲۴ کشور در مورد تهدیدات دولتی مربوط به سرویس‌های امنیتی ایران و محکومیت حملات اخیر که گروه حرکت اصحاب یمین الاسلامیه (HAYI) مسئولیت آن را بر عهده گرفت - در سراسر اروپا."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-112",
+      "date": "2026-06-09",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "flag": "🇬🇧",
+      "source_organization": "Foreign, Commonwealth & Development Office",
+      "source_url": "https://www.gov.uk/government/speeches/the-full-and-effective-implementation-of-reinstated-un-sanctions-on-iran-remains-essential-uk-statement-at-the-un-security-council",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "The full and effective implementation of reinstated UN sanctions on Iran remains essential: UK statement at the UN Security Council",
+      "excerpt": "Statement by Ambassador James Kariuki, UK Chargé d’Affaires to the UN, at the UN Security Council meeting on Iran.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "بیانیه بریتانیا در شورای امنیت سازمان ملل: اجرای کامل و مؤثر تحریم‌های سازمان ملل علیه ایران همچنان ضروری است",
+          "excerpt": "بیانیه سفیر جیمز کاریوکی، کاردار بریتانیا در سازمان ملل، در جلسه شورای امنیت سازمان ملل متحد درباره ایران."
         }
       },
       "topics": []
