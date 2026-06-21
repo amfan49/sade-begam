@@ -153,7 +153,7 @@
   outline: none;
   line-height: 1.5;
   overflow-y: auto;
-  direction: rtl;
+  direction: inherit;
 }
 
 .chat-page__textarea:focus {

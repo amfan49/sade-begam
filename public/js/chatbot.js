@@ -16,7 +16,7 @@ function _sbGetAllNews() {
     const cw = JSON.parse(localStorage.getItem("sb_current_week_v1"));
     const items = cw?.data?.items || [];
     const arc = JSON.parse(localStorage.getItem("sb_archive_v1"));
-    const arcItems = arc?.data?.items || arc?.data?.archive || [];
+    const arcItems = arc?.items || arc?.data?.items || [];
     const ids = new Set(items.map((i) => i.id));
     arcItems.forEach((i) => { if (!ids.has(i.id)) items.push(i); });
     return items;

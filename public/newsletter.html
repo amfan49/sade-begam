@@ -37,6 +37,13 @@
   <main class="container">
     <section class="card form-block">
       <h1 class="about__title" id="nlTitle">Newsletter</h1>
+      <div class="newsletter-inactive-bar" id="nlInactiveBar" style="display:flex;align-items:center;gap:12px;background:#FFF3E0;border:1px solid #FFB74D;border-radius:10px;padding:14px 18px;margin:16px 0 20px;">
+        <span style="font-size:22px">⚠️</span>
+        <div>
+          <strong id="nlInactiveTitle" style="color:#E65100;display:block;margin-bottom:3px;"></strong>
+          <span id="nlInactiveDesc" style="font-size:14px;color:#BF5000;"></span>
+        </div>
+      </div>
       <p class="about__body" id="nlIntro"></p>
       <form id="signupForm" class="sb-form">
         <label class="field-label"><span id="nlEmailLabel"></span>
@@ -80,13 +87,16 @@
     set("navHome", T.navHome); set("navAbout", T.navAbout);
     set("navArchive", T.navArchive);
     set("navNewsletter", T.navNewsletter); set("navOrders", T.navOrders);
+    set("navChat", T.navChat);
     set("footerNote", T.footerNote); set("rights", T.rights);
     sbRenderCommonFooter();
 
     set("nlTitle", T.newsletter.title);
+    set("nlInactiveTitle", T.newsletter.inactiveTitle);
+    set("nlInactiveDesc", T.newsletter.inactiveDesc);
     set("nlIntro", T.newsletter.intro);
     set("nlEmailLabel", T.newsletter.emailLabel);
-    set("nlSignupBtn", T.newsletter.signupBtn);
+    set("nlSignupBtn", T.newsletter.waitlistBtn || T.newsletter.signupBtn);
     set("nlFormNote", T.newsletter.formNote);
     set("nlConfirmTitle", T.newsletter.confirmTitle);
     set("nlConfirmBody", T.newsletter.confirmBody);

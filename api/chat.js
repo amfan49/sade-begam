@@ -50,7 +50,7 @@ const TOOLS = [
         phone: { type: "string", description: "شماره تلفن (اختیاری)" },
         note:  { type: "string", description: "موضوع علاقه یا یادداشت" }
       },
-      required: ["name", "email"]
+      required: ["email"]
     }
   },
   {
@@ -176,7 +176,10 @@ module.exports = async (req, res) => {
 
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
-    return res.status(500).json({ error: "ANTHROPIC_API_KEY not configured" });
+    return res.status(503).json({
+      error: "ANTHROPIC_API_KEY not configured",
+      response: null
+    });
   }
 
   const { messages = [], session_id, source = "web" } = req.body || {};

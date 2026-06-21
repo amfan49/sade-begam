@@ -42,8 +42,16 @@ const STRINGS = {
       botName:     "بگم‌بات",
       botStatus:   "آنلاین · دستیار هوشمند",
       placeholder: "پیامتان را بنویسید…",
-      greeting:    "سلام! 👋 من بگم‌بات هستم — دستیار هوشمند سایت «ساده بگم».\n\nمی‌توانید درباره اخبار رسمی ایران بپرسید، وضعیت اشتراک را بررسی کنید، یا اطلاعات تماس خود را ثبت کنید.",
-      error:       "متأسفانه خطایی رخ داد. لطفاً دوباره تلاش کنید."
+      greeting:    "سلام! 👋 من بگم‌بات هستم — دستیار هوشمند سایت «ساده بگم».\n\nمی‌توانید درباره اخبار رسمی ایران بپرسید، خبرنامه را دنبال کنید، یا سفارش خبر ویژه بدهید.",
+      error:       "متأسفانه خطایی رخ داد. لطفاً دوباره تلاش کنید.",
+      localMode:   "🔍 جستجوی محلی در اخبار ذخیره‌شده:",
+      noApiKey:    "سرویس هوش مصنوعی هنوز راه‌اندازی نشده — در حال جستجو در اخبار ذخیره‌شده…",
+      suggestions: [
+        { q: "آخرین اخبار مربوط به برجام و توافق هسته‌ای", label: "☢️ برجام" },
+        { q: "اظهارات اخیر وزارت خارجه آمریکا درباره ایران", label: "🇺🇸 آمریکا" },
+        { q: "آخرین گزارش آژانس بین‌المللی انرژی اتمی", label: "⚛️ آژانس اتمی" },
+        { q: "می‌خواهم در خبرنامه ثبت نام کنم", label: "✉️ خبرنامه" }
+      ]
     },
     chat: {
       title: "ساده بگم — چت و جستجو",
@@ -95,12 +103,15 @@ const STRINGS = {
     },
     newsletter: {
       title: "خبرنامه",
+      inactiveTitle: "خبرنامه هنوز راه‌اندازی نشده است",
+      inactiveDesc: "ایمیل خود را وارد کنید تا به‌محض شروع، اول از همه خبر دریافت کنید.",
+      waitlistBtn: "ثبت‌نام برای اطلاع‌رسانی",
       intro: "هفته‌ای یک‌بار، خبرهای رسمی درباره‌ی ایران — گردآوری‌شده، مستند و رایگان. ابتدا یک ایمیل تأیید می‌فرستیم؛ بدون رضایت شما چیزی ارسال نمی‌شود و هر زمان می‌توانید لغو اشتراک کنید.",
       emailLabel: "نشانی ایمیل",
       signupBtn: "اشتراک در خبرنامه",
       formNote: "فقط پس از تأیید شما ایمیل می‌فرستیم. بدون هرزنامه.",
       confirmTitle: "یک گام دیگر باقی مانده ✉️",
-      confirmBody: "برای تکمیل اشتراک، ایمیل تأییدی را که برایتان باز می‌شود ارسال کنید. تا وقتی روی پیوند تأیید کلیک نکنید، هیچ خبرنامه‌ای دریافت نخواهید کرد (تأیید دو‌مرحله‌ای).",
+      confirmBody: "برای تکمیل ثبت‌نام، ایمیل تأییدی را که برایتان باز می‌شود ارسال کنید. به‌محض راه‌اندازی خبرنامه، اطلاع‌رسانی خواهید شد.",
       confirmAgain: "ثبت ایمیلی دیگر"
     },
     orders: {
@@ -186,8 +197,16 @@ const STRINGS = {
       botName:     "SaBot",
       botStatus:   "Online · AI Assistant",
       placeholder: "Type your message…",
-      greeting:    "Hello! 👋 I'm SaBot — the AI assistant for Sade Begam.\n\nYou can ask me about official news on Iran, check your subscription status, or register your contact information.",
-      error:       "Sorry, an error occurred. Please try again."
+      greeting:    "Hello! 👋 I'm SaBot — the AI assistant for Sade Begam.\n\nAsk me about official news on Iran, subscribe to the newsletter, or request specific news coverage.",
+      error:       "Sorry, an error occurred. Please try again.",
+      localMode:   "🔍 Local search results:",
+      noApiKey:    "AI service not yet configured — searching local news instead…",
+      suggestions: [
+        { q: "Latest news on the Iran nuclear deal JCPOA", label: "☢️ Nuclear deal" },
+        { q: "US State Department statements on Iran", label: "🇺🇸 USA" },
+        { q: "IAEA report on Iran nuclear programme", label: "⚛️ IAEA" },
+        { q: "I want to subscribe to the newsletter", label: "✉️ Newsletter" }
+      ]
     },
     chat: {
       title: "Sade Begam — Chat & Search",
@@ -239,12 +258,15 @@ const STRINGS = {
     },
     newsletter: {
       title: "Newsletter",
+      inactiveTitle: "Newsletter not yet active",
+      inactiveDesc: "Enter your email to be the very first to know when we launch.",
+      waitlistBtn: "Notify me at launch",
       intro: "Once a week, the official news about Iran — gathered, sourced, and free. We send a confirmation first; nothing is sent without your consent, and you can unsubscribe anytime.",
       emailLabel: "Email address",
       signupBtn: "Subscribe to the newsletter",
       formNote: "We email you only after you confirm. No spam, ever.",
       confirmTitle: "One more step ✉️",
-      confirmBody: "To complete your subscription, please send the confirmation email that just opened. You won't receive any newsletter until you confirm (double opt-in).",
+      confirmBody: "To complete your registration, please send the confirmation email that just opened. You will be notified as soon as the newsletter launches.",
       confirmAgain: "Use a different email"
     },
     orders: {

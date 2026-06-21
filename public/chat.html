@@ -51,13 +51,8 @@
     <!-- Message stream -->
     <div class="chat-page__messages" id="chatMessages" aria-live="polite" aria-label="مکالمه"></div>
 
-    <!-- Quick suggestion chips (shown initially) -->
-    <div class="chat-suggestions" id="chatSuggestions">
-      <button class="chat-suggestions__chip" data-q="آخرین اخبار مربوط به برجام چیست؟">📰 برجام</button>
-      <button class="chat-suggestions__chip" data-q="اظهارات اخیر وزارت خارجه آمریکا درباره ایران">🇺🇸 آمریکا</button>
-      <button class="chat-suggestions__chip" data-q="آخرین اخبار آژانس بین‌المللی انرژی اتمی">⚛️ آژانس اتمی</button>
-      <button class="chat-suggestions__chip" data-q="می‌خواهم در خبرنامه ثبت نام کنم">✉️ خبرنامه</button>
-    </div>
+    <!-- Quick suggestion chips — populated from i18n.js by chat-page.js -->
+    <div class="chat-suggestions" id="chatSuggestions"></div>
 
     <!-- Input bar -->
     <div class="chat-page__input-bar">
