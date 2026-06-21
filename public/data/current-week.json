@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:43:42.484Z",
+  "published_at": "2026-06-21T08:43:44.820Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3214,6 +3214,27 @@
         "fa": {
           "headline": "ایران می‌خواهد اردن را به خاطر میزبانی از نیروهای آمریکایی مجازات کند",
           "excerpt": "نیروهای مسلح اردن (JAF) در ۱۱ ژوئن اعلام کردند که ۲۰ موشک شلیک شده از ایران به سمت الازرق، شهری در حدود ۵۰ مایلی شرق امان که محل یک پایگاه هوایی بزرگ نیز هست، را رهگیری کرده‌اند."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-153",
+      "date": "2026-06-12",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/12/israels-reaction-to-a-potential-iran-deal/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Israel’s reaction to a potential Iran deal",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "واکنش اسرائیل به توافق احتمالی با ایران",
+          "excerpt": ""
         }
       },
       "topics": []
