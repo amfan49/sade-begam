@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:29.318Z",
+  "published_at": "2026-06-21T08:44:32.812Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3613,6 +3613,27 @@
         "fa": {
           "headline": "مصاحبه کرونیگ با بی‌بی‌سی درباره مذاکرات ایران",
           "excerpt": "در ۱۱ ژوئن، متیو کرونیگ، معاون رئیس شورای آتلانتیک و مدیر ارشد مرکز اسکوکرافت، در مصاحبه‌ای با بی‌بی‌سی درباره مذاکرات جاری با ایران صحبت کرد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-172",
+      "date": "2026-06-11",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/content-series/fastthinking/is-this-the-end-of-the-iran-war/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Is this the end of the Iran war?",
+      "excerpt": "Our experts break down the latest strikes and Trump's announcement of a pending deal to end the conflict.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "آیا این پایان جنگ ایران است؟",
+          "excerpt": "کارشناسان ما آخرین حملات و اعلام ترامپ مبنی بر توافق قریب‌الوقوع برای پایان دادن به درگیری را بررسی می‌کنند."
         }
       },
       "topics": []
