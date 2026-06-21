@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:32.812Z",
+  "published_at": "2026-06-21T08:44:34.678Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3634,6 +3634,27 @@
         "fa": {
           "headline": "آیا این پایان جنگ ایران است؟",
           "excerpt": "کارشناسان ما آخرین حملات و اعلام ترامپ مبنی بر توافق قریب‌الوقوع برای پایان دادن به درگیری را بررسی می‌کنند."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-173",
+      "date": "2026-06-10",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/dispatches/from-a-gap-to-a-chasm-diverging-us-and-israeli-interests-in-the-war-with-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "From a gap to a chasm: Diverging US and Israeli interests in the war with Iran",
+      "excerpt": "The once-modest gap between Israeli Prime Minister Benjamin Netanyahu and US President Donald Trump has widened in recent weeks.",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "از شکاف تا شکاف عمیق: منافع متضاد آمریکا و اسرائیل در جنگ با ایران",
+          "excerpt": "اختلاف نظر میان بنیامین نتانیاهو، نخست وزیر اسرائیل، و دونالد ترامپ، رئیس جمهور آمریکا که زمانی اندک بود، در هفته‌های اخیر عمیق‌تر شده است."
         }
       },
       "topics": []
