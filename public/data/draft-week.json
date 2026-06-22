@@ -1,48 +1,24 @@
 {
-  "generated_at": "2026-06-21T22:41:40.903Z",
+  "generated_at": "2026-06-22T18:00:16.273Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 4,
+  "total": 16,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
-      "id": "draft-001",
-      "date": "2026-06-19",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/podcasts/the-iran-breakdown/2026/06/19/strait-talk-unpacking-the-us-iran-mou/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Strait Talk: Unpacking the US-Iran MOU",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Strait Talk: Unpacking the US-Iran MOU appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
       "id": "draft-002",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/19/iran-prioritizes-protection-of-hezbollah-over-negotiations-with-u-s/",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/vp-vance-speaks-after-u-s-iran-peace-talks-in-switzerland/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Iran Prioritizes Protection of Hezbollah Over Negotiations With U.S.",
+      "headline": "VP Vance speaks after U.S.-Iran peace talks in Switzerland",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Days after signing a Memorandum of Understanding (MOU) to end the U.S.-Iran war, the Tehran regime is testing whether it can use Lebanon — and its Lebanese terror proxy Hezbollah — as leverage over... The post Iran Prioritizes Protection of Hezbollah Over Negotiations With U.S. appeared first on FDD",
+      "excerpt": "The post VP Vance speaks after U.S.-Iran peace talks in Switzerland appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -55,18 +31,18 @@
     },
     {
       "id": "draft-003",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/blogs/econographics/central-banks-cant-afford-to-keep-missing-their-inflation-targets/",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/22/sudan-turns-away-from-iranian-weapons-in-hopes-of-courting-washington/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Central banks can’t afford to keep missing their inflation targets",
+      "headline": "Sudan Turns Away From Iranian Weapons in Hopes of Courting Washington",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "While the Iran war explains the sudden rise in inflation, relying on this excuse obscures that there is potentially a long-term problem central banks will need to confront as they manage the long tail of this crisis. The post Central banks can’t afford to keep missing their inflation targets appeare",
+      "excerpt": "Sudan’s civil war, now in its fourth year, has become one of Africa’s first drone wars. Yet the drones dominating this battlefield are overwhelmingly foreign. From approximately 3,000 miles away,... The post Sudan Turns Away From Iranian Weapons in Hopes of Courting Washington appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -79,18 +55,330 @@
     },
     {
       "id": "draft-004",
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/was-it-worth-it-the-true-cost-of-trumps-iran-war",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/the-humiliations-yet-to-come-from-trumps-iran-deal/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Was It Worth It? The True Cost of Trump’s Iran War",
+      "headline": "The Humiliations Yet to Come from Trump’s Iran Deal",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The war ended with a deal that gives Iran sanctions relief, reconstruction funds, and the ability to charge tolls on the world&#8217;s most critical waterway. While the White House may call it a victory, the costs suggest otherwise.",
+      "excerpt": "The post The Humiliations Yet to Come from Trump’s Iran Deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/a-look-at-the-text-of-the-agreement-between-the-united-states-and-iran/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "A Look at the Text of the Agreement Between the United States and Iran",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post A Look at the Text of the Agreement Between the United States and Iran appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-006",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/iran-peace-deal-makes-clear-how-far-us-has-been-forced-to-retreat-since-2025/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran peace deal makes clear how far US has been forced to retreat since 2025",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran peace deal makes clear how far US has been forced to retreat since 2025 appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-007",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/what-next-for-iran-after-trump-signs-disastrous-deal-to-end-war-with-300bn-boost-and-scrapped-sanctions/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "What next for Iran after Trump signs ‘disastrous’ deal to end war with $300bn boost and scrapped sanctions",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post What next for Iran after Trump signs ‘disastrous’ deal to end war with $300bn boost and scrapped sanctions appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-008",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/could-congress-scuttle-trumps-iran-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Could Congress Scuttle Trump’s Iran Deal?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Could Congress Scuttle Trump’s Iran Deal? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-009",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/trumps-iran-accord-and-the-2015-nuclear-deal-whats-different-this-time/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump&#8217;s Iran Accord And The 2015 Nuclear Deal: What&#8217;s Different This Time?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump&#8217;s Iran Accord And The 2015 Nuclear Deal: What&#8217;s Different This Time? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-010",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/iran-gets-major-economic-lifeline-for-minimal-concessions-in-initial-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran Gets Major Economic Lifeline for Minimal Concessions in Initial Deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran Gets Major Economic Lifeline for Minimal Concessions in Initial Deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-015",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Atlantic Council",
+      "source_url": "https://www.atlanticcouncil.org/blogs/turkeysource/turkey-has-survived-the-energy-crisis-it-still-needs-a-more-deliberate-economic-strategy/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Turkey has survived the energy crisis. It still needs a more deliberate economic strategy.",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The recent Iran conflict has exposed the enduring vulnerabilities of Turkey's economic strategy. The post Turkey has survived the energy crisis. It still needs a more deliberate economic strategy. appeared first on Atlantic Council.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-016",
+      "date": "2026-06-22",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.inforadio.de/rubriken/interviews/2026/06/22/israel-usa-iran-friedensdeal-angriffe-libanon-peter-lintl.html",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Politologe: USA und Israel haben keine gemeinsamen Ziele mehr",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Trotz Rahmenabkommen für einen Frieden zwischen den USA und dem Iran kämpfen Israel und die Hisbollah weiter. Peter Lintl von der Stiftung Wissenschaft und Politik sieht Israel in einer sehr schwierigen Situation.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-001",
+      "date": "2026-06-21",
+      "country": "Iran",
+      "region": "Middle East",
+      "flag": "🇮🇷",
+      "source_organization": "Ministry of Economic Affairs Iran",
+      "source_url": "http://en.mefa.ir/news/741907/Iran-s-Participation-in-IsDB-Annual-Meeting-Strengthens-Development",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran’s Participation in IsDB Annual Meeting Strengthens Development Cooperation",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Iran played an active role in the 51st Annual Meeting of the Islamic Development Bank (IsDB) Group, held in Baku (from June 16 to 19) under the theme “Regional Integration for Sustainable Prosperity.” The event brought together more than 2,000 participants from 57 member countries and focused on reg",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-011",
+      "date": "2026-06-21",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/21/iran-closes-strait-of-hormuz-blames-israeli-attacks-on-lebanon/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran closes Strait of Hormuz, blames Israeli attacks on Lebanon",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran closes Strait of Hormuz, blames Israeli attacks on Lebanon appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-012",
+      "date": "2026-06-20",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/20/israel-hezbollah-conflict-threatens-iran-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Israel-Hezbollah conflict threatens Iran deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Israel-Hezbollah conflict threatens Iran deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-013",
+      "date": "2026-06-20",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/20/u-s-lifts-blockade-against-iranian-ports-critics-warn-of-financial-lifeline-for-regime/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S. lifts blockade against Iranian ports, critics warn of financial lifeline for regime",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S. lifts blockade against Iranian ports, critics warn of financial lifeline for regime appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-014",
+      "date": "2026-06-20",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/20/u-s-iran-deal-peace-efforts-underway-despite-middle-east-violence-strait-of-hormuz-tensions/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S.-Iran deal peace efforts underway despite Middle East violence, Strait of Hormuz tensions",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S.-Iran deal peace efforts underway despite Middle East violence, Strait of Hormuz tensions appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
