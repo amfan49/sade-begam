@@ -1,12 +1,108 @@
 {
-  "generated_at": "2026-06-22T18:00:16.273Z",
+  "generated_at": "2026-06-22T23:08:55.850Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 16,
+  "total": 22,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-002",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/analyzing-the-latest-u-s-iran-agreement/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Analyzing the latest U.S.-Iran agreement",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Analyzing the latest U.S.-Iran agreement appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/u-s-will-be-on-uncomfortable-footing-trying-to-transform-irans-regime/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S. will be on uncomfortable footing trying to transform Iran&#8217;s regime",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S. will be on uncomfortable footing trying to transform Iran&#8217;s regime appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/rubio-will-visit-gulf-allies-amid-scrutiny-of-his-position-in-iran-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Rubio will visit Gulf allies amid scrutiny of his position in Iran Deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Rubio will visit Gulf allies amid scrutiny of his position in Iran Deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
+      "date": "2026-06-22",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/amid-conflicting-us-iran-messages-trump-threatens-force-against-iran-if-it-doesnt-stop-hezbollah-in-lebanon/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Amid Conflicting US-Iran Messages, Trump Threatens Force Against Iran if It Doesn&#8217;t Stop Hezbollah in Lebanon",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Amid Conflicting US-Iran Messages, Trump Threatens Force Against Iran if It Doesn&#8217;t Stop Hezbollah in Lebanon appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-006",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-007",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-008",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-009",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-010",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-011",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-012",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +270,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-013",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-014",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-021",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-022",
       "date": "2026-06-22",
       "country": "Germany",
       "region": "Think Tanks",
@@ -294,7 +390,55 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-015",
+      "date": "2026-06-21",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/21/vp-vance-iranian-officials-launch-talks-on-tehran-nuclear-program/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "VP Vance, Iranian officials launch talks on Tehran nuclear program",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post VP Vance, Iranian officials launch talks on Tehran nuclear program appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-016",
+      "date": "2026-06-21",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/21/irans-leadership-emerges-from-war-battered-and-transformed/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran’s leadership emerges from war battered and transformed",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran’s leadership emerges from war battered and transformed appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-017",
       "date": "2026-06-21",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-018",
       "date": "2026-06-20",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-019",
       "date": "2026-06-20",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +510,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-020",
       "date": "2026-06-20",
       "country": "United States",
       "region": "Think Tanks",
