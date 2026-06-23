@@ -1,10 +1,34 @@
 {
-  "generated_at": "2026-06-22T23:08:55.850Z",
+  "generated_at": "2026-06-23T11:46:40.371Z",
   "window_days": 3,
   "keyword": "iran",
   "total": 22,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
+    {
+      "id": "draft-001",
+      "date": "2026-06-23",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/iran-to-allow-nuclear-inspectors-in/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran to allow nuclear inspectors in",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran to allow nuclear inspectors in appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
     {
       "id": "draft-002",
       "date": "2026-06-22",
@@ -355,30 +379,6 @@
       "headline": "Politologe: USA und Israel haben keine gemeinsamen Ziele mehr",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Trotz Rahmenabkommen für einen Frieden zwischen den USA und dem Iran kämpfen Israel und die Hisbollah weiter. Peter Lintl von der Stiftung Wissenschaft und Politik sieht Israel in einer sehr schwierigen Situation.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-001",
-      "date": "2026-06-21",
-      "country": "Iran",
-      "region": "Middle East",
-      "flag": "🇮🇷",
-      "source_organization": "Ministry of Economic Affairs Iran",
-      "source_url": "http://en.mefa.ir/news/741907/Iran-s-Participation-in-IsDB-Annual-Meeting-Strengthens-Development",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran’s Participation in IsDB Annual Meeting Strengthens Development Cooperation",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Iran played an active role in the 51st Annual Meeting of the Islamic Development Bank (IsDB) Group, held in Baku (from June 16 to 19) under the theme “Regional Integration for Sustainable Prosperity.” The event brought together more than 2,000 participants from 57 member countries and focused on reg",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
