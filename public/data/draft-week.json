@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-23T19:30:23.606Z",
+  "generated_at": "2026-06-24T10:39:34.946Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 32,
+  "total": 34,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
@@ -163,6 +163,30 @@
       "headline": "Iran to allow nuclear inspectors in",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The post Iran to allow nuclear inspectors in appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-032",
+      "date": "2026-06-23",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-iran-war-turned-asias-fragile-energy-dependence-into-an-emergency",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "The Iran War Turned Asia’s Fragile Energy Dependence Into an Emergency",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Asia got a glimpse of its energy future during the Iran war. What governments do next will determine whether the crisis becomes a turning point or a missed opportunity.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -726,7 +750,7 @@
       "topics": []
     },
     {
-      "id": "draft-032",
+      "id": "draft-033",
       "date": "2026-06-22",
       "country": "Germany",
       "region": "Think Tanks",
@@ -739,6 +763,30 @@
       "headline": "Politologe: USA und Israel haben keine gemeinsamen Ziele mehr",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Trotz Rahmenabkommen für einen Frieden zwischen den USA und dem Iran kämpfen Israel und die Hisbollah weiter. Peter Lintl von der Stiftung Wissenschaft und Politik sieht Israel in einer sehr schwierigen Situation.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-034",
+      "date": "2026-06-22",
+      "country": "Germany",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "SWP Berlin",
+      "source_url": "https://www.zdf.de/play/talk/markus-lanz-114/markus-lanz-vom-22-juni-2026-100",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Markus Lanz: Der Talk am 22. Juni 2026",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Zum amerikanisch-iranischen Rahmenabkommen, zum europäischen Engagement vor Ort bezüglich der Straße von Hormus, zur deutschen Rolle bei den G7 sowie über die Krise in der Automobilbranche",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
