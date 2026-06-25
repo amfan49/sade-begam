@@ -1,12 +1,108 @@
 {
-  "generated_at": "2026-06-25T10:31:48.002Z",
+  "generated_at": "2026-06-25T19:24:41.731Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 31,
+  "total": 29,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/did-america-just-save-irans-regime/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Did America just save Iran&#8217;s regime?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Did America just save Iran&#8217;s regime? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/irans-next-move-revealed/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran&#8217;s next move revealed",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran&#8217;s next move revealed appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/podcasts/the-iran-breakdown/2026/06/25/what-iranians-think-about-the-us-iran-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "What Iranians Think About the US-Iran Deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post What Iranians Think About the US-Iran Deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/reacting-to-the-ongoing-negotiations-with-iran/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Reacting to the ongoing negotiations with Iran",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Reacting to the ongoing negotiations with Iran appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
+      "id": "draft-006",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-007",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-008",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-009",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-010",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-011",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +270,31 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-012",
+      "date": "2026-06-24",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/24/experts-urge-extreme-caution-on-irans-crown-jewel-hezbollah-terror-group-with-us-blood-on-its-hands/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Experts urge extreme caution on Iran’s ‘crown jewel’ Hezbollah — terror group with US blood on its hands",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Experts urge extreme caution on Iran’s ‘crown jewel’ Hezbollah — terror group with US blood on its hands appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-013",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-014",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +342,55 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-015",
+      "date": "2026-06-24",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/u-s-and-iran-disagree-on-interim-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S. and Iran disagree on interim deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S. and Iran disagree on interim deal appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-016",
+      "date": "2026-06-24",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/from-trumps-maximum-pressure-to-the-new-mou-exposing-the-regime-in-iran/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "From Trump&#8217;s maximum pressure to the new MOU: exposing the regime in Iran",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "From Trump's Maximum Pressure to the New MOU: Edmund Fitton-Brown Exposes the Regime in Iran https://t.co/niuD3b0d7D&#8212; Armin Navabi (@ArminNavabi) June 24, 2026 ... The post From Trump&#8217;s maximum pressure to the new MOU: exposing the regime in Iran appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-017",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +414,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-018",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +438,7 @@
       "topics": []
     },
     {
-      "id": "draft-029",
+      "id": "draft-028",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -294,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-019",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-020",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +510,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-021",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +534,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-022",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -390,7 +558,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-023",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -414,7 +582,31 @@
       "topics": []
     },
     {
-      "id": "draft-017",
+      "id": "draft-024",
+      "date": "2026-06-23",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/23/iran-us-peace-deal-faces-various-threats-from-lebanon-israel-and-trump/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran-US peace deal faces various threats, from Lebanon, Israel and Trump",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran-US peace deal faces various threats, from Lebanon, Israel and Trump appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-025",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -438,7 +630,7 @@
       "topics": []
     },
     {
-      "id": "draft-018",
+      "id": "draft-026",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -462,7 +654,7 @@
       "topics": []
     },
     {
-      "id": "draft-019",
+      "id": "draft-027",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -486,127 +678,7 @@
       "topics": []
     },
     {
-      "id": "draft-020",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/does-iran-deal-leave-enriched-uranium-untouched/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Does Iran deal leave enriched uranium untouched?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Does Iran deal leave enriched uranium untouched? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-021",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/did-trump-achieve-his-iran-goals/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Did Trump achieve his Iran goals?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Did Trump achieve his Iran goals? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-022",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/vance-and-trump-are-playing-good-cop-bad-cop-with-iran-is-it-helping-talks/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Vance and Trump are playing &#8216;good cop, bad cop&#8217; with Iran— is it helping talks?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Vance and Trump are playing &#8216;good cop, bad cop&#8217; with Iran— is it helping talks? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-023",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/23/trump-administration-provides-billions-in-unrestricted-oil-sanctions-relief-to-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump Administration Provides Billions in Unrestricted Oil Sanctions Relief to Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The Trump administration is laying the groundwork for a major cash infusion for the Iranian regime. On June 22, the Treasury Department issued General License (GL) X, a 60-day authorization for the... The post Trump Administration Provides Billions in Unrestricted Oil Sanctions Relief to Iran appear",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-024",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/iran-to-allow-nuclear-inspectors-in/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran to allow nuclear inspectors in",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran to allow nuclear inspectors in appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-030",
+      "id": "draft-029",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -619,126 +691,6 @@
       "headline": "The Iran War Turned Asia’s Fragile Energy Dependence Into an Emergency",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Asia got a glimpse of its energy future during the Iran war. What governments do next will determine whether the crisis becomes a turning point or a missed opportunity.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-025",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/analyzing-the-latest-u-s-iran-agreement/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Analyzing the latest U.S.-Iran agreement",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Analyzing the latest U.S.-Iran agreement appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-026",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/u-s-will-be-on-uncomfortable-footing-trying-to-transform-irans-regime/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. will be on uncomfortable footing trying to transform Iran&#8217;s regime",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. will be on uncomfortable footing trying to transform Iran&#8217;s regime appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-027",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/rubio-will-visit-gulf-allies-amid-scrutiny-of-his-position-in-iran-deal/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Rubio will visit Gulf allies amid scrutiny of his position in Iran Deal",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Rubio will visit Gulf allies amid scrutiny of his position in Iran Deal appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-028",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Atlantic Council",
-      "source_url": "https://www.atlanticcouncil.org/blogs/turkeysource/turkey-has-survived-the-energy-crisis-it-still-needs-a-more-deliberate-economic-strategy/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Turkey has survived the energy crisis. It still needs a more deliberate economic strategy.",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The recent Iran conflict has exposed the enduring vulnerabilities of Turkey's economic strategy. The post Turkey has survived the energy crisis. It still needs a more deliberate economic strategy. appeared first on Atlantic Council.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-031",
-      "date": "2026-06-22",
-      "country": "Germany",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "SWP Berlin",
-      "source_url": "https://www.inforadio.de/rubriken/interviews/2026/06/22/israel-usa-iran-friedensdeal-angriffe-libanon-peter-lintl.html",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Politologe: USA und Israel haben keine gemeinsamen Ziele mehr",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Trotz Rahmenabkommen für einen Frieden zwischen den USA und dem Iran kämpfen Israel und die Hisbollah weiter. Peter Lintl von der Stiftung Wissenschaft und Politik sieht Israel in einer sehr schwierigen Situation.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
