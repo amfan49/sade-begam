@@ -1,12 +1,84 @@
 {
-  "generated_at": "2026-06-24T18:25:09.585Z",
+  "generated_at": "2026-06-25T10:31:48.002Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 32,
+  "total": 31,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/24/dont-help-iran-prop-up-hezbollah/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Don’t Help Iran Prop Up Hezbollah",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Excerpt When the Iranian regime demanded a&#160;Lebanon&#160;cease-fire clause in the memorandum of understanding with the U.S., it was a clever move. In exchange for ending its stranglehold on the... The post Don’t Help Iran Prop Up Hezbollah appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-24",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/iran-tries-to-link-lebanon-conflict-to-their-own-deal-with-the-u-s/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran tries to link Lebanon conflict to their own deal with the U.S.",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran tries to link Lebanon conflict to their own deal with the U.S. appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-24",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/is-iran-winning-the-diplomatic-war-after-military-defeat-on-the-battlefield/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Is Iran winning the diplomatic war after military defeat on the battlefield?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Is Iran winning the diplomatic war after military defeat on the battlefield? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
+      "id": "draft-005",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-006",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-007",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-008",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-009",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-010",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-011",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +270,31 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-029",
+      "date": "2026-06-24",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/another-hormuz-the-red-seas-threat-to-the-global-economy",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Another Hormuz? The Red Sea’s Threat to the Global Economy",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The Red Sea is vital to the free flow of global trade, but the Yemen-based Houthis and the fallout from the Iran war threaten to choke off the Mideast waterway, with major consequences for the global economy.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-012",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-013",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-014",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +366,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-015",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -294,7 +390,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-016",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,7 +414,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-017",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +438,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-018",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-019",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -390,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-017",
+      "id": "draft-020",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -414,7 +510,7 @@
       "topics": []
     },
     {
-      "id": "draft-018",
+      "id": "draft-021",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -438,7 +534,7 @@
       "topics": []
     },
     {
-      "id": "draft-019",
+      "id": "draft-022",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -462,7 +558,7 @@
       "topics": []
     },
     {
-      "id": "draft-020",
+      "id": "draft-023",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -486,7 +582,7 @@
       "topics": []
     },
     {
-      "id": "draft-021",
+      "id": "draft-024",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -534,7 +630,7 @@
       "topics": []
     },
     {
-      "id": "draft-022",
+      "id": "draft-025",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -558,7 +654,7 @@
       "topics": []
     },
     {
-      "id": "draft-023",
+      "id": "draft-026",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -582,7 +678,7 @@
       "topics": []
     },
     {
-      "id": "draft-024",
+      "id": "draft-027",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -606,103 +702,7 @@
       "topics": []
     },
     {
-      "id": "draft-025",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/22/amid-conflicting-us-iran-messages-trump-threatens-force-against-iran-if-it-doesnt-stop-hezbollah-in-lebanon/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Amid Conflicting US-Iran Messages, Trump Threatens Force Against Iran if It Doesn&#8217;t Stop Hezbollah in Lebanon",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Amid Conflicting US-Iran Messages, Trump Threatens Force Against Iran if It Doesn&#8217;t Stop Hezbollah in Lebanon appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-026",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/what-do-the-latest-iran-talks-mean-for-lebanon-and-regional-conflict/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "What do the latest Iran talks mean for Lebanon and regional conflict?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post What do the latest Iran talks mean for Lebanon and regional conflict? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-027",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/22/vp-vance-speaks-after-u-s-iran-peace-talks-in-switzerland/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "VP Vance speaks after U.S.-Iran peace talks in Switzerland",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post VP Vance speaks after U.S.-Iran peace talks in Switzerland appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
       "id": "draft-028",
-      "date": "2026-06-22",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/22/sudan-turns-away-from-iranian-weapons-in-hopes-of-courting-washington/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Sudan Turns Away From Iranian Weapons in Hopes of Courting Washington",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Sudan’s civil war, now in its fourth year, has become one of Africa’s first drone wars. Yet the drones dominating this battlefield are overwhelmingly foreign. From approximately 3,000 miles away,... The post Sudan Turns Away From Iranian Weapons in Hopes of Courting Washington appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-029",
       "date": "2026-06-22",
       "country": "United States",
       "region": "Think Tanks",
@@ -739,30 +739,6 @@
       "headline": "Politologe: USA und Israel haben keine gemeinsamen Ziele mehr",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Trotz Rahmenabkommen für einen Frieden zwischen den USA und dem Iran kämpfen Israel und die Hisbollah weiter. Peter Lintl von der Stiftung Wissenschaft und Politik sieht Israel in einer sehr schwierigen Situation.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-032",
-      "date": "2026-06-22",
-      "country": "Germany",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "SWP Berlin",
-      "source_url": "https://www.zdf.de/play/talk/markus-lanz-114/markus-lanz-vom-22-juni-2026-100",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Markus Lanz: Der Talk am 22. Juni 2026",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Zum amerikanisch-iranischen Rahmenabkommen, zum europäischen Engagement vor Ort bezüglich der Straße von Hormus, zur deutschen Rolle bei den G7 sowie über die Krise in der Automobilbranche",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
