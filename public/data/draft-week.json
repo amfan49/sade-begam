@@ -1,12 +1,84 @@
 {
-  "generated_at": "2026-06-26T11:22:16.971Z",
+  "generated_at": "2026-06-26T18:15:21.795Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 27,
+  "total": 28,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
-      "id": "draft-025",
+      "id": "draft-001",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/26/trumps-iran-mou-explained-how-iran-gets-billions-and-why/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump&#8217;s Iran MoU explained: how Iran gets billions—and why",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump&#8217;s Iran MoU explained: how Iran gets billions—and why appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/26/washington-held-an-unprecedented-upper-hand-over-iran-then-cashed-it-in/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Washington held an unprecedented upper hand over Iran &#8211; then cashed it in",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Excerpt The odds had never been worse for&#160;the Islamic Republic&#160;than in early June 2026. Its missile infrastructure had been devastated, senior military leaders killed, nuclear facilities bombed,... The post Washington held an unprecedented upper hand over Iran &#8211; then cashed it in app",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/26/irans-economic-catastrophe/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran’s economic catastrophe",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "On February 28, 2026, American and Israeli forces launched Operation Epic Fury. The country they targeted was already in economic crisis: inflation had topped 50%, the currency was in free fall, merchants... The post Iran’s economic catastrophe appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-026",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-001",
+      "id": "draft-004",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
+      "id": "draft-005",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-006",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-007",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +198,79 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-008",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/saudi-arabia-plans-gulf-reconciliation-summit-with-iran/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Saudi Arabia plans Gulf reconciliation summit with Iran",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Explaining Gulf dynamics on @i24NEWS_EN: The &#34;reconciliation with Iran summit&#34; that Saudi Arabia is organizing does not make sense, especially to the three GCC countries &#8212; the UAE, Kuwait... The post Saudi Arabia plans Gulf reconciliation summit with Iran appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-009",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/25/frozen-funds-will-never-touch-iran-under-trump-backed-mou-us-official-tells-the-post/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Frozen funds will never ‘touch Iran’ under Trump-backed MOU, US official tells The Post",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Frozen funds will never ‘touch Iran’ under Trump-backed MOU, US official tells The Post appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-010",
+      "date": "2026-06-25",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/will-there-be-phased-israeli-withdrawal-from-lebanon/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Will there be phased Israeli withdrawal from Lebanon?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "On @almashhadmedia: Phased Israeli withdrawal from Lebanon, contingent on Hezbollah's disarmament, is the result of direct Lebanese-Israeli talks and has nothing to do with the U.S.-Iran track. Islamic... The post Will there be phased Israeli withdrawal from Lebanon? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-011",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-012",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-013",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-014",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +366,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-015",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +390,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-016",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +414,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-017",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -294,7 +438,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-018",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-019",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-020",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +510,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-021",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -390,7 +534,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-022",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -414,7 +558,7 @@
       "topics": []
     },
     {
-      "id": "draft-017",
+      "id": "draft-023",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -438,7 +582,7 @@
       "topics": []
     },
     {
-      "id": "draft-018",
+      "id": "draft-024",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -462,7 +606,7 @@
       "topics": []
     },
     {
-      "id": "draft-026",
+      "id": "draft-027",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -486,7 +630,7 @@
       "topics": []
     },
     {
-      "id": "draft-019",
+      "id": "draft-025",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -510,127 +654,7 @@
       "topics": []
     },
     {
-      "id": "draft-020",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/u-s-eases-oil-sanctions-on-iran-as-talks-continue-in-switzerland/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. eases oil sanctions on Iran as talks continue in Switzerland",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. eases oil sanctions on Iran as talks continue in Switzerland appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-021",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/23/pakistan-gains-favor-with-trump-as-iran-mediator-history-raises-concerns-about-its-reliability/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Pakistan gains favor with Trump as Iran mediator, history raises concerns about its reliability",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Pakistan gains favor with Trump as Iran mediator, history raises concerns about its reliability appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-022",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/how-are-iran-u-s-negotiations-affecting-israel-lebanon-talks-in-washington/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "How are Iran-U.S. negotiations affecting Israel-Lebanon talks in Washington?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post How are Iran-U.S. negotiations affecting Israel-Lebanon talks in Washington? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-023",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/23/how-iran-plans-to-consolidate-its-victory/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "How Iran Plans to Consolidate Its Victory",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Wars are judged by how they end, not by successes along the way. President Trump has done more to cripple Iran’s nuclear apparatus than his predecessors, but that may not matter. The memorandum... The post How Iran Plans to Consolidate Its Victory appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-024",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/unfrozen-iranian-assets-should-aid-iranians-not-regimes-terrorism/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Unfrozen Iranian assets should aid Iranians, not regime&#8217;s terrorism",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Unfrozen Iranian assets should aid Iranians, not regime&#8217;s terrorism appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-027",
+      "id": "draft-028",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
