@@ -1,10 +1,34 @@
 {
-  "generated_at": "2026-06-25T19:24:41.731Z",
+  "generated_at": "2026-06-26T11:22:16.971Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 29,
+  "total": 27,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
+    {
+      "id": "draft-025",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/the-iran-deal-comes-at-a-cost-to-israel-the-white-house-hasnt-acknowledged-it",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "The Iran Deal Comes at a Cost to Israel. The White House Hasn’t Acknowledged It.",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The U.S.-Iran deal sidelines Israel, a critical ally, on issues affecting its core security interests. That may be tactically defensible, but the way Washington has handled it is not.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
     {
       "id": "draft-001",
       "date": "2026-06-25",
@@ -438,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-028",
+      "id": "draft-026",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -468,6 +492,30 @@
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/is-iran-running-roughshod-over-the-rookie-negotiator/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Is Iran running roughshod over the rookie negotiator?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Is Iran running roughshod over the rookie negotiator? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-020",
+      "date": "2026-06-23",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
       "source_url": "https://www.fdd.org/in_the_news/2026/06/23/u-s-eases-oil-sanctions-on-iran-as-talks-continue-in-switzerland/",
       "is_official": true,
       "needs_review": true,
@@ -486,7 +534,7 @@
       "topics": []
     },
     {
-      "id": "draft-020",
+      "id": "draft-021",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -510,7 +558,7 @@
       "topics": []
     },
     {
-      "id": "draft-021",
+      "id": "draft-022",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -534,7 +582,7 @@
       "topics": []
     },
     {
-      "id": "draft-022",
+      "id": "draft-023",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -558,7 +606,7 @@
       "topics": []
     },
     {
-      "id": "draft-023",
+      "id": "draft-024",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
@@ -582,103 +630,7 @@
       "topics": []
     },
     {
-      "id": "draft-024",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/23/iran-us-peace-deal-faces-various-threats-from-lebanon-israel-and-trump/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran-US peace deal faces various threats, from Lebanon, Israel and Trump",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran-US peace deal faces various threats, from Lebanon, Israel and Trump appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-025",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/23/trump-administration-upends-decades-of-u-s-policy-to-give-iran-what-it-desperately-wants/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump administration upends decades of U.S. policy to give Iran what it desperately wants",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump administration upends decades of U.S. policy to give Iran what it desperately wants appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-026",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/23/trump-administration-touts-iran-deal-as-a-payday-for-us-farmers-but-iran-denies-it/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump administration touts Iran deal as a payday for US farmers, but Iran denies it",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Trump administration touts Iran deal as a payday for US farmers, but Iran denies it appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
       "id": "draft-027",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/iranian-delegation-attends-talks-in-muscat-and-islamabad/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iranian delegation attends talks in Muscat and Islamabad",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iranian delegation attends talks in Muscat and Islamabad appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-029",
       "date": "2026-06-23",
       "country": "United States",
       "region": "Think Tanks",
