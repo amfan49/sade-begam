@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T15:58:14.545Z",
+  "generated_at": "2026-06-27T21:46:07.276Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 23,
+  "total": 16,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
@@ -174,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-022",
+      "id": "draft-016",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -379,174 +379,6 @@
       "headline": "Don’t Help Iran Prop Up Hezbollah",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Excerpt When the Iranian regime demanded a&#160;Lebanon&#160;cease-fire clause in the memorandum of understanding with the U.S., it was a clever move. In exchange for ending its stranglehold on the... The post Don’t Help Iran Prop Up Hezbollah appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-016",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/iran-tries-to-link-lebanon-conflict-to-their-own-deal-with-the-u-s/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran tries to link Lebanon conflict to their own deal with the U.S.",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran tries to link Lebanon conflict to their own deal with the U.S. appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-017",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/is-iran-winning-the-diplomatic-war-after-military-defeat-on-the-battlefield/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Is Iran winning the diplomatic war after military defeat on the battlefield?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Is Iran winning the diplomatic war after military defeat on the battlefield? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-018",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/24/to-police-any-new-nuclear-deal-iaea-access-is-needed-urgently/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "To Police Any New Nuclear Deal, IAEA Access Is Needed — Urgently",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Will the International Atomic Energy Agency (IAEA), the UN nuclear watchdog, journey to Iran following the inking of a memorandum of understanding (MOU) between Tehran and Washington? According to Vice... The post To Police Any New Nuclear Deal, IAEA Access Is Needed — Urgently appeared first on FDD",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-019",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/24/the-deal-with-tehran-comes-at-the-expense-of-iranians/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Deal With Tehran Comes at the Expense of Iranians",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "As Washington negotiates, Tehran executes. Iran’s judiciary announced on June 22 that authorities had arrested more than 3,000 people since the start of the conflict on charges of collaborating with... The post The Deal With Tehran Comes at the Expense of Iranians appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-020",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/sec-rubio-visits-gulf-allies-to-ease-worries-over-iran-deal/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Sec. Rubio visits Gulf allies to ease worries over Iran deal",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Sec. Rubio visits Gulf allies to ease worries over Iran deal appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-021",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/irans-terrorist-regime-plays-stupid-games-with-trump/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran’s terrorist regime plays ‘stupid games’ with Trump",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran’s terrorist regime plays ‘stupid games’ with Trump appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-023",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/another-hormuz-the-red-seas-threat-to-the-global-economy",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Another Hormuz? The Red Sea’s Threat to the Global Economy",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The Red Sea is vital to the free flow of global trade, but the Yemen-based Houthis and the fallout from the Iran war threaten to choke off the Mideast waterway, with major consequences for the global economy.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
