@@ -1,12 +1,36 @@
 {
-  "generated_at": "2026-06-27T09:35:22.727Z",
+  "generated_at": "2026-06-27T15:58:14.545Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 26,
+  "total": 23,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
+      "date": "2026-06-27",
+      "country": "Iran",
+      "region": "Middle East",
+      "flag": "🇮🇷",
+      "source_organization": "Ministry of Economic Affairs Iran",
+      "source_url": "http://en.mefa.ir/news/742047/WCO-to-Support-Iran-Customs-Modernization-Program",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "[WCO to Support Iran Customs Modernization Program",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Iran's Deputy Minister of Economic Affairs and Finance and Head of the Islamic Republic of Iran Customs Administration (IRICA), Foroud Asgari, held talks with World Customs Organization (WCO) Secretary General Ian Saunders in Brussels, where the two sides agreed to expand cooperation on Iran's custo",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +54,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
+      "id": "draft-003",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +78,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-004",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-005",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-006",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-007",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-025",
+      "id": "draft-022",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-008",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-009",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-010",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +270,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-011",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-012",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -294,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-013",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-014",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +366,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-015",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +390,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-016",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -390,7 +414,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-017",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -414,7 +438,7 @@
       "topics": []
     },
     {
-      "id": "draft-017",
+      "id": "draft-018",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -438,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-018",
+      "id": "draft-019",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -462,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-019",
+      "id": "draft-020",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -486,7 +510,7 @@
       "topics": []
     },
     {
-      "id": "draft-020",
+      "id": "draft-021",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -510,103 +534,7 @@
       "topics": []
     },
     {
-      "id": "draft-021",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/24/experts-urge-extreme-caution-on-irans-crown-jewel-hezbollah-terror-group-with-us-blood-on-its-hands/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Experts urge extreme caution on Iran’s ‘crown jewel’ Hezbollah — terror group with US blood on its hands",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Experts urge extreme caution on Iran’s ‘crown jewel’ Hezbollah — terror group with US blood on its hands appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-022",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/nuclear-inspections-dispute-clouds-push-for-iran-deal/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Nuclear inspections dispute clouds push for Iran deal",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Nuclear inspections dispute clouds push for Iran deal appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
       "id": "draft-023",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/nuclear-watchdog-backs-trump-on-iran-inspections/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Nuclear watchdog backs Trump on Iran inspections",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Nuclear watchdog backs Trump on Iran inspections appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-024",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/u-s-and-iran-disagree-on-interim-deal/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. and Iran disagree on interim deal",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. and Iran disagree on interim deal appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-026",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
