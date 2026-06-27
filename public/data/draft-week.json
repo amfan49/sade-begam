@@ -1,12 +1,84 @@
 {
-  "generated_at": "2026-06-26T18:15:21.795Z",
+  "generated_at": "2026-06-27T09:35:22.727Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 28,
+  "total": 26,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/26/u-s-strikes-iran-after-strait-attack/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S. strikes Iran after Strait attack",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S. strikes Iran after Strait attack appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/26/trump-accuses-iran-of-violating-ceasefire/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump accuses Iran of violating ceasefire",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump accuses Iran of violating ceasefire appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-26",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/26/trump-says-iran-violated-ceasefire-with-hormuz-drone-attack/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump says Iran violated ceasefire with Hormuz drone attack",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Trump says Iran violated ceasefire with Hormuz drone attack appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
+      "id": "draft-005",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-006",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-026",
+      "id": "draft-025",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-007",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-008",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-009",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-010",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +270,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-011",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-012",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-013",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-014",
       "date": "2026-06-25",
       "country": "United States",
       "region": "Think Tanks",
@@ -294,7 +366,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-015",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,7 +390,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-016",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +414,7 @@
       "topics": []
     },
     {
-      "id": "draft-014",
+      "id": "draft-017",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +438,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-018",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -390,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-019",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -414,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-017",
+      "id": "draft-020",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -438,7 +510,7 @@
       "topics": []
     },
     {
-      "id": "draft-018",
+      "id": "draft-021",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -462,7 +534,7 @@
       "topics": []
     },
     {
-      "id": "draft-019",
+      "id": "draft-022",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -486,7 +558,7 @@
       "topics": []
     },
     {
-      "id": "draft-020",
+      "id": "draft-023",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -510,7 +582,7 @@
       "topics": []
     },
     {
-      "id": "draft-021",
+      "id": "draft-024",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -534,79 +606,7 @@
       "topics": []
     },
     {
-      "id": "draft-022",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/from-trumps-maximum-pressure-to-the-new-mou-exposing-the-regime-in-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "From Trump&#8217;s maximum pressure to the new MOU: exposing the regime in Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "From Trump's Maximum Pressure to the New MOU: Edmund Fitton-Brown Exposes the Regime in Iran https://t.co/niuD3b0d7D&#8212; Armin Navabi (@ArminNavabi) June 24, 2026 ... The post From Trump&#8217;s maximum pressure to the new MOU: exposing the regime in Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-023",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/24/great-at-chaos-bad-at-peace-whats-next-for-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Great at chaos, bad at peace: what&#8217;s next for Iran?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Great at chaos, bad at peace: what&#8217;s next for Iran? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-024",
-      "date": "2026-06-24",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/24/letter-to-melania-beyond-the-oil-and-nukes-you-can-fight-for-iranian-women/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Letter to Melania: Beyond the oil and nukes, you can fight for Iranian women",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Dear Mrs. Trump, Or may I call you Melania? If that is too familiar, no problem, I understand. But you can certainly call me Cliff! I am a longtime admirer. I have heard you speak out for human rights,... The post Letter to Melania: Beyond the oil and nukes, you can fight for Iranian women appeared ",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-027",
+      "id": "draft-026",
       "date": "2026-06-24",
       "country": "United States",
       "region": "Think Tanks",
@@ -619,54 +619,6 @@
       "headline": "Another Hormuz? The Red Sea’s Threat to the Global Economy",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The Red Sea is vital to the free flow of global trade, but the Yemen-based Houthis and the fallout from the Iran war threaten to choke off the Mideast waterway, with major consequences for the global economy.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-025",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/23/is-iran-running-roughshod-over-the-rookie-negotiator/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Is Iran running roughshod over the rookie negotiator?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Is Iran running roughshod over the rookie negotiator? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-028",
-      "date": "2026-06-23",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/the-iran-war-turned-asias-fragile-energy-dependence-into-an-emergency",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Iran War Turned Asia’s Fragile Energy Dependence Into an Emergency",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Asia got a glimpse of its energy future during the Iran war. What governments do next will determine whether the crisis becomes a turning point or a missed opportunity.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
