@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-28T10:17:08.023Z",
+  "generated_at": "2026-06-28T16:43:39.151Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 15,
+  "total": 10,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
@@ -174,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-010",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -235,126 +235,6 @@
       "headline": "Iran&#8217;s next move revealed",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The post Iran&#8217;s next move revealed appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-010",
-      "date": "2026-06-25",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/podcasts/the-iran-breakdown/2026/06/25/what-iranians-think-about-the-us-iran-deal/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "What Iranians Think About the US-Iran Deal",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post What Iranians Think About the US-Iran Deal appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-011",
-      "date": "2026-06-25",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/reacting-to-the-ongoing-negotiations-with-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Reacting to the ongoing negotiations with Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Reacting to the ongoing negotiations with Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-012",
-      "date": "2026-06-25",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/saudi-arabia-plans-gulf-reconciliation-summit-with-iran/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Saudi Arabia plans Gulf reconciliation summit with Iran",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Explaining Gulf dynamics on @i24NEWS_EN: The &#34;reconciliation with Iran summit&#34; that Saudi Arabia is organizing does not make sense, especially to the three GCC countries &#8212; the UAE, Kuwait... The post Saudi Arabia plans Gulf reconciliation summit with Iran appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-013",
-      "date": "2026-06-25",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/25/frozen-funds-will-never-touch-iran-under-trump-backed-mou-us-official-tells-the-post/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Frozen funds will never ‘touch Iran’ under Trump-backed MOU, US official tells The Post",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Frozen funds will never ‘touch Iran’ under Trump-backed MOU, US official tells The Post appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-014",
-      "date": "2026-06-25",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/25/will-there-be-phased-israeli-withdrawal-from-lebanon/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Will there be phased Israeli withdrawal from Lebanon?",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "On @almashhadmedia: Phased Israeli withdrawal from Lebanon, contingent on Hezbollah's disarmament, is the result of direct Lebanese-Israeli talks and has nothing to do with the U.S.-Iran track. Islamic... The post Will there be phased Israeli withdrawal from Lebanon? appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
