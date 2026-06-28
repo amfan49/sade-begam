@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-27T21:46:07.276Z",
+  "generated_at": "2026-06-28T10:17:08.023Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 16,
+  "total": 15,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
@@ -174,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-015",
       "date": "2026-06-26",
       "country": "United States",
       "region": "Think Tanks",
@@ -355,30 +355,6 @@
       "headline": "Will there be phased Israeli withdrawal from Lebanon?",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "On @almashhadmedia: Phased Israeli withdrawal from Lebanon, contingent on Hezbollah's disarmament, is the result of direct Lebanese-Israeli talks and has nothing to do with the U.S.-Iran track. Islamic... The post Will there be phased Israeli withdrawal from Lebanon? appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-015",
-      "date": "2026-06-25",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/24/dont-help-iran-prop-up-hezbollah/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Don’t Help Iran Prop Up Hezbollah",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Excerpt When the Iranian regime demanded a&#160;Lebanon&#160;cease-fire clause in the memorandum of understanding with the U.S., it was a clever move. In exchange for ending its stranglehold on the... The post Don’t Help Iran Prop Up Hezbollah appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
