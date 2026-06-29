@@ -1,10 +1,34 @@
 {
-  "generated_at": "2026-06-28T21:47:46.902Z",
+  "generated_at": "2026-06-29T14:52:54.559Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 8,
+  "total": 6,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
+    {
+      "id": "draft-006",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/trumps-iran-food-deal-could-easily-become-another-oil-for-food-scandal",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Trump&apos;s Iran Food Deal Could End Up Helping the Regime, Not Its People",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The Trump administration wants to release frozen Iranian funds—but only to buy U.S. farm goods. The proposal is less humanitarian gesture than market engineering, and without independent oversight, it risks repeating the catastrophic failures of the Iraq Oil-for-Food program.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
     {
       "id": "draft-001",
       "date": "2026-06-27",
@@ -115,78 +139,6 @@
       "headline": "Trump&#8217;s Iran MoU explained: how Iran gets billions—and why",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The post Trump&#8217;s Iran MoU explained: how Iran gets billions—and why appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-006",
-      "date": "2026-06-26",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/26/washington-held-an-unprecedented-upper-hand-over-iran-then-cashed-it-in/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Washington held an unprecedented upper hand over Iran &#8211; then cashed it in",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Excerpt The odds had never been worse for&#160;the Islamic Republic&#160;than in early June 2026. Its missile infrastructure had been devastated, senior military leaders killed, nuclear facilities bombed,... The post Washington held an unprecedented upper hand over Iran &#8211; then cashed it in app",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-007",
-      "date": "2026-06-26",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/analysis/2026/06/26/irans-economic-catastrophe/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran’s economic catastrophe",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "On February 28, 2026, American and Israeli forces launched Operation Epic Fury. The country they targeted was already in economic crisis: inflation had topped 50%, the currency was in free fall, merchants... The post Iran’s economic catastrophe appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-008",
-      "date": "2026-06-26",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/the-iran-deal-comes-at-a-cost-to-israel-the-white-house-hasnt-acknowledged-it",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Iran Deal Comes at a Cost to Israel. The White House Hasn’t Acknowledged It.",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The U.S.-Iran deal sidelines Israel, a critical ally, on issues affecting its core security interests. That may be tactically defensible, but the way Washington has handled it is not.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
