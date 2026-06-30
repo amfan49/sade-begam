@@ -1,12 +1,36 @@
 {
-  "generated_at": "2026-06-29T22:21:06.850Z",
+  "generated_at": "2026-06-30T11:30:52.926Z",
   "window_days": 3,
   "keyword": "iran",
   "total": 13,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
-      "id": "draft-002",
+      "id": "draft-001",
+      "date": "2026-06-29",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167831",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Middle East conflict leaves developing countries paying the price",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "With another weekend of strikes involving the United States and Iran, renewed diplomatic efforts on Monday have eased immediate fears of escalation, but the economic shockwaves are already taking a heavy toll on some of the world&#039;s poorest countries.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +54,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-004",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +78,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-005",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-006",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-007",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-008",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-009",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-001",
+      "id": "draft-002",
       "date": "2026-06-27",
       "country": "Iran",
       "region": "Middle East",
@@ -246,7 +270,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-010",
       "date": "2026-06-27",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-011",
       "date": "2026-06-27",
       "country": "United States",
       "region": "Think Tanks",
@@ -283,30 +307,6 @@
       "headline": "Iran bombs Kuwait and Bahrain",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The post Iran bombs Kuwait and Bahrain appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-011",
-      "date": "2026-06-26",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/26/u-s-strikes-iran-after-strait-attack/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. strikes Iran after Strait attack",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. strikes Iran after Strait attack appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
