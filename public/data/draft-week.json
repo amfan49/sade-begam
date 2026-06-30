@@ -1,24 +1,48 @@
 {
-  "generated_at": "2026-06-30T11:30:52.926Z",
+  "generated_at": "2026-06-30T18:25:54.755Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 13,
+  "total": 17,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
       "id": "draft-001",
-      "date": "2026-06-29",
-      "country": "United Nations",
-      "region": "International Bodies",
-      "flag": "🇺🇳",
-      "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167831",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/30/why-is-saudi-arabia-appeasing-iran/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Middle East conflict leaves developing countries paying the price",
+      "headline": "Why Is Saudi Arabia Appeasing Iran?",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "With another weekend of strikes involving the United States and Iran, renewed diplomatic efforts on Monday have eased immediate fears of escalation, but the economic shockwaves are already taking a heavy toll on some of the world&#039;s poorest countries.",
+      "excerpt": "Last week, while Iran&#160;attacked&#160;Bahrain and ships navigating through the&#160;Strait of Hormuz,&#160;Saudi Arabia&#160;was&#160;preparing&#160;a reconciliation summit with Tehran. Meanwhile, Secretary... The post Why Is Saudi Arabia Appeasing Iran? appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-002",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/30/u-s-iran-peace-talks-in-doha-off-to-shaky-start/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "U.S.-Iran peace talks in Doha off to shaky start",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post U.S.-Iran peace talks in Doha off to shaky start appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -31,6 +55,54 @@
     },
     {
       "id": "draft-003",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/a-flawed-u-s-iran-mou-and-a-fragile-ceasefire-with-iran/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "A flawed U.S.-Iran MOU and a fragile ceasefire with Iran",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post A flawed U.S.-Iran MOU and a fragile ceasefire with Iran appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-015",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/in-ankara-europe-faces-an-accelerating-u-s-decoupling-from-nato",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "In Ankara, Europe Faces an Accelerating U.S. Decoupling From NATO",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The United States appears to be pulling back from European security, with U.S. plans for withdrawal accelerating after a rift over support for the U.S.-Israeli war against Iran. NATO’s Turkey summit could be the start of a transition toward a new version of the alliance, but there are fears it could",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-005",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +150,31 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-006",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/iran-negotiates-to-manage-pressure-amid-flailing-economy/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran negotiates to ‘manage pressure’ amid flailing economy",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran negotiates to ‘manage pressure’ amid flailing economy appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-007",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +198,79 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-008",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/the-uns-toxic-obsession-with-israel-and-upcoming-u-s-iran-talks-in-doha/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "The UN&#8217;s &#8220;toxic obsession&#8221; with Israel and upcoming U.S.-Iran talks in Doha",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post The UN&#8217;s &#8220;toxic obsession&#8221; with Israel and upcoming U.S.-Iran talks in Doha appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-009",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/strait-of-hormuz-escalation-dominance-and-how-iran-turned-historic-sites-into-intelligence-assets/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Strait of Hormuz &#8220;escalation dominance&#8221; and how Iran turned historic sites into intelligence assets",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Strait of Hormuz &#8220;escalation dominance&#8221; and how Iran turned historic sites into intelligence assets appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-010",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/29/five-key-legal-questions-about-the-june-2026-u-s-iran-memorandum-of-understanding/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Five Key Legal Questions About the June 2026 U.S.-Iran Memorandum of Understanding",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The analysis draws on my decade as an attorney in the State Department Legal Adviser’s Office, followed by two decades as a law professor teaching and writing about international law issues. &#160;For... The post Five Key Legal Questions About the June 2026 U.S.-Iran Memorandum of Understanding appe",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-016",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-017",
       "date": "2026-06-29",
       "country": "Germany",
       "region": "Think Tanks",
@@ -150,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-011",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-012",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +366,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-013",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +390,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-014",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -235,78 +403,6 @@
       "headline": "The Israel-Lebanon agreement and connection to the U.S.-Iran MOU",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Listen ... The post The Israel-Lebanon agreement and connection to the U.S.-Iran MOU appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-002",
-      "date": "2026-06-27",
-      "country": "Iran",
-      "region": "Middle East",
-      "flag": "🇮🇷",
-      "source_organization": "Ministry of Economic Affairs Iran",
-      "source_url": "http://en.mefa.ir/news/742047/WCO-to-Support-Iran-Customs-Modernization-Program",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "[WCO to Support Iran Customs Modernization Program",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Iran's Deputy Minister of Economic Affairs and Finance and Head of the Islamic Republic of Iran Customs Administration (IRICA), Foroud Asgari, held talks with World Customs Organization (WCO) Secretary General Ian Saunders in Brussels, where the two sides agreed to expand cooperation on Iran's custo",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-010",
-      "date": "2026-06-27",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/27/u-s-strikes-iran-after-cargo-ship-attack/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. strikes Iran after cargo ship attack",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. strikes Iran after cargo ship attack appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-011",
-      "date": "2026-06-27",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/27/iran-bombs-kuwait-and-bahrain/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran bombs Kuwait and Bahrain",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran bombs Kuwait and Bahrain appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
