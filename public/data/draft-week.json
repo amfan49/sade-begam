@@ -1,12 +1,84 @@
 {
-  "generated_at": "2026-06-30T18:25:54.755Z",
+  "generated_at": "2026-07-01T11:43:35.257Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 17,
+  "total": 21,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
-      "id": "draft-001",
+      "id": "draft-002",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/30/everyone-is-watching-iran-theyre-missing-the-bigger-threat/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Everyone is watching Iran&#8230; they&#8217;re missing the bigger threat",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Everyone is watching Iran&#8230; they&#8217;re missing the bigger threat appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/30/treasury-license-for-iranian-petroleum-is-unwise-and-may-be-inconsistent-with-statutory-requirements/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Treasury License for Iranian Petroleum Is Unwise and May Be Inconsistent With Statutory Requirements",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The Treasury Department’s issuance on June 22 of a license pausing Iranian petroleum sanctions appears to be inconsistent with the Iran Nuclear Agreement Review Act (INARA), which prohibits such relief... The post Treasury License for Iranian Petroleum Is Unwise and May Be Inconsistent With Statutor",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-004",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/30/iran-fights-to-keep-grip-on-hormuz-as-us-gulf-allies-carve-new-shipping-route/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Iran fights to keep grip on Hormuz as US, Gulf allies carve new shipping route",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "The post Iran fights to keep grip on Hormuz as US, Gulf allies carve new shipping route appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-005",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-002",
+      "id": "draft-006",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-007",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-015",
+      "id": "draft-019",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +174,31 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-001",
+      "date": "2026-06-29",
+      "country": "United Nations",
+      "region": "International Bodies",
+      "flag": "🇺🇳",
+      "source_organization": "UN News",
+      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167831",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Middle East conflict leaves developing countries paying the price",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "With another weekend of strikes involving the United States and Iran, renewed diplomatic efforts on Monday have eased immediate fears of escalation, but the economic shockwaves are already taking a heavy toll on some of the world&#039;s poorest countries.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-008",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +222,31 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-009",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/president-trump-attempts-to-keep-lid-on-iran-conflict-to-move-oil-through-strait-of-hormuz/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "President Trump attempts to &#8216;keep lid on&#8217; Iran conflict to move oil through Strait of Hormuz",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Listen ... The post President Trump attempts to &#8216;keep lid on&#8217; Iran conflict to move oil through Strait of Hormuz appeared first on FDD.",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-010",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +270,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-011",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-012",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-013",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +342,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-014",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +366,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-015",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -270,7 +390,7 @@
       "topics": []
     },
     {
-      "id": "draft-016",
+      "id": "draft-020",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -294,7 +414,7 @@
       "topics": []
     },
     {
-      "id": "draft-017",
+      "id": "draft-021",
       "date": "2026-06-29",
       "country": "Germany",
       "region": "Think Tanks",
@@ -318,7 +438,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-016",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -342,7 +462,7 @@
       "topics": []
     },
     {
-      "id": "draft-012",
+      "id": "draft-017",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -366,7 +486,7 @@
       "topics": []
     },
     {
-      "id": "draft-013",
+      "id": "draft-018",
       "date": "2026-06-28",
       "country": "United States",
       "region": "Think Tanks",
@@ -379,30 +499,6 @@
       "headline": "The Israel-Lebanon agreement and connection to the U.S.-Iran memorandum",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "Listen ... The post The Israel-Lebanon agreement and connection to the U.S.-Iran memorandum appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-014",
-      "date": "2026-06-28",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/28/the-israel-lebanon-agreement-and-connection-to-the-u-s-iran-mou/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The Israel-Lebanon agreement and connection to the U.S.-Iran MOU",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Listen ... The post The Israel-Lebanon agreement and connection to the U.S.-Iran MOU appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
