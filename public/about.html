@@ -55,15 +55,33 @@
       <section class="impressum-section">
         <h2 class="about__subtitle" id="impressumTitle"></h2>
 
+        <h3 class="impressum__sub" id="impressumOperatorTitle"></h3>
+        <p class="impressum__name" id="impressumOperatorName"></p>
+        <p id="impressumOperatorNote"></p>
+        <p><a href="mailto:hello@sadebegam.com">hello@sadebegam.com</a></p>
+
+        <h3 class="impressum__sub" id="cfTitle"></h3>
+        <form id="contactForm" class="sb-form">
+          <label class="field-label"><span id="cfNameLabel"></span>
+            <input type="text" name="name" class="search" autocomplete="name" />
+          </label>
+          <label class="field-label"><span id="cfEmailLabel"></span>
+            <input type="email" name="email" required class="search" autocomplete="email" />
+          </label>
+          <label class="field-label"><span id="cfMessageLabel"></span>
+            <textarea name="message" rows="4" required class="search" id="cfMessageInput"></textarea>
+          </label>
+          <button type="submit" class="card__source" id="cfSubmitBtn"></button>
+          <p class="muted form-note" id="cfStatus" role="status"></p>
+        </form>
+
+        <hr class="about-divider" />
+
         <h3 class="impressum__sub" id="impressumNewsletterTitle"></h3>
         <p id="impressumNewsletterText"></p>
-        <p class="impressum__badge" id="impressumInactiveNote"></p>
 
         <h3 class="impressum__sub" id="impressumDataTitle"></h3>
         <p id="impressumDataText"></p>
-
-        <h3 class="impressum__sub" id="impressumContactTitle"></h3>
-        <p id="impressumContactText"></p>
       </section>
 
       <hr class="about-divider" />
@@ -128,13 +146,49 @@
 
     // Impressum / Privacy
     set("impressumTitle",           T.impressum.title);
+    set("impressumOperatorTitle",   T.impressum.operatorTitle);
+    set("impressumOperatorName",    T.impressum.operatorName);
+    set("impressumOperatorNote",    T.impressum.operatorNote);
     set("impressumNewsletterTitle", T.impressum.newsletterTitle);
     set("impressumNewsletterText",  T.impressum.newsletterText);
-    set("impressumInactiveNote",    T.impressum.inactiveNote);
     set("impressumDataTitle",       T.impressum.dataTitle);
     set("impressumDataText",        T.impressum.dataText);
-    set("impressumContactTitle",    T.impressum.contactTitle);
-    set("impressumContactText",     T.impressum.contactText);
+
+    // Contact form → api/contact.js (emails the site operator; never stores
+    // or forwards the visitor's data anywhere else)
+    set("cfTitle",       T.impressum.formTitle);
+    set("cfNameLabel",   T.impressum.formNameLabel);
+    set("cfEmailLabel",  T.impressum.formEmailLabel);
+    set("cfMessageLabel", T.impressum.formMessageLabel);
+    set("cfSubmitBtn",   T.impressum.formSubmitBtn);
+    document.getElementById("cfMessageInput").placeholder = T.impressum.formMessagePlaceholder;
+
+    document.getElementById("contactForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const statusEl = document.getElementById("cfStatus");
+      const btn = document.getElementById("cfSubmitBtn");
+      btn.disabled = true;
+      statusEl.textContent = T.impressum.formSending;
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: f.get("name") || "",
+            email: f.get("email") || "",
+            message: f.get("message") || ""
+          })
+        });
+        if (!res.ok) throw new Error("failed");
+        statusEl.textContent = T.impressum.formSuccess;
+        e.target.reset();
+      } catch (_) {
+        statusEl.textContent = T.impressum.formError;
+      } finally {
+        btn.disabled = false;
+      }
+    });
     fetch("data/sources.json")
       .then((r) => r.json())
       .then((data) => {
@@ -146,7 +200,13 @@
           if (!byRegion[r]) byRegion[r] = [];
           byRegion[r].push(f);
         });
-        Object.entries(byRegion).forEach(([region, items]) => {
+        // Western sources are always listed before Iranian sources.
+        const regions = Object.keys(byRegion).sort((a, b) => {
+          const wa = a.startsWith("Iran") ? 1 : 0, wb = b.startsWith("Iran") ? 1 : 0;
+          return wa - wb;
+        });
+        regions.forEach((region) => {
+          const items = byRegion[region];
           const header = document.createElement("li");
           header.style.cssText = "font-weight:700;color:var(--brand-blue-deep);font-size:13px;text-transform:uppercase;letter-spacing:0.1em;padding:14px 0 4px;list-style:none;";
           header.textContent = region;
@@ -155,8 +215,7 @@
             const li = document.createElement("li");
             li.className = "about-feed-item";
             const twLink = f.twitter ? ` <a class="about-feed-tw" href="${f.twitter}" target="_blank" rel="noopener noreferrer" title="X/Twitter">𝕏</a>` : "";
-            li.innerHTML = `<span class="about-feed-flag">${f.flag}</span>
-              <div>
+            li.innerHTML = `<div>
                 <a class="about-feed-name" href="${f.homepage}" target="_blank" rel="noopener noreferrer">${f.name}</a>${twLink}
                 <span class="about-feed-country">${f.country}</span>
               </div>`;

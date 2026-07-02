@@ -1,7 +1,8 @@
 // ── Sade Begam — AI Chat page ─────────────────────────────────
 // Full chat interface for /chat.html
-// Uses /api/chat (the shared brain) — requires ANTHROPIC_API_KEY on Vercel
-// Falls back to local news search when API is not available.
+// Uses /api/chat (the shared brain) — 100% free, no API key, ever.
+// Falls back to local in-browser news search if the request itself fails
+// (offline, network error) — defensive only, not a paid-vs-free switch.
 
 const CHAT_API   = "/api/chat";
 const SESSION_KEY = "sb_chat_session_v1";
@@ -140,7 +141,8 @@ async function sendMessage(text) {
       body:    JSON.stringify({
         messages:   [...history, { role: "user", content: text }],
         session_id: SESSION_ID,
-        source:     "web"
+        source:     "web",
+        lang:       SB_LANG
       })
     });
 
@@ -202,8 +204,8 @@ function handleLocalFallback(query) {
   // Newsletter
   if (/(خبرنامه|newsletter|subscribe|اشتراک)/.test(q)) {
     const reply = (lang === "fa")
-      ? "خبرنامه‌ی ساده بگم هنوز فعال نشده — می‌توانید ایمیل خود را در صفحه‌ی خبرنامه ثبت کنید تا اول از همه باخبر شوید: newsletter.html"
-      : "The Sade Begam newsletter is not yet active — register your email on the newsletter page to be the first notified: newsletter.html";
+      ? "با کمال میل! خبرنامه‌ی رایگان هفتگی ساده بگم را اینجا ثبت‌نام کنید: newsletter.html"
+      : "Happy to help! You can subscribe to the free weekly Sade Begam newsletter here: newsletter.html";
     appendBubble("bot", reply);
     saveToHistory("bot", reply);
     return;
@@ -240,7 +242,7 @@ function handleLocalFallback(query) {
       item.translations?.en?.headline || "",
     ].join(" ").toLowerCase();
     return txt.includes(q);
-  });
+  }).sort((a, b) => (a.country === "Iran" ? 1 : 0) - (b.country === "Iran" ? 1 : 0));
 
   if (!results.length) {
     const noRes = (lang === "fa")
@@ -258,7 +260,6 @@ function handleLocalFallback(query) {
     const dateStr = typeof sbBothDates !== "undefined" ? sbBothDates(item.date) : (item.date || "");
     const html = `<div style="background:var(--bg-page);border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:13px;line-height:1.55;margin-top:4px;">
       <div style="display:flex;align-items:center;gap:6px;font-weight:700;margin-bottom:4px;">
-        <span>${item.flag || "🌍"}</span>
         <strong>${_escHtml(item.country)}</strong>
         <span style="font-size:11px;color:var(--text-muted);font-weight:400;">${_escHtml(dateStr)}</span>
       </div>
@@ -280,7 +281,7 @@ function handleLocalFallback(query) {
     appendBubble("bot", moreStr, false);
   }
 
-  const summary = top.map(i => `${i.flag} ${i.headline} — ${i.source_url}`).join("\n");
+  const summary = top.map(i => `${i.country}: ${i.headline} — ${i.source_url}`).join("\n");
   saveToHistory("bot", summary);
 }
 

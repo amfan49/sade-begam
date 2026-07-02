@@ -66,7 +66,10 @@ async function loadArchive() {
     [...(arc.items || []), ...(week.items || [])].forEach((it) => { if (it && it.id) byId.set(it.id, it); });
     ARC_ITEMS = [...byId.values()].sort((a, b) => {
       const da = a.date || "", db = b.date || "";
-      return db > da ? 1 : db < da ? -1 : (b.id || "") > (a.id || "") ? 1 : -1;
+      if (db !== da) return db > da ? 1 : -1;
+      const wa = a.country === "Iran" ? 1 : 0, wb = b.country === "Iran" ? 1 : 0;
+      if (wa !== wb) return wa - wb; // Western sources before Iranian sources
+      return (b.id || "") > (a.id || "") ? 1 : -1;
     });
 
     try { localStorage.setItem(ARC_CACHE_KEY, JSON.stringify({ at: Date.now(), items: ARC_ITEMS })); } catch (_) {}
@@ -168,7 +171,6 @@ function renderArcItem(item) {
   const headline = (item.lang_original !== SB_LANG && tr && tr.headline) ? tr.headline : item.headline;
 
   a.innerHTML = `
-    <span class="arc-item__flag">${item.flag || "🏳️"}</span>
     <span class="arc-item__body">
       <span class="arc-item__date">${sbBothDates(item.date)}</span>
       <span class="arc-item__headline">${headline || ""}</span>

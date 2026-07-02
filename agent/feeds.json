@@ -3,66 +3,374 @@
   "window_days": 1,
   "keyword": "iran",
   "feeds": [
-    { "country": "United Nations", "region": "International Bodies", "organization": "UN News", "flag": "🇺🇳", "lang": "en", "feed": "https://news.un.org/feed/subscribe/en/news/all/rss.xml", "homepage": "https://news.un.org/" },
-    { "country": "United Kingdom", "region": "Europe", "organization": "Foreign, Commonwealth & Development Office", "flag": "🇬🇧", "lang": "en", "feed": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office", "homepage": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office" },
-    { "country": "IAEA", "region": "International Bodies", "organization": "International Atomic Energy Agency", "flag": "🌍", "lang": "en", "feed": "https://www.iaea.org/feeds/topnews", "homepage": "https://www.iaea.org/newscenter" },
-    { "country": "IAEA", "region": "International Bodies", "organization": "IAEA Director General Statements", "flag": "🌍", "lang": "en", "feed": "https://www.iaea.org/feeds/dg-statements", "homepage": "https://www.iaea.org/about/director-general" },
-    { "country": "Canada", "region": "North America", "organization": "Global Affairs Canada", "flag": "🇨🇦", "lang": "en", "feed": "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&type=newsreleases&sort=publishedDate&orderBy=desc&pick=50&format=atom&atomtitle=Global%20Affairs%20Canada", "homepage": "https://www.canada.ca/en/global-affairs.html" },
-    { "country": "European Union", "region": "Europe", "organization": "EU External Action Service (EEAS)", "flag": "🇪🇺", "lang": "en", "feed": "https://www.eeas.europa.eu/eeas/rss_en", "homepage": "https://www.eeas.europa.eu/" },
-    { "country": "European Union", "region": "Europe", "organization": "Council of the European Union", "flag": "🇪🇺", "lang": "en", "feed": "https://www.consilium.europa.eu/en/press/rss/", "homepage": "https://www.consilium.europa.eu/en/press/" },
-    { "country": "European Union", "region": "International Bodies", "organization": "European Commission", "flag": "🇪🇺", "lang": "en", "feed": "https://ec.europa.eu/commission/presscorner/api/rss", "homepage": "https://ec.europa.eu/" },
-    { "country": "United Nations", "region": "International Bodies", "organization": "UN Human Rights (OHCHR)", "flag": "🇺🇳", "lang": "en", "feed": "https://www.ohchr.org/en/rss", "homepage": "https://www.ohchr.org/en/news" },
-    { "country": "United Nations", "region": "International Bodies", "organization": "UN Security Council", "flag": "🇺🇳", "lang": "en", "feed": "https://www.un.org/press/en/content/security-council/rss.xml", "homepage": "https://www.un.org/securitycouncil/" },
-    { "country": "NATO", "region": "International Bodies", "organization": "NATO News", "flag": "🌍", "lang": "en", "feed": "https://www.nato.int/cps/en/natohq/news.xml", "homepage": "https://www.nato.int/cps/en/natohq/news.htm" },
-    { "country": "OSCE", "region": "International Bodies", "organization": "Organization for Security and Co-operation in Europe", "flag": "🌍", "lang": "en", "feed": "https://www.osce.org/feeds/all", "homepage": "https://www.osce.org/news" },
-    { "country": "France", "region": "Europe", "organization": "French Ministry for Europe and Foreign Affairs", "flag": "🇫🇷", "lang": "fr", "feed": "https://www.diplomatie.gouv.fr/spip.php?page=backend", "homepage": "https://www.diplomatie.gouv.fr/en/" },
-    { "country": "Germany", "region": "Europe", "organization": "German Federal Foreign Office", "flag": "🇩🇪", "lang": "en", "feed": "https://www.auswaertiges-amt.de/opendata/rss/news_en", "homepage": "https://www.auswaertiges-amt.de/en" },
-    { "country": "Germany", "region": "Europe", "organization": "Bundeskanzler", "flag": "🇩🇪", "lang": "de", "feed": "https://www.bundeskanzler.de/bk-de/service/newsroom/rss_newsroom-de.xml", "homepage": "https://www.bundeskanzler.de/" },
-    { "country": "United States", "region": "North America", "organization": "US State Department", "flag": "🇺🇸", "lang": "en", "feed": "https://www.state.gov/feeds/press.xml", "homepage": "https://www.state.gov/press-releases/" },
-    { "country": "United States", "region": "North America", "organization": "The White House", "flag": "🇺🇸", "lang": "en", "feed": "https://www.whitehouse.gov/presidential-actions/feed/", "homepage": "https://www.whitehouse.gov/" },
-    { "country": "United States", "region": "North America", "organization": "US Central Command (CENTCOM)", "flag": "🇺🇸", "lang": "en", "feed": "https://www.centcom.mil/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=1014&max=50", "homepage": "https://www.centcom.mil/" },
-    { "country": "United States", "region": "North America", "organization": "US Senate Foreign Relations Committee", "flag": "🇺🇸", "lang": "en", "feed": "https://www.foreign.senate.gov/rss/", "homepage": "https://www.foreign.senate.gov/" },
-    { "country": "United States", "region": "North America", "organization": "US House Foreign Affairs Committee", "flag": "🇺🇸", "lang": "en", "feed": "https://foreignaffairs.house.gov/rss.xml", "homepage": "https://foreignaffairs.house.gov/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Supreme Leader of Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://english.khamenei.ir/rss/statements", "homepage": "https://english.khamenei.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Presidency of Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://www.president.ir/en/rss", "homepage": "https://www.president.ir/en" },
-    { "country": "Iran", "region": "Middle East", "organization": "Ministry of Foreign Affairs Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://www.mfa.gov.ir/en/rss", "homepage": "https://www.mfa.gov.ir/en" },
-    { "country": "Iran", "region": "Middle East", "organization": "Iran UN Mission", "flag": "🇮🇷", "lang": "en", "feed": "https://iran.un.org/en/rss", "homepage": "https://iran.un.org/en" },
-    { "country": "Iran", "region": "Middle East", "organization": "Atomic Energy Organization of Iran (AEOI)", "flag": "🇮🇷", "lang": "en", "feed": "https://www.aeoi.org.ir/en/rss", "homepage": "https://www.aeoi.org.ir/en" },
-    { "country": "Iran", "region": "Middle East", "organization": "Central Bank of Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://www.cbi.ir/en/rss", "homepage": "https://www.cbi.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Judiciary of Iran", "flag": "🇮🇷", "lang": "fa", "feed": "https://www.eadl.ir/rss", "homepage": "https://www.eadl.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Ministry of Economic Affairs Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://en.mefa.ir/rss", "homepage": "https://meb.mefa.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Ministry of ICT Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://ict.gov.ir/en/rss", "homepage": "https://ict.gov.ir/en" },
-    { "country": "Iran", "region": "Middle East", "organization": "Ministry of Interior Iran", "flag": "🇮🇷", "lang": "fa", "feed": "https://www.moi.ir/rss", "homepage": "https://www.moi.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Trade Promotion Organization Iran", "flag": "🇮🇷", "lang": "en", "feed": "https://en.tpo.ir/rss", "homepage": "https://en.tpo.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Ministry of Labor Iran", "flag": "🇮🇷", "lang": "fa", "feed": "https://mcls.gov.ir/rss", "homepage": "https://mcls.gov.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "National Iranian Oil Company (NIOC)", "flag": "🇮🇷", "lang": "en", "feed": "https://www.nioc.ir/en/rss", "homepage": "https://www.nioc.ir/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Embassy of Iran in the UK", "flag": "🇮🇷", "lang": "en", "feed": "https://iran-embassy.org.uk/feed", "homepage": "https://iran-embassy.org.uk/" },
-    { "country": "Iran", "region": "Middle East", "organization": "Embassy of Iran in China", "flag": "🇮🇷", "lang": "en", "feed": "https://china.mfa.gov.ir/en/rss", "homepage": "https://china.mfa.gov.ir/" },
-    { "country": "United States", "region": "North America", "organization": "US Special Envoy for Iran", "flag": "🇺🇸", "lang": "en", "feed": "https://www.state.gov/feeds/press-iran.xml", "homepage": "https://www.state.gov/iran/" },
-    { "country": "United Nations", "region": "International Bodies", "organization": "UN Special Procedures (Human Rights)", "flag": "🇺🇳", "lang": "en", "feed": "https://www.ohchr.org/en/rss/special-procedures", "homepage": "https://www.ohchr.org/en/special-procedures-human-rights-council" },
-    { "country": "Israel", "region": "Middle East", "organization": "Prime Minister's Office Israel", "flag": "🇮🇱", "lang": "en", "feed": "https://www.gov.il/api/en/media/rss/2", "homepage": "https://www.gov.il/en/departments/prime_ministers_office" },
-    { "country": "Israel", "region": "Middle East", "organization": "Israeli Ministry of Foreign Affairs", "flag": "🇮🇱", "lang": "en", "feed": "https://mfa.gov.il/MFA/PressRoom/rss/rss.xml", "homepage": "https://www.gov.il/en/departments/ministry_of_foreign_affairs" },
-    { "country": "Israel", "region": "Think Tanks", "organization": "INSS Israel", "flag": "🇮🇱", "lang": "en", "feed": "https://www.inss.org.il/feed/", "homepage": "https://www.inss.org.il/" },
-    { "country": "Saudi Arabia", "region": "Middle East", "organization": "Ministry of Foreign Affairs Saudi Arabia", "flag": "🇸🇦", "lang": "en", "feed": "https://www.mofa.gov.sa/en/rss", "homepage": "https://www.mofa.gov.sa/en" },
-    { "country": "UAE", "region": "Middle East", "organization": "Ministry of Foreign Affairs UAE", "flag": "🇦🇪", "lang": "en", "feed": "https://www.mofaic.gov.ae/en/rss", "homepage": "https://www.mofaic.gov.ae/en" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Washington Institute for Near East Policy (WINEP)", "flag": "🏛️", "lang": "en", "feed": "https://www.washingtoninstitute.org/rss/policy-analysis", "homepage": "https://www.washingtoninstitute.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Foundation for Defense of Democracies (FDD)", "flag": "🏛️", "lang": "en", "feed": "https://www.fdd.org/feed/", "homepage": "https://www.fdd.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Middle East Institute (MEI)", "flag": "🏛️", "lang": "en", "feed": "https://www.mei.edu/rss.xml", "homepage": "https://www.mei.edu/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Iran Primer (USIP)", "flag": "🏛️", "lang": "en", "feed": "https://iranprimer.usip.org/rss.xml", "homepage": "https://iranprimer.usip.org/" },
-    { "country": "International", "region": "Think Tanks", "organization": "International Crisis Group", "flag": "🏛️", "lang": "en", "feed": "https://www.crisisgroup.org/rss", "homepage": "https://www.crisisgroup.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Atlantic Council", "flag": "🏛️", "lang": "en", "feed": "https://www.atlanticcouncil.org/feed/", "homepage": "https://www.atlanticcouncil.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Council on Foreign Relations (CFR)", "flag": "🏛️", "lang": "en", "feed": "https://www.cfr.org/feed", "homepage": "https://www.cfr.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Brookings Institution", "flag": "🏛️", "lang": "en", "feed": "https://www.brookings.edu/search/feed/?q=iran&post_type=post", "homepage": "https://www.brookings.edu/" },
-    { "country": "International", "region": "Think Tanks", "organization": "Carnegie Endowment for International Peace", "flag": "🏛️", "lang": "en", "feed": "https://carnegieendowment.org/rss", "homepage": "https://carnegieendowment.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Center for Strategic and International Studies (CSIS)", "flag": "🏛️", "lang": "en", "feed": "https://www.csis.org/rss.xml", "homepage": "https://www.csis.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "RAND Corporation", "flag": "🏛️", "lang": "en", "feed": "https://www.rand.org/pubs/rss/", "homepage": "https://www.rand.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Stimson Center", "flag": "🏛️", "lang": "en", "feed": "https://www.stimson.org/feed/", "homepage": "https://www.stimson.org/" },
-    { "country": "Europe", "region": "Think Tanks", "organization": "European Council on Foreign Relations (ECFR)", "flag": "🏛️", "lang": "en", "feed": "https://ecfr.eu/feed/", "homepage": "https://ecfr.eu/" },
-    { "country": "United Kingdom", "region": "Think Tanks", "organization": "Chatham House", "flag": "🏛️", "lang": "en", "feed": "https://www.chathamhouse.org/rss", "homepage": "https://www.chathamhouse.org/" },
-    { "country": "Germany", "region": "Think Tanks", "organization": "SWP Berlin", "flag": "🏛️", "lang": "en", "feed": "https://www.swp-berlin.org/en/rss.xml", "homepage": "https://www.swp-berlin.org/en/" },
-    { "country": "Germany", "region": "Think Tanks", "organization": "DGAP", "flag": "🏛️", "lang": "en", "feed": "https://dgap.org/en/rss.xml", "homepage": "https://dgap.org/en/" },
-    { "country": "International", "region": "Think Tanks", "organization": "International Institute for Strategic Studies (IISS)", "flag": "🏛️", "lang": "en", "feed": "https://www.iiss.org/rss", "homepage": "https://www.iiss.org/" },
-    { "country": "International", "region": "Think Tanks", "organization": "Bourse & Bazaar", "flag": "🏛️", "lang": "en", "feed": "https://www.bourseandbazaar.org/articles?format=rss", "homepage": "https://www.bourseandbazaar.org/" },
-    { "country": "United States", "region": "Think Tanks", "organization": "Arabian Gulf States Institute (AGSIW)", "flag": "🏛️", "lang": "en", "feed": "https://agsiw.org/feed/", "homepage": "https://agsiw.org/" }
+    {
+      "country": "United Nations",
+      "region": "International Bodies",
+      "organization": "UN News",
+      "flag": "🇺🇳",
+      "lang": "en",
+      "feed": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "homepage": "https://news.un.org/"
+    },
+    {
+      "country": "United Kingdom",
+      "region": "Europe",
+      "organization": "Foreign, Commonwealth & Development Office",
+      "flag": "🇬🇧",
+      "lang": "en",
+      "feed": "https://www.gov.uk/search/news-and-communications.atom?organisations%5B%5D=foreign-commonwealth-development-office",
+      "homepage": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office"
+    },
+    {
+      "country": "IAEA",
+      "region": "International Bodies",
+      "organization": "International Atomic Energy Agency",
+      "flag": "🌍",
+      "lang": "en",
+      "feed": "https://www.iaea.org/feeds/topnews",
+      "homepage": "https://www.iaea.org/newscenter"
+    },
+    {
+      "country": "IAEA",
+      "region": "International Bodies",
+      "organization": "IAEA Director General Statements",
+      "flag": "🌍",
+      "lang": "en",
+      "feed": "https://www.iaea.org/feeds/dg-statements",
+      "homepage": "https://www.iaea.org/about/director-general"
+    },
+    {
+      "country": "Canada",
+      "region": "North America",
+      "organization": "Global Affairs Canada",
+      "flag": "🇨🇦",
+      "lang": "en",
+      "feed": "https://api.io.canada.ca/io-server/gc/news/en/v2?dept=departmentofforeignaffairstradeanddevelopment&type=newsreleases&sort=publishedDate&orderBy=desc&pick=50&format=atom&atomtitle=Global%20Affairs%20Canada",
+      "homepage": "https://www.canada.ca/en/global-affairs.html"
+    },
+    {
+      "country": "European Union",
+      "region": "Europe",
+      "organization": "EU External Action Service (EEAS)",
+      "flag": "🇪🇺",
+      "lang": "en",
+      "feed": "https://www.eeas.europa.eu/eeas/rss_en",
+      "homepage": "https://www.eeas.europa.eu/"
+    },
+    {
+      "country": "European Union",
+      "region": "Europe",
+      "organization": "Council of the European Union",
+      "flag": "🇪🇺",
+      "lang": "en",
+      "feed": "https://www.consilium.europa.eu/en/press/rss/",
+      "homepage": "https://www.consilium.europa.eu/en/press/"
+    },
+    {
+      "country": "European Union",
+      "region": "International Bodies",
+      "organization": "European Commission",
+      "flag": "🇪🇺",
+      "lang": "en",
+      "feed": "https://ec.europa.eu/commission/presscorner/api/rss",
+      "homepage": "https://ec.europa.eu/"
+    },
+    {
+      "country": "United Nations",
+      "region": "International Bodies",
+      "organization": "UN Human Rights (OHCHR)",
+      "flag": "🇺🇳",
+      "lang": "en",
+      "feed": "https://www.ohchr.org/en/rss",
+      "homepage": "https://www.ohchr.org/en/news"
+    },
+    {
+      "country": "United Nations",
+      "region": "International Bodies",
+      "organization": "UN Security Council",
+      "flag": "🇺🇳",
+      "lang": "en",
+      "feed": "https://www.un.org/press/en/content/security-council/rss.xml",
+      "homepage": "https://www.un.org/securitycouncil/"
+    },
+    {
+      "country": "NATO",
+      "region": "International Bodies",
+      "organization": "NATO News",
+      "flag": "🌍",
+      "lang": "en",
+      "feed": "https://www.nato.int/cps/en/natohq/news.xml",
+      "homepage": "https://www.nato.int/cps/en/natohq/news.htm"
+    },
+    {
+      "country": "OSCE",
+      "region": "International Bodies",
+      "organization": "Organization for Security and Co-operation in Europe",
+      "flag": "🌍",
+      "lang": "en",
+      "feed": "https://www.osce.org/feeds/all",
+      "homepage": "https://www.osce.org/news"
+    },
+    {
+      "country": "France",
+      "region": "Europe",
+      "organization": "French Ministry for Europe and Foreign Affairs",
+      "flag": "🇫🇷",
+      "lang": "fr",
+      "feed": "https://www.diplomatie.gouv.fr/spip.php?page=backend",
+      "homepage": "https://www.diplomatie.gouv.fr/en/"
+    },
+    {
+      "country": "Germany",
+      "region": "Europe",
+      "organization": "German Federal Foreign Office",
+      "flag": "🇩🇪",
+      "lang": "en",
+      "feed": "https://www.auswaertiges-amt.de/opendata/rss/news_en",
+      "homepage": "https://www.auswaertiges-amt.de/en"
+    },
+    {
+      "country": "Germany",
+      "region": "Europe",
+      "organization": "Bundeskanzler",
+      "flag": "🇩🇪",
+      "lang": "de",
+      "feed": "https://www.bundeskanzler.de/bk-de/service/newsroom/rss_newsroom-de.xml",
+      "homepage": "https://www.bundeskanzler.de/"
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "organization": "US State Department",
+      "flag": "🇺🇸",
+      "lang": "en",
+      "feed": "https://www.state.gov/feeds/press.xml",
+      "homepage": "https://www.state.gov/press-releases/"
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "organization": "The White House",
+      "flag": "🇺🇸",
+      "lang": "en",
+      "feed": "https://www.whitehouse.gov/presidential-actions/feed/",
+      "homepage": "https://www.whitehouse.gov/"
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "organization": "US Central Command (CENTCOM)",
+      "flag": "🇺🇸",
+      "lang": "en",
+      "feed": "https://www.centcom.mil/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=1014&max=50",
+      "homepage": "https://www.centcom.mil/"
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "organization": "US Senate Foreign Relations Committee",
+      "flag": "🇺🇸",
+      "lang": "en",
+      "feed": "https://www.foreign.senate.gov/rss/",
+      "homepage": "https://www.foreign.senate.gov/"
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "organization": "US House Foreign Affairs Committee",
+      "flag": "🇺🇸",
+      "lang": "en",
+      "feed": "https://foreignaffairs.house.gov/rss.xml",
+      "homepage": "https://foreignaffairs.house.gov/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Supreme Leader of Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://english.khamenei.ir/rss/statements",
+      "homepage": "https://english.khamenei.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Presidency of Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://www.president.ir/en/rss",
+      "homepage": "https://www.president.ir/en"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Ministry of Foreign Affairs Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://www.mfa.gov.ir/en/rss",
+      "homepage": "https://www.mfa.gov.ir/en"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Iran UN Mission",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://iran.un.org/en/rss",
+      "homepage": "https://iran.un.org/en"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Atomic Energy Organization of Iran (AEOI)",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://www.aeoi.org.ir/en/rss",
+      "homepage": "https://www.aeoi.org.ir/en"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Central Bank of Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://www.cbi.ir/en/rss",
+      "homepage": "https://www.cbi.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Judiciary of Iran",
+      "flag": "🇮🇷",
+      "lang": "fa",
+      "feed": "https://www.eadl.ir/rss",
+      "homepage": "https://www.eadl.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Ministry of Economic Affairs Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://en.mefa.ir/rss",
+      "homepage": "https://meb.mefa.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Ministry of ICT Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://ict.gov.ir/en/rss",
+      "homepage": "https://ict.gov.ir/en"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Ministry of Interior Iran",
+      "flag": "🇮🇷",
+      "lang": "fa",
+      "feed": "https://www.moi.ir/rss",
+      "homepage": "https://www.moi.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Trade Promotion Organization Iran",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://en.tpo.ir/rss",
+      "homepage": "https://en.tpo.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Ministry of Labor Iran",
+      "flag": "🇮🇷",
+      "lang": "fa",
+      "feed": "https://mcls.gov.ir/rss",
+      "homepage": "https://mcls.gov.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "National Iranian Oil Company (NIOC)",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://www.nioc.ir/en/rss",
+      "homepage": "https://www.nioc.ir/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Embassy of Iran in the UK",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://iran-embassy.org.uk/feed",
+      "homepage": "https://iran-embassy.org.uk/"
+    },
+    {
+      "country": "Iran",
+      "region": "Middle East",
+      "organization": "Embassy of Iran in China",
+      "flag": "🇮🇷",
+      "lang": "en",
+      "feed": "https://china.mfa.gov.ir/en/rss",
+      "homepage": "https://china.mfa.gov.ir/"
+    },
+    {
+      "country": "United States",
+      "region": "North America",
+      "organization": "US Special Envoy for Iran",
+      "flag": "🇺🇸",
+      "lang": "en",
+      "feed": "https://www.state.gov/feeds/press-iran.xml",
+      "homepage": "https://www.state.gov/iran/"
+    },
+    {
+      "country": "United Nations",
+      "region": "International Bodies",
+      "organization": "UN Special Procedures (Human Rights)",
+      "flag": "🇺🇳",
+      "lang": "en",
+      "feed": "https://www.ohchr.org/en/rss/special-procedures",
+      "homepage": "https://www.ohchr.org/en/special-procedures-human-rights-council"
+    },
+    {
+      "country": "Israel",
+      "region": "Middle East",
+      "organization": "Prime Minister's Office Israel",
+      "flag": "🇮🇱",
+      "lang": "en",
+      "feed": "https://www.gov.il/api/en/media/rss/2",
+      "homepage": "https://www.gov.il/en/departments/prime_ministers_office"
+    },
+    {
+      "country": "Israel",
+      "region": "Middle East",
+      "organization": "Israeli Ministry of Foreign Affairs",
+      "flag": "🇮🇱",
+      "lang": "en",
+      "feed": "https://mfa.gov.il/MFA/PressRoom/rss/rss.xml",
+      "homepage": "https://www.gov.il/en/departments/ministry_of_foreign_affairs"
+    },
+    {
+      "country": "Saudi Arabia",
+      "region": "Middle East",
+      "organization": "Ministry of Foreign Affairs Saudi Arabia",
+      "flag": "🇸🇦",
+      "lang": "en",
+      "feed": "https://www.mofa.gov.sa/en/rss",
+      "homepage": "https://www.mofa.gov.sa/en"
+    },
+    {
+      "country": "UAE",
+      "region": "Middle East",
+      "organization": "Ministry of Foreign Affairs UAE",
+      "flag": "🇦🇪",
+      "lang": "en",
+      "feed": "https://www.mofaic.gov.ae/en/rss",
+      "homepage": "https://www.mofaic.gov.ae/en"
+    }
   ]
 }

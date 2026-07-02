@@ -1,66 +1,326 @@
 {
-  "last_updated": "2026-06-14",
-  "note": "60 official primary sources monitored by Sade Begam. Twitter/X accounts listed for reference; no API used.",
+  "last_updated": "2026-07-02",
+  "note": "40 official primary sources monitored by Sade Begam. Twitter/X accounts listed for reference; no API used.",
   "feeds": [
-    { "name": "Supreme Leader of Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://english.khamenei.ir/", "twitter": "https://x.com/khamenei_ir" },
-    { "name": "Presidency of Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.president.ir/en", "twitter": "https://x.com/IranGov_EN" },
-    { "name": "Ministry of Foreign Affairs Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.mfa.gov.ir/en", "twitter": "https://x.com/IRIMFA_EN" },
-    { "name": "Islamic Consultative Assembly", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://en.parliran.ir/", "twitter": "https://x.com/parliran_en" },
-    { "name": "Government Information Council", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://pad.dolat.ir/", "twitter": "https://x.com/PadDolat" },
-    { "name": "Central Bank of Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.cbi.ir/", "twitter": "https://x.com/cbi_ir" },
-    { "name": "Judiciary of Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.eadl.ir/", "twitter": "https://x.com/Ejei_ir" },
-    { "name": "Atomic Energy Organization of Iran (AEOI)", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.aeoi.org.ir/en", "twitter": "https://x.com/aeoioriginal" },
-    { "name": "Ministry of Economic Affairs Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://meb.mefa.ir/", "twitter": "https://x.com/Mefa_ir" },
-    { "name": "Ministry of ICT Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://ict.gov.ir/en", "twitter": "https://x.com/Iran_ICT" },
-    { "name": "Ministry of Interior Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.moi.ir/", "twitter": "https://x.com/moigov_ir" },
-    { "name": "Trade Promotion Organization Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://en.tpo.ir/", "twitter": "https://x.com/tpo_iran" },
-    { "name": "Ministry of Labor Iran", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://mcls.gov.ir/", "twitter": "https://x.com/mcls_ir" },
-    { "name": "National Iranian Oil Company (NIOC)", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://www.nioc.ir/", "twitter": "https://x.com/NIOC_ir" },
-    { "name": "Iran UN Mission", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://iran.un.org/en", "twitter": "https://x.com/Iran_UN" },
-    { "name": "Embassy of Iran in the UK", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://iran-embassy.org.uk/", "twitter": "https://x.com/IraninUK" },
-    { "name": "Embassy of Iran in Russia", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://iranembassy.ru/", "twitter": "https://x.com/IraninRussia" },
-    { "name": "Embassy of Iran in China", "country": "Iran", "flag": "🇮🇷", "region": "Iran — Government", "homepage": "https://china.mfa.gov.ir/", "twitter": "https://x.com/IraninChina" },
-    { "name": "The White House", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://www.whitehouse.gov/", "twitter": "https://x.com/WhiteHouse" },
-    { "name": "US Department of State", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://www.state.gov/", "twitter": "https://x.com/StateDept" },
-    { "name": "US Special Envoy for Iran", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://www.state.gov/iran/", "twitter": "https://x.com/USEnvoyIran" },
-    { "name": "US Treasury (OFAC)", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://home.treasury.gov/", "twitter": "https://x.com/USTreasury" },
-    { "name": "US Central Command (CENTCOM)", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://www.centcom.mil/", "twitter": "https://x.com/CENTCOM" },
-    { "name": "US Senate Foreign Relations Committee", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://www.foreign.senate.gov/", "twitter": "https://x.com/SFRCdems" },
-    { "name": "US House Foreign Affairs Committee", "country": "United States", "flag": "🇺🇸", "region": "USA — Government", "homepage": "https://foreignaffairs.house.gov/", "twitter": "https://x.com/HouseForeignGOP" },
-    { "name": "EU External Action Service (EEAS)", "country": "European Union", "flag": "🇪🇺", "region": "Europe", "homepage": "https://www.eeas.europa.eu/", "twitter": "https://x.com/eu_eeas" },
-    { "name": "German Federal Foreign Office", "country": "Germany", "flag": "🇩🇪", "region": "Europe", "homepage": "https://www.auswaertiges-amt.de/en", "twitter": "https://x.com/AuswaertigesAmt" },
-    { "name": "Bundeskanzler", "country": "Germany", "flag": "🇩🇪", "region": "Europe", "homepage": "https://www.bundeskanzler.de/", "twitter": "https://x.com/Bundeskanzler" },
-    { "name": "Foreign, Commonwealth & Development Office", "country": "United Kingdom", "flag": "🇬🇧", "region": "Europe", "homepage": "https://www.gov.uk/fcdo", "twitter": "https://x.com/FCDOGovUK" },
-    { "name": "France Diplomatie", "country": "France", "flag": "🇫🇷", "region": "Europe", "homepage": "https://www.diplomatie.gouv.fr/en/", "twitter": "https://x.com/francediplo_EN" },
-    { "name": "Prime Minister's Office Israel", "country": "Israel", "flag": "🇮🇱", "region": "Middle East", "homepage": "https://www.gov.il/en/departments/prime_ministers_office", "twitter": "https://x.com/IsraeliPM" },
-    { "name": "Israeli Ministry of Foreign Affairs (Farsi)", "country": "Israel", "flag": "🇮🇱", "region": "Middle East", "homepage": "https://www.gov.il/en/departments/ministry_of_foreign_affairs", "twitter": "https://x.com/IsraelPersian" },
-    { "name": "Ministry of Foreign Affairs Saudi Arabia", "country": "Saudi Arabia", "flag": "🇸🇦", "region": "Middle East", "homepage": "https://www.mofa.gov.sa/en", "twitter": "https://x.com/KSAmofaEN" },
-    { "name": "Ministry of Foreign Affairs UAE", "country": "UAE", "flag": "🇦🇪", "region": "Middle East", "homepage": "https://www.mofaic.gov.ae/en", "twitter": "https://x.com/MoFAICUAE" },
-    { "name": "International Atomic Energy Agency (IAEA)", "country": "IAEA", "flag": "🌍", "region": "International Bodies", "homepage": "https://www.iaea.org/", "twitter": "https://x.com/iaeaorg" },
-    { "name": "Rafael Mariano Grossi (IAEA DG)", "country": "IAEA", "flag": "🌍", "region": "International Bodies", "homepage": "https://www.iaea.org/about/director-general", "twitter": "https://x.com/rafaelmgrossi" },
-    { "name": "UN Security Council", "country": "United Nations", "flag": "🇺🇳", "region": "International Bodies", "homepage": "https://www.un.org/securitycouncil/", "twitter": "https://x.com/UN_DPA" },
-    { "name": "UN Human Rights (OHCHR)", "country": "United Nations", "flag": "🇺🇳", "region": "International Bodies", "homepage": "https://www.ohchr.org/en/news", "twitter": "https://x.com/UNHumanRights" },
-    { "name": "UN Special Procedures", "country": "United Nations", "flag": "🇺🇳", "region": "International Bodies", "homepage": "https://www.ohchr.org/en/special-procedures-human-rights-council", "twitter": "https://x.com/UN_SPExperts" },
-    { "name": "European Commission", "country": "European Union", "flag": "🇪🇺", "region": "International Bodies", "homepage": "https://ec.europa.eu/", "twitter": "https://x.com/EU_Commission" },
-    { "name": "Washington Institute for Near East Policy (WINEP)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.washingtoninstitute.org/", "twitter": "https://x.com/WashInstitute" },
-    { "name": "Foundation for Defense of Democracies (FDD)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.fdd.org/", "twitter": "https://x.com/FDD" },
-    { "name": "Middle East Institute (MEI)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.mei.edu/", "twitter": "https://x.com/MiddleEastInst" },
-    { "name": "Iran Primer (USIP)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://iranprimer.usip.org/", "twitter": "https://x.com/TheIranPrimer" },
-    { "name": "International Crisis Group", "country": "International", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.crisisgroup.org/", "twitter": "https://x.com/CrisisGroup" },
-    { "name": "Atlantic Council", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.atlanticcouncil.org/", "twitter": "https://x.com/AtlanticCouncil" },
-    { "name": "Council on Foreign Relations (CFR)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.cfr.org/", "twitter": "https://x.com/CFR_org" },
-    { "name": "Brookings Institution", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.brookings.edu/", "twitter": "https://x.com/BrookingsInst" },
-    { "name": "Carnegie Endowment for International Peace", "country": "International", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://carnegieendowment.org/", "twitter": "https://x.com/CarnegieEndow" },
-    { "name": "Center for Strategic and International Studies (CSIS)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.csis.org/", "twitter": "https://x.com/CSIS" },
-    { "name": "RAND Corporation", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.rand.org/", "twitter": "https://x.com/RANDCorporation" },
-    { "name": "Stimson Center", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.stimson.org/", "twitter": "https://x.com/StimsonCenter" },
-    { "name": "European Council on Foreign Relations (ECFR)", "country": "Europe", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://ecfr.eu/", "twitter": "https://x.com/ecfr" },
-    { "name": "Chatham House", "country": "United Kingdom", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.chathamhouse.org/", "twitter": "https://x.com/ChathamHouse" },
-    { "name": "SWP Berlin", "country": "Germany", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.swp-berlin.org/en/", "twitter": "https://x.com/SWPBerlin" },
-    { "name": "DGAP", "country": "Germany", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://dgap.org/en/", "twitter": "https://x.com/dgapev" },
-    { "name": "International Institute for Strategic Studies (IISS)", "country": "International", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.iiss.org/", "twitter": "https://x.com/IISS_org" },
-    { "name": "Bourse & Bazaar", "country": "International", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://www.bourseandbazaar.com/", "twitter": "https://x.com/BourseandBazaar" },
-    { "name": "Arabian Gulf States Institute (AGSIW)", "country": "United States", "flag": "🏛️", "region": "Think Tanks", "homepage": "https://agsiw.org/", "twitter": "https://x.com/GulfStatesInst" },
-    { "name": "INSS Israel", "country": "Israel", "flag": "🇮🇱", "region": "Think Tanks", "homepage": "https://www.inss.org.il/", "twitter": "https://x.com/INSSIsrael" }
+    {
+      "name": "Supreme Leader of Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://english.khamenei.ir/",
+      "twitter": "https://x.com/khamenei_ir"
+    },
+    {
+      "name": "Presidency of Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.president.ir/en",
+      "twitter": "https://x.com/IranGov_EN"
+    },
+    {
+      "name": "Ministry of Foreign Affairs Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.mfa.gov.ir/en",
+      "twitter": "https://x.com/IRIMFA_EN"
+    },
+    {
+      "name": "Islamic Consultative Assembly",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://en.parliran.ir/",
+      "twitter": "https://x.com/parliran_en"
+    },
+    {
+      "name": "Government Information Council",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://pad.dolat.ir/",
+      "twitter": "https://x.com/PadDolat"
+    },
+    {
+      "name": "Central Bank of Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.cbi.ir/",
+      "twitter": "https://x.com/cbi_ir"
+    },
+    {
+      "name": "Judiciary of Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.eadl.ir/",
+      "twitter": "https://x.com/Ejei_ir"
+    },
+    {
+      "name": "Atomic Energy Organization of Iran (AEOI)",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.aeoi.org.ir/en",
+      "twitter": "https://x.com/aeoioriginal"
+    },
+    {
+      "name": "Ministry of Economic Affairs Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://meb.mefa.ir/",
+      "twitter": "https://x.com/Mefa_ir"
+    },
+    {
+      "name": "Ministry of ICT Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://ict.gov.ir/en",
+      "twitter": "https://x.com/Iran_ICT"
+    },
+    {
+      "name": "Ministry of Interior Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.moi.ir/",
+      "twitter": "https://x.com/moigov_ir"
+    },
+    {
+      "name": "Trade Promotion Organization Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://en.tpo.ir/",
+      "twitter": "https://x.com/tpo_iran"
+    },
+    {
+      "name": "Ministry of Labor Iran",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://mcls.gov.ir/",
+      "twitter": "https://x.com/mcls_ir"
+    },
+    {
+      "name": "National Iranian Oil Company (NIOC)",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://www.nioc.ir/",
+      "twitter": "https://x.com/NIOC_ir"
+    },
+    {
+      "name": "Iran UN Mission",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://iran.un.org/en",
+      "twitter": "https://x.com/Iran_UN"
+    },
+    {
+      "name": "Embassy of Iran in the UK",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://iran-embassy.org.uk/",
+      "twitter": "https://x.com/IraninUK"
+    },
+    {
+      "name": "Embassy of Iran in Russia",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://iranembassy.ru/",
+      "twitter": "https://x.com/IraninRussia"
+    },
+    {
+      "name": "Embassy of Iran in China",
+      "country": "Iran",
+      "flag": "🇮🇷",
+      "region": "Iran — Government",
+      "homepage": "https://china.mfa.gov.ir/",
+      "twitter": "https://x.com/IraninChina"
+    },
+    {
+      "name": "The White House",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://www.whitehouse.gov/",
+      "twitter": "https://x.com/WhiteHouse"
+    },
+    {
+      "name": "US Department of State",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://www.state.gov/",
+      "twitter": "https://x.com/StateDept"
+    },
+    {
+      "name": "US Special Envoy for Iran",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://www.state.gov/iran/",
+      "twitter": "https://x.com/USEnvoyIran"
+    },
+    {
+      "name": "US Treasury (OFAC)",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://home.treasury.gov/",
+      "twitter": "https://x.com/USTreasury"
+    },
+    {
+      "name": "US Central Command (CENTCOM)",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://www.centcom.mil/",
+      "twitter": "https://x.com/CENTCOM"
+    },
+    {
+      "name": "US Senate Foreign Relations Committee",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://www.foreign.senate.gov/",
+      "twitter": "https://x.com/SFRCdems"
+    },
+    {
+      "name": "US House Foreign Affairs Committee",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "region": "USA — Government",
+      "homepage": "https://foreignaffairs.house.gov/",
+      "twitter": "https://x.com/HouseForeignGOP"
+    },
+    {
+      "name": "EU External Action Service (EEAS)",
+      "country": "European Union",
+      "flag": "🇪🇺",
+      "region": "Europe",
+      "homepage": "https://www.eeas.europa.eu/",
+      "twitter": "https://x.com/eu_eeas"
+    },
+    {
+      "name": "German Federal Foreign Office",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "region": "Europe",
+      "homepage": "https://www.auswaertiges-amt.de/en",
+      "twitter": "https://x.com/AuswaertigesAmt"
+    },
+    {
+      "name": "Bundeskanzler",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "region": "Europe",
+      "homepage": "https://www.bundeskanzler.de/",
+      "twitter": "https://x.com/Bundeskanzler"
+    },
+    {
+      "name": "Foreign, Commonwealth & Development Office",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "region": "Europe",
+      "homepage": "https://www.gov.uk/fcdo",
+      "twitter": "https://x.com/FCDOGovUK"
+    },
+    {
+      "name": "France Diplomatie",
+      "country": "France",
+      "flag": "🇫🇷",
+      "region": "Europe",
+      "homepage": "https://www.diplomatie.gouv.fr/en/",
+      "twitter": "https://x.com/francediplo_EN"
+    },
+    {
+      "name": "Prime Minister's Office Israel",
+      "country": "Israel",
+      "flag": "🇮🇱",
+      "region": "Middle East",
+      "homepage": "https://www.gov.il/en/departments/prime_ministers_office",
+      "twitter": "https://x.com/IsraeliPM"
+    },
+    {
+      "name": "Israeli Ministry of Foreign Affairs (Farsi)",
+      "country": "Israel",
+      "flag": "🇮🇱",
+      "region": "Middle East",
+      "homepage": "https://www.gov.il/en/departments/ministry_of_foreign_affairs",
+      "twitter": "https://x.com/IsraelPersian"
+    },
+    {
+      "name": "Ministry of Foreign Affairs Saudi Arabia",
+      "country": "Saudi Arabia",
+      "flag": "🇸🇦",
+      "region": "Middle East",
+      "homepage": "https://www.mofa.gov.sa/en",
+      "twitter": "https://x.com/KSAmofaEN"
+    },
+    {
+      "name": "Ministry of Foreign Affairs UAE",
+      "country": "UAE",
+      "flag": "🇦🇪",
+      "region": "Middle East",
+      "homepage": "https://www.mofaic.gov.ae/en",
+      "twitter": "https://x.com/MoFAICUAE"
+    },
+    {
+      "name": "International Atomic Energy Agency (IAEA)",
+      "country": "IAEA",
+      "flag": "🌍",
+      "region": "International Bodies",
+      "homepage": "https://www.iaea.org/",
+      "twitter": "https://x.com/iaeaorg"
+    },
+    {
+      "name": "Rafael Mariano Grossi (IAEA DG)",
+      "country": "IAEA",
+      "flag": "🌍",
+      "region": "International Bodies",
+      "homepage": "https://www.iaea.org/about/director-general",
+      "twitter": "https://x.com/rafaelmgrossi"
+    },
+    {
+      "name": "UN Security Council",
+      "country": "United Nations",
+      "flag": "🇺🇳",
+      "region": "International Bodies",
+      "homepage": "https://www.un.org/securitycouncil/",
+      "twitter": "https://x.com/UN_DPA"
+    },
+    {
+      "name": "UN Human Rights (OHCHR)",
+      "country": "United Nations",
+      "flag": "🇺🇳",
+      "region": "International Bodies",
+      "homepage": "https://www.ohchr.org/en/news",
+      "twitter": "https://x.com/UNHumanRights"
+    },
+    {
+      "name": "UN Special Procedures",
+      "country": "United Nations",
+      "flag": "🇺🇳",
+      "region": "International Bodies",
+      "homepage": "https://www.ohchr.org/en/special-procedures-human-rights-council",
+      "twitter": "https://x.com/UN_SPExperts"
+    },
+    {
+      "name": "European Commission",
+      "country": "European Union",
+      "flag": "🇪🇺",
+      "region": "International Bodies",
+      "homepage": "https://ec.europa.eu/",
+      "twitter": "https://x.com/EU_Commission"
+    }
   ]
 }

@@ -15,91 +15,9 @@ const PAGE_SIZE = 20;
 document.addEventListener("DOMContentLoaded", () => {
   applyLanguageChrome();
   loadNews();
-  initDetailOverlay();
   initTranslationModal();
   startAutoRefresh();
 });
-
-// ── Detail overlay ────────────────────────────────────────────────
-// Purely client-side. Content is rendered on demand from ALL_ITEMS and
-// cleared on close — nothing is written to localStorage or the server.
-
-function initDetailOverlay() {
-  const overlay = document.getElementById("detailOverlay");
-  const closeBtn = document.getElementById("detailClose");
-  if (!overlay) return;
-
-  closeBtn.setAttribute("aria-label", T.closeDetail);
-  closeBtn.addEventListener("click", closeDetail);
-
-  // "Back to home" button (keyboard/screen-reader accessible shortcut)
-  const backBtn = document.getElementById("detailBackBtn");
-  if (backBtn) backBtn.addEventListener("click", () => { closeDetail(); window.location.href = "index.html"; });
-  overlay.addEventListener("click", (e) => { if (e.target === overlay) closeDetail(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
-  window.addEventListener("popstate", () => { if (!location.hash) closeDetail(); });
-}
-
-function openDetail(item) {
-  const overlay = document.getElementById("detailOverlay");
-  const body = document.getElementById("detailBody");
-  if (!overlay || !body) return;
-
-  const tr = item.translations ? item.translations[SB_LANG] : null;
-  const hasTr = item.lang_original !== SB_LANG && tr && tr.headline;
-  const origDir = item.lang_original === "fa" ? "rtl" : "ltr";
-
-  body.innerHTML = `
-    <div class="detail-header">
-      <span class="detail-flag">${item.flag || "🏳️"}</span>
-      <div class="detail-meta">
-        <div class="detail-country">${item.country}</div>
-        <div class="detail-org">${item.source_organization}</div>
-        <div class="detail-date">${sbBothDates(item.date)}</div>
-      </div>
-      <span class="badge badge--official">✓ ${T.officialBadge}</span>
-    </div>
-
-    <hr class="detail-divider" />
-
-    <section class="detail-section">
-      <span class="card__quote-label">${T.originalLabel}</span>
-      <h2 class="detail-headline" lang="${item.lang_original}" dir="${origDir}">${item.headline || ""}</h2>
-      <p class="detail-excerpt" lang="${item.lang_original}" dir="${origDir}">${item.excerpt || ""}</p>
-    </section>
-
-    ${hasTr ? `
-    <section class="detail-section detail-section--tr">
-      <span class="card__quote-label">${T.translationLabel}</span>
-      <h2 class="detail-headline">${tr.headline}</h2>
-      <p class="detail-excerpt">${tr.excerpt || ""}</p>
-      <p class="detail-disclaimer"><small>${T.translationDisclaimer}</small></p>
-    </section>` : ""}
-
-    <a class="detail-source-btn" href="${item.source_url}" target="_blank" rel="noopener noreferrer">
-      🔗 ${T.viewSource}
-    </a>
-  `;
-
-  overlay.classList.add("open");
-  overlay.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
-  history.pushState({ detailId: item.id }, "", `#${item.id}`);
-}
-
-function closeDetail() {
-  const overlay = document.getElementById("detailOverlay");
-  if (!overlay || !overlay.classList.contains("open")) return;
-  overlay.classList.remove("open");
-  overlay.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-  if (location.hash) history.pushState(null, "", location.pathname + location.search);
-  // Clear rendered content after animation — no stale data kept in DOM
-  setTimeout(() => {
-    const body = document.getElementById("detailBody");
-    if (body) body.innerHTML = "";
-  }, 320);
-}
 
 // Fill in all the static UI text from the language file.
 function applyLanguageChrome() {
@@ -137,7 +55,6 @@ function applyLanguageChrome() {
   });
 
   sbRenderCommonFooter();
-  setText("detailBackBtn", T.backToHome);
 }
 
 // Client-side caching: show the cached copy instantly, then revalidate in
@@ -181,23 +98,44 @@ async function loadNews() {
   }
 }
 
+// Header shows a permanently live Berlin clock + when the news was last
+// updated. No Jalali/solar-calendar date and no week number here (removed
+// by request — Jalali dates still appear elsewhere, e.g. on news cards).
+let _berlinClockTimer = null;
+
 function renderWeekStrip(data) {
   const el = document.getElementById("weekStrip");
   if (!el) return;
-  const r = data.date_range || {};
-  const weekMatch = String(data.week || "").match(/W(\d+)/);
-  const weekNum = weekMatch ? weekMatch[1] : data.week;
-  const weekLabel = SB_LANG === "fa" ? sbPersianDigits(weekNum) : weekNum;
-  const start = r.start ? sbBothDates(r.start) : "";
-  const end = r.end ? sbBothDates(r.end) : "";
 
   let updatedPart = "";
   if (data.published_at) {
     const pubDate = data.published_at.split("T")[0];
-    updatedPart = ` · ${T.lastUpdated}: ${sbBothDates(pubDate)}`;
+    const updated = SB_LANG === "fa" ? sbGregorianFa(pubDate) : sbGregorian(pubDate);
+    updatedPart = ` · ${T.lastUpdated}: ${updated}`;
   }
 
-  el.textContent = `${T.weekLabel} ${weekLabel} · ${start} – ${end}${updatedPart}`;
+  el.innerHTML = `🕐 ${T.berlinTime}: <span id="berlinClock"></span>${updatedPart}`;
+
+  const renderClock = () => {
+    const clockEl = document.getElementById("berlinClock");
+    if (clockEl) clockEl.textContent = formatBerlinDateTime();
+  };
+  renderClock();
+  if (_berlinClockTimer) clearInterval(_berlinClockTimer);
+  _berlinClockTimer = setInterval(renderClock, 30000);
+}
+
+// Live date + time in the Europe/Berlin timezone, formatted in the page
+// language (Persian digits + Persian month words on the FA page).
+function formatBerlinDateTime() {
+  const now = new Date();
+  const dateFmt = new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit" });
+  const timeFmt = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Berlin", hour: "2-digit", minute: "2-digit", hour12: false });
+  const iso = dateFmt.format(now);
+  const time = timeFmt.format(now);
+  const dateStr = SB_LANG === "fa" ? sbGregorianFa(iso) : sbGregorian(iso);
+  const timeStr = SB_LANG === "fa" ? sbPersianDigits(time) : time;
+  return `${dateStr}, ${timeStr}`;
 }
 
 function buildRegionFilter() {
@@ -229,7 +167,10 @@ function renderFeed() {
 
   let items = [...ALL_ITEMS].sort((a, b) => {
     const da = a.date || "", db = b.date || "";
-    return db > da ? 1 : db < da ? -1 : (b.id || "") > (a.id || "") ? 1 : -1;
+    if (db !== da) return db > da ? 1 : -1;
+    const wa = a.country === "Iran" ? 1 : 0, wb = b.country === "Iran" ? 1 : 0;
+    if (wa !== wb) return wa - wb; // Western sources before Iranian sources
+    return (b.id || "") > (a.id || "") ? 1 : -1;
   });
   if (ACTIVE_REGION !== "all") items = items.filter((i) => i.region === ACTIVE_REGION);
   if (SEARCH) {
@@ -310,17 +251,19 @@ function renderCard(item) {
   card.className = "card";
   const _tr = item.translations ? item.translations[SB_LANG] : null;
   const _hasTr = item.lang_original !== SB_LANG && _tr && _tr.headline;
+  // Clicking the translation opens the full translated text in a new window
+  // (with the AI-translation disclaimer). Clicking the original message
+  // takes the visitor straight to the official source.
   card.addEventListener("click", (e) => {
     if (e.target.closest(".card__source")) return;
-    // On Persian page: clicking anywhere on the card opens the translation window
-    if (_hasTr && (e.target.closest(".card__translation") || SB_LANG === "fa")) {
+    if (_hasTr && e.target.closest(".card__translation")) {
       openTranslationWindow(item);
       return;
     }
-    openDetail(item);
+    window.open(item.source_url, "_blank", "noopener,noreferrer");
   });
   card.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && (e.target.closest(".card__translation") || (SB_LANG === "fa" && _hasTr))) {
+    if (e.key === "Enter" && e.target.closest(".card__translation") && _hasTr) {
       openTranslationWindow(item);
     }
   });
@@ -331,13 +274,13 @@ function renderCard(item) {
 
   const imageHTML = item.image
     ? `<img class="card__photo" src="${item.image}" alt="${item.country}" loading="lazy" />`
-    : `<span class="card__flag-badge">${item.flag || "🏳️"}</span>`;
+    : `<span class="card__flag-badge" aria-hidden="true">📰</span>`;
 
   card.innerHTML = `
     <header class="card__head">
       ${imageHTML}
       <div class="card__meta">
-        <div class="card__country">${item.flag || ""} ${item.country}</div>
+        <div class="card__country">${item.country}</div>
         <div class="card__org">${item.source_organization}</div>
         <div class="card__date">${sbBothDates(item.date)}</div>
       </div>
@@ -429,7 +372,6 @@ function openTranslationModal(item) {
 
   body.innerHTML = `
     <div class="tr-modal__header">
-      <span class="tr-modal__flag">${item.flag || "🌍"}</span>
       <div>
         <div class="tr-modal__country">${item.country}</div>
         <div class="tr-modal__org">${item.source_organization}</div>
@@ -492,7 +434,7 @@ function openTranslationWindow(item) {
 "<head>\n" +
 "<meta charset=\"utf-8\">\n" +
 "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
-"<title>" + (item.flag || "") + " " + item.country + " — Sade Begam</title>\n" +
+"<title>" + item.country + " — Sade Begam</title>\n" +
 "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n" +
 "<link href=\"" + fontUrl + "\" rel=\"stylesheet\">\n" +
 "<style>\n" +
@@ -500,7 +442,6 @@ function openTranslationWindow(item) {
 "body{font-family:" + fontFam + ";background:#F5F7FA;color:#1C2233;line-height:1.75;padding:16px}\n" +
 ".card{background:#fff;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,.09);max-width:700px;margin:20px auto;padding:28px 28px 32px}\n" +
 ".meta-row{display:flex;align-items:center;gap:12px;margin-bottom:20px}\n" +
-".flag{font-size:36px;flex-shrink:0}\n" +
 ".country{font-weight:700;font-size:16px}\n" +
 ".org{color:#1A6FBF;font-size:13px;margin-top:2px}\n" +
 ".date{font-size:12px;color:#6B7A94;margin-top:2px}\n" +
@@ -521,7 +462,6 @@ function openTranslationWindow(item) {
 "<body>\n" +
 "<div class=\"card\">\n" +
 "  <div class=\"meta-row\">\n" +
-"    <span class=\"flag\">" + (item.flag || "🌍") + "</span>\n" +
 "    <div>\n" +
 "      <div class=\"country\">" + item.country + "</div>\n" +
 "      <div class=\"org\">" + item.source_organization + "</div>\n" +

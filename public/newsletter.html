@@ -37,13 +37,6 @@
   <main class="container">
     <section class="card form-block">
       <h1 class="about__title" id="nlTitle">Newsletter</h1>
-      <div class="newsletter-inactive-bar" id="nlInactiveBar" style="display:flex;align-items:center;gap:12px;background:#FFF3E0;border:1px solid #FFB74D;border-radius:10px;padding:14px 18px;margin:16px 0 20px;">
-        <span style="font-size:22px">⚠️</span>
-        <div>
-          <strong id="nlInactiveTitle" style="color:#E65100;display:block;margin-bottom:3px;"></strong>
-          <span id="nlInactiveDesc" style="font-size:14px;color:#BF5000;"></span>
-        </div>
-      </div>
       <p class="about__body" id="nlIntro"></p>
       <form id="signupForm" class="sb-form">
         <label class="field-label"><span id="nlEmailLabel"></span>
@@ -92,11 +85,9 @@
     sbRenderCommonFooter();
 
     set("nlTitle", T.newsletter.title);
-    set("nlInactiveTitle", T.newsletter.inactiveTitle);
-    set("nlInactiveDesc", T.newsletter.inactiveDesc);
     set("nlIntro", T.newsletter.intro);
     set("nlEmailLabel", T.newsletter.emailLabel);
-    set("nlSignupBtn", T.newsletter.waitlistBtn || T.newsletter.signupBtn);
+    set("nlSignupBtn", T.newsletter.signupBtn);
     set("nlFormNote", T.newsletter.formNote);
     set("nlConfirmTitle", T.newsletter.confirmTitle);
     set("nlConfirmBody", T.newsletter.confirmBody);
@@ -104,17 +95,42 @@
 
     const form = document.getElementById("signupForm");
     const confirm = document.getElementById("signupConfirm");
+    const submitBtn = document.getElementById("nlSignupBtn");
 
-    // Step 1 → 2 (double opt-in): opens the visitor's email app pre-filled so
-    // the subscription is confirmed by THEM. Nothing is auto-sent or stored.
-    form.addEventListener("submit", (e) => {
+    // Real double opt-in: we store the signup and send an actual
+    // confirmation email (api/subscribe.js). The subscription only becomes
+    // active once the visitor clicks the link inside that email
+    // (api/confirm.js) — nothing is sent to anyone before that.
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = new FormData(e.target).get("email") || "";
-      location.href = "mailto:hello@sadebegam.com?subject=" +
-        encodeURIComponent("Sade Begam — Confirm newsletter subscription") +
-        "&body=" + encodeURIComponent("Please confirm my subscription. Email: " + email);
-      form.hidden = true;
-      confirm.hidden = false;
+      const email = (new FormData(e.target).get("email") || "").trim();
+      submitBtn.disabled = true;
+      set("nlFormNote", T.newsletter.sending);
+      try {
+        const res = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, lang: SB_LANG })
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "failed");
+
+        if (data.alreadySubscribed) {
+          set("nlFormNote", T.newsletter.alreadySubscribed);
+          submitBtn.disabled = false;
+          return;
+        }
+        if (!data.emailSent) {
+          set("nlFormNote", T.newsletter.sendError);
+          submitBtn.disabled = false;
+          return;
+        }
+        form.hidden = true;
+        confirm.hidden = false;
+      } catch (_) {
+        set("nlFormNote", T.newsletter.sendError);
+        submitBtn.disabled = false;
+      }
     });
 
     // Let the visitor go back and enter a different address.

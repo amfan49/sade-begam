@@ -1,275 +1,185 @@
-// api/chat.js — Sade Begam AI Chatbot Brain
+// api/chat.js — Sade Begam Chatbot Brain
 // POST /api/chat
-// Body: { messages: [{role, content}], session_id, source }
+// Body: { messages: [{role, content}], session_id, source, lang }
 // Returns: { response: string, session_id: string }
 //
-// Env vars needed:
-//   ANTHROPIC_API_KEY   — Claude API key (required)
-//   SUPABASE_URL        — https://xxxx.supabase.co (optional: enables memory + RAG)
-//   SUPABASE_SERVICE_KEY — service role key (optional)
+// 100% FREE — permanently. No external API, no API key, nothing that can
+// ever incur cost. Searches the site's own published news and replies with
+// warm, polite, multilingual (fa/en) canned text — the same approach used
+// by the in-page chat widget (public/js/chatbot.js) and the full chat page
+// fallback (public/js/chat-page.js), so the whole site is consistent.
+//
+// This is the shared brain for the full chat page (chat.html), the
+// embeddable widget (widget.js), and the Telegram bot (api/telegram.js).
 
 "use strict";
 
-const SYSTEM_PROMPT = `تو «بگم‌بات» هستی — دستیار هوشمند، مؤدب و دلسوز سایت «ساده بگم». با هر کاربر با احترام و گرمی رفتار کن.
+const https = require("https");
 
-درباره‌ی ساده بگم:
-ساده بگم یک رسانه‌ی مستقل فارسی‌زبان است که اظهارات و بیانیه‌های رسمی درباره‌ی ایران را از منابع معتبر بین‌المللی جمع‌آوری و ترجمه می‌کند. هیچ تحلیل، تفسیر یا نظر شخصی ارائه نمی‌دهد — فقط منابع رسمی.
+const SITE = "https://sade-begam.vercel.app";
 
-خدمات موجود در سایت که می‌توانی کاربر را راهنمایی کنی:
-• صفحه‌ی اصلی (index.html): آخرین اخبار رسمی هفتگی درباره‌ی ایران با ترجمه‌ی فارسی
-• آرشیو (archive.html): تمام اخبار منتشرشده — قابل مرور بر اساس روز، هفته، ماه یا سال
-• خبرنامه (newsletter.html): خبرنامه‌ی هفتگی رایگان — ⚠️ در حال حاضر فعال نیست؛ به زودی راه‌اندازی می‌شود. می‌توانی ایمیل کاربر را برای اطلاع‌رسانی ثبت کنی
-• سفارش خبر ویژه (orders.html): کاربر می‌تواند درخواست تمرکز روی موضوع خاصی را بدهد
-• درباره‌ی ما (about.html): اطلاعات کامل درباره‌ی رسانه، منابع و سیاست حریم خصوصی
-• چت هوشمند (همین صفحه): پاسخ به سؤالات
-
-وظایف من:
-• پاسخ گرم و مؤدبانه به تمام سؤالات کاربران
-• راهنمایی دقیق درباره‌ی سایت و تمام خدمات آن
-• اطلاعات درباره‌ی اخبار و اظهارات رسمی ایران
-• ثبت اطلاعات تماس علاقه‌مندان با رضایت کاربر (ابزار capture_lead) — نام داوطلبانه است
-• بررسی وضعیت اشتراک کاربر با ایمیل (ابزار check_enrollment)
-
-قوانین مهم:
-• همیشه به فارسی پاسخ بده مگر اینکه کاربر به زبان دیگری بنویسد
-• بسیار مؤدب، گرم و محترمانه باش — از عباراتی مثل «خواهش می‌کنم»، «ممنون از تماس شما»، «با کمال میل در خدمتم»، «چه کمکی می‌توانم بکنم؟» استفاده کن
-• پاسخ‌ها را مختصر اما کامل نگه دار
-• فقط اطلاعات دقیق ارائه بده؛ اگر چیزی را نمی‌دانی صادقانه بگو
-• وقتی کاربر درباره‌ی خبرنامه می‌پرسد: توضیح بده که در حال حاضر فعال نیست ولی ایمیل او را می‌توانی برای اطلاع‌رسانی زمان راه‌اندازی ثبت کنی
-• هرگز ادعا نکن که تحلیل یا نظر شخصی ارائه می‌دهی — ساده بگم فقط منابع رسمی را منعکس می‌کند`;
-
-const TOOLS = [
-  {
-    name: "capture_lead",
-    description: "اطلاعات تماس کاربر را ذخیره کن. وقتی کاربر می‌خواهد تماس گرفته شود، اشتراک بگیرد یا اطلاعات بیشتری بگیرد از این ابزار استفاده کن.",
-    input_schema: {
-      type: "object",
-      properties: {
-        name:  { type: "string", description: "نام کامل کاربر" },
-        email: { type: "string", description: "آدرس ایمیل" },
-        phone: { type: "string", description: "شماره تلفن (اختیاری)" },
-        note:  { type: "string", description: "موضوع علاقه یا یادداشت" }
-      },
-      required: ["email"]
-    }
-  },
-  {
-    name: "check_enrollment",
-    description: "وضعیت ثبت‌نام یا اشتراک کاربر را بررسی کن",
-    input_schema: {
-      type: "object",
-      properties: {
-        email: { type: "string", description: "ایمیل کاربر برای جستجو" }
-      },
-      required: ["email"]
-    }
-  }
-];
-
-// ── Supabase REST helpers ─────────────────────────────────────────
-
-function sbHeaders(key) {
-  return {
-    "apikey": key,
-    "Authorization": `Bearer ${key}`,
-    "Content-Type": "application/json"
-  };
-}
-
-async function sbSelect(url, key, table, params) {
-  const u = new URL(`${url}/rest/v1/${table}`);
-  Object.entries(params || {}).forEach(([k, v]) => u.searchParams.set(k, v));
-  try {
-    const r = await fetch(u.toString(), { headers: sbHeaders(key) });
-    if (!r.ok) return [];
-    return r.json();
-  } catch { return []; }
-}
-
-async function sbInsert(url, key, table, data) {
-  try {
-    await fetch(`${url}/rest/v1/${table}`, {
-      method: "POST",
-      headers: { ...sbHeaders(key), "Prefer": "return=minimal" },
-      body: JSON.stringify(data)
-    });
-  } catch { /* non-critical */ }
-}
-
-async function sbRpc(url, key, fn, params) {
-  try {
-    const r = await fetch(`${url}/rest/v1/rpc/${fn}`, {
-      method: "POST",
-      headers: sbHeaders(key),
-      body: JSON.stringify(params)
-    });
-    if (!r.ok) return [];
-    return r.json();
-  } catch { return []; }
-}
-
-// ── Claude API call ───────────────────────────────────────────────
-
-async function callClaude(messages, system, tools, apiKey) {
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-      "content-type": "application/json"
-    },
-    body: JSON.stringify({
-      model: "claude-haiku-4-5-20251001",
-      max_tokens: 1024,
-      system,
-      messages,
-      tools
-    })
-  });
-  if (!r.ok) {
-    const txt = await r.text();
-    throw new Error(`Claude API ${r.status}: ${txt.slice(0, 200)}`);
-  }
-  return r.json();
-}
-
-// ── Tool execution ────────────────────────────────────────────────
-
-async function executeTool(name, input, sessionId, sbUrl, sbKey, source) {
-  if (name === "capture_lead") {
-    if (sbUrl && sbKey) {
-      await sbInsert(sbUrl, sbKey, "leads", {
-        name:       input.name,
-        email:      input.email,
-        phone:      input.phone || null,
-        note:       input.note  || null,
-        source:     `chatbot-${source || "web"}`,
-        session_id: sessionId || null
+function fetchJson(url) {
+  return new Promise((resolve) => {
+    https.get(url, (r) => {
+      let data = "";
+      r.on("data", (c) => { data += c; });
+      r.on("end", () => {
+        try { resolve(JSON.parse(data)); } catch { resolve(null); }
       });
-    }
-    return `لید ثبت شد: ${input.name} <${input.email}>`;
+    }).on("error", () => resolve(null));
+  });
+}
+
+function detectLang(text, hint) {
+  if (hint === "fa" || hint === "en") return hint;
+  return /[؀-ۿ]/.test(text || "") ? "fa" : "en";
+}
+
+function toDigits(n, lang) {
+  if (lang !== "fa") return String(n);
+  return String(n).replace(/[0-9]/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
+}
+
+function escapeHtml(s) {
+  return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+// Western sources always listed before Iranian sources.
+function sortWesternFirst(items) {
+  return [...items].sort((a, b) => {
+    const wa = a.country === "Iran" ? 1 : 0;
+    const wb = b.country === "Iran" ? 1 : 0;
+    if (wa !== wb) return wa - wb;
+    return (b.date || "") > (a.date || "") ? 1 : -1;
+  });
+}
+
+const REPLIES = {
+  fa: {
+    greeting: "سلام! 👋 خیلی خوش‌آمدید. چه کمکی از دستم برمی‌آید؟",
+    help: "با کمال میل کمکتان می‌کنم 🙏\n\n• هر موضوعی را جست‌وجو کنید (مثلاً «آژانس» یا «آلمان»)\n• بنویسید «خبرنامه» برای ثبت‌نام در خبرنامه‌ی رایگان\n• بنویسید «تماس» برای سفارش خبر ویژه\n\nهر وقت خواستید بپرسید.",
+    newsletter: `خبرنامه‌ی هفتگیِ رایگان «ساده بگم» اینجاست: ${SITE}/newsletter.html — خوشحال می‌شوم ثبت‌نامتان کنم!`,
+    contact: `برای سفارش خبر ویژه یا تماس با ما، لطفاً از این صفحه استفاده کنید: ${SITE}/orders.html`,
+    voice: "برای شنیدن اخبار، از دکمه‌ی 🔊 در همین گفت‌وگو یا در کارت‌های خبری صفحه‌ی اصلی استفاده کنید.",
+    noData: "با عرض پوزش، در حال حاضر خبری در دسترس نیست. لطفاً کمی بعد دوباره سر بزنید 🙏",
+    noResults: (q) => `با عرض پوزش، نتیجه‌ای برای «${q}» پیدا نکردم. می‌توانید در توییتر/ایکس هم جست‌وجو کنید: `,
+    found: (n) => `با کمال میل، ${n} نتیجه پیدا کردم:`,
+    more: (n) => `و ${n} نتیجه‌ی دیگر هم هست — برای نتیجه‌ی دقیق‌تر، عبارت دیگری را امتحان کنید 🙏`,
+    source: "منبع رسمی",
+    fallback: 'متشکرم از پیامتان 🙏 من فقط می‌توانم در اخبار رسمی «ساده بگم» جست‌وجو کنم. می‌توانید موضوعی را بپرسید یا بنویسید «راهنما».'
+  },
+  en: {
+    greeting: "Hello! 👋 Welcome. How can I help you today?",
+    help: "Happy to help 🙏\n\n• Search any topic (e.g. \"IAEA\" or \"Germany\")\n• Type \"newsletter\" to subscribe to the free newsletter\n• Type \"contact\" to request specific coverage\n\nFeel free to ask anytime.",
+    newsletter: `The free Sade Begam weekly newsletter is here: ${SITE}/newsletter.html — I'd be glad to get you signed up!`,
+    contact: `To request specific coverage or contact us, please use this page: ${SITE}/orders.html`,
+    voice: "To hear the news read aloud, use the 🔊 button in this chat or on the news cards on the home page.",
+    noData: "Sorry, no news is available right now. Please check back shortly 🙏",
+    noResults: (q) => `Sorry, I couldn't find anything for "${q}". You could also search on Twitter/X: `,
+    found: (n) => `Happy to help — I found ${n} result(s):`,
+    more: (n) => `Plus ${n} more — try a more specific search term for a better match 🙏`,
+    source: "Official source",
+    fallback: 'Thank you for your message 🙏 I can only search Sade Begam\'s official news. Please ask about a topic, or type "help".'
+  }
+};
+
+function twitterUrl(q) {
+  return "https://twitter.com/search?q=" + encodeURIComponent("Iran " + q) + "&f=news";
+}
+
+async function loadItems() {
+  const [week, arc] = await Promise.all([
+    fetchJson(`${SITE}/data/current-week.json`),
+    fetchJson(`${SITE}/data/archive.json`)
+  ]);
+  const byId = new Map();
+  [...((arc && arc.items) || []), ...((week && week.items) || [])].forEach((it) => {
+    if (it && it.id) byId.set(it.id, it);
+  });
+  return [...byId.values()];
+}
+
+function searchReply(query, lang, items) {
+  const R = REPLIES[lang];
+  const qLow = query.toLowerCase();
+
+  if (!items.length) return { text: R.noData, html: false };
+
+  const iranItems = items.filter((item) => {
+    const allText = [
+      item.headline, item.excerpt,
+      item.translations?.fa?.headline || "", item.translations?.en?.headline || "",
+      ...(item.topics || [])
+    ].join(" ").toLowerCase();
+    return allText.includes("iran") || item.country === "Iran";
+  });
+
+  const results = sortWesternFirst(iranItems.filter((item) => {
+    const txt = [
+      item.country, item.source_organization, item.headline, item.excerpt,
+      ...(item.topics || []),
+      item.translations?.fa?.headline || "", item.translations?.fa?.excerpt || "",
+      item.translations?.en?.headline || "", item.translations?.en?.excerpt || ""
+    ].join(" ").toLowerCase();
+    return txt.includes(qLow);
+  }));
+
+  if (!results.length) {
+    return { text: R.noResults(query) + twitterUrl(query), html: false };
   }
 
-  if (name === "check_enrollment") {
-    if (!sbUrl || !sbKey) return "سیستم پایگاه داده در دسترس نیست";
-    const rows = await sbSelect(sbUrl, sbKey, "enrollments", {
-      "email": `eq.${input.email}`,
-      "limit": "1"
-    });
-    if (!rows.length) return "ثبت‌نامی با این ایمیل یافت نشد";
-    const e = rows[0];
-    return `name=${e.name};course=${e.course};status=${e.status}`;
-  }
+  const top = results.slice(0, 3);
+  const lines = [R.found(toDigits(results.length, lang))];
+  top.forEach((item) => {
+    const tr = item.translations?.[lang];
+    const headline = (item.lang_original !== lang && tr?.headline) ? tr.headline : item.headline;
+    lines.push(`— ${item.country} (${item.source_organization}): ${headline}\n  🔗 ${R.source}: ${item.source_url}`);
+  });
+  if (results.length > 3) lines.push(R.more(toDigits(results.length - 3, lang)));
 
-  return "ابزار نامشخص";
+  return { text: lines.join("\n\n"), html: false };
+}
+
+function routeMessage(query, lang, items) {
+  const R = REPLIES[lang];
+  const q = query.trim().toLowerCase();
+
+  if (/^(سلام|درود|hello|hi|hey|hallo|bonjour)/.test(q)) return R.greeting;
+  if (/^(راهنما|کمک|help|\?|؟)$/.test(q)) return R.help;
+  if (/(خبرنامه|newsletter|subscribe|اشتراک)/.test(q)) return R.newsletter;
+  if (/(تماس|contact|سفارش|order|درخواست)/.test(q)) return R.contact;
+  if (/(بخوان|read.?news|صدا|voice|speak|vorlesen)/.test(q)) return R.voice;
+  if (!q) return R.fallback;
+
+  return searchReply(query, lang, items).text;
 }
 
 // ── Main handler ─────────────────────────────────────────────────
 
 module.exports = async (req, res) => {
-  // CORS — allow widget to work on any domain
-  res.setHeader("Access-Control-Allow-Origin",  "*");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
   if (req.method === "OPTIONS") return res.status(200).end();
-  if (req.method !== "POST")   return res.status(405).end();
+  if (req.method !== "POST") return res.status(405).end();
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    return res.status(503).json({
-      error: "ANTHROPIC_API_KEY not configured",
-      response: null
-    });
-  }
-
-  const { messages = [], session_id, source = "web" } = req.body || {};
+  const { messages = [], session_id, lang: langHint } = req.body || {};
   if (!messages.length) return res.status(400).json({ error: "messages required" });
 
-  const sbUrl = process.env.SUPABASE_URL;
-  const sbKey = process.env.SUPABASE_SERVICE_KEY;
+  const userQuery = messages[messages.length - 1]?.content || "";
+  const lang = detectLang(userQuery, langHint);
 
   try {
-    // 1. Long-term memory: load previous conversation
-    let history = [];
-    if (sbUrl && sbKey && session_id) {
-      const prev = await sbSelect(sbUrl, sbKey, "chat_messages", {
-        "session_id": `eq.${session_id}`,
-        "order":      "created_at.asc",
-        "limit":      "20",
-        "select":     "role,content"
-      });
-      history = (prev || []).map(r => ({ role: r.role, content: r.content }));
-    }
-
-    // 2. RAG: search relevant news
-    const userQuery = messages[messages.length - 1]?.content || "";
-    let ragContext = "";
-    if (sbUrl && sbKey && userQuery.trim()) {
-      const docs = await sbRpc(sbUrl, sbKey, "search_news", {
-        query_text:  userQuery,
-        match_count: 3
-      });
-      if (Array.isArray(docs) && docs.length) {
-        ragContext = "\n\nاخبار مرتبط در پایگاه داده:\n" +
-          docs.map(d =>
-            `- [${d.date}] ${d.source_organization}: ${d.headline}`
-          ).join("\n");
-      }
-    }
-
-    // 3. Build full message list (history + new messages, max 30)
-    const allMessages = [...history, ...messages].slice(-30);
-    const systemWithRag = SYSTEM_PROMPT + ragContext;
-
-    // 4. First Claude call
-    const resp1 = await callClaude(allMessages, systemWithRag, TOOLS, apiKey);
-
-    let finalText = "";
-
-    if (resp1.stop_reason === "tool_use") {
-      // 5a. Execute tools + continue conversation
-      const toolUseBlocks = resp1.content.filter(b => b.type === "tool_use");
-      const toolResults = await Promise.all(
-        toolUseBlocks.map(async (b) => ({
-          type:        "tool_result",
-          tool_use_id: b.id,
-          content:     await executeTool(b.name, b.input, session_id, sbUrl, sbKey, source)
-        }))
-      );
-
-      const continueMessages = [
-        ...allMessages,
-        { role: "assistant", content: resp1.content },
-        { role: "user",      content: toolResults }
-      ];
-      const resp2 = await callClaude(continueMessages, systemWithRag, TOOLS, apiKey);
-      finalText = resp2.content
-        .filter(b => b.type === "text")
-        .map(b => b.text)
-        .join("");
-    } else {
-      // 5b. Direct text response
-      finalText = resp1.content
-        .filter(b => b.type === "text")
-        .map(b => b.text)
-        .join("");
-    }
-
-    // 6. Save to long-term memory
-    if (sbUrl && sbKey && session_id && finalText) {
-      await sbInsert(sbUrl, sbKey, "chat_messages", [
-        { session_id, role: "user",      content: userQuery, source },
-        { session_id, role: "assistant", content: finalText,  source }
-      ]);
-    }
-
-    return res.json({ response: finalText, session_id: session_id || null });
-
+    const items = await loadItems();
+    const response = routeMessage(userQuery, lang, items);
+    return res.json({ response, session_id: session_id || null });
   } catch (err) {
     console.error("Chat error:", err.message);
-    return res.status(500).json({
-      response: "متأسفانه خطایی رخ داد. لطفاً دوباره تلاش کنید.",
-      error:    err.message
+    const lang2 = detectLang(userQuery, langHint);
+    return res.status(200).json({
+      response: REPLIES[lang2].fallback,
+      session_id: session_id || null
     });
   }
 };

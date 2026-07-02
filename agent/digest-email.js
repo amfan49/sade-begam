@@ -1,4 +1,4 @@
-// digest-email.js — generates the daily HTML email with one-click approve links
+// digest-email.js — generates the weekly HTML email with one-click approve links
 //
 // Called by GitHub Actions: node agent/digest-email.js > /tmp/digest.html
 // Env vars needed: APPROVE_SECRET, SITE_URL

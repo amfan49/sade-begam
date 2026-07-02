@@ -1,17 +1,73 @@
-name: Daily Draft Digest Email
+name: Weekly News Update
 
-# Sends Amir a daily email at 8:00 AM London time (07:00 UTC in summer).
-# Each news item in draft-week.json gets a one-click "Publish" link.
-# Uses Resend.com free API (3000 emails/month, no SMTP setup needed).
-# Requires secrets: APPROVE_SECRET, RESEND_API_KEY
+# Runs ONCE a week — Sunday 08:00 Europe/Berlin — to collect candidate news
+# and email Amir a digest with one-click "Publish" links.
+#
+# This is the only step that runs unattended. Nothing gets published or
+# deployed here: approve-single.yml (triggered by Amir clicking a link, or by
+# running it manually) is the sole place that commits to current-week.json
+# and deploys to Vercel. This keeps GitHub Actions minutes and Vercel builds
+# to roughly once a week instead of several times a day.
+#
+# Two cron entries fire at 06:00 and 07:00 UTC so the run lands at 08:00
+# Berlin time across the DST switch; the "gate" job only lets the rest of
+# the workflow continue when the Berlin hour is actually 08 (or when
+# triggered manually).
 
 on:
   schedule:
-    - cron: "0 7 * * *"   # 07:00 UTC = 08:00 BST (London summer)
+    - cron: "0 6 * * 0"   # 08:00 CEST (Berlin summer)
+    - cron: "0 7 * * 0"   # 08:00 CET (Berlin winter)
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - id: check
+        run: |
+          HOUR=$(TZ='Europe/Berlin' date '+%H')
+          if [ "$HOUR" = "08" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  collect:
+    needs: gate
+    if: needs.gate.outputs.go == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Collect candidate news (last 7 days)
+        env:
+          DAYS: "7"
+        run: node agent/collect.js
+
+      - name: Commit draft if changed
+        run: |
+          git config user.name "Sade Begam Bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add public/data/draft-week.json
+          if git diff --staged --quiet; then
+            echo "No new draft items."
+          else
+            git commit -m "News draft — $(TZ='Europe/Berlin' date '+%Y-%m-%d %H:%M') [vercel skip]"
+            git push
+          fi
+
   send-digest:
+    needs: collect
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -75,4 +131,4 @@ jobs:
 
       - name: Skip (no draft items)
         if: steps.check.outputs.count == '0'
-        run: echo "No draft items today — email not sent."
+        run: echo "No draft items this week — email not sent."

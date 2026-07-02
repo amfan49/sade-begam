@@ -1,0 +1,31 @@
+name: Weekly Newsletter Report
+
+# Sends the subscriber-facing weekly report (different from weekly-update.yml,
+# which emails Amir a review digest of DRAFT candidates).
+#
+# SAFETY: TEST_ONLY defaults to "true" below — every run (scheduled or
+# manual) sends a single preview to Amir's own inbox instead of the real
+# subscriber list, until he explicitly changes it. This matches his request
+# to review a sample email before this goes live for real subscribers.
+#
+# To go live: change TEST_ONLY to "false" in the env block below.
+
+on:
+  schedule:
+    - cron: "0 10 * * 0"   # Sunday, ~1h after the weekly-update digest
+  workflow_dispatch: {}    # run on demand to send/preview immediately
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Send weekly report
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SITE_URL: "https://sade-begam.vercel.app"
+          TEST_ONLY: "true"   # ← change to "false" only after reviewing a test send
+        run: node agent/send-weekly-report.js

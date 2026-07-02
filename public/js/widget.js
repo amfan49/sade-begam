@@ -157,7 +157,8 @@
       body:    JSON.stringify({
         messages:   [{ role: "user", content: text }],
         session_id: SESSION_ID,
-        source:     "widget"
+        source:     "widget",
+        lang:       LANG
       })
     })
     .then(function (r) { return r.json(); })

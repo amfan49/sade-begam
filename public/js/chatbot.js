@@ -27,6 +27,15 @@ function _sbTwUrl(q) {
   return "https://twitter.com/search?q=" + encodeURIComponent("Iran " + q) + "&f=news";
 }
 
+// Western sources are always listed before Iranian sources.
+function _sbWesternFirst(items) {
+  return [...items].sort((a, b) => {
+    const wa = a.country === "Iran" ? 1 : 0;
+    const wb = b.country === "Iran" ? 1 : 0;
+    return wa - wb;
+  });
+}
+
 function _sbLink(href, label) {
   return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="sb-chat-result-link">${label}</a>`;
 }
@@ -185,11 +194,6 @@ function sbChatSearch(query) {
   }
 
   // Strict filter: only items that mention Iran (topic or source)
-  const IRAN_SOURCES = new Set([
-    "Iran","United States","United Kingdom","European Union","Germany","France",
-    "Israel","Saudi Arabia","UAE","Canada","IAEA","United Nations","NATO","OSCE",
-    "International","Europe","Think Tanks"
-  ]);
   const iranItems = items.filter((item) => {
     const allText = [item.headline, item.excerpt,
       item.translations?.fa?.headline || "", item.translations?.en?.headline || "",
@@ -197,7 +201,7 @@ function sbChatSearch(query) {
     return allText.includes("iran") || item.country === "Iran";
   });
 
-  const results = iranItems.filter((item) => {
+  const results = _sbWesternFirst(iranItems.filter((item) => {
     const txt = [
       item.country, item.source_organization,
       item.headline, item.excerpt,
@@ -207,7 +211,7 @@ function sbChatSearch(query) {
       item.translations?.en?.headline || "",
     ].join(" ").toLowerCase();
     return txt.includes(qLow);
-  });
+  }));
 
   if (!results.length) {
     const noRes = (chat.noResults || 'No results for "{q}". Search on Twitter:').replace('{q}', _sbEscape(query));
@@ -225,7 +229,6 @@ function sbChatSearch(query) {
     const date = typeof sbBothDates !== "undefined" ? sbBothDates(item.date) : item.date;
     const html = `<div class="sb-chat-result">
       <div class="sb-chat-result-head">
-        <span>${item.flag || "🌍"}</span>
         <strong>${item.country}</strong>
         <span class="sb-chat-result-date">${date}</span>
       </div>
