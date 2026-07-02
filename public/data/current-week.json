@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:18.579Z",
+  "published_at": "2026-07-02T15:57:21.426Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -4054,6 +4054,27 @@
         "fa": {
           "headline": "جلیقه ضدگلوله: آینده جنگ ایران",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-193",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/president-trump-attempts-to-keep-lid-on-iran-conflict-to-move-oil-through-strait-of-hormuz/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "President Trump attempts to 'keep lid on' Iran conflict to move oil through Strait of Hormuz",
+      "excerpt": "Listen ...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "پرزیدنت ترامپ تلاش می‌کند تا با «سرپوش گذاشتن» بر درگیری با ایران، نفت را از طریق تنگه هرمز منتقل کند",
+          "excerpt": "... گوش کن"
         }
       },
       "topics": []
