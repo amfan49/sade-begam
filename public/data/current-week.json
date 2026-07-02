@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:12.742Z",
+  "published_at": "2026-07-02T15:57:16.404Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -4011,6 +4011,27 @@
         "en": null,
         "fa": {
           "headline": "مذاکرات صلح آمریکا و ایران در دوحه با شروعی لرزان آغاز شد",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-191",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/29/vance-and-rubio-race-to-close-deals-with-iran-lebanon/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Vance and Rubio race to close deals with Iran, Lebanon",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ونس و روبیو برای بستن قرارداد با ایران و لبنان رقابت می‌کنند",
           "excerpt": ""
         }
       },
