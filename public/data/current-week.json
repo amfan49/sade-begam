@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:04.273Z",
+  "published_at": "2026-07-02T15:57:06.026Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3928,6 +3928,27 @@
         "fa": {
           "headline": "مجوز خزانه‌داری برای نفت ایران غیرعاقلانه است و ممکن است با الزامات قانونی مغایرت داشته باشد",
           "excerpt": "صدور مجوز توقف تحریم‌های نفتی ایران توسط وزارت خزانه‌داری در ۲۲ ژوئن، ظاهراً با قانون بررسی توافق هسته‌ای ایران (INARA) که چنین لغو تحریم‌هایی را ممنوع می‌کند، مغایرت دارد... مجوز وزارت خزانه‌داری برای نفت ایران غیرعاقلانه است و ممکن است با قانون اساسی مغایرت داشته باشد."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-187",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/quotes/2026/06/30/iran-fights-to-keep-grip-on-hormuz-as-us-gulf-allies-carve-new-shipping-route/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran fights to keep grip on Hormuz as US, Gulf allies carve new shipping route",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "همزمان با ایجاد مسیر کشتیرانی جدید توسط ایالات متحده و متحدان خلیج فارس، ایران برای حفظ تسلط خود بر هرمز می‌جنگد",
+          "excerpt": ""
         }
       },
       "topics": []
