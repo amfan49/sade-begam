@@ -1,12 +1,60 @@
 {
-  "generated_at": "2026-07-01T18:35:07.034Z",
+  "generated_at": "2026-07-02T10:22:03.041Z",
   "window_days": 3,
   "keyword": "iran",
-  "total": 20,
+  "total": 16,
   "note": "DRAFT — review each item, paste the verified official quote, then move approved items into current-week.json.",
   "items": [
     {
+      "id": "draft-001",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/07/01/why-hasnt-the-trump-administration-complied-with-the-law-on-reporting-iran-agreements-to-congress/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "Why Hasn’t the Trump Administration Complied with the Law on Reporting Iran Agreements to Congress?",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "Abstract This article argues that the Trump Administration’s Memorandum of Understanding with Iran is subject to the Iran Nuclear Agreement Review Act (INARA) but the administration has not complied... The post Why Hasn’t the Trump Administration Complied with the Law on Reporting Iran Agreements to",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
       "id": "draft-002",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/07/01/how-trumps-understanding-with-iran-echoes-obamas-2015-nuclear-deal/",
+      "is_official": true,
+      "needs_review": true,
+      "lang_original": "en",
+      "headline": "How Trump’s Understanding With Iran Echoes Obama’s 2015 Nuclear Deal",
+      "quote_original": "[REVIEW: paste the exact official quote here]",
+      "excerpt": "If you want to understand Iran’s negotiating posture for the new nuclear deal with the United States, listen to what Washington and Tehran said about the nuclear deal of July 2015. At the time, President... The post How Trump’s Understanding With Iran Echoes Obama’s 2015 Nuclear Deal appeared first ",
+      "translations": {
+        "en": null,
+        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
+      },
+      "context": {
+        "en": "",
+        "fa": ""
+      },
+      "topics": []
+    },
+    {
+      "id": "draft-003",
       "date": "2026-07-01",
       "country": "United States",
       "region": "Think Tanks",
@@ -30,7 +78,7 @@
       "topics": []
     },
     {
-      "id": "draft-003",
+      "id": "draft-004",
       "date": "2026-07-01",
       "country": "United States",
       "region": "Think Tanks",
@@ -54,7 +102,7 @@
       "topics": []
     },
     {
-      "id": "draft-004",
+      "id": "draft-005",
       "date": "2026-07-01",
       "country": "United States",
       "region": "Think Tanks",
@@ -78,7 +126,7 @@
       "topics": []
     },
     {
-      "id": "draft-005",
+      "id": "draft-006",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -102,7 +150,7 @@
       "topics": []
     },
     {
-      "id": "draft-006",
+      "id": "draft-007",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -126,7 +174,7 @@
       "topics": []
     },
     {
-      "id": "draft-007",
+      "id": "draft-008",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -150,7 +198,7 @@
       "topics": []
     },
     {
-      "id": "draft-008",
+      "id": "draft-009",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -174,7 +222,7 @@
       "topics": []
     },
     {
-      "id": "draft-009",
+      "id": "draft-010",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -198,7 +246,7 @@
       "topics": []
     },
     {
-      "id": "draft-010",
+      "id": "draft-011",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -222,7 +270,7 @@
       "topics": []
     },
     {
-      "id": "draft-011",
+      "id": "draft-012",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -246,7 +294,7 @@
       "topics": []
     },
     {
-      "id": "draft-018",
+      "id": "draft-016",
       "date": "2026-06-30",
       "country": "United States",
       "region": "Think Tanks",
@@ -256,7 +304,7 @@
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "In Ankara, Europe Faces an Accelerating U.S. Decoupling From NATO",
+      "headline": "At the NATO Summit, Europe Faces an Accelerating U.S. Decoupling",
       "quote_original": "[REVIEW: paste the exact official quote here]",
       "excerpt": "The United States appears to be pulling back from European security, with U.S. plans for withdrawal accelerating after a rift over support for the U.S.-Israeli war against Iran. NATO’s Turkey summit could be the start of a transition toward a new version of the alliance, but there are fears it could",
       "translations": {
@@ -270,31 +318,7 @@
       "topics": []
     },
     {
-      "id": "draft-001",
-      "date": "2026-06-29",
-      "country": "United Nations",
-      "region": "International Bodies",
-      "flag": "🇺🇳",
-      "source_organization": "UN News",
-      "source_url": "https://news.un.org/feed/view/en/story/2026/06/1167831",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Middle East conflict leaves developing countries paying the price",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "With another weekend of strikes involving the United States and Iran, renewed diplomatic efforts on Monday have eased immediate fears of escalation, but the economic shockwaves are already taking a heavy toll on some of the world&#039;s poorest countries.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-012",
+      "id": "draft-013",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
@@ -318,43 +342,19 @@
       "topics": []
     },
     {
-      "id": "draft-013",
-      "date": "2026-06-29",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/president-trump-attempts-to-keep-lid-on-iran-conflict-to-move-oil-through-strait-of-hormuz/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "President Trump attempts to &#8216;keep lid on&#8217; Iran conflict to move oil through Strait of Hormuz",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "Listen ... The post President Trump attempts to &#8216;keep lid on&#8217; Iran conflict to move oil through Strait of Hormuz appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
       "id": "draft-014",
       "date": "2026-06-29",
       "country": "United States",
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/iran-strikes-u-s-bases-in-kuwait-bahrain/",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/strait-jacket-the-future-of-the-iran-war/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Iran strikes U.S. bases in Kuwait, Bahrain",
+      "headline": "Strait-jacket: the future of the Iran war",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran strikes U.S. bases in Kuwait, Bahrain appeared first on FDD.",
+      "excerpt": "The post Strait-jacket: the future of the Iran war appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
@@ -372,109 +372,13 @@
       "region": "Think Tanks",
       "flag": "🏛️",
       "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/iran-negotiates-to-manage-pressure-amid-flailing-economy/",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/president-trump-attempts-to-keep-lid-on-iran-conflict-to-move-oil-through-strait-of-hormuz/",
       "is_official": true,
       "needs_review": true,
       "lang_original": "en",
-      "headline": "Iran negotiates to ‘manage pressure’ amid flailing economy",
+      "headline": "President Trump attempts to &#8216;keep lid on&#8217; Iran conflict to move oil through Strait of Hormuz",
       "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post Iran negotiates to ‘manage pressure’ amid flailing economy appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-016",
-      "date": "2026-06-29",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/u-s-and-iran-agree-to-halt-strikes-will-meet-tuesday-in-qatar/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "U.S. and Iran agree to halt strikes, will meet Tuesday in Qatar",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post U.S. and Iran agree to halt strikes, will meet Tuesday in Qatar appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-017",
-      "date": "2026-06-29",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Foundation for Defense of Democracies (FDD)",
-      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/the-uns-toxic-obsession-with-israel-and-upcoming-u-s-iran-talks-in-doha/",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "The UN&#8217;s &#8220;toxic obsession&#8221; with Israel and upcoming U.S.-Iran talks in Doha",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The post The UN&#8217;s &#8220;toxic obsession&#8221; with Israel and upcoming U.S.-Iran talks in Doha appeared first on FDD.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-019",
-      "date": "2026-06-29",
-      "country": "United States",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "Council on Foreign Relations (CFR)",
-      "source_url": "https://www.cfr.org/articles/trumps-iran-food-deal-could-easily-become-another-oil-for-food-scandal",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Trump’s Iran Food Deal Could End Up Helping the Regime, Not Its People",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "The Trump administration wants to release frozen Iranian funds—but only to buy U.S. farm goods. The proposal is less humanitarian gesture than market engineering, and without independent oversight, it risks repeating the catastrophic failures of the Iraq Oil-for-Food program.",
-      "translations": {
-        "en": null,
-        "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
-      },
-      "context": {
-        "en": "",
-        "fa": ""
-      },
-      "topics": []
-    },
-    {
-      "id": "draft-020",
-      "date": "2026-06-29",
-      "country": "Germany",
-      "region": "Think Tanks",
-      "flag": "🏛️",
-      "source_organization": "SWP Berlin",
-      "source_url": "https://www.deutschlandfunk.de/interview-volker-perthes-swp-iran-usa-kriegsende-oder-permanenter-zustand-100.html",
-      "is_official": true,
-      "needs_review": true,
-      "lang_original": "en",
-      "headline": "Iran-Krieg: Angriffe, um eigene Ziele in den Verhandlungen durchzusetzen",
-      "quote_original": "[REVIEW: paste the exact official quote here]",
-      "excerpt": "",
+      "excerpt": "Listen ... The post President Trump attempts to &#8216;keep lid on&#8217; Iran conflict to move oil through Strait of Hormuz appeared first on FDD.",
       "translations": {
         "en": null,
         "fa": "[بازبینی: ترجمه‌ی فارسی این‌جا]"
