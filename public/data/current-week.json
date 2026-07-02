@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:56:59.513Z",
+  "published_at": "2026-07-02T15:57:01.767Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3886,6 +3886,27 @@
         "fa": {
           "headline": "برای تهران، مذاکره، جنگ با ابزاری دیگر است",
           "excerpt": "رئیس جمهور ترامپ اظهار داشته است که حاکمان ایران «هرگز در جنگی پیروز نشده‌اند، اما هرگز در مذاکره‌ای شکست نخورده‌اند.» سوالی که باید مطرح شود این است: چرا اینطور است؟ یکی از دلایلی که آنها در جنگ‌ها پیروز نمی‌شوند: آنها..."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-185",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/30/everyone-is-watching-iran-theyre-missing-the-bigger-threat/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Everyone is watching Iran… they're missing the bigger threat",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "همه دارند ایران را تماشا می‌کنند... آنها تهدید بزرگتر را از دست می‌دهند.",
+          "excerpt": ""
         }
       },
       "topics": []
