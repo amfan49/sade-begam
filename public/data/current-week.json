@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:56:56.604Z",
+  "published_at": "2026-07-02T15:56:59.513Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3865,6 +3865,27 @@
         "fa": {
           "headline": "ایران برای آزادسازی دارایی‌های مسدود شده خود تلاش می‌کند",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-184",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/07/01/for-tehran-negotiation-is-war-by-other-means/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "For Tehran, negotiation is war by other means",
+      "excerpt": "President Trump has observed that Iran’s rulers have “never won a war, but never lost a negotiation.” The question that should follow: Why is that? One reason they don’t win wars: They have...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "برای تهران، مذاکره، جنگ با ابزاری دیگر است",
+          "excerpt": "رئیس جمهور ترامپ اظهار داشته است که حاکمان ایران «هرگز در جنگی پیروز نشده‌اند، اما هرگز در مذاکره‌ای شکست نخورده‌اند.» سوالی که باید مطرح شود این است: چرا اینطور است؟ یکی از دلایلی که آنها در جنگ‌ها پیروز نمی‌شوند: آنها..."
         }
       },
       "topics": []
