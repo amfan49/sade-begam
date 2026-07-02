@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:21.426Z",
+  "published_at": "2026-07-02T15:57:24.592Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -4075,6 +4075,27 @@
         "fa": {
           "headline": "پرزیدنت ترامپ تلاش می‌کند تا با «سرپوش گذاشتن» بر درگیری با ایران، نفت را از طریق تنگه هرمز منتقل کند",
           "excerpt": "... گوش کن"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-194",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Council on Foreign Relations (CFR)",
+      "source_url": "https://www.cfr.org/articles/in-ankara-europe-faces-an-accelerating-u-s-decoupling-from-nato",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "At the NATO Summit, Europe Faces an Accelerating U.S. Decoupling",
+      "excerpt": "The United States appears to be pulling back from European security, with U.S. plans for withdrawal accelerating after a rift over support for the U.S.-Israeli war against Iran. NATO’s Turkey summit could be the start of a transition toward a new version of the alliance, but there are fears it could",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "در اجلاس ناتو، اروپا با جدایی شتابنده آمریکا روبروست",
+          "excerpt": "به نظر می‌رسد ایالات متحده در حال عقب‌نشینی از امنیت اروپا است و برنامه‌های ایالات متحده برای خروج پس از اختلاف بر سر حمایت از جنگ آمریکا و اسرائیل علیه ایران تسریع شده است. اجلاس ناتو در ترکیه می‌تواند آغاز گذار به سمت نسخه جدیدی از این اتحاد باشد، اما نگرانی‌هایی وجود دارد که این امر می‌تواند..."
         }
       },
       "topics": []
