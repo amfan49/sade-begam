@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:56:54.502Z",
+  "published_at": "2026-07-02T15:56:56.604Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3844,6 +3844,27 @@
         "fa": {
           "headline": "مذاکرات ایران و آمریکا در قطر درباره یادداشت تفاهم و لبنان",
           "excerpt": "... گوش کن"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-183",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/07/01/iran-pushes-for-release-of-frozen-assets/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Iran pushes for release of frozen assets",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "ایران برای آزادسازی دارایی‌های مسدود شده خود تلاش می‌کند",
+          "excerpt": ""
         }
       },
       "topics": []
