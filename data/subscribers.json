@@ -5,9 +5,9 @@
       "lang": "fa",
       "confirm_token": "2534ca810322d7c47b3e6bbb4a646efc7d8b3731e02a1a13",
       "unsubscribe_token": "a8c781e7218a69dfa405c9ae5a87bf15f0e261d399084a2e",
-      "confirmed": false,
+      "confirmed": true,
       "created_at": "2026-07-02T16:50:10.745Z",
-      "confirmed_at": null
+      "confirmed_at": "2026-07-02T16:56:18.115Z"
     }
   ]
 }
