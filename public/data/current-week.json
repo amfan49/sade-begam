@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:24.592Z",
+  "published_at": "2026-07-02T15:59:35.324Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -4096,6 +4096,27 @@
         "fa": {
           "headline": "در اجلاس ناتو، اروپا با جدایی شتابنده آمریکا روبروست",
           "excerpt": "به نظر می‌رسد ایالات متحده در حال عقب‌نشینی از امنیت اروپا است و برنامه‌های ایالات متحده برای خروج پس از اختلاف بر سر حمایت از جنگ آمریکا و اسرائیل علیه ایران تسریع شده است. اجلاس ناتو در ترکیه می‌تواند آغاز گذار به سمت نسخه جدیدی از این اتحاد باشد، اما نگرانی‌هایی وجود دارد که این امر می‌تواند..."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-195",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/a-flawed-u-s-iran-mou-and-a-fragile-ceasefire-with-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "A flawed U.S.-Iran MOU and a fragile ceasefire with Iran",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "تفاهم‌نامه ناقص ایران و آمریکا و آتش‌بس شکننده با ایران",
+          "excerpt": ""
         }
       },
       "topics": []
