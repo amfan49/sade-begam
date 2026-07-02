@@ -71,6 +71,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The collect job pushes a new draft commit during this same run.
+          # Without an explicit ref, checkout uses the SHA that triggered the
+          # workflow — which predates that push — so the digest would be built
+          # from last week's stale draft.
+          ref: main
 
       - uses: actions/setup-node@v4
         with:

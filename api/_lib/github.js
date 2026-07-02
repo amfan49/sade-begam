@@ -77,4 +77,29 @@ async function writeJsonFile(repoPath, token, data, sha, message) {
   return ghPut(`/repos/${REPO}/contents/${repoPath}`, token, body);
 }
 
-module.exports = { ghGet, ghPut, readJsonFile, writeJsonFile, REPO, BRANCH };
+// Read-modify-write with retry. Two overlapping requests each read the same
+// file sha; the slower PUT then fails with a 409 sha-mismatch and its change
+// would be silently lost — so on write failure we re-read and re-apply.
+// `mutate(data)` receives the parsed JSON (null if the file doesn't exist)
+// and returns { write: bool, data, ...extras }; the same object is returned
+// to the caller. When write is false, nothing is written (read-only outcome).
+async function updateJsonFile(repoPath, token, message, mutate) {
+  const ATTEMPTS = 3;
+  let lastErr;
+  for (let i = 0; i < ATTEMPTS; i++) {
+    const { data, sha } = await readJsonFile(repoPath, token);
+    const result = mutate(data);
+    if (!result || !result.write) return result;
+    try {
+      await writeJsonFile(repoPath, token, result.data, sha, message);
+      return result;
+    } catch (err) {
+      lastErr = err;
+      // 409 = sha conflict (concurrent write) — re-read and retry.
+      if (!/409/.test(err.message)) throw err;
+    }
+  }
+  throw lastErr;
+}
+
+module.exports = { ghGet, ghPut, readJsonFile, writeJsonFile, updateJsonFile, REPO, BRANCH };

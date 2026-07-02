@@ -192,9 +192,13 @@ function handleLocalFallback(query) {
   const chat = T.aiChat || {};
   const q    = query.toLowerCase();
   const lang = SB_LANG;
+  // Same routing rules as chatbot.js/api-chat: greetings must be the whole
+  // message; commands only fire on short messages so real searches
+  // ("executive order on Iran") aren't hijacked.
+  const isCommand = (re) => q.split(/\s+/).length <= 3 && re.test(q);
 
   // Greetings
-  if (/^(سلام|درود|hello|hi|hey|hallo)/.test(q)) {
+  if (/^(سلام|درود|hello|hi|hey|hallo)[\s!!.؟?،,]*$/.test(q)) {
     const reply = T.chat?.greetBack || (lang === "fa" ? "سلام! چه کمکی می‌توانم بکنم؟" : "Hello! How can I help?");
     appendBubble("bot", reply);
     saveToHistory("bot", reply);
@@ -202,7 +206,7 @@ function handleLocalFallback(query) {
   }
 
   // Newsletter
-  if (/(خبرنامه|newsletter|subscribe|اشتراک)/.test(q)) {
+  if (isCommand(/(خبرنامه|newsletter|subscribe|اشتراک)/)) {
     const reply = (lang === "fa")
       ? "با کمال میل! خبرنامه‌ی رایگان هفتگی ساده بگم را اینجا ثبت‌نام کنید: newsletter.html"
       : "Happy to help! You can subscribe to the free weekly Sade Begam newsletter here: newsletter.html";
@@ -212,7 +216,7 @@ function handleLocalFallback(query) {
   }
 
   // Contact / Orders
-  if (/(تماس|contact|سفارش|order|درخواست)/.test(q)) {
+  if (isCommand(/(تماس|contact|سفارش|order|درخواست)/)) {
     const reply = (lang === "fa")
       ? "برای سفارش خبر ویژه یا تماس با ما، از صفحه‌ی سفارش خبر استفاده کنید: orders.html"
       : "To order specific news coverage or contact us, visit the orders page: orders.html";
@@ -242,7 +246,7 @@ function handleLocalFallback(query) {
       item.translations?.en?.headline || "",
     ].join(" ").toLowerCase();
     return txt.includes(q);
-  }).sort((a, b) => (a.country === "Iran" ? 1 : 0) - (b.country === "Iran" ? 1 : 0));
+  }).sort(sbIranLast);
 
   if (!results.length) {
     const noRes = (lang === "fa")

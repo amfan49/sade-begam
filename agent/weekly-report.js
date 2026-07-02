@@ -15,10 +15,20 @@ const path = require("path");
 const SITE = (process.env.SITE_URL || "https://sade-begam.vercel.app").replace(/\/$/, "");
 const CURRENT_WEEK_PATH = path.join(__dirname, "..", "public", "data", "current-week.json");
 
+// Feed-derived text goes into subscriber emails — escape it. RSS titles
+// routinely contain &, <, and quotes.
+function esc(s) {
+  return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
 function lastNDaysItems(items, days = 7) {
-  const cutoff = Date.now() - days * 86400000;
+  // Compare date strings, not timestamps: item dates are date-only (UTC
+  // midnight), so a time-of-day cutoff would drop items dated exactly
+  // `days` ago even though they belong to the window.
+  const cutoffIso = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
   return items
-    .filter((it) => it.date && new Date(it.date).getTime() >= cutoff)
+    .filter((it) => it.date && it.date >= cutoffIso)
     .sort((a, b) => {
       if (a.date !== b.date) return a.date > b.date ? -1 : 1;
       const wa = a.country === "Iran" ? 1 : 0, wb = b.country === "Iran" ? 1 : 0;
@@ -30,19 +40,20 @@ function itemRow(item, lang) {
   const tr = item.translations ? item.translations[lang] : null;
   const headline = (item.lang_original !== lang && tr && tr.headline) ? tr.headline : item.headline;
   const excerpt = (item.lang_original !== lang && tr && tr.excerpt) ? tr.excerpt : (item.excerpt || "");
+  const shortExcerpt = (excerpt || "").slice(0, 220) + ((excerpt || "").length > 220 ? "…" : "");
   return `
   <tr>
     <td style="padding:16px 0; border-bottom:1px solid #E8ECF2;">
       <div style="font-size:11px; color:#888; margin-bottom:4px;">
-        ${item.country} · ${item.source_organization} · ${item.date}
+        ${esc(item.country)} · ${esc(item.source_organization)} · ${esc(item.date)}
       </div>
       <div style="font-size:15px; font-weight:600; color:#1C2233; margin-bottom:6px; line-height:1.4;">
-        ${headline || ""}
+        ${esc(headline)}
       </div>
       <div style="font-size:13px; color:#555; line-height:1.5; margin-bottom:10px;">
-        ${(excerpt || "").slice(0, 220)}${(excerpt || "").length > 220 ? "…" : ""}
+        ${esc(shortExcerpt)}
       </div>
-      <a href="${item.source_url}" target="_blank"
+      <a href="${esc(item.source_url)}" target="_blank"
          style="display:inline-block; color:#1A6FBF; text-decoration:none; font-size:12px; font-weight:600;">
         🔗 ${lang === "fa" ? "منبع رسمی" : "Official source"}
       </a>

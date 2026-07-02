@@ -40,11 +40,6 @@ function toDigits(n, lang) {
   return String(n).replace(/[0-9]/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]);
 }
 
-function escapeHtml(s) {
-  return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-}
-
 // Western sources always listed before Iranian sources.
 function sortWesternFirst(items) {
   return [...items].sort((a, b) => {
@@ -88,7 +83,16 @@ function twitterUrl(q) {
   return "https://twitter.com/search?q=" + encodeURIComponent("Iran " + q) + "&f=news";
 }
 
+// Module-scope cache: warm serverless invocations reuse the news for 5
+// minutes instead of re-downloading both JSON files on every message
+// (mirrors the 5-minute client-side refresh cadence in main.js).
+const NEWS_TTL_MS = 5 * 60 * 1000;
+let _newsCache = { at: 0, items: null };
+
 async function loadItems() {
+  if (_newsCache.items && Date.now() - _newsCache.at < NEWS_TTL_MS) {
+    return _newsCache.items;
+  }
   const [week, arc] = await Promise.all([
     fetchJson(`${SITE}/data/current-week.json`),
     fetchJson(`${SITE}/data/archive.json`)
@@ -97,14 +101,16 @@ async function loadItems() {
   [...((arc && arc.items) || []), ...((week && week.items) || [])].forEach((it) => {
     if (it && it.id) byId.set(it.id, it);
   });
-  return [...byId.values()];
+  const items = [...byId.values()];
+  if (items.length) _newsCache = { at: Date.now(), items };
+  return items;
 }
 
 function searchReply(query, lang, items) {
   const R = REPLIES[lang];
   const qLow = query.toLowerCase();
 
-  if (!items.length) return { text: R.noData, html: false };
+  if (!items.length) return R.noData;
 
   const iranItems = items.filter((item) => {
     const allText = [
@@ -126,7 +132,7 @@ function searchReply(query, lang, items) {
   }));
 
   if (!results.length) {
-    return { text: R.noResults(query) + twitterUrl(query), html: false };
+    return R.noResults(query) + twitterUrl(query);
   }
 
   const top = results.slice(0, 3);
@@ -138,21 +144,28 @@ function searchReply(query, lang, items) {
   });
   if (results.length > 3) lines.push(R.more(toDigits(results.length - 3, lang)));
 
-  return { text: lines.join("\n\n"), html: false };
+  return lines.join("\n\n");
 }
 
 function routeMessage(query, lang, items) {
   const R = REPLIES[lang];
   const q = query.trim().toLowerCase();
-
-  if (/^(سلام|درود|hello|hi|hey|hallo|bonjour)/.test(q)) return R.greeting;
-  if (/^(راهنما|کمک|help|\?|؟)$/.test(q)) return R.help;
-  if (/(خبرنامه|newsletter|subscribe|اشتراک)/.test(q)) return R.newsletter;
-  if (/(تماس|contact|سفارش|order|درخواست)/.test(q)) return R.contact;
-  if (/(بخوان|read.?news|صدا|voice|speak|vorlesen)/.test(q)) return R.voice;
   if (!q) return R.fallback;
 
-  return searchReply(query, lang, items).text;
+  const words = q.split(/\s+/);
+  // Greeting only when the whole message is a greeting (± punctuation) — a
+  // bare prefix match would hijack searches like "history…" or "سلامت…".
+  if (/^(سلام|درود|hello|hi|hey|hallo|bonjour)[\s!!.؟?،,]*$/.test(q)) return R.greeting;
+  if (/^(راهنما|کمک|help|\?|؟)$/.test(q)) return R.help;
+  // Newsletter/contact/voice only for short command-like messages; longer
+  // sentences containing these words ("executive order on Iran") are
+  // real search queries.
+  const isCommand = (re) => words.length <= 3 && re.test(q);
+  if (isCommand(/(خبرنامه|newsletter|subscribe|اشتراک)/)) return R.newsletter;
+  if (isCommand(/(تماس|contact|سفارش|order|درخواست)/)) return R.contact;
+  if (isCommand(/(بخوان|read.?news|صدا|voice|speak|vorlesen)/)) return R.voice;
+
+  return searchReply(query, lang, items);
 }
 
 // ── Main handler ─────────────────────────────────────────────────

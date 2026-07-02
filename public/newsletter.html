@@ -113,6 +113,14 @@
           body: JSON.stringify({ email, lang: SB_LANG })
         });
         const data = await res.json();
+
+        // 400 = the server rejected the address itself — nothing was stored,
+        // so tell the visitor that, not a misleading "signup saved" message.
+        if (res.status === 400) {
+          set("nlFormNote", T.newsletter.invalidEmail);
+          submitBtn.disabled = false;
+          return;
+        }
         if (!res.ok) throw new Error(data.error || "failed");
 
         if (data.alreadySubscribed) {
@@ -121,6 +129,7 @@
           return;
         }
         if (!data.emailSent) {
+          // Stored, but the confirmation email failed — sendError says so.
           set("nlFormNote", T.newsletter.sendError);
           submitBtn.disabled = false;
           return;
@@ -128,7 +137,9 @@
         form.hidden = true;
         confirm.hidden = false;
       } catch (_) {
-        set("nlFormNote", T.newsletter.sendError);
+        // Network/server failure — we don't know if anything was stored,
+        // so use the generic message, not sendError's "signup was saved".
+        set("nlFormNote", T.newsletter.genericError);
         submitBtn.disabled = false;
       }
     });
@@ -138,6 +149,8 @@
       confirm.hidden = true;
       form.hidden = false;
       form.reset();
+      submitBtn.disabled = false;
+      set("nlFormNote", T.newsletter.formNote);
     });
 
     document.querySelectorAll("[data-setlang]").forEach((btn) => {

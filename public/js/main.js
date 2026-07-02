@@ -168,8 +168,8 @@ function renderFeed() {
   let items = [...ALL_ITEMS].sort((a, b) => {
     const da = a.date || "", db = b.date || "";
     if (db !== da) return db > da ? 1 : -1;
-    const wa = a.country === "Iran" ? 1 : 0, wb = b.country === "Iran" ? 1 : 0;
-    if (wa !== wb) return wa - wb; // Western sources before Iranian sources
+    const w = sbIranLast(a, b); // Western sources before Iranian sources
+    if (w) return w;
     return (b.id || "") > (a.id || "") ? 1 : -1;
   });
   if (ACTIVE_REGION !== "all") items = items.filter((i) => i.region === ACTIVE_REGION);

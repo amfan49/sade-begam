@@ -1,37 +1,18 @@
 // api/confirm.js — Newsletter double opt-in confirmation
 // GET /api/confirm?token=...
 //
-// Marks the matching subscriber as confirmed in public/data/subscribers.json.
-// This is the second step of double opt-in — until this link is clicked,
-// the subscriber never receives anything but this one confirmation email.
+// Marks the matching subscriber as confirmed in data/subscribers.json
+// (repo root — NOT under public/, which is served publicly; that file
+// holds real email addresses). This is the second step of double opt-in —
+// until this link is clicked, the subscriber never receives anything but
+// the one confirmation email.
 
 "use strict";
 
-const { readJsonFile, writeJsonFile } = require("./_lib/github");
+const { updateJsonFile } = require("./_lib/github");
+const { htmlPage } = require("./_lib/html");
 
-const SUBSCRIBERS_PATH = "data/subscribers.json"; // not under public/ — real emails live here
-
-function htmlPage(title, msg, color) {
-  return `<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>${title}</title>
-  <style>
-    body{margin:0;background:#F5F7FA;display:flex;align-items:center;
-         justify-content:center;min-height:100vh;font-family:Tahoma,Arial,sans-serif;}
-    .box{background:#fff;border-radius:14px;padding:40px 48px;text-align:center;
-         box-shadow:0 4px 24px rgba(0,0,0,.1);max-width:420px;}
-    h1{color:${color};margin:0 0 12px;} p{color:#444;line-height:1.6;margin:0 0 18px;}
-    a{display:inline-block;background:#1A6FBF;color:#fff;text-decoration:none;
-      padding:10px 24px;border-radius:8px;font-size:14px;}
-  </style>
-</head>
-<body><div class="box"><h1>${title}</h1><p>${msg}</p>
-<a href="https://sade-begam.vercel.app">→ ساده بگم</a></div></body>
-</html>`;
-}
+const SUBSCRIBERS_PATH = "data/subscribers.json";
 
 module.exports = async (req, res) => {
   const { token } = req.query || {};
@@ -41,21 +22,22 @@ module.exports = async (req, res) => {
   if (!ghPat) return res.status(500).send(htmlPage("خطا", "پیکربندی سرور ناقص است.", "#e74c3c"));
 
   try {
-    const { data, sha } = await readJsonFile(SUBSCRIBERS_PATH, ghPat);
-    const store = data || { subscribers: [] };
-    const entry = store.subscribers.find((s) => s.confirm_token === token);
+    const result = await updateJsonFile(SUBSCRIBERS_PATH, ghPat, "Newsletter confirmed [vercel skip]", (data) => {
+      const store = data || { subscribers: [] };
+      const entry = store.subscribers.find((s) => s.confirm_token === token);
+      if (!entry) return { write: false, status: "notfound" };
+      if (entry.confirmed) return { write: false, status: "already" };
+      entry.confirmed = true;
+      entry.confirmed_at = new Date().toISOString();
+      return { write: true, data: store, status: "confirmed" };
+    });
 
-    if (!entry) {
+    if (result.status === "notfound") {
       return res.status(404).send(htmlPage("یافت نشد", "این پیوند تأیید معتبر نیست یا قبلاً استفاده شده است.", "#e74c3c"));
     }
-    if (entry.confirmed) {
+    if (result.status === "already") {
       return res.status(200).send(htmlPage("✅ قبلاً تأیید شده", "اشتراک شما پیش از این تأیید شده بود.", "#27ae60"));
     }
-
-    entry.confirmed = true;
-    entry.confirmed_at = new Date().toISOString();
-    await writeJsonFile(SUBSCRIBERS_PATH, ghPat, store, sha, `Newsletter confirmed: ${entry.email} [vercel skip]`);
-
     return res.status(200).send(htmlPage("✅ تأیید شد", "اشتراک شما در خبرنامه‌ی ساده بگم با موفقیت تأیید شد. متشکریم!", "#27ae60"));
   } catch (err) {
     console.error("Confirm error:", err.message);

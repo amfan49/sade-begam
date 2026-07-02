@@ -108,6 +108,7 @@ const STRINGS = {
       confirmBody: "یک ایمیل تأیید برایتان فرستادیم. برای تکمیل ثبت‌نام، روی پیوند داخل آن کلیک کنید.",
       alreadySubscribed: "شما پیش‌تر در خبرنامه ثبت‌نام کرده‌اید.",
       sendError: "متأسفانه ارسال ایمیل تأیید ممکن نشد. ثبت‌نامتان ذخیره شد؛ لطفاً کمی بعد دوباره تلاش کنید یا به hello@sadebegam.com ایمیل بزنید.",
+      genericError: "متأسفانه خطایی رخ داد. لطفاً دوباره تلاش کنید.",
       invalidEmail: "لطفاً یک نشانی ایمیل معتبر وارد کنید.",
       confirmAgain: "ثبت ایمیلی دیگر"
     },
@@ -269,6 +270,7 @@ const STRINGS = {
       confirmBody: "We've sent you a confirmation email. Click the link inside to complete your subscription.",
       alreadySubscribed: "You are already subscribed to the newsletter.",
       sendError: "Sorry, the confirmation email could not be sent. Your signup was saved — please try again shortly or email hello@sadebegam.com.",
+      genericError: "Sorry, something went wrong. Please try again.",
       invalidEmail: "Please enter a valid email address.",
       confirmAgain: "Use a different email"
     },
@@ -415,6 +417,12 @@ function sbTodayIso() {
 
 // Fills the shared footer bits (today's date in both calendars + the
 // non-profit / imprint notice) on every page that includes them.
+// Shared sort rule: Western sources always come before Iranian sources.
+// Use as a comparator (or a tie-breaker inside a larger comparator).
+function sbIranLast(a, b) {
+  return (a.country === "Iran" ? 1 : 0) - (b.country === "Iran" ? 1 : 0);
+}
+
 function sbRenderCommonFooter() {
   const today = document.getElementById("todayDate");
   if (today) today.textContent = `${T.todayLabel}: ${sbBothDates(sbTodayIso())}`;

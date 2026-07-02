@@ -35,7 +35,6 @@ function card(item, index) {
     <td style="padding:16px 0; border-bottom:1px solid #E8ECF2;">
       <table width="100%" cellpadding="0" cellspacing="0">
         <tr>
-          <td style="width:36px; font-size:24px; vertical-align:top; padding-top:2px;">${item.flag || "🏳️"}</td>
           <td style="padding-right:12px;">
             <div style="font-size:11px; color:#888; margin-bottom:4px;">
               ${index + 1} · ${item.source_organization} · ${item.date} · <em>${item.region}</em>

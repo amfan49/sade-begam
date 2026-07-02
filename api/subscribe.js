@@ -2,17 +2,19 @@
 // POST /api/subscribe
 // Body: { email, lang }
 //
-// Stores the subscriber in public/data/subscribers.json (private repo —
-// same GitHub-as-database pattern as api/approve.js, no separate DB needed)
-// and emails a confirmation link via Resend. The subscription only becomes
-// "confirmed" once the visitor clicks that link (api/confirm.js).
+// Stores the subscriber in data/subscribers.json — repo root, NOT under
+// public/ (public/ is served to every visitor as static files and this
+// file holds real email addresses). Same GitHub-as-database pattern as
+// api/approve.js, no separate DB needed. Emails a confirmation link via
+// Resend; the subscription only becomes "confirmed" once the visitor
+// clicks that link (api/confirm.js).
 //
 // Env vars needed: GH_PAT (already configured), RESEND_API_KEY (free tier)
 
 "use strict";
 
 const crypto = require("crypto");
-const { readJsonFile, writeJsonFile } = require("./_lib/github");
+const { updateJsonFile } = require("./_lib/github");
 const { sendResend } = require("./_lib/resend");
 
 const SITE = "https://sade-begam.vercel.app";
@@ -73,18 +75,13 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const { data, sha } = await readJsonFile(SUBSCRIBERS_PATH, ghPat);
-    const store = data || { subscribers: [] };
-
-    let entry = store.subscribers.find((s) => s.email === cleanEmail);
-    let isNew = false;
-
-    if (entry && entry.confirmed) {
-      return res.status(200).json({ ok: true, alreadySubscribed: true, message: L.already });
-    }
-
-    if (!entry) {
-      isNew = true;
+    // updateJsonFile retries on concurrent-write conflicts, so two visitors
+    // subscribing at the same moment can't silently lose a signup.
+    const result = await updateJsonFile(SUBSCRIBERS_PATH, ghPat, "Newsletter signup [vercel skip]", (data) => {
+      const store = data || { subscribers: [] };
+      let entry = store.subscribers.find((s) => s.email === cleanEmail);
+      if (entry && entry.confirmed) return { write: false, entry, already: true };
+      if (entry) return { write: false, entry, already: false }; // pending — just resend the email
       entry = {
         email: cleanEmail,
         lang: (lang === "fa" ? "fa" : "en"),
@@ -95,11 +92,13 @@ module.exports = async (req, res) => {
         confirmed_at: null
       };
       store.subscribers.push(entry);
-    }
+      return { write: true, data: store, entry, already: false };
+    });
 
-    if (isNew) {
-      await writeJsonFile(SUBSCRIBERS_PATH, ghPat, store, sha, `Newsletter signup: ${cleanEmail} [vercel skip]`);
+    if (result.already) {
+      return res.status(200).json({ ok: true, alreadySubscribed: true, message: L.already });
     }
+    const entry = result.entry;
 
     let emailSent = false;
     const apiKey = process.env.RESEND_API_KEY;

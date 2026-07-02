@@ -27,13 +27,10 @@ function _sbTwUrl(q) {
   return "https://twitter.com/search?q=" + encodeURIComponent("Iran " + q) + "&f=news";
 }
 
-// Western sources are always listed before Iranian sources.
+// Western sources are always listed before Iranian sources (sbIranLast
+// lives in i18n.js, which loads before this file on every page).
 function _sbWesternFirst(items) {
-  return [...items].sort((a, b) => {
-    const wa = a.country === "Iran" ? 1 : 0;
-    const wb = b.country === "Iran" ? 1 : 0;
-    return wa - wb;
-  });
+  return [...items].sort(sbIranLast);
 }
 
 function _sbLink(href, label) {
@@ -142,35 +139,39 @@ function sbChatRespond(query) {
   const T = typeof window.T !== "undefined" ? window.T : {};
   const chat = T.chat || {};
   const q = query.toLowerCase();
+  // Commands only fire on short, command-like messages; longer sentences
+  // containing these words ("executive order on Iran") are real searches.
+  const isCommand = (re) => q.split(/\s+/).length <= 3 && re.test(q);
 
-  // Greeting
-  if (/^(سلام|درود|hello|hi|hey|hallo|bonjour)/.test(q)) {
+  // Greeting — must be the whole message, otherwise "history…"/"سلامت…"
+  // would be hijacked by the bare prefix.
+  if (/^(سلام|درود|hello|hi|hey|hallo|bonjour)[\s!!.؟?،,]*$/.test(q)) {
     sbBotMsg(chat.greetBack || "Hello! How can I help?", false);
     return;
   }
   // Help
-  if (/^(راهنما|کمک|help|\?|؟)/.test(q)) {
+  if (/^(راهنما|کمک|help|\?|؟)[\s!!.؟?،,]*$/.test(q)) {
     sbBotMsg(chat.helpText ||
       "Commands: search [topic] · newsletter · contact · read news", true);
     return;
   }
   // Newsletter
-  if (/(خبرنامه|newsletter|subscribe|اشتراک)/.test(q)) {
+  if (isCommand(/(خبرنامه|newsletter|subscribe|اشتراک)/)) {
     sbBotMsg(`${chat.newsletterReply || "Subscribe here:"} ${_sbLink("newsletter.html", "📧 Newsletter")}`, true);
     return;
   }
   // Contact / Order
-  if (/(تماس|contact|سفارش|order|درخواست)/.test(q)) {
+  if (isCommand(/(تماس|contact|سفارش|order|درخواست)/)) {
     sbBotMsg(`${chat.contactReply || "Contact / order:"} ${_sbLink("orders.html", "📩 " + (chat.contactLink || "Order"))}`, true);
     return;
   }
   // Read news (TTS)
-  if (/(بخوان|read.?news|صدا|voice|speak|vorlesen)/.test(q)) {
+  if (isCommand(/(بخوان|read.?news|صدا|voice|speak|vorlesen)/)) {
     sbReadNews();
     return;
   }
   // Stop reading
-  if (/(توقف|stop|pause|بایست)/.test(q)) {
+  if (isCommand(/(توقف|stop|pause|بایست)/)) {
     sbStopReading();
     sbBotMsg(chat.stopped || "Stopped.", false);
     return;

@@ -13,8 +13,10 @@
 
 const fs = require("fs");
 const path = require("path");
-const https = require("https");
 const { buildReportHtml } = require("./weekly-report");
+// Runs from a full repo checkout in GitHub Actions, so the serverless
+// helper is requirable here too — one Resend client, not two.
+const { sendResend } = require("../api/_lib/resend");
 
 const SITE = (process.env.SITE_URL || "https://sade-begam.vercel.app").replace(/\/$/, "");
 const OWNER_EMAIL = "amfan49@gmail.com";
@@ -22,28 +24,6 @@ const TEST_ONLY = process.env.TEST_ONLY !== "false"; // default true — safest
 
 const CURRENT_WEEK_PATH = path.join(__dirname, "..", "public", "data", "current-week.json");
 const SUBSCRIBERS_PATH = path.join(__dirname, "..", "data", "subscribers.json");
-
-function sendResend(apiKey, body) {
-  return new Promise((resolve, reject) => {
-    const raw = JSON.stringify(body);
-    const req = https.request({
-      hostname: "api.resend.com",
-      path: "/emails",
-      method: "POST",
-      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json", "Content-Length": Buffer.byteLength(raw) }
-    }, (r) => {
-      let data = "";
-      r.on("data", (c) => { data += c; });
-      r.on("end", () => {
-        if (r.statusCode >= 200 && r.statusCode < 300) resolve(data);
-        else reject(new Error(`Resend ${r.statusCode}: ${data}`));
-      });
-    });
-    req.on("error", reject);
-    req.write(raw);
-    req.end();
-  });
-}
 
 async function main() {
   const apiKey = process.env.RESEND_API_KEY;
