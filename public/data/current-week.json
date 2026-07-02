@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:16.404Z",
+  "published_at": "2026-07-02T15:57:18.579Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -4032,6 +4032,27 @@
         "en": null,
         "fa": {
           "headline": "ونس و روبیو برای بستن قرارداد با ایران و لبنان رقابت می‌کنند",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-192",
+      "date": "2026-06-29",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/29/strait-jacket-the-future-of-the-iran-war/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Strait-jacket: the future of the Iran war",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "جلیقه ضدگلوله: آینده جنگ ایران",
           "excerpt": ""
         }
       },
