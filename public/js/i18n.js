@@ -423,6 +423,13 @@ function sbIranLast(a, b) {
   return (a.country === "Iran" ? 1 : 0) - (b.country === "Iran" ? 1 : 0);
 }
 
+// One-time cleanup (2026-07-02): the v1 caches held think-tank items that
+// were purged from the site — actively delete them from visitors' browsers.
+try {
+  localStorage.removeItem("sb_current_week_v1");
+  localStorage.removeItem("sb_archive_v1");
+} catch (_) { /* storage disabled — fine */ }
+
 function sbRenderCommonFooter() {
   const today = document.getElementById("todayDate");
   if (today) today.textContent = `${T.todayLabel}: ${sbBothDates(sbTodayIso())}`;

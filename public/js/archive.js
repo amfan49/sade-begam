@@ -4,7 +4,7 @@
 // or year. Each entry keeps its source link and headline translation.
 // Uses the same client-side cache idea as the home feed.
 
-const ARC_CACHE_KEY = "sb_archive_v1";
+const ARC_CACHE_KEY = "sb_archive_v2"; // v2: bumped 2026-07-02 (think-tank purge)
 const ARC_CACHE_TTL = 0; // always revalidate
 
 let ARC_ITEMS = [];

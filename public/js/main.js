@@ -60,7 +60,9 @@ function applyLanguageChrome() {
 // Client-side caching: show the cached copy instantly, then revalidate in
 // the background (stale-while-revalidate). Saves bandwidth and renders fast
 // on repeat visits. News + translations live together in current-week.json.
-const NEWS_CACHE_KEY = "sb_current_week_v1";
+// v2: key bumped 2026-07-02 so browsers discard cached think-tank items
+// immediately (stale-while-revalidate would flash them otherwise).
+const NEWS_CACHE_KEY = "sb_current_week_v2";
 const NEWS_CACHE_TTL = 0; // always revalidate — show cached instantly, then fetch fresh
 
 function renderNews(data) {

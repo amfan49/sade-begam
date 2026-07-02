@@ -172,9 +172,9 @@ async function sendMessage(text) {
 
 function _getLocalNews() {
   try {
-    const cw  = JSON.parse(localStorage.getItem("sb_current_week_v1"));
+    const cw  = JSON.parse(localStorage.getItem("sb_current_week_v2"));
     const items = (cw?.data?.items || []).slice();
-    const arc = JSON.parse(localStorage.getItem("sb_archive_v1"));
+    const arc = JSON.parse(localStorage.getItem("sb_archive_v2"));
     const arcItems = arc?.items || arc?.data?.items || [];
     const ids = new Set(items.map(i => i.id));
     arcItems.forEach(i => { if (i && !ids.has(i.id)) items.push(i); });
