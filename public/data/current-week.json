@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-06-21T08:44:49.762Z",
+  "published_at": "2026-07-02T15:56:48.942Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3781,6 +3781,27 @@
         "fa": {
           "headline": "Der Irankrieg verändert die Golfregion – Europa muss handeln",
           "excerpt": "Ein Kriegsende am Golf würde Europa die Chance eröffnen، politisch und wirtschaftlich Einfluss zurückzugewinnen. Volker Perthes، سابق سازمان ملل متحد Untergeneralsekretär، zeigt، wo die Anknüpfungspunkte liegen."
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-180",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/07/01/why-hasnt-the-trump-administration-complied-with-the-law-on-reporting-iran-agreements-to-congress/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Why Hasn’t the Trump Administration Complied with the Law on Reporting Iran Agreements to Congress?",
+      "excerpt": "Abstract This article argues that the Trump Administration’s Memorandum of Understanding with Iran is subject to the Iran Nuclear Agreement Review Act (INARA) but the administration has not complied... The post Why Hasn’t the Trump Administration Complied with the Law on Reporting Iran Agreements to",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "چرا دولت ترامپ از قانون گزارش توافقات ایران به کنگره پیروی نکرده است؟",
+          "excerpt": "چکیده این مقاله استدلال می‌کند که تفاهم‌نامه دولت ترامپ با ایران مشمول قانون بررسی توافق هسته‌ای ایران (INARA) است، اما دولت از آن پیروی نکرده است... پست چرا دولت ترامپ از قانون گزارش توافقات ایران به ... پیروی نکرده است؟"
         }
       },
       "topics": []
