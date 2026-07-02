@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:56:48.942Z",
+  "published_at": "2026-07-02T15:56:51.818Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3802,6 +3802,27 @@
         "fa": {
           "headline": "چرا دولت ترامپ از قانون گزارش توافقات ایران به کنگره پیروی نکرده است؟",
           "excerpt": "چکیده این مقاله استدلال می‌کند که تفاهم‌نامه دولت ترامپ با ایران مشمول قانون بررسی توافق هسته‌ای ایران (INARA) است، اما دولت از آن پیروی نکرده است... پست چرا دولت ترامپ از قانون گزارش توافقات ایران به ... پیروی نکرده است؟"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-181",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/07/01/how-trumps-understanding-with-iran-echoes-obamas-2015-nuclear-deal/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "How Trump’s Understanding With Iran Echoes Obama’s 2015 Nuclear Deal",
+      "excerpt": "If you want to understand Iran’s negotiating posture for the new nuclear deal with the United States, listen to what Washington and Tehran said about the nuclear deal of July 2015. At the time, President... The post How Trump’s Understanding With Iran Echoes Obama’s 2015 Nuclear Deal appeared first",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "چگونه تفاهم ترامپ با ایران، یادآور توافق هسته‌ای اوباما در سال ۲۰۱۵ است؟",
+          "excerpt": "اگر می‌خواهید موضع مذاکره ایران برای توافق هسته‌ای جدید با ایالات متحده را درک کنید، به آنچه واشنگتن و تهران در مورد توافق هسته‌ای ژوئیه ۲۰۱۵ گفتند گوش دهید. در آن زمان، رئیس جمهور... این پست چگونه تفاهم ترامپ با ایران، توافق هسته‌ای ۲۰۱۵ اوباما را تکرار می‌کند، برای اولین بار ظاهر شد"
         }
       },
       "topics": []
