@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:10.740Z",
+  "published_at": "2026-07-02T15:57:12.742Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3990,6 +3990,27 @@
         "en": null,
         "fa": {
           "headline": "تشدید آزار و اذیت مسیحیان در جمهوری اسلامی ایران",
+          "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-190",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/06/30/u-s-iran-peace-talks-in-doha-off-to-shaky-start/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S.-Iran peace talks in Doha off to shaky start",
+      "excerpt": "",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "مذاکرات صلح آمریکا و ایران در دوحه با شروعی لرزان آغاز شد",
           "excerpt": ""
         }
       },
