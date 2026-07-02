@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:06.026Z",
+  "published_at": "2026-07-02T15:57:08.604Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3949,6 +3949,27 @@
         "fa": {
           "headline": "همزمان با ایجاد مسیر کشتیرانی جدید توسط ایالات متحده و متحدان خلیج فارس، ایران برای حفظ تسلط خود بر هرمز می‌جنگد",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-188",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/30/why-is-saudi-arabia-appeasing-iran/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Why Is Saudi Arabia Appeasing Iran?",
+      "excerpt": "Last week, while Iran attacked Bahrain and ships navigating through the Strait of Hormuz, Saudi Arabia was preparing a reconciliation summit with Tehran. Meanwhile, Secretary...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "چرا عربستان سعودی در حال مماشات با ایران است؟",
+          "excerpt": "هفته گذشته، در حالی که ایران به بحرین و کشتی‌هایی که از تنگه هرمز عبور می‌کردند حمله کرد، عربستان سعودی در حال آماده‌سازی یک اجلاس آشتی با تهران بود. در همین حال، وزیر..."
         }
       },
       "topics": []
