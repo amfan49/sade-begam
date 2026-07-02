@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:56:51.818Z",
+  "published_at": "2026-07-02T15:56:54.502Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3823,6 +3823,27 @@
         "fa": {
           "headline": "چگونه تفاهم ترامپ با ایران، یادآور توافق هسته‌ای اوباما در سال ۲۰۱۵ است؟",
           "excerpt": "اگر می‌خواهید موضع مذاکره ایران برای توافق هسته‌ای جدید با ایالات متحده را درک کنید، به آنچه واشنگتن و تهران در مورد توافق هسته‌ای ژوئیه ۲۰۱۵ گفتند گوش دهید. در آن زمان، رئیس جمهور... این پست چگونه تفاهم ترامپ با ایران، توافق هسته‌ای ۲۰۱۵ اوباما را تکرار می‌کند، برای اولین بار ظاهر شد"
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-182",
+      "date": "2026-07-01",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/in_the_news/2026/07/01/u-s-iran-hold-talks-in-qatar-on-mou-lebanon/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "U.S., Iran hold talks in Qatar on MOU, Lebanon",
+      "excerpt": "Listen ...",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "مذاکرات ایران و آمریکا در قطر درباره یادداشت تفاهم و لبنان",
+          "excerpt": "... گوش کن"
         }
       },
       "topics": []
