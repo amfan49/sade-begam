@@ -4,7 +4,7 @@
     "start": "2026-06-08",
     "end": "2026-06-14"
   },
-  "published_at": "2026-07-02T15:57:01.767Z",
+  "published_at": "2026-07-02T15:57:04.273Z",
   "items": [
     {
       "id": "2026-W24-141",
@@ -3907,6 +3907,27 @@
         "fa": {
           "headline": "همه دارند ایران را تماشا می‌کنند... آنها تهدید بزرگتر را از دست می‌دهند.",
           "excerpt": ""
+        }
+      },
+      "topics": []
+    },
+    {
+      "id": "2026-W24-186",
+      "date": "2026-06-30",
+      "country": "United States",
+      "region": "Think Tanks",
+      "flag": "🏛️",
+      "source_organization": "Foundation for Defense of Democracies (FDD)",
+      "source_url": "https://www.fdd.org/analysis/2026/06/30/treasury-license-for-iranian-petroleum-is-unwise-and-may-be-inconsistent-with-statutory-requirements/",
+      "is_official": true,
+      "lang_original": "en",
+      "headline": "Treasury License for Iranian Petroleum Is Unwise and May Be Inconsistent With Statutory Requirements",
+      "excerpt": "The Treasury Department’s issuance on June 22 of a license pausing Iranian petroleum sanctions appears to be inconsistent with the Iran Nuclear Agreement Review Act (INARA), which prohibits such relief... The post Treasury License for Iranian Petroleum Is Unwise and May Be Inconsistent With Statutor",
+      "translations": {
+        "en": null,
+        "fa": {
+          "headline": "مجوز خزانه‌داری برای نفت ایران غیرعاقلانه است و ممکن است با الزامات قانونی مغایرت داشته باشد",
+          "excerpt": "صدور مجوز توقف تحریم‌های نفتی ایران توسط وزارت خزانه‌داری در ۲۲ ژوئن، ظاهراً با قانون بررسی توافق هسته‌ای ایران (INARA) که چنین لغو تحریم‌هایی را ممنوع می‌کند، مغایرت دارد... مجوز وزارت خزانه‌داری برای نفت ایران غیرعاقلانه است و ممکن است با قانون اساسی مغایرت داشته باشد."
         }
       },
       "topics": []
